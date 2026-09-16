@@ -1,7 +1,6 @@
 name: Cloud RSS sync
 
 on:
-  workflow_dispatch:
   schedule:
     - cron: "7,27,47 * * * *"
 
