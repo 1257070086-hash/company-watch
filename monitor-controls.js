@@ -122,3 +122,25 @@ if(!usingSnapshot)refresh=async function(){
     setStatus(`RSS 请求未完成，已显示本地数据 · ${allArticles.length} 篇`);
   }finally{button.disabled=false;}
 };
+
+// An open cloud page periodically checks the published snapshot. This is a
+// read-only GitHub request and never triggers an upstream RSS fetch.
+let cloudSnapshotRefreshPending=false;
+async function refreshCloudSnapshot(){
+  if(!usingSnapshot||cloudSnapshotRefreshPending||document.visibilityState==='hidden')return;
+  cloudSnapshotRefreshPending=true;
+  try{
+    await fetchSources();
+    await fetchArticles();
+  }catch(error){
+    console.warn('云端快照暂时无法更新，继续显示上次数据',error);
+  }finally{
+    cloudSnapshotRefreshPending=false;
+  }
+}
+if(usingSnapshot){
+  setInterval(refreshCloudSnapshot,5*60*1000);
+  document.addEventListener('visibilitychange',()=>{
+    if(document.visibilityState==='visible'&&(!readingLoadedAt||Date.now()-readingLoadedAt.getTime()>5*60*1000))refreshCloudSnapshot();
+  });
+}
