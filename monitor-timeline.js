@@ -32,9 +32,11 @@ getFiltered=function(){
   // valid articles merely because their titles do not contain a company name.
   const selectedSource=curSourceId?sourceMap[curSourceId]:null;
   const explicitMediaSource=selectedSource?.sourceKind==='media';
-  if(curView==='brief'&&!explicitMediaSource) arts=arts.filter(a=>isOfficial(a)||relatedCompanies(a).some(c=>!!companyLogoFiles[c]));
-  if(curView==='articles'&&!explicitMediaSource) arts=arts.filter(a=>isOfficial(a)||relatedCompanies(a).length>0);
-  if(company==='行业资讯') arts=arts.filter(a=>!isOfficial(a)&&(explicitMediaSource||relatedCompanies(a).some(c=>!!companyLogoFiles[c])));
+  if(curView==='brief'&&company!=='行业资讯'&&!explicitMediaSource) arts=arts.filter(a=>isOfficial(a)||relatedCompanies(a).some(c=>!!companyLogoFiles[c]));
+  if(curView==='articles'&&company!=='行业资讯'&&!explicitMediaSource) arts=arts.filter(a=>isOfficial(a)||relatedCompanies(a).length>0);
+  // The dedicated industry view is an archive of every monitored media feed.
+  // Company-keyword filtering belongs only to the mixed "all" view.
+  if(company==='行业资讯') arts=arts.filter(a=>!isOfficial(a));
   else if(company!=='all') arts=arts.filter(a=>isOfficial(a)?a.company===company:relatedCompanies(a).includes(company));
   if(type!=='all') arts=arts.filter(a=>contentLabels(a).includes(type));
   const seen=new Set();
@@ -51,10 +53,14 @@ document.getElementById('brief-grid').insertAdjacentHTML('afterend','<div class=
 document.getElementById('timeline-more').onclick=()=>{curPage++;renderBrief();};
 document.getElementById('panel-articles').insertAdjacentHTML('afterbegin','<div id="company-directory" class="company-directory"></div><div id="company-profile"></div>');
 document.getElementById('panel-charts').insertAdjacentHTML('beforeend','<section id="content-insights" class="insight-section"></section>');
-function timelineCard(a){
+function timelineContent(a){
   const companies=relatedCompanies(a), label=isOfficial(a)?a.company:companies.join(' / ');
+  return `<article class="timeline-content"><div class="art-meta"><span class="company-identity">${safeText(label||a.company)}</span><span class="origin-badge ${isOfficial(a)?'official':'media'}">${isOfficial(a)?'公司账号':'外部报道'}</span>${contentLabels(a).map(t=>`<span class="art-kw">${t}</span>`).join('')}</div>${articleLink(a,'timeline-title',`${safeText(a.title)}<span aria-hidden="true"> ↗</span>`)}${typeof articleSummary==='function'?articleSummary(a):''}<div class="timeline-source">${safeText(a.authorName)}</div></article>`;
+}
+function timelineCard(items){
+  const a=items[0];
   const valid=a.date instanceof Date&&Number.isFinite(+a.date), full=publishedMinute(a);
-  return `<article class="timeline-entry"><time class="timeline-time" ${valid?`datetime="${a.date.toISOString()}"`:''} title="${safeText(full)} 北京时间" aria-label="${safeText(full)} 北京时间">${valid?full.slice(-5):'待核实'}</time><span class="timeline-node" aria-hidden="true"></span><div class="timeline-content"><div class="art-meta"><span class="company-identity">${safeText(label||a.company)}</span><span class="origin-badge ${isOfficial(a)?'official':'media'}">${isOfficial(a)?'公司账号':'外部报道'}</span>${contentLabels(a).map(t=>`<span class="art-kw">${t}</span>`).join('')}</div>${articleLink(a,'timeline-title',`${safeText(a.title)}<span aria-hidden="true"> ↗</span>`)}${typeof articleSummary==='function'?articleSummary(a):''}<div class="timeline-source">${safeText(a.authorName)}</div></div></article>`;
+  return `<section class="timeline-entry"><time class="timeline-time" ${valid?`datetime="${a.date.toISOString()}"`:''} title="${safeText(full)} 北京时间" aria-label="${safeText(full)} 北京时间">${valid?full.slice(-5):'待核实'}</time><span class="timeline-node" aria-hidden="true"></span><div class="timeline-stack">${items.map(timelineContent).join('')}</div></section>`;
 }
 const collapsedTimelineDays=new Set();
 document.addEventListener('toggle',e=>{
@@ -71,7 +77,15 @@ function timelineHTML(arts){
     const dateLabel=valid?`${parts[0]}年${Number(parts[1])}月${Number(parts[2])}日`:'发布时间待核实';
     const weekday=valid?new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',weekday:'long'}).format(items[0].date):'';
     const key=`${curView}:${day}`;
-    return `<details class="timeline-date-group" data-timeline-key="${safeText(key)}" ${collapsedTimelineDays.has(key)?'':'open'}><summary class="timeline-day"><span class="timeline-day-label">${dateLabel}</span><span class="timeline-chevron" aria-hidden="true"></span><span class="timeline-day-meta">${weekday}${weekday?' · ':''}${items.length} 条</span></summary><div class="timeline-day-items">${items.map(timelineCard).join('')}</div></details>`;
+    const batches=[], batchByKey=new Map();
+    for(const item of items){
+      const minute=publishedMinute(item), validMinute=/^\d{4}-\d{2}-\d{2} \d{2}:\d{2}$/.test(minute);
+      const groupKey=validMinute?`${item.sourceId}|${minute}`:`${item.sourceId}|${item.id||item.url||item.title}`;
+      let batch=batchByKey.get(groupKey);
+      if(!batch){batch=[];batchByKey.set(groupKey,batch);batches.push(batch);}
+      batch.push(item);
+    }
+    return `<details class="timeline-date-group" data-timeline-key="${safeText(key)}" ${collapsedTimelineDays.has(key)?'':'open'}><summary class="timeline-day"><span class="timeline-day-label">${dateLabel}</span><span class="timeline-chevron" aria-hidden="true"></span><span class="timeline-day-meta">${weekday}${weekday?' · ':''}${items.length} 条</span></summary><div class="timeline-day-items">${batches.map(timelineCard).join('')}</div></details>`;
   }).join('');
 }
 renderBrief=function(){
