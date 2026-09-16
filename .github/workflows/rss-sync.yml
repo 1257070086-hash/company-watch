@@ -5,9 +5,9 @@ on:
   # recover a stale snapshot without exposing a refresh button to visitors.
   workflow_dispatch:
   schedule:
-    # Check frequently so a delayed/dropped GitHub event does not stall data.
-    # The collector itself enforces a 19-minute floor before touching RSS.
-    - cron: "2-59/5 * * * *"
+    # Beijing time 08:12-23:12, hourly. The :12 offset sits between the
+    # local collector's 20-minute supplier rounds instead of overlapping them.
+    - cron: "12 0-15 * * *"
 
 permissions:
   contents: write

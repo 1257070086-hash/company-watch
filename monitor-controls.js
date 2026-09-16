@@ -54,7 +54,7 @@ const right=document.querySelector('.topbar-right');right.append(settings);
 const settingsBox=settings.querySelector('div');settingsBox.prepend(backgroundControl);settingsBox.append(document.querySelector('.status-pill'),document.getElementById('btn-refresh'));
 settings.querySelector('#density-slot').append(document.getElementById('density-select'));
 const manageButton=document.createElement('button');manageButton.className='quiet-button';manageButton.textContent='监测账号';manageButton.onclick=openSources;right.insertBefore(manageButton,settings);
-if(usingSnapshot){manageButton.hidden=true;document.getElementById('btn-refresh').hidden=true;document.querySelector('.status-pill').title='云端数据每 20 分钟自动更新';}
+if(usingSnapshot){manageButton.hidden=true;document.getElementById('btn-refresh').hidden=true;document.querySelector('.status-pill').title='云端数据每天 08:12–23:12，每小时自动更新';}
 for(const detail of [settings,advanced]){document.addEventListener('click',e=>{if(!detail.contains(e.target))detail.open=false;});detail.addEventListener('keydown',e=>{if(e.key==='Escape'){detail.open=false;detail.querySelector('summary').focus();}});}
 const priorSync=syncWorkspace;
 syncWorkspace=function(){
