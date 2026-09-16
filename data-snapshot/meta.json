@@ -1,1 +1,164 @@
-{"snapshotTime": "2026-08-24T12:31:22Z", "feedCount": 24}
+{
+  "generatedAt": 1789541235,
+  "feedCount": 24,
+  "activeFeedCount": 22,
+  "intervalMinutes": 20,
+  "maxItemsPerSource": 10,
+  "errors": 0,
+  "sources": {
+    "MP_WXS_1432156401": {
+      "status": "cooldown",
+      "checkedAt": 1789541235,
+      "successAt": 0,
+      "message": "供应商限频，1小时冷却中",
+      "count": 60
+    },
+    "MP_WXS_1925343081": {
+      "status": "cooldown",
+      "checkedAt": 1789541235,
+      "successAt": 0,
+      "message": "供应商限频，1小时冷却中",
+      "count": 60
+    },
+    "MP_WXS_2266383221": {
+      "status": "cooldown",
+      "checkedAt": 1789541235,
+      "successAt": 0,
+      "message": "供应商限频，1小时冷却中",
+      "count": 55
+    },
+    "MP_WXS_2390142780": {
+      "status": "cooldown",
+      "checkedAt": 1789541235,
+      "successAt": 0,
+      "message": "供应商限频，1小时冷却中",
+      "count": 60
+    },
+    "MP_WXS_2396491298": {
+      "status": "ok",
+      "checkedAt": 1789541235,
+      "successAt": 1789541235,
+      "message": "正常，暂无新文章",
+      "count": 70
+    },
+    "MP_WXS_2398602260": {
+      "status": "cooldown",
+      "checkedAt": 1789541235,
+      "successAt": 0,
+      "message": "供应商限频，1小时冷却中",
+      "count": 60
+    },
+    "MP_WXS_3073282833": {
+      "status": "ok",
+      "checkedAt": 1789541235,
+      "successAt": 1789541235,
+      "message": "正常，暂无新文章",
+      "count": 61
+    },
+    "MP_WXS_3212124064": {
+      "status": "cooldown",
+      "checkedAt": 1789541235,
+      "successAt": 0,
+      "message": "供应商限频，1小时冷却中",
+      "count": 60
+    },
+    "MP_WXS_3223374696": {
+      "status": "cooldown",
+      "checkedAt": 1789541235,
+      "successAt": 0,
+      "message": "供应商限频，1小时冷却中",
+      "count": 57
+    },
+    "MP_WXS_3225964491": {
+      "status": "cooldown",
+      "checkedAt": 1789541235,
+      "successAt": 0,
+      "message": "供应商限频，1小时冷却中",
+      "count": 59
+    },
+    "MP_WXS_3231231509": {
+      "status": "cooldown",
+      "checkedAt": 1789541235,
+      "successAt": 0,
+      "message": "供应商限频，1小时冷却中",
+      "count": 60
+    },
+    "MP_WXS_3236757533": {
+      "status": "ok",
+      "checkedAt": 1789541235,
+      "successAt": 1789541235,
+      "message": "正常，暂无新文章",
+      "count": 70
+    },
+    "MP_WXS_3253632141": {
+      "status": "ok",
+      "checkedAt": 1789541235,
+      "successAt": 1789541235,
+      "message": "正常，暂无新文章",
+      "count": 71
+    },
+    "MP_WXS_3254144461": {
+      "status": "cooldown",
+      "checkedAt": 1789541235,
+      "successAt": 0,
+      "message": "供应商限频，1小时冷却中",
+      "count": 57
+    },
+    "MP_WXS_3293283359": {
+      "status": "cooldown",
+      "checkedAt": 1789541235,
+      "successAt": 0,
+      "message": "供应商限频，1小时冷却中",
+      "count": 54
+    },
+    "MP_WXS_3534750856": {
+      "status": "cooldown",
+      "checkedAt": 1789541235,
+      "successAt": 0,
+      "message": "供应商限频，1小时冷却中",
+      "count": 60
+    },
+    "MP_WXS_3539511831": {
+      "status": "cooldown",
+      "checkedAt": 1789541235,
+      "successAt": 0,
+      "message": "供应商限频，1小时冷却中",
+      "count": 60
+    },
+    "MP_WXS_3572959446": {
+      "status": "ok",
+      "checkedAt": 1789541235,
+      "successAt": 1789541235,
+      "message": "正常，暂无新文章",
+      "count": 72
+    },
+    "MP_WXS_3885737868": {
+      "status": "cooldown",
+      "checkedAt": 1789541235,
+      "successAt": 0,
+      "message": "供应商限频，1小时冷却中",
+      "count": 58
+    },
+    "MP_WXS_3889763736": {
+      "status": "cooldown",
+      "checkedAt": 1789541235,
+      "successAt": 0,
+      "message": "供应商限频，1小时冷却中",
+      "count": 56
+    },
+    "MP_WXS_3930693616": {
+      "status": "cooldown",
+      "checkedAt": 1789541235,
+      "successAt": 0,
+      "message": "供应商限频，1小时冷却中",
+      "count": 52
+    },
+    "MP_WXS_3935671163": {
+      "status": "cooldown",
+      "checkedAt": 1789541235,
+      "successAt": 0,
+      "message": "供应商限频，1小时冷却中",
+      "count": 57
+    }
+  }
+}
