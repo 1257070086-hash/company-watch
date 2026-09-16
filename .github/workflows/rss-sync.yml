@@ -1,6 +1,9 @@
 name: Cloud RSS sync
 
 on:
+  # Kept off the public dashboard: repository administrators can use this to
+  # recover a stale snapshot without exposing a refresh button to visitors.
+  workflow_dispatch:
   schedule:
     # Check frequently so a delayed/dropped GitHub event does not stall data.
     # The collector itself enforces a 19-minute floor before touching RSS.
