@@ -71,7 +71,7 @@ window.REPORT_DATA = {
         sources: [
           { name: 'LongCat-2.0万亿参数', url: 'https://mp.weixin.qq.com/s/9XFcx3fmFcmbry5bHMJsow' },
           { name: 'Fable5差评如潮', url: 'https://mp.weixin.qq.com/s/C8AvQISjI4yIaapsg9z-0Q' },
-          { name: '英伟达含量为0', url: 'https://mp.weixin.qq.com/s/OWCyjK_CVOJnITX_1Da4Q' },
+          { name: '英伟达含量为0', url: 'https://mp.weixin.qq.com/s/OWCyjK_CVOJn8ITX_1Da4Q' },
           { name: 'Codex吃掉150GB', url: 'https://mp.weixin.qq.com/s/o8QimVvfB1gZf-5_4rIUSg' },
         ],
       },

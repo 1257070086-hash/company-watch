@@ -7,11 +7,27 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <title>行业资讯雷达 v2</title>
+  <title>大厂内容观察台</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<script src="weekly-report/embedded.js?v=20260916-quiet" defer></script>
   <style>
+    body.weekly-view .main-layout { grid-template-columns: minmax(0,1fr); }
+    body.weekly-view .main-layout > .sidebar, body.weekly-view #company-segment { display:none; }
+    body.weekly-view { background:#f6f7f9; }
+    body.weekly-view .main-layout { max-width:1440px; margin:0 auto; padding:0 24px; }
+    #weekly-status { display:none; color:#526177; font-size:12px; }
+    body.weekly-view #weekly-status { display:inline; }
+    body.weekly-view .status-pill, body.weekly-view #btn-refresh { display:none; }
+    @media(max-width:680px) {
+      body.weekly-view .main-layout { padding:0 18px; }
+      body.weekly-view .topbar { height:auto; min-height:52px; flex-wrap:wrap; padding:10px 18px; gap:8px; }
+      body.weekly-view .topbar-tabs { order:3; width:100%; justify-content:space-between; }
+      body.weekly-view .topbar-divider { display:none; }
+      body.weekly-view .topbar-tab { font-size:12px; padding:6px 9px; }
+      body.weekly-view #weekly-status { font-size:10px; }
+    }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
       --bg: #f5f5f7;
@@ -182,40 +198,7 @@
     .company-ai-card { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); padding: 18px; }
     @media (max-width: 860px) { .company-bottom-grid { grid-template-columns: 1fr; } }
 
-    /* ── 情报存档 ── */
-    .archive-badge { display:inline-flex;align-items:center;justify-content:center;background:var(--blue);color:#fff;border-radius:10px;font-size:10px;font-weight:700;min-width:16px;height:16px;padding:0 4px;margin-left:4px;vertical-align:middle;line-height:1; }
-    .archive-toolbar { display:flex;align-items:center;gap:10px;padding:14px 0 12px;border-bottom:1px solid var(--border);margin-bottom:16px; }
-    .archive-toolbar-title { font-size:14px;font-weight:700;color:var(--text); }
-    .archive-filter { padding:5px 10px;border-radius:6px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:12px;cursor:pointer; }
-    .archive-period-toggle { display:flex;gap:2px;background:var(--surface-2);border-radius:7px;padding:2px; }
-    .arc-toggle-btn { padding:4px 14px;border-radius:5px;border:none;font-size:12px;font-weight:500;cursor:pointer;background:transparent;color:var(--text-2);transition:all .15s; }
-    .arc-toggle-btn.active { background:var(--surface);color:var(--text);box-shadow:0 1px 3px rgba(0,0,0,.1); }
-    #archive-weekly-frame { margin-top:4px; }
-    #archive-weekly-frame iframe { width:100%;height:600px;min-height:400px;border:none;border-radius:10px;background:var(--surface); }
-    .archive-list { display:flex;flex-direction:column;gap:20px; }
-    .archive-card { background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px;animation:fadeUp .2s ease both;border-left:3px solid var(--blue); }
-    .archive-card-head { display:flex;align-items:center;gap:10px;margin-bottom:18px; }
-    .archive-card-company { font-size:13px;font-weight:700;cursor:pointer;transition:opacity .12s;color:var(--text); }
-    .archive-card-company:hover { opacity:.7;text-decoration:underline; }
-    .archive-card-time { font-size:11px;color:var(--text-3);margin-left:auto; }
-    .archive-card-del { width:24px;height:24px;border-radius:6px;border:none;background:transparent;color:var(--text-3);cursor:pointer;font-size:15px;line-height:1;display:flex;align-items:center;justify-content:center;transition:all .15s; }
-    .archive-card-del:hover { background:var(--red);color:#fff; }
-    .archive-card-body { font-size:13px;color:var(--text-1);line-height:1.8; }
-    .archive-section { margin-bottom:20px; }
-    .archive-section:last-child { margin-bottom:0; }
-    .archive-section-title {
-      font-size:12px;font-weight:700;letter-spacing:.04em;
-      color:var(--text-1);border-left:3px solid var(--blue);
-      padding:3px 10px;display:block;margin-bottom:10px;
-    }
-    .archive-section-body { font-size:13px;color:var(--text-1);line-height:1.8;padding-left:4px; }
-    .archive-refs { margin-top:14px;border-top:1px solid var(--border);padding-top:10px; }
-    .archive-refs-toggle { font-size:11px;color:var(--text-3);cursor:pointer;user-select:none;display:flex;align-items:center;gap:4px; }
-    .archive-refs-toggle:hover { color:var(--blue); }
-    .archive-refs-list { margin-top:8px;display:flex;flex-direction:column;gap:4px; }
-    .archive-ref-item { font-size:11px;color:var(--blue);text-decoration:none;display:flex;align-items:baseline;gap:5px;line-height:1.5;padding:2px 0; }
-    .archive-ref-item:hover { text-decoration:underline; }
-    .archive-ref-src { font-size:10px;color:var(--text-3);flex-shrink:0; }
+
     .brief-card {
       background: var(--surface); border-radius: var(--radius);
       box-shadow: var(--shadow); padding: 24px; overflow: hidden;
@@ -425,6 +408,8 @@
       *, *::before, *::after { animation: none !important; transition: none !important; }
     }
   </style>
+<link rel="stylesheet" href="monitor-ui.css?v=20260908-landscape">
+<link rel="stylesheet" href="monitor-layout.css?v=20260911-spacing">
 </head>
 <body>
 
@@ -432,16 +417,16 @@
 <header class="topbar">
   <div class="topbar-logo">
     <div class="topbar-logo-dot"></div>
-    行业资讯雷达
+    大厂内容观察台
   </div>
   <div class="topbar-divider"></div>
   <div class="topbar-tabs">
-    <button class="topbar-tab active" data-view="brief" onclick="switchView('brief')">资讯概览</button>
-    <button class="topbar-tab" data-view="articles" onclick="switchView('articles')">资讯列表</button>
-    <button class="topbar-tab" data-view="charts" onclick="switchView('charts')">数据图表</button>
-    <button class="topbar-tab" data-view="archive" onclick="switchView('archive')">AI 资讯摘要</button>
+    <button class="topbar-tab active" data-view="brief" onclick="switchView('brief')">最新动态</button>
+    <button class="topbar-tab" data-view="charts" onclick="switchView('charts')">数据与洞察</button>
+    <button class="topbar-tab" data-view="archive" onclick="switchView('archive')">行业周报</button>
   </div>
   <div class="topbar-right">
+    <span id="weekly-status" aria-live="polite">正在加载周报…</span>
     <div class="status-pill">
       <div class="status-dot" id="status-dot"></div>
       <span id="status-text">正在连接…</span>
@@ -523,28 +508,8 @@
       </div>
     </div>
 
-    <!-- ARCHIVE PANEL -->
-    <div class="panel" id="panel-archive">
-      <div class="archive-toolbar">
-        <span class="archive-toolbar-title">AI 资讯摘要</span>
-        <div class="archive-period-toggle" style="margin-left:12px">
-          <button class="arc-toggle-btn active" id="arc-btn-daily" onclick="switchArchivePeriod('daily')">每日</button>
-          <button class="arc-toggle-btn" id="arc-btn-weekly" onclick="switchArchivePeriod('weekly')">每周</button>
-        </div>
-        <div id="archive-daily-filters" style="display:flex;gap:8px;margin-left:auto;align-items:center">
-          <select class="archive-filter" id="archive-filter-date" onchange="renderArchive()">
-            <option value="all">全部日期</option>
-          </select>
-          <select class="archive-filter" id="archive-filter-company" onchange="onArchiveCompanyChange(this.value)">
-            <option value="all">全部公司</option>
-          </select>
-        </div>
-      </div>
-      <div id="archive-list" class="archive-list"><div class="empty-state">暂无摘要，请等待每日自动更新</div></div>
-      <div id="archive-weekly-frame" style="display:none">
-        <iframe src="weekly-report/index.html" title="每周周报" allowfullscreen></iframe>
-      </div>
-    </div>
+    <!-- Weekly reports are rendered in the page, without an iframe. -->
+    <div class="panel" id="panel-archive"><industry-weekly></industry-weekly></div>
   </div>
 
   <!-- SIDEBAR -->
@@ -594,9 +559,11 @@
 const AI_BASE  = 'https://api.deepseek.com/v1';
 const PAGE_SZ  = 25;
 
-// 数据模式：本地（localhost）直连 WeWe RSS API，云端（GitHub Pages）读快照
-const SNAPSHOT_BASE = './data-snapshot';
-const WEWE_BASE     = 'http://localhost:4000';
+// 本地直连采集器；云端从独立数据分支读取自动更新的脱敏快照。
+const isLocalHost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+const CLOUD_SNAPSHOT_BASE = 'https://raw.githubusercontent.com/1257070086-hash/beijing-hiking-routes-map/cloud-data/data-snapshot';
+const SNAPSHOT_BASE = isLocalHost ? './data-snapshot' : CLOUD_SNAPSHOT_BASE;
+const WEWE_BASE     = 'http://127.0.0.1:8080';
 
 const COMPANY_GROUPS = {
   '行业资讯': ['MP_WXS_3223374696','MP_WXS_3572959446','MP_WXS_3254144461','MP_WXS_3539511831','MP_WXS_3077993707','MP_WXS_1432156401','MP_WXS_3073282833','MP_WXS_2390142780','MP_WXS_3236757533'],
@@ -631,20 +598,24 @@ const STOP = new Set(['的','了','在','是','和','有','我','们','以','及
 const COMPANY_NAMES = new Set(['字节','跳动','字节跳动','小红书','美团','阿里','腾讯','巴巴','阿里巴巴','快手','微信','百度','京东','拼多多','抖音','今日头条','字节范','字节范儿','招聘','技术','团队','行业','资讯','互联网']);
 
 // ═══════════════ STATE ═══════════════
-let sources=[], sourceMap={}, allArticles=[];
+let sources=[], sourceMap={}, allArticles=[], publicFeeds={};
 let curCompany='all', curView='brief', curSearch='', activeKws=new Set(), curPage=1;
 let curSourceId=null; // 精确公众号过滤（null=不限）
 let charts={}, emptySrcs=[];
-// 本地（localhost / 127.0.0.1）直连实时数据，其余走快照
-const usingSnapshot = !(window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+// 本地直连实时数据，其余读取云端自动快照。
+const usingSnapshot = !isLocalHost;
 
 // ═══════════════ INIT ═══════════════
 async function init() {
   await fetchSources();
+  if (!sources.length) {
+    document.getElementById('brief-grid').innerHTML='<div class="empty-state">暂时无法读取监测账号，请确认数据服务可用。<button class="quiet-button" onclick="main()">重试连接</button></div>';
+    return;
+  }
   await fetchArticles();
 
   // 加载静态 AI 摘要快照（所有人都能看到，无需 API Key）
-  await loadSnapshotAiSummary();
+  // 日报已停用，周报由独立面板按需加载。
 
   // 检测未分类账号，有则弹出分类面板
   const unclassified = getUnclassified();
@@ -653,67 +624,49 @@ async function init() {
   }
 }
 
-// 写入单条摘要记录（内部辅助）
-function writeSummaryToArchive(generatedAt, summaries) {
-  const dateKey = generatedAt ? generatedAt.slice(0,10) : new Date().toISOString().slice(0,10);
-  Object.entries(summaries).forEach(([company, txt]) => {
-    if (!txt || txt === '暂无文章数据') return;
-    const companyArticles = allArticles.filter(a => a.company === company);
-    saveAiRecord(company, txt, dateKey, companyArticles, true);
-  });
-}
-
-// 加载 data-snapshot/ai-summary.json 写入 archive（AI 资讯摘要 Tab 展示）
-async function loadSnapshotAiSummary() {
-  // 先加载历史补录日报（ai-summary-history.json）
-  try {
-    const histR = await fetch(`${SNAPSHOT_BASE}/ai-summary-history.json`);
-    if (histR.ok) {
-      const histList = await histR.json(); // 格式：[{generatedAt, summaries}, ...]
-      for (const item of histList) {
-        if (item && item.summaries) writeSummaryToArchive(item.generatedAt, item.summaries);
-      }
-    }
-  } catch(e) { /* 无历史文件时忽略 */ }
-
-  // 再加载今日摘要（ai-summary.json）
-  try {
-    const r = await fetch(`${SNAPSHOT_BASE}/ai-summary.json`);
-    if (!r.ok) return;
-    const data = await r.json();
-    const { generatedAt, summaries } = data;
-    if (!summaries) return;
-
-    // 始终覆盖写入：用最新快照替换当天同公司旧记录
-    // 同时传入对应公司的真实文章列表，供引用标注使用
-    writeSummaryToArchive(generatedAt, summaries);
-
-    // 若当前在 archive 视图则立即刷新
-    if (curView === 'archive') renderArchive();
-  } catch(e) {
-    console.log('AI 摘要快照未找到，如需展示请运行 export-snapshot.sh');
-  }
-}
-
 // ═══════════════ SOURCES ═══════════════
 async function fetchSources() {
   try {
     if (!usingSnapshot) {
       // 本地模式：直连 WeWe RSS /feeds
-      const r = await fetch(`${WEWE_BASE}/feeds`);
+      let r;
+      try {
+        r = await fetch(`${WEWE_BASE}/feeds`);
+        if (!r.ok) throw new Error('Local source request failed');
+      } catch(e) {
+        console.warn('本地 WeWe RSS 不可用，改用最近一次账号快照', e);
+        r = await fetch(`${SNAPSHOT_BASE}/feeds.json`);
+        if (!r.ok) throw e;
+      }
       const raw = await r.json();
+      // 新服务只保存订阅与文章数据；头像、简介沿用本地快照中的展示元数据。
+      let snapshotMeta = {};
+      try {
+        const snapshotR = await fetch(`${SNAPSHOT_BASE}/feeds.json`);
+        if (snapshotR.ok) {
+          const snapshotFeeds = await snapshotR.json();
+          snapshotMeta = Object.fromEntries(snapshotFeeds.map(f => [f.id, f]));
+        }
+      } catch(e) { /* 展示元数据缺失不影响实时文章读取 */ }
       // WeWe RSS 返回 [{id, name, intro, cover, syncTime, updateTime}, ...]
-      sources = raw.map(f => ({ id: f.id, name: f.name, cover: f.cover, intro: f.intro }));
+      sources = raw.map(f => ({
+        id: f.id,
+        name: f.name,
+        cover: f.cover || snapshotMeta[f.id]?.cover || '',
+        intro: f.intro || snapshotMeta[f.id]?.intro || '',
+      }));
     } else {
-      // 快照模式：读 GitHub Pages 静态 JSON
-      const r = await fetch(`${SNAPSHOT_BASE}/feeds.json`);
+      // 云端模式：读取 cloud-data 分支，不依赖本机服务。
+      const r = await fetch(`${SNAPSHOT_BASE}/feeds.json?v=${Date.now()}`, {cache:'no-store'});
+      if (!r.ok) throw new Error(`Cloud source request failed: ${r.status}`);
       sources = await r.json();
     }
   } catch(e) {
     console.error(usingSnapshot ? '快照读取失败，请确认已运行 export-snapshot.sh' : '本地 WeWe RSS 连接失败，请确认服务已启动', e);
-    setStatus(usingSnapshot ? '❌ 快照数据不存在，请运行 export-snapshot.sh 生成数据' : '❌ 无法连接本地 WeWe RSS（localhost:4000），请确认服务已启动');
+    setStatus('连接失败 · 请重试');
     return;
   }
+  sources = sources.map(s => ({...s,sourceKind:s.sourceKind||s.kind||'',company:s.company||''}));
   sources.forEach(s => sourceMap[s.id] = s);
 
   rebuildSegmentButtons();
@@ -760,30 +713,106 @@ function rebuildSegmentButtons() {
 }
 
 // ═══════════════ ARTICLES ═══════════════
+function normalizeArticleUrl(value) {
+  if (!value) return '';
+  try {
+    const parsed = new URL(value);
+    parsed.hash = '';
+    const trackingParams = new Set([
+      'from','scene','clicktime','enterid','sessionid','isappinstalled',
+      'subscene','ascene','fasttmpl_type','fasttmpl_fullversion','exportkey'
+    ]);
+    [...parsed.searchParams.keys()].forEach(key => {
+      if (key.toLowerCase().startsWith('utm_') || trackingParams.has(key.toLowerCase())) {
+        parsed.searchParams.delete(key);
+      }
+    });
+    parsed.searchParams.sort();
+    parsed.hostname = parsed.hostname.toLowerCase();
+    if (parsed.pathname !== '/') parsed.pathname = parsed.pathname.replace(/\/$/, '');
+    return parsed.toString();
+  } catch(e) {
+    return String(value).trim();
+  }
+}
+
+function mergeArticleHistory(primaryItems, historyItems) {
+  const merged = [];
+  const seenUrls = new Set(), seenIds = new Set(), seenTitles = new Set();
+  [...primaryItems, ...historyItems].forEach(item => {
+    const urlKey = normalizeArticleUrl(item.url);
+    const idKey = String(item.id || '').trim();
+    const titleKey = String(item.title || '').trim().toLowerCase().replace(/\s+/g, ' ');
+    if ((urlKey && seenUrls.has(urlKey)) ||
+        (idKey && seenIds.has(idKey)) ||
+        (titleKey && seenTitles.has(titleKey))) return;
+    merged.push(item);
+    if (urlKey) seenUrls.add(urlKey);
+    if (idKey) seenIds.add(idKey);
+    if (titleKey) seenTitles.add(titleKey);
+  });
+  return merged;
+}
+
+function mapArticleItems(items, src) {
+  return items.map(item => ({
+    id: item.id, title: item.title||'(无标题)', url: item.url,
+    image: item.image||null,
+    date: (item.date_published || item.date_modified) ? new Date(item.date_published || item.date_modified) : null,
+    authorName: src.name, sourceId: src.id,
+    company: getCompany(src.id),
+  }));
+}
+
+async function fetchArticleHistory(src) {
+  const urls = usingSnapshot
+    ? [`${SNAPSHOT_BASE}/${src.id}.json`]
+    : [`${WEWE_BASE}/feeds/${src.id}.json?limit=5000`, `${SNAPSHOT_BASE}/${src.id}.json`];
+  let lastError;
+  for (const url of urls) {
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`Article request failed: ${response.status}`);
+      const payload = await response.json();
+      return mapArticleItems(payload.items || [], src);
+    } catch(e) {
+      lastError = e;
+    }
+  }
+  throw lastError || new Error('Article history unavailable');
+}
+
 async function fetchArticles() {
   const btn = document.getElementById('btn-refresh');
   const dot = document.getElementById('status-dot');
   btn.classList.add('spinning');
   dot.classList.add('syncing');
   emptySrcs = []; allArticles = [];
+  const failedSources = [];
+
+  try {
+    const fallbackResponse = await fetch(`${SNAPSHOT_BASE}/public-feeds.json?v=${Date.now()}`);
+    if (fallbackResponse.ok) {
+      const fallbackPayload = await fallbackResponse.json();
+      publicFeeds = fallbackPayload.feeds || {};
+    }
+  } catch(e) {
+    console.warn('公开 RSS 数据读取失败，将继续使用本地数据', e);
+  }
 
   setStatus('读取文章…');
-  const dataBase = usingSnapshot ? SNAPSHOT_BASE : WEWE_BASE + '/feeds';
   const results = await Promise.all(sources.map(async src => {
+    const publicItems = mapArticleItems(publicFeeds[src.id]?.items || [], src);
     try {
-      const url = usingSnapshot ? `${dataBase}/${src.id}.json` : `${dataBase}/${src.id}.json?limit=100`;
-      const r = await fetch(url);
-      const d = await r.json();
-      const items = (d.items||[]).map(item => ({
-        id: item.id, title: item.title||'(无标题)', url: item.url,
-        image: item.image||null,
-        date: item.date_modified ? new Date(item.date_modified) : null,
-        authorName: src.name, sourceId: src.id,
-        company: getCompany(src.id),
-      }));
-      if (!items.length) emptySrcs.push(src.name);
-      return items;
-    } catch(e){ return []; }
+      const items = await fetchArticleHistory(src);
+      const mergedItems = mergeArticleHistory(publicItems, items);
+      if (!mergedItems.length) emptySrcs.push(src.name);
+      return mergedItems;
+    } catch(e){
+      if (publicItems.length) return publicItems;
+      failedSources.push(src.name);
+      return [];
+    }
   }));
 
   allArticles = results.flat().sort((a,b) => {
@@ -805,7 +834,11 @@ async function fetchArticles() {
     document.getElementById('warn-bar').style.display = 'none';
   }
 
-  setStatus(`${usingSnapshot ? '📦 快照' : '✅ 实时'} · ${allArticles.length} 篇${emptySrcs.length ? ' · ' + emptySrcs.length + ' 个账号无数据' : ''}`);
+  if (failedSources.length) {
+    document.getElementById('warn-text').textContent = `${failedSources.length} 个账号读取失败，当前显示已成功读取的文章。可点击刷新重试。`;
+    document.getElementById('warn-bar').style.display = 'flex';
+  }
+  setStatus(`${failedSources.length?'部分数据未加载':usingSnapshot?'快照数据':'数据已更新'} · ${allArticles.length} 篇`);
   updateStats(); updateCounts(); renderSidebar(); render();
 }
 
@@ -1004,18 +1037,9 @@ function switchCompany(c) {
   document.getElementById('search-input').placeholder = '搜索标题关键词…';
   document.querySelectorAll('.src-item').forEach(el => { el.style.background=''; el.style.boxShadow=''; });
   document.querySelectorAll('.seg-btn').forEach(b => b.classList.toggle('active', b.dataset.company===c));
-  // 同步存档下拉（如果选项已填充）
-  const filterCompEl = document.getElementById('archive-filter-company');
-  if (filterCompEl && filterCompEl.options.length > 1) filterCompEl.value = c;
   render();
 }
 
-  // 存档公司下拉变更 → 同步顶部 Tab + 刷新存档
-function onArchiveCompanyChange(val) {
-  curCompany = val;
-  document.querySelectorAll('.seg-btn').forEach(b => b.classList.toggle('active', b.dataset.company === val));
-  renderArchive();
-}
 
 // 点击公众号：切换到该公司 Tab + 下面展开单公司账号子卡片
 function jumpToSource(sourceId, company) {
@@ -1035,6 +1059,7 @@ function jumpToSource(sourceId, company) {
 }
 function switchView(v) {
   curView = v;
+  document.body.classList.toggle('weekly-view', v === 'archive');
   // 切离 articles 时清除精确账号过滤，避免状态残留
   if (v !== 'articles') { curSourceId = null; }
   document.querySelectorAll('.topbar-tab').forEach(t => t.classList.toggle('active', t.dataset.view===v));
@@ -1047,7 +1072,7 @@ function render() {
   if (curView==='brief')    renderBrief();
   if (curView==='articles') renderArticles();
   if (curView==='charts')   renderCharts();
-  if (curView==='archive')  renderArchive();
+  if (curView==='archive') document.querySelector('industry-weekly').load();
 }
 function getFiltered() {
   let arts = [...allArticles];
@@ -1234,196 +1259,6 @@ function briefCard(company) {
   </div>`;
 }
 
-// ═══════════════ ARCHIVE (localStorage 持久存档) ═══════════════
-const ARCHIVE_KEY = 'cm_ai_archive';
-
-function loadArchive() {
-  try { return JSON.parse(localStorage.getItem(ARCHIVE_KEY) || '[]'); } catch(e) { return []; }
-}
-function saveAiRecord(company, txt, dateKey, articles, silent) {
-  const records = loadArchive();
-  if (!dateKey) dateKey = new Date().toISOString().slice(0,10);
-
-  // 检查当天同公司是否已有存档
-  const existIdx = records.findIndex(r => r.company === company && (r.dateKey || r.time?.slice(0,10)) === dateKey);
-  if (existIdx !== -1) {
-    if (silent) {
-      // 批量生成时静默覆盖
-      records.splice(existIdx, 1);
-    } else {
-      const ok = confirm(`「${company}」今日（${dateKey}）已有一条 AI 摘要，是否覆盖更新？\n\n点「确定」→ 覆盖旧版本\n点「取消」→ 保留两条`);
-      if (ok) records.splice(existIdx, 1);
-    }
-  }
-
-  records.unshift({
-    id: Date.now(),
-    company,
-    time: new Date().toISOString(),
-    dateKey,
-    content: txt,
-    articles: (articles || []).map(a => ({ title: a.title, url: a.url, authorName: a.authorName })),
-  });
-  if (records.length > 200) records.splice(200);
-  localStorage.setItem(ARCHIVE_KEY, JSON.stringify(records));
-  updateArchiveBadge();
-}
-function updateArchiveBadge() {
-  // badge 不再显示数字，保留函数以兼容旧调用
-}
-function clearArchive() {
-  if (!confirm('确定清空全部存档？此操作不可撤销。')) return;
-  localStorage.removeItem(ARCHIVE_KEY);
-  updateArchiveBadge();
-  renderArchive();
-}
-function deleteArchiveRecord(id) {
-  const records = loadArchive().filter(r => r.id !== id);
-  localStorage.setItem(ARCHIVE_KEY, JSON.stringify(records));
-  updateArchiveBadge();
-  renderArchive();
-}
-// codeflicker-fix: UI-Issue-002/h2zsaci1b5xvmg2s9gow
-function switchArchivePeriod(period) {
-  document.getElementById('arc-btn-daily').classList.toggle('active', period === 'daily');
-  document.getElementById('arc-btn-weekly').classList.toggle('active', period === 'weekly');
-  const isDaily = period === 'daily';
-  document.getElementById('archive-list').style.display = isDaily ? '' : 'none';
-  // codeflicker-fix: UI-Issue-004/h2zsaci1b5xvmg2s9gow
-  document.getElementById('archive-daily-filters').style.display = isDaily ? 'flex' : 'none';
-  const frame = document.getElementById('archive-weekly-frame');
-  frame.style.display = isDaily ? 'none' : 'block';
-  if (!isDaily) {
-    // 动态计算 iframe 高度：视口高度 - frame 元素顶部距离 - 底部留白
-    const iframe = frame.querySelector('iframe');
-    if (iframe) {
-      const top = frame.getBoundingClientRect().top;
-      iframe.style.height = Math.max(400, window.innerHeight - top - 24) + 'px';
-    }
-  }
-}
-
-function renderArchive() {
-  const list = document.getElementById('archive-list');
-  if (!list) return;
-
-  // 每次都重建公司筛选下拉（确保新增自定义分组后也能更新）
-  const filterCompEl = document.getElementById('archive-filter-company');
-  if (filterCompEl) {
-    const curVal = filterCompEl.value || 'all';
-    filterCompEl.innerHTML = '<option value="all">全部公司</option>';
-    const allCompanies = [...new Set([...Object.keys(COMPANY_GROUPS), ...Object.keys(loadCustomGroups())])];
-    allCompanies.forEach(c => {
-      const opt = document.createElement('option');
-      opt.value = c; opt.textContent = c;
-      filterCompEl.appendChild(opt);
-    });
-    // 对齐当前 curCompany 状态
-    filterCompEl.value = curCompany !== 'all' ? curCompany : curVal;
-  }
-  const filterCompany = filterCompEl ? filterCompEl.value : 'all';
-
-  // 更新日期筛选下拉
-  const filterDateEl = document.getElementById('archive-filter-date');
-  const allDates = [...new Set(loadArchive().map(r => r.dateKey || r.time?.slice(0,10) || '').filter(Boolean))].sort().reverse();
-  if (filterDateEl) {
-    const curDateVal = filterDateEl.value;
-    filterDateEl.innerHTML = '<option value="all">全部日期</option>';
-    allDates.forEach(d => {
-      const opt = document.createElement('option');
-      opt.value = d; opt.textContent = d;
-      if (d === curDateVal) opt.selected = true;
-      filterDateEl.appendChild(opt);
-    });
-  }
-  const filterDate = filterDateEl ? filterDateEl.value : 'all';
-
-  let records = loadArchive();
-  if (filterCompany !== 'all') records = records.filter(r => r.company === filterCompany);
-  if (filterDate !== 'all') records = records.filter(r => (r.dateKey || r.time?.slice(0,10)) === filterDate);
-
-  if (!records.length) {
-    list.innerHTML = '<div class="empty-state">暂无摘要，请等待每日自动更新</div>';
-    return;
-  }
-
-  const color = c => COMPANY_COLORS[c] || 'var(--blue)';
-  // 公司顺序（与顶部 Tab 保持一致）
-  const companyOrder = Object.keys(COMPANY_GROUPS);
-  const sortByCompany = (a, b) => {
-    const ai = companyOrder.indexOf(a.company), bi = companyOrder.indexOf(b.company);
-    return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
-  };
-  // 按天分组
-  const groups = {};
-  records.forEach(r => {
-    const dk = r.dateKey || r.time?.slice(0,10) || '未知日期';
-    if (!groups[dk]) groups[dk] = [];
-    groups[dk].push(r);
-  });
-  // 每天内部按公司顺序排序
-  Object.values(groups).forEach(recs => recs.sort(sortByCompany));
-
-  const cardHTML = r => {
-    const clr = color(r.company);
-    const timeStr = new Date(r.time).toLocaleString('zh-CN', {month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});
-    // 行业资讯需要全量文章做跨公司引用匹配；其他公司只用本公司文章
-    const refArticles = r.company === '行业资讯' ? allArticles : (r.articles || []);
-    const enableCit = true;
-
-    // 结构化渲染：把 **标题** 识别为分节标题，正文内 [N] 替换成内联引用角标
-    // 先预处理：去掉 ###/#### 前缀，统一成 **标题** 格式；去掉 --- 分割线
-    const raw = (r.content || '').trim()
-      .replace(/^#{1,6}\s+/gm, '')       // 去掉 # ## ### #### 前缀
-      .replace(/^---+$/gm, '')            // 去掉分割线
-      .replace(/^\*{3}\s*/gm, '')        // 去掉 *** 分割线
-      .replace(/^\n{2,}/gm, '\n');       // 合并多余空行
-    const parts = raw.split(/(?=^\*\*)/m);
-    let bodyHTML = '';
-    parts.forEach(part => {
-      const titleMatch = part.match(/^\*\*(.+?)\*\*\s*\n?([\s\S]*)/);
-      if (titleMatch) {
-        const sectionTitle = titleMatch[1].trim();
-        const sectionBody = renderWithCitations(titleMatch[2].trim(), refArticles, enableCit);
-        if (sectionBody) {
-          bodyHTML += `<div class="archive-section">
-            <div class="archive-section-title" style="border-left-color:${clr}">${sectionTitle}</div>
-            <div class="archive-section-body">${sectionBody}</div>
-          </div>`;
-        } else {
-          bodyHTML += `<div class="archive-section"><div class="archive-section-title" style="border-left-color:${clr}">${sectionTitle}</div></div>`;
-        }
-      } else if (part.trim()) {
-        bodyHTML += `<div class="archive-section"><div class="archive-section-body">${renderWithCitations(part.trim(), refArticles, enableCit)}</div></div>`;
-      }
-    });
-
-    return `<div class="archive-card" style="border-left-color:${clr}">
-      <div class="archive-card-head">
-        <span style="width:8px;height:8px;border-radius:50%;background:${clr};flex-shrink:0"></span>
-        <span class="archive-card-company"
-          onclick="switchCompany('${r.company}');switchView('brief');"
-          title="点击查看 ${r.company} 资讯概览">${r.company}</span>
-        <span class="archive-card-time">${timeStr}</span>
-        <button class="archive-card-del" onclick="deleteArchiveRecord(${r.id})" title="删除">×</button>
-      </div>
-      <div class="archive-card-body">${bodyHTML}</div>
-    </div>`;
-  };
-
-  list.innerHTML = Object.entries(groups)
-    .sort(([a],[b]) => b.localeCompare(a))
-    .map(([dk, recs]) => `
-      <div style="margin-bottom:20px">
-        <div style="font-size:12px;font-weight:700;color:var(--text-2);padding:6px 0;border-bottom:2px solid var(--border);margin-bottom:10px;display:flex;align-items:center;gap:8px">
-          📅 ${dk}
-          <span style="font-size:11px;font-weight:400;color:var(--text-3)">${recs.length} 条存档</span>
-        </div>
-        ${recs.map(cardHTML).join('<div style="height:14px"></div>')}
-      </div>
-    `).join('');
-}
-let companyTrendChart = null;
 function renderCompanyTrendChart(company) {
   const canvas = document.getElementById('chart-company-trend');
   if (!canvas) return;
@@ -1639,16 +1474,15 @@ function showAllSources() {
 // ═══════════════ CHARTS ═══════════════
 function renderCharts() {
   // 排除「行业资讯」，只统计各公司
-  const EXCLUDE = '行业资讯';
-  const arts = (curCompany==='all' ? allArticles : allArticles.filter(a=>a.company===curCompany))
-    .filter(a=>a.company !== EXCLUDE);
-  const days14 = Array.from({length:14},(_,i)=>{const d=new Date();d.setDate(d.getDate()-13+i);return d.toISOString().slice(0,10);});
-  const companies = (curCompany==='all' ? Object.keys(COMPANY_GROUPS) : [curCompany]).filter(c=>c!==EXCLUDE);
+  const arts = getChartArticles();
+  const days14 = chartDayKeys();
+  const companies = [...new Set(arts.map(a=>a.company))];
+  document.querySelector('#panel-charts .chart-title').innerHTML = `最近 ${workspace.chartDays} 天发文趋势 <span class="chart-subtitle">按公司分组 · 点击数据点查看原文，点击图例切换公司显示</span>`;
   buildChart('chart-trend','line',{
     labels: days14.map(d=>d.slice(5)),
     datasets: companies.map(c=>({
       label:c,
-      data:days14.map(day=>allArticles.filter(a=>a.company===c&&a.date instanceof Date&&a.date.toISOString().slice(0,10)===day).length),
+      data:days14.map(day=>arts.filter(a=>a.company===c&&a.date instanceof Date&&dayKey(a.date)===day).length),
       borderColor:COMPANY_COLORS[c]||'#999',
       backgroundColor:(COMPANY_COLORS[c]||'#999')+'18',
       tension:.35, pointRadius:3, fill:false, borderWidth:2,
@@ -1676,7 +1510,7 @@ function renderCharts() {
   buildChart('chart-kw','bar',{
     labels:topKw.map(([w])=>w),
     datasets:[{label:'词频',data:topKw.map(([,n])=>n),
-      backgroundColor:topKw.map((_,i)=>`oklch(${55+i}% 0.18 ${250-i*5})`),
+      backgroundColor:'#648de4',
       borderRadius:4,borderWidth:0}],
   },{
     indexAxis:'y',
@@ -1770,7 +1604,7 @@ function buildChart(id, type, data, options) {
     type, data,
     options: {
       responsive:true, maintainAspectRatio:false,
-      animation:{duration:350},
+      animation:{duration:matchMedia('(prefers-reduced-motion: reduce)').matches?0:220},
       plugins:{legend:{labels:{font:{family:"Inter,-apple-system",size:11}}}},
       ...options,
     }
@@ -1875,9 +1709,17 @@ function relTime(date) {
 function esc(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 function escRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
 
+// The workspace layer shares one filter state across the four views.
+</script>
+<script src="monitor-ui.js?v=20260916-default-all"></script>
+<link rel="stylesheet" href="monitor-timeline.css?v=20260916-quiet">
+<script src="monitor-timeline.js?v=20260916-media-source"></script>
+<script src="monitor-content.js?v=20260916-charts-first"></script>
+<link rel="stylesheet" href="monitor-controls.css?v=20260916-spacing-fix">
+<script src="monitor-controls.js?v=20260916-cloud-auto"></script>
+<script>
 // ═══════════════ BOOT ═══════════════
-document.getElementById('search-bar').style.display = 'none';
-async function main() { await init(); updateArchiveBadge(); }
+async function main() { await init(); }
 main();
 </script>
 </body>

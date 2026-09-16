@@ -1,0 +1,46 @@
+name: Cloud RSS sync
+
+on:
+  schedule:
+    - cron: "7,27,47 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cloud-rss-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out collector
+        uses: actions/checkout@v4
+        with:
+          path: site
+
+      - name: Check out cloud data
+        uses: actions/checkout@v4
+        with:
+          ref: cloud-data
+          path: cloud-data
+
+      - name: Fetch latest RSS entries
+        env:
+          RSS_SOURCES_JSON: ${{ secrets.RSS_SOURCES_JSON }}
+        run: python3 site/scripts/cloud_rss_sync.py --output cloud-data/data-snapshot
+
+      - name: Publish updated snapshot
+        working-directory: cloud-data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data-snapshot
+          if git diff --cached --quiet; then
+            echo "No snapshot changes"
+          else
+            git commit -m "data: automatic RSS refresh"
+            git push origin cloud-data
+          fi

@@ -9,35 +9,35 @@ window.REPORT_DATA = {
       rank: '01',
       title: '阿里全集团 2027 届校招一日内启动 12 条产品线，AI 方向全面放量',
       summary: '8月5日，阿里巴巴集团招聘号单日连发 12 条官宣，覆盖阿里云、千问事业部、Token Foundry、平头哥、淘天、飞猪、菜鸟、盒马等核心BU，2027 届秋招战全面打响，AI基础设施与大模型方向为重点招聘赛道。',
-      url: 'https://mp.weixin.qq.com/s/ali-2027-all',
+      url: 'https://mp.weixin.qq.com/s?__biz=MzUzNDc1MDg1Ng==&mid=2247503622&idx=1&sn=0067a432ad359a02b5967572553a9b3b&scene=58&subscene=0',
       tag: '招聘',
     },
     {
       rank: '02',
       title: '字节跳动 2027 校招正式启动，持续加码 AI 人才',
       summary: '字节跳动官方招聘号、字节范儿、申妈的朋友圈三渠道联动，8月3-4日密集发声宣布 2027 届校招启动，强调"持续加码 AI 人才"，并同步面向高水平科研人才，与上周 Seed STEM 科学家计划形成招聘合力。',
-      url: 'https://mp.weixin.qq.com/s/bytedance-2027-campus',
+      url: 'https://mp.weixin.qq.com/s/gdSfX5vpS9tEKB-TN9zrWw',
       tag: '招聘',
     },
     {
       rank: '03',
       title: '美团发布 CatPaw：全场景 AI Agent，从个人提效到企业智能化',
       summary: '美团本周正式发布 CatPaw 全场景 AI Agent 平台，同步启动 2027 届北斗计划全球热招，技术发布与人才战略双线推进，CatPaw 成为美团 AI 战略对外展示的核心产品名片。',
-      url: 'https://mp.weixin.qq.com/s/meituan-catpaw',
+      url: 'https://mp.weixin.qq.com/s?__biz=MjM5NzYyMzIwMg==&mid=2792300924&idx=1&sn=98d23a204e729bb37316184a89a67c89&scene=58&subscene=0',
       tag: '技术',
     },
     {
       rank: '04',
       title: '腾讯 SkillHub：10 万+技能背后如何帮用户找到那 20% 真正好用的',
       summary: '腾讯技术工程披露 SkillHub 运营细节——平台已上线超10万个 Skill，通过多维度评测和排序策略筛选高质量技能，是腾讯 Agent 工程化落地的重要基础设施，彰显腾讯在工具链生态建设上的规模优势。',
-      url: 'https://mp.weixin.qq.com/s/tencent-skillhub',
+      url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803078&idx=1&sn=13cad02f15d9addef06e2a31fb3a3f93&scene=58&subscene=0',
       tag: '技术',
     },
     {
       rank: '05',
       title: '字节 Codex 实战：不写一行代码搭起视频搜索网站，AI视频画质增强揭秘',
       summary: '字节技术团队本周发布两篇标志性工程内容：一是普通员工"小V"用 Codex 零代码搭建视频搜索网站的实战案例，二是 AI 视频画质增强的技术揭秘——两篇共同塑造"AI让人人都能做工程"的雇主品牌叙事。',
-      url: 'https://mp.weixin.qq.com/s/bytedance-codex-video',
+      url: 'https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521147&idx=1&sn=dc14c37c6a03dd9448d8b95c2d4f15d6&scene=58&subscene=0',
       tag: '技术',
     },
   ],
@@ -53,10 +53,10 @@ window.REPORT_DATA = {
           '小红书 ICML 2026 入选成果：首个 AI 翻译「文化有效性」评测标准（8.7）——持续顶会输出，本周围绕多模态和 NLP 再度刷新学术存在感。',
         ],
         sources: [
-          { name: '阿里2027届全系列招聘', url: 'https://mp.weixin.qq.com/s/ali-2027-all' },
-          { name: '字节2027校招正式启动', url: 'https://mp.weixin.qq.com/s/bytedance-2027' },
-          { name: '美团CatPaw发布', url: 'https://mp.weixin.qq.com/s/catpaw' },
-          { name: '腾讯AI发现Linux漏洞', url: 'https://mp.weixin.qq.com/s/linux-ai' },
+          { name: '阿里2027届全系列招聘', url: 'https://mp.weixin.qq.com/s?__biz=MzUzNDc1MDg1Ng==&mid=2247503622&idx=1&sn=0067a432ad359a02b5967572553a9b3b&scene=58&subscene=0' },
+          { name: '字节2027校招正式启动', url: 'https://mp.weixin.qq.com/s?__biz=MzI5MzI4MzM1OQ==&mid=2247532513&idx=1&sn=0731633e2ecda727849dd0ffcc94d5e9&scene=58&subscene=0' },
+          { name: '美团CatPaw发布', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NzYyMzIwMg==&mid=2792300924&idx=1&sn=98d23a204e729bb37316184a89a67c89&scene=58&subscene=0' },
+          { name: '腾讯AI发现Linux漏洞', url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803040&idx=1&sn=a0b7458e9bcc381edcbca4dbc1769f85&chksm=bf9a98884291744fb465db8b4dc5d99db0f536026b242c2b69a5493e12ca0fb428184d60699c#rd' },
         ],
       },
       '技术前沿': {
@@ -69,10 +69,10 @@ window.REPORT_DATA = {
           '阿里"从 Agent Flow 到 AI Native"（8.5）——提出通用 Agent 是"饮鸩止渴"，为 AI 原生架构设计提出新思路，引发行业讨论。',
         ],
         sources: [
-          { name: '字节SenseFlow', url: 'https://mp.weixin.qq.com/s/senseflow' },
-          { name: '腾讯AI发现Linux漏洞', url: 'https://mp.weixin.qq.com/s/linux-ai' },
-          { name: '阿里AgentFlow到AI Native', url: 'https://mp.weixin.qq.com/s/agent-native' },
-          { name: '小红书多模态推理加速', url: 'https://mp.weixin.qq.com/s/xhs-moe' },
+          { name: '字节SenseFlow', url: 'https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521212&idx=1&sn=819993bfc75955779785e4aaad7dcd89&scene=58&subscene=0' },
+          { name: '腾讯AI发现Linux漏洞', url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803040&idx=1&sn=a0b7458e9bcc381edcbca4dbc1769f85&chksm=bf9a98884291744fb465db8b4dc5d99db0f536026b242c2b69a5493e12ca0fb428184d60699c#rd' },
+          { name: '阿里AgentFlow到AI Native', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247510883&idx=1&sn=1988e51340f0d9a22b2e6908fc60eddc&chksm=ceaa7679d032a4ce841d1616ab237753fb3f2e95536e7f9ed808898c90707b4c8b75279c7965#rd' },
+          { name: '小红书多模态推理加速', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495927&idx=1&sn=cfc2a126460fcb1528d21570661db92a&chksm=ce9af4f0d73a504d83caf6277a7f8b5e699408c4abac976a856c72ca9d08eefbebd73667feed#rd' },
         ],
       },
       '行业趋势': {
@@ -83,8 +83,8 @@ window.REPORT_DATA = {
           '技术内容的"故事化"竞争加剧——字节"普通员工用 Codex 搭网站"、腾讯"AI 先于人类发现漏洞"，用具体案例替代抽象技术，传播效果远超纯技术论文类内容。',
         ],
         sources: [
-          { name: '字节Codex实战案例', url: 'https://mp.weixin.qq.com/s/codex-case' },
-          { name: '美团CatPaw发布', url: 'https://mp.weixin.qq.com/s/catpaw' },
+          { name: '字节Codex实战案例', url: 'https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521147&idx=1&sn=dc14c37c6a03dd9448d8b95c2d4f15d6&scene=58&subscene=0' },
+          { name: '美团CatPaw发布', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NzYyMzIwMg==&mid=2792300924&idx=1&sn=98d23a204e729bb37316184a89a67c89&scene=58&subscene=0' },
         ],
       },
       '对快手的启示': {
@@ -114,10 +114,10 @@ window.REPORT_DATA = {
             '文件上传即可检索：实时多模态向量链路落地实践（8.4）：端到端多模态检索工程化实践分享，覆盖图文视频全链路。',
           ],
           sources: [
-            { name: '字节SenseFlow', url: 'https://mp.weixin.qq.com/s/senseflow' },
-            { name: 'Codex零代码实战', url: 'https://mp.weixin.qq.com/s/codex-ncode' },
-            { name: 'AI视频画质增强', url: 'https://mp.weixin.qq.com/s/ai-video-quality' },
-            { name: 'MySQL向量索引', url: 'https://mp.weixin.qq.com/s/mysql-vector' },
+            { name: '字节SenseFlow', url: 'https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521212&idx=1&sn=819993bfc75955779785e4aaad7dcd89&scene=58&subscene=0' },
+            { name: 'Codex零代码实战', url: 'https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521147&idx=1&sn=dc14c37c6a03dd9448d8b95c2d4f15d6&scene=58&subscene=0' },
+            { name: 'AI视频画质增强', url: 'https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521103&idx=1&sn=464de2a00f29cfc21e3875a515d5fdbe&scene=58&subscene=0' },
+            { name: 'MySQL向量索引', url: 'https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521161&idx=1&sn=205af0499a556576a9543c04ec64b93d&chksm=e87bebbf556aadd9b6b4750775c2eef2f2ef448348de4f733afa93f7892b7cb13ee4b1833083#rd' },
           ],
         },
         '招聘动态': {
@@ -125,7 +125,7 @@ window.REPORT_DATA = {
             '字节跳动 2027 校招正式启动（8.3-8.4）——官方招聘号、字节范儿、申妈的朋友圈三渠道联动，强调"持续加码 AI 人才"，是本周行业校招声量最大的单一事件。',
           ],
           sources: [
-            { name: '字节2027校招启动', url: 'https://mp.weixin.qq.com/s/bytedance-2027' },
+            { name: '字节2027校招启动', url: 'https://mp.weixin.qq.com/s?__biz=MzI5MzI4MzM1OQ==&mid=2247532513&idx=1&sn=0731633e2ecda727849dd0ffcc94d5e9&scene=58&subscene=0' },
           ],
         },
         '对快手的启示': {
@@ -150,9 +150,9 @@ window.REPORT_DATA = {
             'AI Infra 进阶：如何让大模型输出确定的结果（8.5）——生产环境 LLM 确定性输出的工程解法，Infra 视角深度，是腾讯 AI 工程化体系的重要拼图。',
           ],
           sources: [
-            { name: '腾讯SkillHub10万+', url: 'https://mp.weixin.qq.com/s/skillhub' },
-            { name: 'AI发现Linux漏洞', url: 'https://mp.weixin.qq.com/s/linux-18y' },
-            { name: 'AI读懂老项目', url: 'https://mp.weixin.qq.com/s/ai-legacy' },
+            { name: '腾讯SkillHub10万+', url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803078&idx=1&sn=13cad02f15d9addef06e2a31fb3a3f93&scene=58&subscene=0' },
+            { name: 'AI发现Linux漏洞', url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803040&idx=1&sn=a0b7458e9bcc381edcbca4dbc1769f85&chksm=bf9a98884291744fb465db8b4dc5d99db0f536026b242c2b69a5493e12ca0fb428184d60699c#rd' },
+            { name: 'AI读懂老项目', url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803058&idx=1&sn=f3ed1b512d61666ebc7d4852a33911b5&chksm=bf5a9b2883196aed803a5d75e4e2b9c75bb2a93f9bdf3e0dc4f56efd187f64099148294865b0#rd' },
           ],
         },
         '对快手的启示': {
@@ -178,9 +178,9 @@ window.REPORT_DATA = {
             '前端 Skill 驱动的团队 AI Coding 实践（7.30）：从个人工具到整体提效的团队 AI 转型路径，聚焦前端方向差异化视角。',
           ],
           sources: [
-            { name: '阿里AgentFlow批判', url: 'https://mp.weixin.qq.com/s/agent-flow' },
-            { name: 'Qwen3.8千问办公', url: 'https://mp.weixin.qq.com/s/qwen38-office' },
-            { name: '参数化Memory', url: 'https://mp.weixin.qq.com/s/memory' },
+            { name: '阿里AgentFlow批判', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247510883&idx=1&sn=1988e51340f0d9a22b2e6908fc60eddc&chksm=ceaa7679d032a4ce841d1616ab237753fb3f2e95536e7f9ed808898c90707b4c8b75279c7965#rd' },
+            { name: 'Qwen3.8千问办公', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247510872&idx=1&sn=147d7bfeca0f79d93bb231fae1f0a74b&scene=58&subscene=0' },
+            { name: '参数化Memory', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247511041&idx=1&sn=037ffb3529df30ea5b8b30b966a526bf&chksm=ce02706d20b83dd2607282ee1c85e960fcf45bf40c3d9a08e52c062f0f709ece4235269a3a69#rd' },
           ],
         },
         '校招动态': {
@@ -188,7 +188,7 @@ window.REPORT_DATA = {
             '阿里巴巴 2027 届应届生招聘全系列官宣（8.5）——单日连发 12 条，覆盖阿里云、千问事业部、Token Foundry、平头哥、淘天集团、淘宝闪购、飞猪、菜鸟、盒马、阿里健康、阿里控股、阿里国际、高德、虎鲸文娱、灵犀互娱，AI 算法/基础设施方向为重点。',
           ],
           sources: [
-            { name: '阿里2027全系列官宣', url: 'https://mp.weixin.qq.com/s/ali-2027-global' },
+            { name: '阿里2027全系列官宣', url: 'https://mp.weixin.qq.com/s?__biz=MzUzNDc1MDg1Ng==&mid=2247503622&idx=1&sn=0067a432ad359a02b5967572553a9b3b&scene=58&subscene=0' },
           ],
         },
         '对快手的启示': {
@@ -211,7 +211,7 @@ window.REPORT_DATA = {
             '美团正式发布 CatPaw：全场景 AI Agent，从个人提效到企业智能化（7.28）——是美团 AI 战略的核心产品化输出，定位全场景（个人+企业），与美团 Agent 一年来的工程积累形成完整闭环。',
           ],
           sources: [
-            { name: '美团CatPaw发布', url: 'https://mp.weixin.qq.com/s/catpaw-launch' },
+            { name: '美团CatPaw发布', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NzYyMzIwMg==&mid=2792300924&idx=1&sn=98d23a204e729bb37316184a89a67c89&scene=58&subscene=0' },
           ],
         },
         '招聘动态': {
@@ -220,8 +220,8 @@ window.REPORT_DATA = {
             '社招：Keemart 虚位以待，出海正当时（8.5）——美团国际化 Keemart 业务定向招聘，"出海"定位差异化，精准吸引有出海意向的候选人。',
           ],
           sources: [
-            { name: '美团北斗计划2027', url: 'https://mp.weixin.qq.com/s/beidou-2027' },
-            { name: 'Keemart出海招聘', url: 'https://mp.weixin.qq.com/s/keemart' },
+            { name: '美团北斗计划2027', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NzYyMzIwMg==&mid=2792300924&idx=3&sn=f643cc31122c46a84150741de0276157&scene=58&subscene=0' },
+            { name: 'Keemart出海招聘', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NzYyMzIwMg==&mid=2792300924&idx=2&sn=22215f414a625dd1e9f65fdff85303ec&scene=58&subscene=0' },
           ],
         },
         '对快手的启示': {
@@ -246,9 +246,9 @@ window.REPORT_DATA = {
             '小红书 dots 团队提出 Vision-OPD（7.28）：让多模态大模型"看清细节"，目标检测精度方向新成果。',
           ],
           sources: [
-            { name: '小红书ICML2026', url: 'https://mp.weixin.qq.com/s/xhs-icml' },
-            { name: '问一问多模态加速', url: 'https://mp.weixin.qq.com/s/wenwen-moe' },
-            { name: '模型真实生活测评', url: 'https://mp.weixin.qq.com/s/model-reallife' },
+            { name: '小红书ICML2026', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247496008&idx=1&sn=08f2ce717483f63bc00a2181e59e3f40&scene=58&subscene=0' },
+            { name: '问一问多模态加速', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495927&idx=1&sn=cfc2a126460fcb1528d21570661db92a&chksm=ce9af4f0d73a504d83caf6277a7f8b5e699408c4abac976a856c72ca9d08eefbebd73667feed#rd' },
+            { name: '模型真实生活测评（原文 7月31日）', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495889&idx=1&sn=abb72082b7b1e1b12cc7dc6e4c812a50&scene=58&subscene=0' },
           ],
         },
         '对快手的启示': {

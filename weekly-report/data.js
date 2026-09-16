@@ -9,35 +9,35 @@ window.REPORT_DATA = {
       rank: '01',
       title: '美团 2027 届全球校招正式启动：四线联发，核心商业+Keeta+零售管培生+主站算法同步开抢',
       summary: '8月17日美团四个招聘号单日同步发布2027届校招公告，覆盖核心本地商业、Keeta全球、食杂零售管培生、主站算法等方向，声量集中爆发，补齐此前相对滞后的正式官宣，本周校招竞争白热化格局中美团回归第一梯队。',
-      url: 'https://mp.weixin.qq.com/s/meituan-2027-global',
+      url: 'https://mp.weixin.qq.com/s?__biz=MjM5NzYyMzIwMg==&mid=2792302518&idx=1&sn=4222bd77e6ae1a9f5312133e5dcccf49&chksm=84de38a1c4a21e93f9d2d014819af4e4c0a7378b8b8785a4d460b0d07def4e5f3605ab05a1e9#rd',
       tag: '招聘',
     },
     {
       rank: '02',
       title: '小红书 Lab 1327 发布 27 届 AI-Native 全栈工程师直通 Offer，xAI 多模态负责人加入腾讯混元',
       summary: '小红书8月20日正式发布"Lab 1327"新型AI组织的27届AI-Native全栈工程师招聘，强调"直通Offer"通道，Lab 1327定位面向未来的探路者组织；同期xAI多模态负责人蔺旭东加入腾讯混元，顶尖AI人才流向持续受行业关注。',
-      url: 'https://mp.weixin.qq.com/s/xhs-lab1327',
+      url: 'https://mp.weixin.qq.com/s?__biz=MzIxMjEyNDA2NA==&mid=2648474924&idx=1&sn=8a7757bbdb0b16636ed9cde87153bf10&scene=58&subscene=0',
       tag: '招聘',
     },
     {
       rank: '03',
       title: '腾讯 Agent Memory 团队记忆实践 + Multi-Agent 成本降 50%：Agent 工程化进入精细化运营阶段',
       summary: '腾讯技术工程本周连发5篇Agent工程化内容：TencentDB Agent Memory团队记忆实践、Multi-Agent工作流成本降50%、SuperSQL刷新TPC-DS世界纪录，是本周技术深度最强的系列，Agent工程化叙事从"架构设计"升维至"规模化精细运营"。',
-      url: 'https://mp.weixin.qq.com/s/tencent-agent-memory',
+      url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803679&idx=1&sn=910b29493df93cadf43078846d630cef&scene=58&subscene=0',
       tag: '技术',
     },
     {
       rank: '04',
       title: '阿里 Agent 终章（Harness成本篇）：百炼账单降低 88%，SIGCOMM 2026 入选 12 篇',
       summary: '阿里技术号本周以"Agent终章（Harness成本篇）"收尾整个Harness系列，披露百炼平台账单降低88%的实战数据，并同步发布SIGCOMM 2026 12篇入选论文，技术深度输出持续保持行业领先节奏。',
-      url: 'https://mp.weixin.qq.com/s/ali-harness-cost',
+      url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247511201&idx=1&sn=4af859e8a065ac8c1fa687ace0ea5feb&scene=58&subscene=0',
       tag: '技术',
     },
     {
       rank: '05',
       title: '阿里灵犀互娱被出售，姚顺雨重整腾讯多模态，大厂AI人才与战略流动加速',
       summary: '本周行业人事与战略动向密集：阿里出售灵犀互娱全部股权（信宸资本接盘，8.17），姚顺雨重整腾讯多模态路线（靠拢梁文锋路线），xAI多模态理解负责人蔺旭东加入腾讯混元，大厂AI核心人才与业务版图调整进入活跃期。',
-      url: 'https://mp.weixin.qq.com/s/industry-moves-w34',
+      url: 'https://mp.weixin.qq.com/s?__biz=MzI1NDE0NDQ2MQ==&mid=2649603140&idx=1&sn=e3448dea9198979005403fdc7fbb1e52&chksm=f06ddb2c88ecda11f0efcbc5a44dc5ba37a1850577d48b559add5a1f189bad283009795741cf#rd',
       tag: '热点',
     },
   ],
@@ -54,11 +54,11 @@ window.REPORT_DATA = {
           '腾讯大数据SuperSQL刷新TPC-DS世界纪录（8.20）——标准化权威测试+世界纪录叙事，技术品牌公信力建立的高效路径。',
         ],
         sources: [
-          { name: '美团2027全球启动', url: 'https://mp.weixin.qq.com/s/meituan-2027' },
-          { name: '小红书Lab1327', url: 'https://mp.weixin.qq.com/s/lab1327' },
-          { name: '微信AI13变化', url: 'https://mp.weixin.qq.com/s/wechat-ai-13' },
-          { name: '阿里灵犀出售', url: 'https://mp.weixin.qq.com/s/lingxi-sold' },
-          { name: '腾讯SuperSQL世界纪录', url: 'https://mp.weixin.qq.com/s/supersql' },
+          { name: '美团2027全球启动', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NzYyMzIwMg==&mid=2792302518&idx=1&sn=4222bd77e6ae1a9f5312133e5dcccf49&chksm=84de38a1c4a21e93f9d2d014819af4e4c0a7378b8b8785a4d460b0d07def4e5f3605ab05a1e9#rd' },
+          { name: '小红书Lab1327', url: 'https://mp.weixin.qq.com/s?__biz=MzIxMjEyNDA2NA==&mid=2648474924&idx=1&sn=8a7757bbdb0b16636ed9cde87153bf10&scene=58&subscene=0' },
+          { name: '微信AI13变化', url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803711&idx=1&sn=769cdeea7696c94fe4488827a6a41211&chksm=bfec13e4bac75b3ee68aa99d2f59e818b2249d0e38778617ac10668478421a7fdfb3adfa3bd3#rd' },
+          { name: '阿里灵犀出售', url: 'https://mp.weixin.qq.com/s?__biz=MzI1NDE0NDQ2MQ==&mid=2649603122&idx=1&sn=3c08ca59c73e3cee13f0fb3f48773585&chksm=f06d98d9b284932570c15fe92ba105af9a924913445c100deb2391bbfa272a30b2d835d47062#rd' },
+          { name: '腾讯SuperSQL世界纪录', url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803712&idx=1&sn=515b0c05169da477cb32db81d692715b&scene=58&subscene=0' },
         ],
       },
       '技术前沿': {
@@ -73,12 +73,12 @@ window.REPORT_DATA = {
           '小红书全链路画质守护技术揭秘（8.19）——从文件高清到体验高清，视频全链路画质技术体系，与快手在视频技术方向存在直接对标。',
         ],
         sources: [
-          { name: '腾讯Agent上限在团队', url: 'https://mp.weixin.qq.com/s/agent-team-knowledge' },
-          { name: '腾讯DB记忆实践', url: 'https://mp.weixin.qq.com/s/tencentdb-memory' },
-          { name: '多Agent降成本50%', url: 'https://mp.weixin.qq.com/s/multi-agent-cost' },
-          { name: '阿里Agent终章成本篇', url: 'https://mp.weixin.qq.com/s/ali-agent-cost' },
-          { name: '字节ADrive', url: 'https://mp.weixin.qq.com/s/adrive' },
-          { name: '小红书画质全链路', url: 'https://mp.weixin.qq.com/s/xhs-quality' },
+          { name: '腾讯Agent上限在团队', url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803612&idx=1&sn=13be122cb61484933486e146d5724e37&scene=58&subscene=0' },
+          { name: '腾讯DB记忆实践', url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803679&idx=1&sn=910b29493df93cadf43078846d630cef&scene=58&subscene=0' },
+          { name: '多Agent降成本50%', url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803728&idx=1&sn=e5958d1c5d52e82bbe693b932d07492f&scene=58&subscene=0' },
+          { name: '阿里Agent终章成本篇', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247511201&idx=1&sn=4af859e8a065ac8c1fa687ace0ea5feb&scene=58&subscene=0' },
+          { name: '字节ADrive', url: 'https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521375&idx=2&sn=0f9e1f1fc0b9613c809dd6014c82e3ca&chksm=e84f8d83ada6e1f810ab311f827330285343de535dbd8806da4a238abaf7435dc01415fca878#rd' },
+          { name: '小红书画质全链路', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247496232&idx=1&sn=d674c6fcc367e35f335258320a298f9f&chksm=ced4fd2cba258b15b06de55f774246af6bc718cc0d99f42530b2ee6a63133ec3561b47282c3d#rd' },
         ],
       },
       '行业趋势': {
@@ -89,9 +89,9 @@ window.REPORT_DATA = {
           '小红书Lab 1327的"AI-Native全栈工程师"校招定位——将AI能力内化为岗位本身的核心属性（而非加分项），这是对传统"AI背景优先"校招JD的升级，暗示AI工程化已进入All-in阶段。',
         ],
         sources: [
-          { name: '美团全球启动', url: 'https://mp.weixin.qq.com/s/meituan-2027-global' },
-          { name: '小红书Lab1327', url: 'https://mp.weixin.qq.com/s/lab1327-ainative' },
-          { name: 'xAI→腾讯混元人才流动', url: 'https://mp.weixin.qq.com/s/hunyuan-xai' },
+          { name: '美团全球启动', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NzYyMzIwMg==&mid=2792302518&idx=1&sn=4222bd77e6ae1a9f5312133e5dcccf49&chksm=84de38a1c4a21e93f9d2d014819af4e4c0a7378b8b8785a4d460b0d07def4e5f3605ab05a1e9#rd' },
+          { name: '小红书Lab1327', url: 'https://mp.weixin.qq.com/s?__biz=MzIxMjEyNDA2NA==&mid=2648474924&idx=1&sn=8a7757bbdb0b16636ed9cde87153bf10&scene=58&subscene=0' },
+          { name: 'xAI→腾讯混元人才流动', url: 'https://mp.weixin.qq.com/s?__biz=MzI1NDE0NDQ2MQ==&mid=2649603134&idx=1&sn=b71358206821de48fc83ed8eb102c2ce&chksm=f0dae1265ab0e50bb4ac56b6ce244240a2ba199985ef96c055deeb5756374c584cc66a210f0a#rd' },
         ],
       },
       '对快手的启示': {
@@ -121,10 +121,10 @@ window.REPORT_DATA = {
             '豆包视频通话升级，火山引擎多模态传输系统（8.20）——将底层基础设施能力（多模态实时传输）与豆包产品更新绑定，"产品升级+技术支撑"双叙事提升内容深度。',
           ],
           sources: [
-            { name: '抖音DME多模态', url: 'https://mp.weixin.qq.com/s/dme-model' },
-            { name: 'Agent Plan实践指南', url: 'https://mp.weixin.qq.com/s/agent-plan-harness' },
-            { name: 'ADrive智能网盘', url: 'https://mp.weixin.qq.com/s/adrive' },
-            { name: '豆包视频通话升级', url: 'https://mp.weixin.qq.com/s/doubao-video-call' },
+            { name: '抖音DME多模态', url: 'https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521321&idx=1&sn=4881e96023fe955d32daac031479bc92&scene=58&subscene=0' },
+            { name: 'Agent Plan实践指南', url: 'https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521375&idx=1&sn=e11bc1ebfc05563e0d0ab2d5d47835b5&chksm=e8f62c6bd9c90142091d60cfa7cd31f19e1b4cc7da75652c78a5f3bab51e313ffda20a04eef0#rd' },
+            { name: 'ADrive智能网盘', url: 'https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521375&idx=2&sn=0f9e1f1fc0b9613c809dd6014c82e3ca&chksm=e84f8d83ada6e1f810ab311f827330285343de535dbd8806da4a238abaf7435dc01415fca878#rd' },
+            { name: '豆包视频通话升级', url: 'https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521377&idx=1&sn=3d2f9e30616aa074c8d574c568903ba8&chksm=e88a7f187e7b084dd42e313e3234584ad31e4b65544f18df9f125db08fe16c294e21f220779b#rd' },
           ],
         },
         '对快手的启示': {
@@ -150,11 +150,11 @@ window.REPORT_DATA = {
             '《靠这10个优化点，把Multi-Agent工作流成本降了50%以上》（8.21）——本周行业中最实用的Agent成本优化干货，10个具体操作点，可直接用于生产环境，预计成为持续传播的收藏类内容。',
           ],
           sources: [
-            { name: 'Agent上限在团队知识', url: 'https://mp.weixin.qq.com/s/agent-knowledge' },
-            { name: 'DB记忆实践', url: 'https://mp.weixin.qq.com/s/db-memory' },
-            { name: '微信AI13变化', url: 'https://mp.weixin.qq.com/s/wechat-ai' },
-            { name: 'SuperSQL世界纪录', url: 'https://mp.weixin.qq.com/s/supersql-record' },
-            { name: 'Multi-Agent成本降50%', url: 'https://mp.weixin.qq.com/s/multiagent-cost' },
+            { name: 'Agent上限在团队知识', url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803612&idx=1&sn=13be122cb61484933486e146d5724e37&scene=58&subscene=0' },
+            { name: 'DB记忆实践', url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803679&idx=1&sn=910b29493df93cadf43078846d630cef&scene=58&subscene=0' },
+            { name: '微信AI13变化', url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803711&idx=1&sn=769cdeea7696c94fe4488827a6a41211&chksm=bfec13e4bac75b3ee68aa99d2f59e818b2249d0e38778617ac10668478421a7fdfb3adfa3bd3#rd' },
+            { name: 'SuperSQL世界纪录', url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803712&idx=1&sn=515b0c05169da477cb32db81d692715b&scene=58&subscene=0' },
+            { name: 'Multi-Agent成本降50%', url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803728&idx=1&sn=e5958d1c5d52e82bbe693b932d07492f&scene=58&subscene=0' },
           ],
         },
         '人才流向': {
@@ -163,7 +163,7 @@ window.REPORT_DATA = {
             '腾讯文化内容《只是因为在人群中多看了一眼》（8.17）——以诗意化标题吸引流量，内容风格轻盈，建立腾讯"有人情味"的品牌温度，是腾讯文化号在AI时代的差异化定位。',
           ],
           sources: [
-            { name: 'xAI蔺旭东加入腾讯', url: 'https://mp.weixin.qq.com/s/xai-hunyuan' },
+            { name: 'xAI蔺旭东加入腾讯', url: 'https://mp.weixin.qq.com/s?__biz=MzI1NDE0NDQ2MQ==&mid=2649603134&idx=1&sn=b71358206821de48fc83ed8eb102c2ce&chksm=f0dae1265ab0e50bb4ac56b6ce244240a2ba199985ef96c055deeb5756374c584cc66a210f0a#rd' },
           ],
         },
         '对快手的启示': {
@@ -188,9 +188,9 @@ window.REPORT_DATA = {
             '阿里巴巴12篇论文入选SIGCOMM 2026（8.19）——全球网络顶会12篇，阿里在网络基础设施方向学术输出全球顶级，与技术工程内容形成学术背书。',
           ],
           sources: [
-            { name: 'Harness Skill实践', url: 'https://mp.weixin.qq.com/s/harness-skill' },
-            { name: 'Agent终章成本88%', url: 'https://mp.weixin.qq.com/s/agent-cost-88' },
-            { name: 'SIGCOMM 2026', url: 'https://mp.weixin.qq.com/s/sigcomm-2026' },
+            { name: 'Harness Skill实践', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247511112&idx=1&sn=279ba391d62489b0226d94570388ac8d&scene=58&subscene=0' },
+            { name: 'Agent终章成本88%', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247511201&idx=1&sn=4af859e8a065ac8c1fa687ace0ea5feb&scene=58&subscene=0' },
+            { name: 'SIGCOMM 2026', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247511193&idx=1&sn=985ceca884ea702ec12963d8041ef80d&scene=58&subscene=0' },
           ],
         },
         '校招进阶': {
@@ -200,8 +200,8 @@ window.REPORT_DATA = {
             '"吾心安处是iHome"文化内容（8.19）——以诗意化标题传达阿里国际化业务的雇主叙事，为alimama/国际业务招聘做软性铺垫。',
           ],
           sources: [
-            { name: '阿里星AI Infra热招', url: 'https://mp.weixin.qq.com/s/ali-star-infra' },
-            { name: '淘天直播预告笔试日历', url: 'https://mp.weixin.qq.com/s/taotian-calendar' },
+            { name: '阿里星AI Infra热招', url: 'https://mp.weixin.qq.com/s?__biz=MzUzNDc1MDg1Ng==&mid=2247503684&idx=1&sn=81f6cb3194e5335ea797028a5760d66f&chksm=fb0415ab5451ddf7c34ca15051ab3da23e751ae778d72bfc05561ba2aa6e372242c3e1db62d6#rd' },
+            { name: '淘天直播预告笔试日历', url: 'https://mp.weixin.qq.com/s?__biz=MzUzNDc1MDg1Ng==&mid=2247503684&idx=3&sn=6e6f0c0f9a07e93cd730c2bb87ce4cd9&chksm=fb83e1c0e4e54b728e5529bf99163438376a43a98dfae850c3f6933bcfa3984b21fdc9d9d456#rd' },
           ],
         },
         '对快手的启示': {
@@ -225,8 +225,8 @@ window.REPORT_DATA = {
             '美团将2027届校招关键词定为"AI Native"——招聘信息中明确以AI应用能力为核心标准，呼应小红书Lab 1327同类定位，大厂校招JD的AI Native化趋势已成行业共识。',
           ],
           sources: [
-            { name: '美团2027全球启动', url: 'https://mp.weixin.qq.com/s/meituan-2027-official' },
-            { name: '美团核心本地商业', url: 'https://mp.weixin.qq.com/s/meituan-local-2027' },
+            { name: '美团2027全球启动', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NzYyMzIwMg==&mid=2792302518&idx=1&sn=4222bd77e6ae1a9f5312133e5dcccf49&chksm=84de38a1c4a21e93f9d2d014819af4e4c0a7378b8b8785a4d460b0d07def4e5f3605ab05a1e9#rd' },
+            { name: '美团核心本地商业', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NzYyMzIwMg==&mid=2792302518&idx=2&sn=eac56a262400fedf8007b71f40408322&chksm=8402ba5c0b33c970ced934b845cf105ba6f6341e35759670d50de86917093eeaaeb9a7e528b0#rd' },
           ],
         },
         '技术产出': {
@@ -234,7 +234,7 @@ window.REPORT_DATA = {
             '美团搜索3.0：LLM语义表征在排序模型的探索与应用（8.20）——将LLM能力引入搜索排序，从语义理解角度升级用户搜索体验，是美团搜索技术体系公开披露的重要内容。',
           ],
           sources: [
-            { name: '美团搜索3.0', url: 'https://mp.weixin.qq.com/s/meituan-search-3' },
+            { name: '美团搜索3.0', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651783185&idx=1&sn=0aab6d93f04e2c543903d6d6a4a98f88&chksm=bcde9f61685fd71aa3df0ee762726aa38fd76185e865a384d32a77551af5e1b33c830e2958a4#rd' },
           ],
         },
         '对快手的启示': {
@@ -256,7 +256,7 @@ window.REPORT_DATA = {
             '小红书Lab 1327：27届AI-Native全栈工程师直通Offer（8.20）——Lab 1327是小红书面向未来的新型AI组织，以"探路者"为定位招募开创者，"直通Offer"通道降低应聘门槛，是本周行业中创新度最高的校招内容，将AI-Native能力与组织形态绑定是本篇最大亮点。',
           ],
           sources: [
-            { name: 'Lab 1327直通Offer', url: 'https://mp.weixin.qq.com/s/lab1327-offer' },
+            { name: 'Lab 1327直通Offer', url: 'https://mp.weixin.qq.com/s?__biz=MzIxMjEyNDA2NA==&mid=2648474924&idx=1&sn=8a7757bbdb0b16636ed9cde87153bf10&scene=58&subscene=0' },
           ],
         },
         '技术开源与突破': {
@@ -265,8 +265,8 @@ window.REPORT_DATA = {
             '从文件高清到体验高清：小红书如何守住全链路画质（8.19）——视频全链路画质技术体系公开，在视频内容技术方向与快手/字节形成直接对标，是小红书REDtech本周最具技术分量的内容。',
           ],
           sources: [
-            { name: '小红书IMO模型开源', url: 'https://mp.weixin.qq.com/s/imo-open' },
-            { name: '全链路画质守护', url: 'https://mp.weixin.qq.com/s/quality-chain' },
+            { name: '小红书IMO模型开源', url: 'https://mp.weixin.qq.com/s?__biz=MzA3Nzk5MzcwNw==&mid=2451989480&idx=1&sn=653f3f70a2431ccf816bf2186c304f13&chksm=89646fdfa3a53ac44749c45a1c87b1862a41d318f4cd72073ce696ea9d85148c16b88d6954f9#rd' },
+            { name: '全链路画质守护', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247496232&idx=1&sn=d674c6fcc367e35f335258320a298f9f&chksm=ced4fd2cba258b15b06de55f774246af6bc718cc0d99f42530b2ee6a63133ec3561b47282c3d#rd' },
           ],
         },
         '对快手的启示': {

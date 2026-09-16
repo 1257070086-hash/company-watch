@@ -114,7 +114,7 @@
   function renderSources(sources) {
     if (!sources || sources.length === 0) return '';
     const links = sources.map(s =>
-      `<a href="${s.url}" target="_blank" rel="noopener" class="source-link">📎 ${s.name}</a>`
+      `<a ${s.url ? `href="${s.url}"` : 'aria-disabled="true"'} target="_blank" rel="noopener" class="source-link">📎 ${s.name}${s.url ? '' : ' · 来源待核实'}</a>`
     ).join('');
     return `<div class="sources">${links}</div>`;
   }
@@ -167,10 +167,10 @@
 
   // ── 本周头条 ──────────────────────────────────────────
   const headlineHtml = data.headlines.map(h => `
-    <a class="headline-item" href="${h.url}" target="_blank" rel="noopener">
+    <a class="headline-item" ${h.url ? `href="${h.url}"` : 'aria-disabled="true"'} target="_blank" rel="noopener">
       <span class="headline-rank">${h.rank}</span>
       <div class="headline-body">
-        <span class="headline-text">${h.title}</span>
+        <span class="headline-text">${h.title}${h.url ? '' : ' · 来源待核实'}</span>
         <span class="headline-summary">${h.summary}</span>
       </div>
       <span class="headline-tag tag-${h.tag}">${h.tag}</span>

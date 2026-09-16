@@ -9,35 +9,35 @@ window.REPORT_DATA = {
       rank: '01',
       title: '美团正式发布 CatPaw：全场景 AI Agent，从个人提效到企业智能化',
       summary: '美团1024并入CatPaw，全场景AI Agent正式对外发布，覆盖个人与企业场景，以LongCat大模型为底座，直接对标飞书AI/钉钉AI，企业服务AI赛道玩家再添一员。',
-      url: 'https://mp.weixin.qq.com/s/catpaw',
+      url: 'https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651783056&idx=1&sn=c5c7f73638bc777077e1b88b6f6acebd&chksm=bca5243a9234a8fda354f84280e4c0a537cee313b43f8bf87331ce4dcc7afac827c1df1a6648#rd',
       tag: '热点',
     },
     {
       rank: '02',
       title: '字节飞书并入豆包火山；Seedance 2.5 正式发布',
       summary: '字节内部产品矩阵大整合——飞书并入豆包火山，AI办公生态集中聚焦；Seed同期发布Seedance 2.5，"一镜成片+随心参考"，视频生成进入实用化阶段。',
-      url: 'https://mp.weixin.qq.com/s/seedance',
+      url: 'https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247494218&idx=1&sn=97f04a7a0200a366db2aeb1f4b38b3ae&scene=58&subscene=0',
       tag: '热点',
     },
     {
       rank: '03',
       title: '阿里技术密集发文：AI Coding认知债、Qwen3.8千问办公公测',
       summary: '阿里技术号连发5篇AI Coding深度文章，覆盖认知债/意图债、Spec驱动转向、前端Skill实践等；Qwen3.8+千问办公公测同步开启，大模型生产力落地全面加速。',
-      url: 'https://mp.weixin.qq.com/s/qwen38',
+      url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247510872&idx=1&sn=147d7bfeca0f79d93bb231fae1f0a74b&scene=58&subscene=0',
       tag: '技术',
     },
     {
       rank: '04',
       title: '小红书13周年内部信：build inspire love',
       summary: '小红书13周年发布内部信，首次完整呈现"build inspire love"文化三关键词；REDtech同期发布大模型真实生活场景测评、Vision-OPD多模态等技术文章，技术品牌全面活跃。',
-      url: 'https://mp.weixin.qq.com/s/xhs13',
+      url: 'https://mp.weixin.qq.com/s?__biz=MzkzNTY3MTE2Mw==&mid=2247487429&idx=1&sn=f7b123d81c700fb408351f46a9cd5350&scene=58&subscene=0',
       tag: '品牌',
     },
     {
       rank: '05',
       title: '腾讯：AI Coding下一站是更懂团队，Graph Engineering取代Loop Engineering',
       summary: '腾讯技术工程连发两篇前瞻文章，将AI Coding升维至团队协作视角，并提出Graph Engineering替代Loop Engineering的工程架构新范式，引领行业认知升级。',
-      url: 'https://mp.weixin.qq.com/s/tencent-ai-coding',
+      url: 'https://mp.weixin.qq.com/s/kz_7d66dhmPhOUlcMh4MzA',
       tag: '技术',
     },
   ],
@@ -53,10 +53,10 @@ window.REPORT_DATA = {
           'DevOps之父：发几个Claude Code账号就叫AI转型？Agent用不好是公司的锅（8.3）。',
         ],
         sources: [
-          { name: '美团CatPaw发布', url: 'https://mp.weixin.qq.com/s/catpaw' },
-          { name: '字节飞书并入豆包', url: 'https://mp.weixin.qq.com/s/bytedance-feishu' },
-          { name: 'Claude Code之父专访', url: 'https://mp.weixin.qq.com/s/claude-code' },
-          { name: 'DevOps之父评AI转型', url: 'https://mp.weixin.qq.com/s/devops-ai' },
+          { name: '美团CatPaw发布', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651783056&idx=1&sn=c5c7f73638bc777077e1b88b6f6acebd&chksm=bca5243a9234a8fda354f84280e4c0a537cee313b43f8bf87331ce4dcc7afac827c1df1a6648#rd' },
+          { name: '字节飞书并入豆包', url: 'https://mp.weixin.qq.com/s?__biz=MzIyMzM3NDY5Ng==&mid=2247489228&idx=1&sn=6035a91b5dba2ce20662707a90e2ba12&scene=58&subscene=0' },
+          { name: 'Claude Code之父专访', url: 'https://mp.weixin.qq.com/s/MEUMv2mJGNcS-rGl48f5FA' },
+          { name: 'DevOps之父评AI转型', url: 'https://mp.weixin.qq.com/s/D82xAnUzwGfGYPEZHBFH_g' },
         ],
       },
       '技术前沿': {
@@ -69,10 +69,10 @@ window.REPORT_DATA = {
           'AlphaEvolve正式上线，谷歌提供"进化式代码优化即服务"（InfoQ 7.31）。',
         ],
         sources: [
-          { name: 'Seedance 2.5发布', url: 'https://mp.weixin.qq.com/s/seedance' },
-          { name: '腾讯Graph Engineering', url: 'https://mp.weixin.qq.com/s/graph-engineering' },
-          { name: '小红书Vision-OPD', url: 'https://mp.weixin.qq.com/s/vision-opd' },
-          { name: 'MCP最大更新', url: 'https://mp.weixin.qq.com/s/mcp-update' },
+          { name: 'Seedance 2.5发布', url: 'https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247494218&idx=1&sn=97f04a7a0200a366db2aeb1f4b38b3ae&scene=58&subscene=0' },
+          { name: '腾讯Graph Engineering', url: 'https://mp.weixin.qq.com/s/LzpfUsJRMcpPHzDovo5IrA' },
+          { name: '小红书Vision-OPD', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495833&idx=1&sn=79798c7fd52ea4af8f8b4435591bcfc3&scene=58&subscene=0' },
+          { name: 'MCP最大更新', url: 'https://mp.weixin.qq.com/s/2oofgGKGIDDGhq68CquiKQ' },
         ],
       },
       '行业趋势': {
@@ -83,8 +83,8 @@ window.REPORT_DATA = {
           'AI工程化成为内容战场——阿里/腾讯/字节本周均高频输出AI Coding、Agent工程化深度文章，技术品牌竞争白热化。',
         ],
         sources: [
-          { name: '字节2027校招启动', url: 'https://mp.weixin.qq.com/s/bytedance-2027' },
-          { name: '阿里AI Coding认知债', url: 'https://mp.weixin.qq.com/s/ali-cognitive-debt' },
+          { name: '字节2027校招启动', url: 'https://mp.weixin.qq.com/s?__biz=MzI5MzI4MzM1OQ==&mid=2247532513&idx=1&sn=0731633e2ecda727849dd0ffcc94d5e9&scene=58&subscene=0' },
+          { name: '阿里AI Coding认知债', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247510586&idx=1&sn=2131d6e991d3db144d3d06b636093e59&scene=58&subscene=0' },
         ],
       },
       '对快手的启示': {
@@ -110,7 +110,7 @@ window.REPORT_DATA = {
             '字节跳动2027届校招8月3日正式启动，覆盖技术研发、AI算法等核心方向，媒体报道"持续加码AI人才"。',
           ],
           sources: [
-            { name: '字节2027校招启动', url: 'https://mp.weixin.qq.com/s/bytedance-2027' },
+            { name: '字节2027校招启动', url: 'https://mp.weixin.qq.com/s?__biz=MzI5MzI4MzM1OQ==&mid=2247532513&idx=1&sn=0731633e2ecda727849dd0ffcc94d5e9&scene=58&subscene=0' },
           ],
         },
         '产品与技术': {
@@ -119,8 +119,8 @@ window.REPORT_DATA = {
             '火山引擎开源Agent驱动的搜索自迭代技术——搜索与Agent深度融合，生态布局提速。',
           ],
           sources: [
-            { name: 'Seedance 2.5', url: 'https://mp.weixin.qq.com/s/seedance' },
-            { name: '火山搜索自迭代', url: 'https://mp.weixin.qq.com/s/volcano-search' },
+            { name: 'Seedance 2.5', url: 'https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247494218&idx=1&sn=97f04a7a0200a366db2aeb1f4b38b3ae&scene=58&subscene=0' },
+            { name: '火山搜索自迭代', url: 'https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521040&idx=1&sn=59454cfc3b20a519f2a72e26c0932776&scene=58&subscene=0' },
           ],
         },
         '战略动向': {
@@ -128,7 +128,7 @@ window.REPORT_DATA = {
             '飞书并入豆包火山（7.31早报）——内部产品矩阵精简，AI办公生态聚焦，豆包战略地位进一步提升。',
           ],
           sources: [
-            { name: '飞书并入豆包火山', url: 'https://mp.weixin.qq.com/s/feishu-doubao' },
+            { name: '飞书并入豆包火山', url: 'https://mp.weixin.qq.com/s?__biz=MzIyMzM3NDY5Ng==&mid=2247489228&idx=1&sn=6035a91b5dba2ce20662707a90e2ba12&scene=58&subscene=0' },
           ],
         },
         '对快手的启示': {
@@ -152,8 +152,8 @@ window.REPORT_DATA = {
             '《Loop Engineering已死？Graph Engineering崛起》(7.28)——AI Agent工程架构演进，提出Graph思维替代Loop结构，技术前瞻性强。',
           ],
           sources: [
-            { name: 'AI Coding懂团队', url: 'https://mp.weixin.qq.com/s/tencent-ai-coding' },
-            { name: 'Graph Engineering', url: 'https://mp.weixin.qq.com/s/graph-eng' },
+            { name: 'AI Coding懂团队', url: 'https://mp.weixin.qq.com/s/kz_7d66dhmPhOUlcMh4MzA' },
+            { name: 'Graph Engineering', url: 'https://mp.weixin.qq.com/s/LzpfUsJRMcpPHzDovo5IrA' },
           ],
         },
         '雇主品牌': {
@@ -162,8 +162,8 @@ window.REPORT_DATA = {
             'KDD 2026腾讯青云计划学术活动在济州岛举办(7.28)，面向顶尖算法研究人才，学术渠道持续经营。',
           ],
           sources: [
-            { name: '鹅厂员工小众AI玩法', url: 'https://mp.weixin.qq.com/s/tencent-ai-play' },
-            { name: 'KDD 2026青云计划', url: 'https://mp.weixin.qq.com/s/kdd-2026' },
+            { name: '鹅厂员工小众AI玩法', url: 'https://mp.weixin.qq.com/s/rua4uiu_NCqVVIjAPbdHLA' },
+            { name: 'KDD 2026青云计划', url: 'https://mp.weixin.qq.com/s?__biz=MTkyNTM0MzA4MQ==&mid=2650970134&idx=1&sn=fc728d6baf6a6c702e29d49ed9f40ca3&scene=58&subscene=0' },
           ],
         },
         '对快手的启示': {
@@ -186,7 +186,7 @@ window.REPORT_DATA = {
             '《面向生产力的Qwen3.8、千问办公已同步上线》(8.3)——大模型叙事从"能力展示"转向"生产力落地"，千问办公公测开启，ToB方向发力。',
           ],
           sources: [
-            { name: 'Qwen3.8千问办公', url: 'https://mp.weixin.qq.com/s/qwen38' },
+            { name: 'Qwen3.8千问办公', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247510872&idx=1&sn=147d7bfeca0f79d93bb231fae1f0a74b&scene=58&subscene=0' },
           ],
         },
         'AI Coding深度文章': {
@@ -197,9 +197,9 @@ window.REPORT_DATA = {
             '灵骏真武M890超节点适配Kimi K3(7.28)——国产算力第一时间跟进前沿开源模型，生态布局积极。',
           ],
           sources: [
-            { name: '认知债与意图债', url: 'https://mp.weixin.qq.com/s/cognitive-debt' },
-            { name: 'Spec驱动转验证驱动', url: 'https://mp.weixin.qq.com/s/spec-to-validation' },
-            { name: '前端Skill驱动', url: 'https://mp.weixin.qq.com/s/frontend-skill' },
+            { name: '认知债与意图债', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247510586&idx=1&sn=2131d6e991d3db144d3d06b636093e59&scene=58&subscene=0' },
+            { name: 'Spec驱动转验证驱动', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247510868&idx=1&sn=42f0a3414a57983b491bca0c68f3d171&scene=58&subscene=0' },
+            { name: '前端Skill驱动', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247510834&idx=2&sn=5a5b4047a438b8499f36792f06686618&scene=58&subscene=0' },
           ],
         },
         '对快手的启示': {
@@ -223,7 +223,7 @@ window.REPORT_DATA = {
             '大厂日爆(7.30)报道"美团1024并入CatPaw"，内部整合动作印证CatPaw为美团AI核心产品战略落点。',
           ],
           sources: [
-            { name: '美团CatPaw发布', url: 'https://mp.weixin.qq.com/s/catpaw' },
+            { name: '美团CatPaw发布', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651783056&idx=1&sn=c5c7f73638bc777077e1b88b6f6acebd&chksm=bca5243a9234a8fda354f84280e4c0a537cee313b43f8bf87331ce4dcc7afac827c1df1a6648#rd' },
           ],
         },
         '招聘联动': {
@@ -252,7 +252,7 @@ window.REPORT_DATA = {
             '《小红书你真的很会写信》(7.28)——用户对小红书周年信件文化的自发传播，雇主品牌口碑效应持续发酵。',
           ],
           sources: [
-            { name: '13周年build inspire love', url: 'https://mp.weixin.qq.com/s/xhs13' },
+            { name: '13周年build inspire love', url: 'https://mp.weixin.qq.com/s?__biz=MzkzNTY3MTE2Mw==&mid=2247487429&idx=1&sn=f7b123d81c700fb408351f46a9cd5350&scene=58&subscene=0' },
           ],
         },
         '技术产出': {
@@ -261,8 +261,8 @@ window.REPORT_DATA = {
             'Vision-OPD多模态大模型让模型"看清细节"入选ECCV\'26(7.28)，顶会学术产出持续稳定。',
           ],
           sources: [
-            { name: '大模型真实生活测评', url: 'https://mp.weixin.qq.com/s/model-test' },
-            { name: 'Vision-OPD ECCV26', url: 'https://mp.weixin.qq.com/s/vision-opd' },
+            { name: '大模型真实生活测评', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495889&idx=1&sn=abb72082b7b1e1b12cc7dc6e4c812a50&scene=58&subscene=0' },
+            { name: 'Vision-OPD ECCV26', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495833&idx=1&sn=79798c7fd52ea4af8f8b4435591bcfc3&scene=58&subscene=0' },
           ],
         },
         '对快手的启示': {

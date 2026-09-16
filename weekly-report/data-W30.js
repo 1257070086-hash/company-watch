@@ -9,35 +9,35 @@ window.REPORT_DATA = {
       rank: '01',
       title: '小红书 dots 模型 IMO 2026 满分金牌，13 周年内部大片同步发布',
       summary: '小红书 dots 数学推理模型在 IMO 2026 斩获满分金牌，同日发布 13 周年内部大片《人，来看小红书的生日大片》，技术硬实力与文化软实力双线发力。',
-      url: 'https://mp.weixin.qq.com/s/xhs-imo',
+      url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495735&idx=1&sn=ce165ca3d6ca96311f04d2a243439b66&scene=58&subscene=0',
       tag: '品牌',
     },
     {
       rank: '02',
       title: '腾讯密集输出 AI 工程化内容：Vibe Coding → AI 原生研发团队落地',
       summary: '腾讯技术工程本周连发 5 篇，从 Vibe Coding 到 AI 改代码的等待时间管理，首次系统披露 AI 原生研发团队的工程转型路径，工程化叙事成为本周最高密度输出。',
-      url: 'https://mp.weixin.qq.com/s/tencent-ai-native',
+      url: 'https://mp.weixin.qq.com/s/DrIpzHm777Zd8klcyAICBA',
       tag: '技术',
     },
     {
       rank: '03',
       title: '美团三连发：MineExplorer + LoHoSearch + 55万元具身智能挑战赛',
       summary: '美团技术团队本周三连发技术文章，MineExplorer 揭示多模态大模型能力断层，LoHoSearch 开源搜索智能体评测基准，同步发布 55 万元低空经济与具身智能挑战赛。',
-      url: 'https://mp.weixin.qq.com/s/meituan-tech-w30',
+      url: 'https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651783046&idx=2&sn=847f703c3c0e53c6323fb4a06185b473&chksm=bce6cd19a22fa324b265ff1b8733d7381758f67c06b86e50520ffc9124e8b94cf95e87bb0a94#rd',
       tag: '热点',
     },
     {
       rank: '04',
       title: '阿里宣布 2027 届应届生招聘 8 月启动，阿里星课题第二期密集发布',
       summary: '阿里巴巴集团招聘官宣 2027 届校招 8 月启动，阿里星课题第二期同步上线（基础模型/AI Infra/大模型应用/安全四大方向），秋招战进入倒计时。',
-      url: 'https://mp.weixin.qq.com/s/ali-2027-campus',
+      url: 'https://mp.weixin.qq.com/s?__biz=MzUzNDc1MDg1Ng==&mid=2247503230&idx=1&sn=1cac136de239adb08a735d3cec98b1f3&scene=58&subscene=0',
       tag: '招聘',
     },
     {
       rank: '05',
       title: '字节 Seed STEM 科学家计划启动，COVERT 隐私推理框架入选 ECCV 2026',
       summary: '字节跳动 Seed 团队正式启动 STEM 科学家计划，面向高水平科研人才开放；技术团队同期发布 COVERT 隐私保护推理框架入选 ECCV 2026，学术与招聘双线布局。',
-      url: 'https://mp.weixin.qq.com/s/seed-stem',
+      url: 'https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247494170&idx=1&sn=2123f89369ea40d9c6d8b3aeb8500fc2&scene=58&subscene=0',
       tag: '招聘',
     },
   ],
@@ -53,10 +53,10 @@ window.REPORT_DATA = {
           'Kimi K3 开源引发黄仁勋公开力挺（7.24 机器之心），开源 AI 模型再度成为行业焦点，中国 AI 开源竞争力获国际认可。',
         ],
         sources: [
-          { name: '小红书dots IMO满分', url: 'https://mp.weixin.qq.com/s/dots-imo' },
-          { name: '美团低空智能挑战赛', url: 'https://mp.weixin.qq.com/s/meituan-challenge' },
-          { name: '阿里2027校招官宣', url: 'https://mp.weixin.qq.com/s/ali-2027' },
-          { name: '腾讯具身智能开源', url: 'https://mp.weixin.qq.com/s/tencent-embodied' },
+          { name: '小红书dots IMO满分', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495735&idx=1&sn=ce165ca3d6ca96311f04d2a243439b66&scene=58&subscene=0' },
+          { name: '美团低空智能挑战赛', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651783046&idx=3&sn=585f79be999f3e04f23f3145732854c9&chksm=bc4fb830d14d6ff3f6e0c4df52e38c354e7816fe2bddd970602caa8222f753a9a0e4e89040ef#rd' },
+          { name: '阿里2027校招官宣', url: 'https://mp.weixin.qq.com/s?__biz=MzUzNDc1MDg1Ng==&mid=2247503230&idx=1&sn=1cac136de239adb08a735d3cec98b1f3&scene=58&subscene=0' },
+          { name: '腾讯具身智能基座模型（原文 7月18日）', url: 'https://mp.weixin.qq.com/s/ig-QFQ41WXD7UOnEQVfX_Q' },
         ],
       },
       '技术前沿': {
@@ -68,10 +68,10 @@ window.REPORT_DATA = {
           '阿里开源 skill-up：让 Agent Skill 可评测可回归（7.23），Agent 能力标准化评测工具。',
         ],
         sources: [
-          { name: '小红书BigMac开源', url: 'https://mp.weixin.qq.com/s/bigmac' },
-          { name: '小红书HELMSMAN', url: 'https://mp.weixin.qq.com/s/helmsman' },
-          { name: '腾讯WorkBuddy', url: 'https://mp.weixin.qq.com/s/workbuddy' },
-          { name: '阿里skill-up', url: 'https://mp.weixin.qq.com/s/skill-up' },
+          { name: '小红书BigMac开源', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495739&idx=1&sn=ba6e41fd6a02ce09e3426ca46a17e194&scene=58&subscene=0' },
+          { name: '小红书HELMSMAN', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495761&idx=1&sn=1b131752ba18b25cc0e30e7de9d2af9f&chksm=ce08044cb5a98f7f6f9dd70c1aa84f94e84e26def100539bd89e667464607d8ef15b9f37b502#rd' },
+          { name: '腾讯WorkBuddy', url: 'https://mp.weixin.qq.com/s/kYJ2kHrQrolmY8nDfN_Q3Q' },
+          { name: '阿里skill-up', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247510426&idx=1&sn=77717225ccb946c19752a93e9681d8d1&scene=58&subscene=0' },
         ],
       },
       '行业趋势': {
@@ -82,8 +82,8 @@ window.REPORT_DATA = {
           '开源生态竞争格局——小红书 BigMac+UltraEP，阿里 skill-up，开源成为 AI 公司技术影响力建设的核心战术。',
         ],
         sources: [
-          { name: '字节Seed STEM计划', url: 'https://mp.weixin.qq.com/s/seed-stem' },
-          { name: '阿里2027秋招', url: 'https://mp.weixin.qq.com/s/ali-autumn' },
+          { name: '字节Seed STEM计划', url: 'https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247494170&idx=1&sn=2123f89369ea40d9c6d8b3aeb8500fc2&scene=58&subscene=0' },
+          { name: '阿里2027秋招', url: 'https://mp.weixin.qq.com/s?__biz=MzUzNDc1MDg1Ng==&mid=2247503230&idx=1&sn=1cac136de239adb08a735d3cec98b1f3&scene=58&subscene=0' },
         ],
       },
       '对快手的启示': {
@@ -111,9 +111,9 @@ window.REPORT_DATA = {
             'Viking AI 搜索（7.21）：30 分钟搭建个人情报站，AI 搜索让前沿资讯实时推送，内部工具能力对外展示。',
           ],
           sources: [
-            { name: 'COVERT ECCV2026', url: 'https://mp.weixin.qq.com/s/covert' },
-            { name: '音视频Agent套件', url: 'https://mp.weixin.qq.com/s/av-agent' },
-            { name: 'Viking AI搜索', url: 'https://mp.weixin.qq.com/s/viking-search' },
+            { name: 'COVERT ECCV2026', url: 'https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521026&idx=1&sn=aa0d13c8287fcf8df9fadbd91dca07da&chksm=e8f4fe143d90a5c59365817170870728a980ae2b848bdc28af5dbdd88ba2887754267da8d34a#rd' },
+            { name: '音视频Agent套件', url: 'https://mp.weixin.qq.com/s/rljnVP8iy2GlEcT2JPlx6g' },
+            { name: 'Viking AI搜索', url: 'https://mp.weixin.qq.com/s/z0MRSpXzZZb8GLVCQzTjUA' },
           ],
         },
         '招聘动态': {
@@ -121,7 +121,7 @@ window.REPORT_DATA = {
             'Seed STEM 科学家计划正式启动（7.23）——面向数学/物理/CS 顶尖科研人才，以"科学家计划"命名强化学术吸引力，是字节在尖端科研人才争夺中的差异化布局。',
           ],
           sources: [
-            { name: 'Seed STEM科学家计划', url: 'https://mp.weixin.qq.com/s/seed-stem' },
+            { name: 'Seed STEM科学家计划', url: 'https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247494170&idx=1&sn=2123f89369ea40d9c6d8b3aeb8500fc2&scene=58&subscene=0' },
           ],
         },
         '对快手的启示': {
@@ -147,9 +147,9 @@ window.REPORT_DATA = {
             'Agent 开始"自我进化"（7.27）：会出题、会反思、自己长出新技能，Agent 自主进化能力前瞻探讨。',
           ],
           sources: [
-            { name: 'Vibe Coding到AI原生团队', url: 'https://mp.weixin.qq.com/s/vibe-coding' },
-            { name: 'WorkBuddy', url: 'https://mp.weixin.qq.com/s/workbuddy' },
-            { name: 'Agent自我进化', url: 'https://mp.weixin.qq.com/s/agent-evolve' },
+            { name: 'Vibe Coding到AI原生团队', url: 'https://mp.weixin.qq.com/s/DrIpzHm777Zd8klcyAICBA' },
+            { name: 'WorkBuddy', url: 'https://mp.weixin.qq.com/s/kYJ2kHrQrolmY8nDfN_Q3Q' },
+            { name: 'Agent自我进化', url: 'https://mp.weixin.qq.com/s/fsVJiorPBN4ylGjUYBcIPw' },
           ],
         },
         '对快手的启示': {
@@ -174,8 +174,8 @@ window.REPORT_DATA = {
             'NL2SQL 在超大规模数仓场景的架构突破（7.21）——自然语言驱动数据查询，超大规模生产环境工程实践。',
           ],
           sources: [
-            { name: '阿里skill-up开源', url: 'https://mp.weixin.qq.com/s/skill-up' },
-            { name: 'AI知识库建设实践', url: 'https://mp.weixin.qq.com/s/ai-kb' },
+            { name: '阿里skill-up开源', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247510426&idx=1&sn=77717225ccb946c19752a93e9681d8d1&scene=58&subscene=0' },
+            { name: 'AI知识库建设实践', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247510536&idx=1&sn=ac2faaa2e060546ce38e96c56d773aae&scene=58&subscene=0' },
           ],
         },
         '校招动态': {
@@ -184,8 +184,8 @@ window.REPORT_DATA = {
             '阿里星课题第二期（7.24 × 4篇）：基础模型/AI Infra/大模型应用/安全方向密集发布，以课题驱动校招内容传播。',
           ],
           sources: [
-            { name: '阿里2027届官宣', url: 'https://mp.weixin.qq.com/s/ali-2027-announce' },
-            { name: '阿里星课题第二期', url: 'https://mp.weixin.qq.com/s/alistar-2' },
+            { name: '阿里2027届官宣', url: 'https://mp.weixin.qq.com/s?__biz=MzUzNDc1MDg1Ng==&mid=2247503230&idx=1&sn=1cac136de239adb08a735d3cec98b1f3&scene=58&subscene=0' },
+            { name: '阿里星课题第二期', url: 'https://mp.weixin.qq.com/s?__biz=MzUzNDc1MDg1Ng==&mid=2247503358&idx=1&sn=d2c167162947ac330d670109e95996f2&scene=58&subscene=0' },
           ],
         },
         '对快手的启示': {
@@ -209,8 +209,8 @@ window.REPORT_DATA = {
             '下一代搜索智能体评测基准 LoHoSearch（7.23）：用知识图谱校准 AI 能力认知，为搜索 Agent 提供标准化评测基础。',
           ],
           sources: [
-            { name: 'MineExplorer', url: 'https://mp.weixin.qq.com/s/mine-explorer' },
-            { name: 'LoHoSearch', url: 'https://mp.weixin.qq.com/s/lohosearch' },
+            { name: 'MineExplorer', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651783046&idx=1&sn=a18ff849165bb78a263bdc32c4f55309&chksm=bccc976e23a9534a93defc0e4d9b49763288c4b4a15b186d8bdbad7b78f15a789d7dd9ad48e5#rd' },
+            { name: 'LoHoSearch', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651783046&idx=2&sn=847f703c3c0e53c6323fb4a06185b473&chksm=bce6cd19a22fa324b265ff1b8733d7381758f67c06b86e50520ffc9124e8b94cf95e87bb0a94#rd' },
           ],
         },
         '活动与招聘': {
@@ -219,8 +219,8 @@ window.REPORT_DATA = {
             'Keeta 巴西招聘（7.23）：美团国际化业务向外招聘，"一起做最懂用户的人"，全球化雇主形象建设。',
           ],
           sources: [
-            { name: '55万元具身智能挑战赛', url: 'https://mp.weixin.qq.com/s/meituan-challenge' },
-            { name: 'Keeta巴西招聘', url: 'https://mp.weixin.qq.com/s/keeta-brazil' },
+            { name: '55万元具身智能挑战赛', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651783046&idx=3&sn=585f79be999f3e04f23f3145732854c9&chksm=bc4fb830d14d6ff3f6e0c4df52e38c354e7816fe2bddd970602caa8222f753a9a0e4e89040ef#rd' },
+            { name: 'Keeta巴西招聘', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NzYyMzIwMg==&mid=2792300842&idx=1&sn=b5cc505c26bcce13028e2cb57735d12e&chksm=8443b3fac8cfb6f46ecbc9a313d75a198172f8250f419da009d3aa276e5788faaa6e5a9159c3#rd' },
           ],
         },
         '对快手的启示': {
@@ -246,9 +246,9 @@ window.REPORT_DATA = {
             'UniNote 多模态检索（7.24）：让内容表征与排序"合二为一"，端到端多模态搜索排序新范式。',
           ],
           sources: [
-            { name: 'dots IMO满分', url: 'https://mp.weixin.qq.com/s/dots-imo' },
-            { name: 'BigMac开源', url: 'https://mp.weixin.qq.com/s/bigmac' },
-            { name: 'HELMSMAN OSDI2026', url: 'https://mp.weixin.qq.com/s/helmsman' },
+            { name: 'dots IMO满分', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495735&idx=1&sn=ce165ca3d6ca96311f04d2a243439b66&scene=58&subscene=0' },
+            { name: 'BigMac开源', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495739&idx=1&sn=ba6e41fd6a02ce09e3426ca46a17e194&scene=58&subscene=0' },
+            { name: 'HELMSMAN OSDI2026', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495761&idx=1&sn=1b131752ba18b25cc0e30e7de9d2af9f&chksm=ce08044cb5a98f7f6f9dd70c1aa84f94e84e26def100539bd89e667464607d8ef15b9f37b502#rd' },
           ],
         },
         '文化品牌': {
@@ -257,8 +257,8 @@ window.REPORT_DATA = {
             '世界杯幕后纪实《"不可能"的 40 天》（7.21）——世界杯期间产品幕后故事，用真实案例建立"快速响应+创造力"团队形象。',
           ],
           sources: [
-            { name: '小红书13周年大片', url: 'https://mp.weixin.qq.com/s/xhs-birthday' },
-            { name: '世界杯幕后40天', url: 'https://mp.weixin.qq.com/s/xhs-worldcup' },
+            { name: '小红书13周年大片', url: 'https://mp.weixin.qq.com/s?__biz=MzkzNTY3MTE2Mw==&mid=2247487403&idx=1&sn=083fab0786e7adc8460f5d0e8c0503dd&chksm=c3c17b7ae90000149480c73775307dd9f4b3a4d4155ba6a47f56f8ec21596b20c5ed0e163e4f#rd' },
+            { name: '世界杯幕后40天', url: 'https://mp.weixin.qq.com/s?__biz=MzkzNTY3MTE2Mw==&mid=2247487390&idx=1&sn=7d836c26b2ff9c73c61a7cfd893fa617&chksm=c3e6195852f1e09e933566be16adee3394ef39aab54566fb19ffe1c30fcb94e3439d00a5b965#rd' },
           ],
         },
         '对快手的启示': {

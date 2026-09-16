@@ -9,35 +9,35 @@ window.REPORT_DATA = {
       rank: '01',
       title: '腾讯 AI 代码生成率 94%：一个 Skill 跑通需求开发全流程',
       summary: '腾讯技术工程发文，通过一套 AI Skill 实现从需求到上线的全流程自动化，代码生成率达 94%，Harness Engineering 方法论首次规模化落地，引发行业热议。',
-      url: 'https://mp.weixin.qq.com/s/tencent-ai-coding-94',
+      url: 'https://mp.weixin.qq.com/s/mGGIbFyF4U1PrBJVdfgcvg',
       tag: '技术',
     },
     {
       rank: '02',
       title: '字节 Storage Agent Family：重构云存储的"人机交互"',
       summary: '字节跳动技术团队连发两篇，提出 Storage Agent Family 和 State Lake 概念，将 Agent 时代的存储基础设施从 Data Lake 升维到 State Lake，为 Agent 提供有状态存储支撑。',
-      url: 'https://mp.weixin.qq.com/s/storage-agent-family',
+      url: 'https://mp.weixin.qq.com/s/tEDiv1KjsQvKO4Ffm41aOg',
       tag: '技术',
     },
     {
       rank: '03',
       title: '字节 Seed Audio 1.0 发布：从"会说"走向"会创作"',
       summary: '字节跳动 Seed 团队发布 Audio 1.0 音频创作模型，能力从语音合成升级为音乐/音效创作，覆盖内容生产全链路，直接对标音频 AIGC 赛道。',
-      url: 'https://mp.weixin.qq.com/s/seed-audio-1-0',
+      url: 'https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247494117&idx=1&sn=479ffb4e9fc90fa66d5bf531a84376a7&scene=58&subscene=0',
       tag: '热点',
     },
     {
       rank: '04',
       title: '小红书开源 UltraEP + HYPIC：MoE 训推负载均衡与推理提速',
       summary: '小红书联合北大发布两项开源成果：UltraEP 解决大规模 MoE 训推负载均衡，HYPIC 让混合注意力大模型首 token 延迟降低 3.25 倍，学术输出持续刷新存在感。',
-      url: 'https://mp.weixin.qq.com/s/redbook-ultraep',
+      url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495684&idx=1&sn=deb67718827fbed405fd2dd6978aef7b&scene=58&subscene=0',
       tag: '技术',
     },
     {
       rank: '05',
       title: '腾讯发布多款具身智能基座模型，钛螺丝平台全面升级',
       summary: '腾讯技术工程披露具身智能基座模型及钛螺丝平台，首席科学家张正友主导"三层脑"架构，腾讯在具身智能方向正式进入公开竞争态势。',
-      url: 'https://mp.weixin.qq.com/s/tencent-embodied-ai',
+      url: 'https://mp.weixin.qq.com/s/ig-QFQ41WXD7UOnEQVfX_Q',
       tag: '技术',
     },
   ],
@@ -53,9 +53,9 @@ window.REPORT_DATA = {
           '字节跳动招聘发文"27 条 leader 特质"，以内容营销手法强化雇主品牌叙事，技术 leader 招聘与文化传播合二为一。',
         ],
         sources: [
-          { name: '腾讯AI代码生成94%', url: 'https://mp.weixin.qq.com/s/tencent-ai-94' },
-          { name: '字节Storage Agent Family', url: 'https://mp.weixin.qq.com/s/storage-agent' },
-          { name: 'Seed Audio 1.0', url: 'https://mp.weixin.qq.com/s/seed-audio' },
+          { name: '腾讯AI代码生成94%', url: 'https://mp.weixin.qq.com/s/mGGIbFyF4U1PrBJVdfgcvg' },
+          { name: '字节Storage Agent Family', url: 'https://mp.weixin.qq.com/s/tEDiv1KjsQvKO4Ffm41aOg' },
+          { name: 'Seed Audio 1.0', url: 'https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247494117&idx=1&sn=479ffb4e9fc90fa66d5bf531a84376a7&scene=58&subscene=0' },
         ],
       },
       '技术前沿': {
@@ -67,9 +67,9 @@ window.REPORT_DATA = {
           '字节 AgentPlan + OpenViking：9.9 元/月给销售团队配 AI 助手，Agent 能力平民化。',
         ],
         sources: [
-          { name: '腾讯Agent Hook治理', url: 'https://mp.weixin.qq.com/s/agent-hook' },
-          { name: '阿里T-Head SAIL开源', url: 'https://mp.weixin.qq.com/s/thead-sail' },
-          { name: '小红书HYPIC', url: 'https://mp.weixin.qq.com/s/hypic' },
+          { name: '腾讯Agent Hook治理', url: 'https://mp.weixin.qq.com/s/ISwjIw5lj7JlcQJV7BOx5g' },
+          { name: '阿里T-Head SAIL开源', url: 'https://mp.weixin.qq.com/s/7xU5W5ExxT0go5CvAgkPfw' },
+          { name: '小红书HYPIC', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495626&idx=1&sn=1716d6b911780449e17662c4b1dad973&scene=58&subscene=0' },
         ],
       },
       '行业趋势': {
@@ -80,8 +80,8 @@ window.REPORT_DATA = {
           '腾讯 2027 届青云计划校招启动，AI 算法方向重点布局，秋招战提前打响。',
         ],
         sources: [
-          { name: '腾讯Harness Engineering', url: 'https://mp.weixin.qq.com/s/harness-eng' },
-          { name: '腾讯2027青云计划', url: 'https://mp.weixin.qq.com/s/tencent-2027' },
+          { name: '腾讯Harness Engineering', url: 'https://mp.weixin.qq.com/s/OeUSEpNyeW9W2Ln9DDPrVw' },
+          { name: '腾讯2027青云计划', url: 'https://mp.weixin.qq.com/s?__biz=MTkyNTM0MzA4MQ==&mid=2650970096&idx=1&sn=3bfc4a04e58b0d3da7f270e218cac56f&scene=58&subscene=0' },
         ],
       },
       '对快手的启示': {
@@ -111,9 +111,9 @@ window.REPORT_DATA = {
             '火山 PostgreSQL 助力飞书妙搭 AI 效率革新（7.14）：即建即用的数据库服务，降低 AI 应用开发门槛。',
           ],
           sources: [
-            { name: 'Storage Agent Family', url: 'https://mp.weixin.qq.com/s/storage-agent' },
-            { name: 'State Lake', url: 'https://mp.weixin.qq.com/s/state-lake' },
-            { name: 'Seed Audio 1.0', url: 'https://mp.weixin.qq.com/s/seed-audio' },
+            { name: 'Storage Agent Family', url: 'https://mp.weixin.qq.com/s/tEDiv1KjsQvKO4Ffm41aOg' },
+            { name: 'State Lake', url: 'https://mp.weixin.qq.com/s/qakhw_mXrCO7Fcb3tikv4A' },
+            { name: 'Seed Audio 1.0', url: 'https://mp.weixin.qq.com/s?__biz=MzkzMDY5MzYxNg==&mid=2247494117&idx=1&sn=479ffb4e9fc90fa66d5bf531a84376a7&scene=58&subscene=0' },
           ],
         },
         '雇主品牌': {
@@ -121,7 +121,7 @@ window.REPORT_DATA = {
             '招聘号发文"想加入字节跳动做 leader？建议你先看看这 27 句话"（7.16）——内容营销式招聘，以 leader 特质清单替代 JD，传播力强、候选人自筛效果好。',
           ],
           sources: [
-            { name: '字节27条leader特质', url: 'https://mp.weixin.qq.com/s/bytedance-leader' },
+            { name: '字节27条leader特质', url: 'https://mp.weixin.qq.com/s?__biz=MzIzMTIzMTUwOQ==&mid=2650110627&idx=1&sn=73ce0aeae330712b07066608263be75b&chksm=f0a683d9c7d10acf637992adde4c81eb53c0c1e2fdd40cac398cac85e764afe61da125bb4260#rd' },
           ],
         },
         '对快手的启示': {
@@ -148,10 +148,10 @@ window.REPORT_DATA = {
             '腾讯具身智能基座模型 + 钛螺丝平台升级（7.18）——张正友主导"三层脑"架构，具身智能全栈能力公开亮相。',
           ],
           sources: [
-            { name: '腾讯AI代码生成率94%', url: 'https://mp.weixin.qq.com/s/ai-94' },
-            { name: 'Harness Engineering规范', url: 'https://mp.weixin.qq.com/s/harness' },
-            { name: 'Agent Hook治理', url: 'https://mp.weixin.qq.com/s/agent-hook' },
-            { name: 'ACL2026杰出论文', url: 'https://mp.weixin.qq.com/s/acl-2026' },
+            { name: '腾讯AI代码生成率94%', url: 'https://mp.weixin.qq.com/s/mGGIbFyF4U1PrBJVdfgcvg' },
+            { name: 'Harness Engineering规范', url: 'https://mp.weixin.qq.com/s/g4nTfxm7ebzRwkAVIGdIbg' },
+            { name: 'Agent Hook治理', url: 'https://mp.weixin.qq.com/s/ISwjIw5lj7JlcQJV7BOx5g' },
+            { name: 'ACL2026杰出论文', url: 'https://mp.weixin.qq.com/s/d7TgHluCVmGM90Rjjny0Mw' },
           ],
         },
         '校招动向': {
@@ -160,7 +160,7 @@ window.REPORT_DATA = {
             'Marvis"追马上班"产品故事（7.15）——通过用户案例讲产品，雇主品牌与产品品牌协同传播。',
           ],
           sources: [
-            { name: '2027青云计划', url: 'https://mp.weixin.qq.com/s/qingyun-2027' },
+            { name: '2027青云计划', url: 'https://mp.weixin.qq.com/s?__biz=MTkyNTM0MzA4MQ==&mid=2650970096&idx=1&sn=3bfc4a04e58b0d3da7f270e218cac56f&scene=58&subscene=0' },
           ],
         },
         '对快手的启示': {
@@ -186,9 +186,9 @@ window.REPORT_DATA = {
             '电商团队数据研发的 Harness Engineering 实践（7.14）——从 Coder 到 Designer 的角色升级，AI 工具驱动研发范式转变。',
           ],
           sources: [
-            { name: 'T-Head SAIL开源', url: 'https://mp.weixin.qq.com/s/thead-sail' },
-            { name: 'ACL最佳资源论文', url: 'https://mp.weixin.qq.com/s/acl-resource' },
-            { name: '智能分析Skills架构', url: 'https://mp.weixin.qq.com/s/skills-arch' },
+            { name: 'T-Head SAIL开源', url: 'https://mp.weixin.qq.com/s/7xU5W5ExxT0go5CvAgkPfw' },
+            { name: 'ACL最佳资源论文', url: 'https://mp.weixin.qq.com/s/7avPfYJHEQiKFLc6TmoJsA' },
+            { name: '智能分析Skills架构', url: 'https://mp.weixin.qq.com/s/mF3TyV_GzkBdoyYfK14fWQ' },
           ],
         },
         '招聘动态': {
@@ -197,8 +197,8 @@ window.REPORT_DATA = {
             '淘天、阿里国际、平头哥三大 BU 同步启动 2027 校园大使招募——跨 BU 联合造势，提升阿里校招整体声量。',
           ],
           sources: [
-            { name: '阿里星课题解读系列', url: 'https://mp.weixin.qq.com/s/alistar' },
-            { name: '平头哥校园大使', url: 'https://mp.weixin.qq.com/s/thead-campus' },
+            { name: '阿里星课题解读系列', url: 'https://mp.weixin.qq.com/s?__biz=MzUzNDc1MDg1Ng==&mid=2247503124&idx=1&sn=aac1f666e05d58a1d39317e33959f389&chksm=fb89e4c72dc8b0207dd63152f8bf7e219ab4570a8234f926cb746fb2a8808494b76297051e20#rd' },
+            { name: '平头哥校园大使', url: 'https://mp.weixin.qq.com/s?__biz=MzUzNDc1MDg1Ng==&mid=2247503124&idx=4&sn=ff1447259341adbb73e10d96c76c2ad8&scene=58&subscene=0' },
           ],
         },
         '对快手的启示': {
@@ -221,7 +221,7 @@ window.REPORT_DATA = {
             '"听说美团人上班都喜欢翻袋鼠的口袋"（7.16）——以轻松趣味的内容形式传递公司文化，招聘帖风格化、差异化，降低候选人与品牌的距离感。',
           ],
           sources: [
-            { name: '美团招聘创意内容', url: 'https://mp.weixin.qq.com/s/meituan-bag' },
+            { name: '美团招聘创意内容', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NzYyMzIwMg==&mid=2792300720&idx=1&sn=62476a1e93acdd03e191dc271185f0bd&chksm=84aa7610a5599ea229c2382ad9ac48e927fc011fde915934ce72a17d6102dada7a918fd5b216#rd' },
           ],
         },
         '对快手的启示': {
@@ -245,9 +245,9 @@ window.REPORT_DATA = {
             '企业级 AI 个人助理——从 0 到全员覆盖（7.14）：披露内部 AI 助手全员普及落地路径，员工 AI 提效真实案例。',
           ],
           sources: [
-            { name: '小红书UltraEP开源', url: 'https://mp.weixin.qq.com/s/ultraep' },
-            { name: 'HYPIC推理加速', url: 'https://mp.weixin.qq.com/s/hypic' },
-            { name: '企业级AI助理', url: 'https://mp.weixin.qq.com/s/xhs-ai-assistant' },
+            { name: '小红书UltraEP开源', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495684&idx=1&sn=deb67718827fbed405fd2dd6978aef7b&scene=58&subscene=0' },
+            { name: 'HYPIC推理加速', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495626&idx=1&sn=1716d6b911780449e17662c4b1dad973&scene=58&subscene=0' },
+            { name: '企业级AI助理', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247495589&idx=1&sn=1fcaaea018e3e0883982dd4b98767656&scene=58&subscene=0' },
           ],
         },
         '招聘动向': {

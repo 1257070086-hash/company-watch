@@ -9,35 +9,35 @@ window.REPORT_DATA = {
       rank: '01',
       title: '腾讯 2027 校招全球启动，多 BU 联动：AI 产品经理培训生专项开放',
       summary: '8月11日腾讯发布"有鹅选鹅"全球校招公告，随后混元LLM、游戏美术、投资、AI产品经理培训生等多BU专项相继跟进，形成本周校招声量最大的单一事件，腾讯青云计划朋友局同步启动线下交流。',
-      url: 'https://mp.weixin.qq.com/s/tencent-2027',
+      url: 'https://mp.weixin.qq.com/s?__biz=MTkyNTM0MzA4MQ==&mid=2650970273&idx=1&sn=6a9b70251f2050cec7dbb1e99cb7b696&scene=58&subscene=0',
       tag: '招聘',
     },
     {
       rank: '02',
       title: '字节跳动 2027 多产品线同日宣战：抖音AI产品、中国广告、番茄小说同步开抢',
       summary: '8月12日字节招聘号密集发声，抖音AI产品人才、中国交易与广告（200+Offer）、中国广告产品（AI产品/运营/设计）、番茄团队四条线同日宣传，形成字节2027届第二波校招高峰，巩固本周AI人才声量。',
-      url: 'https://mp.weixin.qq.com/s/bytedance-2027-wave2',
+      url: 'https://mp.weixin.qq.com/s?__biz=MzIzMTIzMTUwOQ==&mid=2650111854&idx=3&sn=d9e0cc35c780edcbd202b1465d71aa9f&chksm=f18be71f216f4b77d5807ca7e29fd2daf4cf5bae93b08725b8c5515fbe5c303bb596cfc326c6#rd',
       tag: '招聘',
     },
     {
       rank: '03',
       title: '小红书开源 dots.tts + dots3-note Preview：向"服务真实生活"的长程 Agent 迈出第一步',
       summary: '小红书REDtech本周双发：一是开源连续自回归语音合成模型dots.tts，打造可持续扩展TTS基座；二是发布dots3-note Preview——面向真实生活长程智能体的第一步，在行业内率先将Agent锚定于"真实生活"而非泛化能力。',
-      url: 'https://mp.weixin.qq.com/s/dots-tts-note',
+      url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247496140&idx=1&sn=5239a5fbb115c58d2ae0056bb32789ff&chksm=ced1210e21467ced875ae7c629fe47521b5f3063278c2b0b26ad41bc91e29630fff0cd1b3da6#rd',
       tag: '技术',
     },
     {
       rank: '04',
       title: '腾讯 DeepSeek Harness 深度拆解：可组装的 Agent 架构，成本可控的落地路径',
       summary: '腾讯技术工程连发两篇深度文章——《DeepSeek Harness拆解：一套能拼装的Agent架构》+《DeepSeek Harness实测：模型之外的那一半》，是本周AI工程化内容中系统性最强的系列，引发行业热议，对智能体架构标准化有引领意义。',
-      url: 'https://mp.weixin.qq.com/s/harness-deep',
+      url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803587&idx=1&sn=a5ac30af9c015db111b60f947eb4e240&scene=58&subscene=0',
       tag: '技术',
     },
     {
       rank: '05',
       title: '阿里 Qwen3.8 正式开源 + GitHub Trending 5 天首位：大模型开源生态竞争升级',
       summary: '阿里技术号披露Qwen3.8周到GitHub Trending首页连续5天的幕后复盘，8月14日Qwen3.8正式宣布开源；同期Qoder CLI实测发布，阿里以开源+工具链+社区热度三联动，在本周大模型开源竞争中占据强势位置。',
-      url: 'https://mp.weixin.qq.com/s/qwen38-open',
+      url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247511110&idx=1&sn=6c53830215ef70752c8abdb8982b297d&scene=58&subscene=0',
       tag: '技术',
     },
   ],
@@ -54,10 +54,10 @@ window.REPORT_DATA = {
           '快手用户增长负责人换帅（大厂日爆8.10）——内部人事动向被外部媒体率先披露，对快手雇主品牌存在一定舆论影响，需关注。',
         ],
         sources: [
-          { name: '腾讯2027全球启动', url: 'https://mp.weixin.qq.com/s/tencent-2027-global' },
-          { name: '小红书dots3-note', url: 'https://mp.weixin.qq.com/s/dots3-note' },
-          { name: 'Qwen3.8开源', url: 'https://mp.weixin.qq.com/s/qwen38-os' },
-          { name: '字节12个故事', url: 'https://mp.weixin.qq.com/s/bytedance-12stories' },
+          { name: '腾讯2027全球启动', url: 'https://mp.weixin.qq.com/s?__biz=MTkyNTM0MzA4MQ==&mid=2650970273&idx=1&sn=6a9b70251f2050cec7dbb1e99cb7b696&scene=58&subscene=0' },
+          { name: '小红书dots3-note', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247496140&idx=1&sn=5239a5fbb115c58d2ae0056bb32789ff&chksm=ced1210e21467ced875ae7c629fe47521b5f3063278c2b0b26ad41bc91e29630fff0cd1b3da6#rd' },
+          { name: 'Qwen3.8开源', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247511110&idx=1&sn=6c53830215ef70752c8abdb8982b297d&scene=58&subscene=0' },
+          { name: '字节12个故事', url: 'https://mp.weixin.qq.com/s?__biz=MzI5MzI4MzM1OQ==&mid=2247532536&idx=1&sn=92b6cd2a9a491a0103071e8d831e25c9&scene=58&subscene=0' },
         ],
       },
       '技术前沿': {
@@ -69,10 +69,10 @@ window.REPORT_DATA = {
           '小红书开源dots.tts语音合成模型（8.13）——继视觉/多模态后，小红书将开源范围延伸至语音领域，开源生态布局全面提速。',
         ],
         sources: [
-          { name: '腾讯WorkBuddy指南', url: 'https://mp.weixin.qq.com/s/workbuddy' },
-          { name: '阿里Agent可控性实践', url: 'https://mp.weixin.qq.com/s/agent-control' },
-          { name: '美团KDD26', url: 'https://mp.weixin.qq.com/s/meituan-kdd26' },
-          { name: '小红书dots.tts', url: 'https://mp.weixin.qq.com/s/dots-tts' },
+          { name: '腾讯WorkBuddy指南', url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803569&idx=1&sn=325170a0e2bd7117d51dfabbbd79539b&scene=58&subscene=0' },
+          { name: '阿里Agent可控性实践', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247511106&idx=1&sn=e3e481953f140ab1a9afb73f7c40221f&scene=58&subscene=0' },
+          { name: '美团KDD26', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651783138&idx=1&sn=31ddcb07ef2bf6c73c2415934ab288dc&chksm=bcf1fc7397ee713a7f725c3bc754d6549c8a2c7efda88cbe707b251772e768399e6f06ac4ab7#rd' },
+          { name: '小红书dots.tts', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247496062&idx=1&sn=d4c48926c5d7607f129dfea03699a6c0&scene=58&subscene=0' },
         ],
       },
       '行业趋势': {
@@ -83,8 +83,8 @@ window.REPORT_DATA = {
           '字节"12个故事"=雇主品牌范本——真实员工+叙事化内容+双渠道联动，本周传播效率最高的非技术类雇主品牌内容，值得快手直接对标参考。',
         ],
         sources: [
-          { name: '字节12个故事', url: 'https://mp.weixin.qq.com/s/12stories' },
-          { name: '腾讯AI产品培训生招聘', url: 'https://mp.weixin.qq.com/s/tencent-aipm' },
+          { name: '字节12个故事', url: 'https://mp.weixin.qq.com/s?__biz=MzI5MzI4MzM1OQ==&mid=2247532536&idx=1&sn=92b6cd2a9a491a0103071e8d831e25c9&scene=58&subscene=0' },
+          { name: '腾讯AI产品培训生招聘', url: 'https://mp.weixin.qq.com/s?__biz=MTkyNTM0MzA4MQ==&mid=2650970393&idx=1&sn=c3709f634455bf2b009927b58379f126&scene=58&subscene=0' },
         ],
       },
       '对快手的启示': {
@@ -113,9 +113,9 @@ window.REPORT_DATA = {
             '"地球Online · 字节服" 员工文化内容（8.10）——以游戏化视角表达快节奏工作文化，强化字节"有意思、有挑战"的雇主人设，受众精准（游戏圈AI圈交集）。',
           ],
           sources: [
-            { name: '字节12个故事', url: 'https://mp.weixin.qq.com/s/bytedance-stories' },
-            { name: '抖音AI产品人才校招', url: 'https://mp.weixin.qq.com/s/douyin-ai-campus' },
-            { name: '中国广告产品2027', url: 'https://mp.weixin.qq.com/s/ads-2027' },
+            { name: '字节12个故事', url: 'https://mp.weixin.qq.com/s?__biz=MzI5MzI4MzM1OQ==&mid=2247532536&idx=1&sn=92b6cd2a9a491a0103071e8d831e25c9&scene=58&subscene=0' },
+            { name: '抖音AI产品人才校招', url: 'https://mp.weixin.qq.com/s?__biz=MzIzMTIzMTUwOQ==&mid=2650111854&idx=3&sn=d9e0cc35c780edcbd202b1465d71aa9f&chksm=f18be71f216f4b77d5807ca7e29fd2daf4cf5bae93b08725b8c5515fbe5c303bb596cfc326c6#rd' },
+            { name: '中国广告产品2027', url: 'https://mp.weixin.qq.com/s?__biz=MzIzMTIzMTUwOQ==&mid=2650111854&idx=4&sn=11c24e9292d1796e0fdc05410a03566b&chksm=f1c80ab9d368874ce9797e1439a2506e3e0299618c81a5ad683f3e900f3b9cbb577720ab5839#rd' },
           ],
         },
         '技术内容': {
@@ -124,8 +124,8 @@ window.REPORT_DATA = {
             '《把AI视频的钱花在刀刃上，不是每一刀上》（8.12）——与前篇形成系列，从"哪些钱不能省"的角度强化字节在AI视频工程化上的深度积累与技术自信。',
           ],
           sources: [
-            { name: 'AI视频降本分析', url: 'https://mp.weixin.qq.com/s/ai-video-cost' },
-            { name: 'AI视频刀刃投入', url: 'https://mp.weixin.qq.com/s/ai-video-roi' },
+            { name: 'AI视频降本分析', url: 'https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521222&idx=1&sn=27759804c7e3d4d635d31ee9f1f70232&scene=58&subscene=0' },
+            { name: 'AI视频刀刃投入', url: 'https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247521239&idx=1&sn=3d1c9e6773e98f7468cf08edd574c940&scene=58&subscene=0' },
           ],
         },
         '对快手的启示': {
@@ -151,10 +151,10 @@ window.REPORT_DATA = {
             '腾讯青云计划朋友局开启报名（8.14）——以线下聚会形式圈定高潜顶尖学术人才，社交化招聘策略精准高效。',
           ],
           sources: [
-            { name: '有鹅选鹅全球启动', url: 'https://mp.weixin.qq.com/s/tencent-global-2027' },
-            { name: '混元LLM热招', url: 'https://mp.weixin.qq.com/s/hunyuan-recruit' },
-            { name: 'AI产品经理培训生', url: 'https://mp.weixin.qq.com/s/tencent-aipm-trainee' },
-            { name: '青云计划朋友局', url: 'https://mp.weixin.qq.com/s/tsingcloud-party' },
+            { name: '有鹅选鹅全球启动', url: 'https://mp.weixin.qq.com/s?__biz=MTkyNTM0MzA4MQ==&mid=2650970273&idx=1&sn=6a9b70251f2050cec7dbb1e99cb7b696&scene=58&subscene=0' },
+            { name: '混元LLM热招', url: 'https://mp.weixin.qq.com/s?__biz=MTkyNTM0MzA4MQ==&mid=2650970339&idx=1&sn=f399b67531afd0a88cf7a852aef74b05&scene=58&subscene=0' },
+            { name: 'AI产品经理培训生', url: 'https://mp.weixin.qq.com/s?__biz=MTkyNTM0MzA4MQ==&mid=2650970393&idx=1&sn=c3709f634455bf2b009927b58379f126&scene=58&subscene=0' },
+            { name: '青云计划朋友局', url: 'https://mp.weixin.qq.com/s?__biz=MTkyNTM0MzA4MQ==&mid=2650970440&idx=1&sn=bae92a3c85511aafc9b1c137ef3916ad&scene=58&subscene=0' },
           ],
         },
         '技术深度': {
@@ -164,9 +164,9 @@ window.REPORT_DATA = {
             '《DeepSeek Harness实测：模型之外的那一半》（8.15）——验证Harness工程价值，提供实测数据，完成"拆解→验证"双篇闭环，腾讯Agent内容系列化运营能力出色。',
           ],
           sources: [
-            { name: '腾讯WorkBuddy指南', url: 'https://mp.weixin.qq.com/s/workbuddy-guide' },
-            { name: 'Harness架构拆解', url: 'https://mp.weixin.qq.com/s/harness-arch' },
-            { name: 'Harness实测', url: 'https://mp.weixin.qq.com/s/harness-test' },
+            { name: '腾讯WorkBuddy指南', url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803569&idx=1&sn=325170a0e2bd7117d51dfabbbd79539b&scene=58&subscene=0' },
+            { name: 'Harness架构拆解', url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803587&idx=1&sn=a5ac30af9c015db111b60f947eb4e240&scene=58&subscene=0' },
+            { name: 'Harness实测', url: 'https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649803588&idx=1&sn=36499841c1cc38ba9ccae6380a90aec9&scene=58&subscene=0' },
           ],
         },
         '对快手的启示': {
@@ -191,9 +191,9 @@ window.REPORT_DATA = {
             'Qwen3.8正式开源（8.14）——配合前两篇社区热度铺垫后正式宣布开源，节奏感强，整个周期构成"预热→社区→开源"三步曲。',
           ],
           sources: [
-            { name: 'GitHub Trending 5天复盘', url: 'https://mp.weixin.qq.com/s/qwen-trending' },
-            { name: 'Qoder CLI实测', url: 'https://mp.weixin.qq.com/s/qoder-test' },
-            { name: 'Qwen3.8开源', url: 'https://mp.weixin.qq.com/s/qwen38-open' },
+            { name: 'GitHub Trending 5天复盘', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247511052&idx=1&sn=ec738e92d8018fb50fac9fa16e9d54fc&scene=58&subscene=0' },
+            { name: 'Qoder CLI实测', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247511066&idx=1&sn=2abf64c9e90df880bdf02446965b4a5e&scene=58&subscene=0' },
+            { name: 'Qwen3.8开源', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247511110&idx=1&sn=6c53830215ef70752c8abdb8982b297d&scene=58&subscene=0' },
           ],
         },
         'Agent工程化': {
@@ -201,7 +201,7 @@ window.REPORT_DATA = {
             '《Agent越改越乱之后，我用评测和轨迹把它拉回来了》（8.13）——直面Agent开发中最普遍的"越改越差"困境，以"评测驱动"为解法，极高的工程师共鸣度，是本周阿里技术内容中讨论度最高的一篇。',
           ],
           sources: [
-            { name: 'Agent可控性实践', url: 'https://mp.weixin.qq.com/s/agent-recover' },
+            { name: 'Agent可控性实践', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247511106&idx=1&sn=e3e481953f140ab1a9afb73f7c40221f&scene=58&subscene=0' },
           ],
         },
         '对快手的启示': {
@@ -225,8 +225,8 @@ window.REPORT_DATA = {
             'KDD\'26学术论文精选+KDD Cup\'26 DataAgents赛道冠军思路（8.13）——将会议论文与大赛冠军捆绑输出，学术品牌与赛事品牌双向强化，是美团学术内容的标准操作。',
           ],
           sources: [
-            { name: '具身智能挑战赛55万', url: 'https://mp.weixin.qq.com/s/meituan-embodied' },
-            { name: 'KDD26美团成果', url: 'https://mp.weixin.qq.com/s/kdd26-meituan' },
+            { name: '具身智能挑战赛55万', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NzYyMzIwMg==&mid=2792301268&idx=3&sn=8a15d79b847219240c30c68b400a5acb&scene=58&subscene=0' },
+            { name: 'KDD26美团成果', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651783138&idx=1&sn=31ddcb07ef2bf6c73c2415934ab288dc&chksm=bcf1fc7397ee713a7f725c3bc754d6549c8a2c7efda88cbe707b251772e768399e6f06ac4ab7#rd' },
           ],
         },
         '招聘布局': {
@@ -235,8 +235,8 @@ window.REPORT_DATA = {
             '美团无人机2027届北斗计划热招（8.12）——无人机业务单独招聘，是美团硬科技方向的雇主品牌差异化标签，吸引机器人/无人机方向顶尖人才。',
           ],
           sources: [
-            { name: 'Keeta出海招聘', url: 'https://mp.weixin.qq.com/s/keeta-global' },
-            { name: '无人机北斗计划', url: 'https://mp.weixin.qq.com/s/drone-campus' },
+            { name: 'Keeta出海招聘', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NzYyMzIwMg==&mid=2792301268&idx=2&sn=e257a3555dddd36a2775bb5e4db0a7a4&scene=58&subscene=0' },
+            { name: '无人机北斗计划', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NzYyMzIwMg==&mid=2792301268&idx=4&sn=9c13c2acda3d1ea198aae83266fd7edc&chksm=84a39992d4260953fd529ea2fc93ae706428fa6f08bf29308fee33ffbcba9d8df8e873fbf2eb#rd' },
           ],
         },
         '对快手的启示': {
@@ -259,8 +259,8 @@ window.REPORT_DATA = {
             'dots3-note Preview：迈向服务真实生活的长程智能体（8.14）——将Agent的核心价值主张定位为"服务真实生活"，而非技术指标竞赛，是行业中最清晰的"AI for Real Life"产品叙事，与小红书平台属性高度契合。',
           ],
           sources: [
-            { name: '小红书dots.tts开源', url: 'https://mp.weixin.qq.com/s/dots-tts-open' },
-            { name: 'dots3-note Preview', url: 'https://mp.weixin.qq.com/s/dots3-note-preview' },
+            { name: '小红书dots.tts开源', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247496062&idx=1&sn=d4c48926c5d7607f129dfea03699a6c0&scene=58&subscene=0' },
+            { name: 'dots3-note Preview', url: 'https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247496140&idx=1&sn=5239a5fbb115c58d2ae0056bb32789ff&chksm=ced1210e21467ced875ae7c629fe47521b5f3063278c2b0b26ad41bc91e29630fff0cd1b3da6#rd' },
           ],
         },
         '雇主品牌': {
@@ -269,8 +269,8 @@ window.REPORT_DATA = {
             '戴锦华独家分享+杜素娟×小鹿（8.11/8.14）——REDacademy系列持续输出人文/文化内容，强化小红书"有深度、有温度"的雇主人设，与竞对的纯技术/纯商业叙事形成差异化。',
           ],
           sources: [
-            { name: '小红书全球校园大使', url: 'https://mp.weixin.qq.com/s/xhs-ambassador' },
-            { name: 'REDacademy戴锦华', url: 'https://mp.weixin.qq.com/s/red-academy' },
+            { name: '小红书全球校园大使', url: 'https://mp.weixin.qq.com/s?__biz=MzIxMjEyNDA2NA==&mid=2648474801&idx=1&sn=2e3c3efab3d0ef64ae245f86352b7273&scene=58&subscene=0' },
+            { name: 'REDacademy戴锦华', url: 'https://mp.weixin.qq.com/s?__biz=MzkzNTY3MTE2Mw==&mid=2247487456&idx=1&sn=f0d356edec48ff7e3398a97628e5273c&chksm=c3784c291eb138039d33378fdb345a66469e64f597aa9fe97013e263241d301d975871466667#rd' },
           ],
         },
         '对快手的启示': {

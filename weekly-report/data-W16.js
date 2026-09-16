@@ -10,31 +10,31 @@ window.REPORT_DATA = {
       rank: 1, tag: '产品',
       title: 'Anthropic 深夜发布 Claude Design，Figma/Adobe 股价重挫',
       summary: '一句话生成 UI，AI 从辅助工具变为核心生产引擎，直接冲击设计软件市场，行业形态面临颠覆。',
-      url: 'https://mp.weixin.qq.com/s?src=claude-design-figma',
+      url: 'https://mp.weixin.qq.com/s/97ZDTIDZ4Qw0Xn8n-8bafQ',
     },
     {
       rank: 2, tag: '技术',
       title: '高德发布全自主具身机器人"导盲犬"，亦庄马拉松完成实地演示',
       summary: '具身智能从实验室走向特定公共服务场景，高德将"机器导盲"作为通往 AGI 的关键技术验证场。',
-      url: 'https://mp.weixin.qq.com/s?src=gaode-robot',
+      url: 'https://mp.weixin.qq.com/s/lfjpZ7KDzNS41WCiCJjMUg',
     },
     {
       rank: 3, tag: '人才',
       title: '字节跳动启动新一轮期权回购（229.5美元/股），辟谣天价年薪',
       summary: '用财务手段稳定核心人才，同步辟谣"近亿元年薪"传闻，侧面反映 AI 顶尖人才争夺持续白热化。',
-      url: 'https://mp.weixin.qq.com/s?src=bytedance-option',
+      url: 'https://mp.weixin.qq.com/s/p8Y_fsCl0X_Enra4Dz9Asw',
     },
     {
       rank: 4, tag: '监管',
       title: '外卖行业遭反垄断重罚，七巨头合计罚没36亿元',
       summary: '反垄断监管出手重拳，相关高管被追责，外卖平台竞争秩序面临重塑，行业格局将发生变化。',
-      url: 'https://mp.weixin.qq.com/s?src=delivery-antitrust',
+      url: 'https://mp.weixin.qq.com/s/YSnuBD_PUj-Rsa8409Kv9A',
     },
     {
       rank: 5, tag: '资本',
       title: '空间智能赛道爆发，群核科技（酷家乐）上市首日暴涨171%',
       summary: '资本市场对具身与空间智能持续热捧，"杭州六小龙之一"成功上市，赛道进入高速发展期。',
-      url: 'https://mp.weixin.qq.com/s?src=kujiale-ipo',
+      url: 'https://mp.weixin.qq.com/s/_9jS9C5hit5SER5Aw-ygSA',
     },
   ],
 
@@ -50,9 +50,9 @@ window.REPORT_DATA = {
           '<strong>空间智能赛道爆发</strong>：群核科技（酷家乐）上市首日暴涨 171%，具身与空间智能成为本周最热资本风口。',
         ],
         sources: [
-          { name: '机器之心：Claude Design 发布', url: 'https://mp.weixin.qq.com/s?src=claude-design' },
-          { name: '机器之心：高德具身机器人实测', url: 'https://mp.weixin.qq.com/s?src=gaode-robot' },
-          { name: 'InfoQ：Claude Design 冲击 Figma', url: 'https://mp.weixin.qq.com/s?src=claude-figma' },
+          { name: '机器之心：Claude Design 发布', url: 'https://mp.weixin.qq.com/s/psYbNUh8_tkdvNglpgNGTw' },
+          { name: '机器之心：高德具身机器人实测', url: 'https://mp.weixin.qq.com/s/lfjpZ7KDzNS41WCiCJjMUg' },
+          { name: 'InfoQ：Claude Design 冲击 Figma', url: 'https://mp.weixin.qq.com/s/97ZDTIDZ4Qw0Xn8n-8bafQ' },
         ],
       },
       '技术进展速览': {
@@ -62,9 +62,9 @@ window.REPORT_DATA = {
           '<strong>算力与基础设施</strong>：马斯克 Terafab 太空算力、英伟达重拾 CPU，多元化算力架构探索加速；阿里云+平头哥协同，模型推理性能提升 13 倍。',
         ],
         sources: [
-          { name: '晚点LatePost：高德具身机器人', url: 'https://mp.weixin.qq.com/s?src=gaode-dog' },
-          { name: '机器之心：记忆智能体框架MIA', url: 'https://mp.weixin.qq.com/s?src=mia' },
-          { name: '小红书REDtech：Relax开源', url: 'https://mp.weixin.qq.com/s?src=relax' },
+          { name: '机器之心：高德具身机器人', url: 'https://mp.weixin.qq.com/s/lfjpZ7KDzNS41WCiCJjMUg' },
+          { name: '机器之心：记忆智能体框架MIA', url: 'https://mp.weixin.qq.com/s/Ps0y3Q9Du9O_v95hhyk8NQ' },
+          { name: '小红书REDtech：Relax开源', url: 'https://mp.weixin.qq.com/s/u0-tZEWTPX4Jh9y9EbVJ1g' },
         ],
       },
       '行业趋势洞察': {
@@ -74,8 +74,8 @@ window.REPORT_DATA = {
           '<strong>"AI 原生工作流"重塑组织考核</strong>：行业出现研发全流程 AI Coding 试点与 AI 代码占比考核，同时也有企业（如多邻国）反思并取消 AI 考核，探索人机协同新范式。',
         ],
         sources: [
-          { name: 'InfoQ：多邻国取消AI考核', url: 'https://mp.weixin.qq.com/s?src=duolingo' },
-          { name: '晚点：算力极限', url: 'https://mp.weixin.qq.com/s?src=compute' },
+          { name: 'InfoQ：多邻国取消AI考核', url: 'https://mp.weixin.qq.com/s/Oo8mXKSCwRxAmCCySZxCBg' },
+          { name: '机器之心：算力极限', url: 'https://mp.weixin.qq.com/s/bvMhMHYaw_QX_Um7CYEzQA' },
         ],
       },
       '对快手的启示': {
@@ -96,7 +96,7 @@ window.REPORT_DATA = {
         '招聘动态': {
           content: '本周正式启动 2027 届前沿技术领域人才校招，重点聚焦 AI 等方向，同步辟谣"近亿元年薪招聘"传闻。新一轮期权回购（229.5 美元/股）以财务手段稳定核心人才，彰显对顶尖人才的持续投入意志。',
           sources: [
-            { name: '字节范儿：前沿技术领域校招启动', url: 'https://mp.weixin.qq.com/s?src=bytedance-campus' },
+            { name: '字节范儿：前沿技术领域校招启动', url: 'https://mp.weixin.qq.com/s?__biz=MzI5MzI4MzM1OQ==&mid=2247531984&idx=1&sn=40ba7d94d3a0e559abd92dd4feab110a&chksm=edd1f410fbafa1cdfbd2dcd63f11f5cdc4f9a348f2d74f125bf30ce7c8024f4d72e6b9491a65#rd' },
           ],
         },
         '人事变动': {
@@ -110,7 +110,7 @@ window.REPORT_DATA = {
             '<strong>AI Agent 安全</strong>：技术团队深度探讨 IAM（身份权限管理）在 AI Agent 时代的核心挑战，提前布局治理框架',
           ],
           sources: [
-            { name: '字节跳动技术团队：IAM与AI Agent安全', url: 'https://mp.weixin.qq.com/s?src=bytedance-iam' },
+            { name: '字节跳动技术团队：IAM与AI Agent安全', url: 'https://mp.weixin.qq.com/s/6WjEsaPbB3w19G_lP2pkog' },
           ],
         },
         '对快手的启示': {
@@ -129,8 +129,8 @@ window.REPORT_DATA = {
         '招聘动态': {
           content: '游戏方向密集开展"游鹅选鹅校园行"系列活动，上线 AI 职业报告，将 AI 能力与职业规划深度结合。广告推荐算法等技术岗同步热招，并以开源数据集为技术背书吸引人才。本周发文 5 篇，校招季冲刺阶段声量高。',
           sources: [
-            { name: '腾讯招聘：游鹅选鹅校园行', url: 'https://mp.weixin.qq.com/s?src=tencent-campus' },
-            { name: '腾讯招聘：游鹅选鹅AI职业报告', url: 'https://mp.weixin.qq.com/s?src=tencent-ai-report' },
+            { name: '腾讯招聘：游鹅选鹅校园行', url: 'https://mp.weixin.qq.com/s/Re5JehjvVJZRtyXtgZpxuw' },
+            { name: '腾讯招聘：游鹅选鹅AI职业报告', url: 'https://mp.weixin.qq.com/s/1yskjTdDLT9hnp5Mz1T6YQ' },
           ],
         },
         '人事变动': {
@@ -144,8 +144,8 @@ window.REPORT_DATA = {
             '<strong>内部效能</strong>：Skill 商店内部实用化，推进组织 AI 原生化，员工自发驱动 AI 工具落地',
           ],
           sources: [
-            { name: '腾讯技术工程：鹅厂最香的Skills', url: 'https://mp.weixin.qq.com/s?src=tencent-skill' },
-            { name: '腾讯技术工程：全模态生成式推荐开源', url: 'https://mp.weixin.qq.com/s?src=tencent-rec' },
+            { name: '腾讯技术工程：鹅厂最香的Skills', url: 'https://mp.weixin.qq.com/s/M-xrfkboccq6IMQlxYZwAQ' },
+            { name: '腾讯招聘：全模态生成式推荐开源', url: 'https://mp.weixin.qq.com/s/YFK2UKG3YrQbslip67_1QQ' },
           ],
         },
         '对快手的启示': {
@@ -164,9 +164,9 @@ window.REPORT_DATA = {
         '招聘动态': {
           content: '本周大规模启动 2027 届实习生招聘，三支线同步发力：淘天集团 T-Star 顶尖人才计划、淘宝闪购转正实习（强调"缺简历机会大"）、灵犀互娱游戏研发实习。招聘节奏高度前置，着重强调笔试的"过程价值"而非单纯分数。',
           sources: [
-            { name: '阿里巴巴招聘：T-Star顶尖人才27届实习生', url: 'https://mp.weixin.qq.com/s?src=ali-tstar' },
-            { name: '阿里巴巴招聘：淘宝闪购转正实习', url: 'https://mp.weixin.qq.com/s?src=ali-flash' },
-            { name: '阿里巴巴招聘：灵犀互娱游戏研发', url: 'https://mp.weixin.qq.com/s?src=ali-lingxi' },
+            { name: '阿里巴巴招聘：T-Star顶尖人才27届实习生', url: 'https://mp.weixin.qq.com/s?__biz=MzUzNDc1MDg1Ng==&mid=2247502591&idx=2&sn=4739186f96b0f4d87b784d3b125ddcbd&chksm=fbe121b371ec4f1f20313639e633f29081afd22ec4aebad6a003086554e7772ea39ebe03649b#rd' },
+            { name: '阿里巴巴招聘：淘宝闪购转正实习', url: 'https://mp.weixin.qq.com/s?__biz=MzUzNDc1MDg1Ng==&mid=2247502591&idx=3&sn=7cea62d15a12370b605962a5671b058e&chksm=fb9b28fc6c18230435cf5c74839366620d8fa79e54dbedde8c17c1ca73ad45c5164521b9e0e0#rd' },
+            { name: '阿里巴巴招聘：灵犀互娱游戏研发', url: 'https://mp.weixin.qq.com/s?__biz=MzUzNDc1MDg1Ng==&mid=2247502591&idx=4&sn=fd30e30405dcd78a8dfad001fffc7872&chksm=fba728ac430a7bab3d23dfd96673d8427f380e986dc038d0dfcd934671f72618d4e8f5d03ff7#rd' },
           ],
         },
         '人事变动': {
@@ -180,7 +180,7 @@ window.REPORT_DATA = {
             '<strong>全球电商竞争</strong>：速卖通与京东、Temu 争夺海外市场，多业务线同步承压，技术人才需求持续增长',
           ],
           sources: [
-            { name: '阿里巴巴招聘：2027届笔试价值观', url: 'https://mp.weixin.qq.com/s?src=ali-exam' },
+            { name: '阿里巴巴招聘：2027届笔试价值观', url: 'https://mp.weixin.qq.com/s?__biz=MzUzNDc1MDg1Ng==&mid=2247502591&idx=1&sn=45237f76fdef00fb42d8efe00d7979ea&chksm=fba23f93207b43932286249f05c1003204006386430c8e615e207d93031d675d7192155769de#rd' },
           ],
         },
         '对快手的启示': {
@@ -199,9 +199,9 @@ window.REPORT_DATA = {
         '招聘动态': {
           content: '本周校招声量最强：LongCat 大模型"北斗实习计划"正式启动，2027 届转正实习多岗位热招，AI 产品经理带岗直播（4 月 17 日 19:00）创新互动形式，"美好生活设计大赛"同步启动。四条线并进，多元吸引 Z 世代技术人才。',
           sources: [
-            { name: '美团技术团队：LongCat北斗实习计划', url: 'https://mp.weixin.qq.com/s?src=meituan-beidou' },
-            { name: '美团招聘：2027届转正实习', url: 'https://mp.weixin.qq.com/s?src=meituan-campus' },
-            { name: '美团招聘：AI产品经理带岗直播', url: 'https://mp.weixin.qq.com/s?src=meituan-pm' },
+            { name: '美团技术团队：LongCat北斗实习计划', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651782487&idx=1&sn=dfce83cc7227922a2b8d6ce270efd9e5&chksm=bcbda5d14f9bdb73a0d2756520b620d2d82aea61bce648683bdd1caace9a7f716b8aaaefccd4#rd' },
+            { name: '美团招聘：2027届转正实习', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NzYyMzIwMg==&mid=2792295176&idx=2&sn=05cd4d9793b36d0bfa72cfd6d0bd0d47&chksm=84847028d1dfece47e726526a6f0bf4a594413ce5c7425adf5bb49aaf164874321ae72bc7b13#rd' },
+            { name: '美团招聘：AI产品经理带岗直播', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NzYyMzIwMg==&mid=2792295176&idx=3&sn=ae4d5bbbc860cb5839ed73fd40ec34f5&chksm=84f6bced6254c61deed148a95645572c3213dc6fe4906f433a1b1ed600e1728424bf1f05c905#rd' },
           ],
         },
         '人事变动': {
@@ -215,7 +215,7 @@ window.REPORT_DATA = {
             '<strong>雇主品牌年轻化</strong>：设计大赛 + 带岗直播 + AI 职业工具，强化对 Z 世代人才的互动吸引力',
           ],
           sources: [
-            { name: '美团技术团队：LongCat-AudioDiT音色克隆', url: 'https://mp.weixin.qq.com/s?src=meituan-audio' },
+            { name: '美团技术团队：LongCat-AudioDiT音色克隆', url: 'https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651782487&idx=2&sn=991d57491cdf2364a9245cc301782044&chksm=bca0a8f3846965431de8f311c644512d6ea1df7853bd0d37eba57e364b5c9cd1a92221d88859#rd' },
           ],
         },
         '对快手的启示': {
@@ -246,7 +246,7 @@ window.REPORT_DATA = {
             '<strong>平台生态强化</strong>：巩固生活方式内容与交易生态，探索"技能商店"等新交互形态',
           ],
           sources: [
-            { name: '小红书REDtech：Relax异步RL训练引擎开源', url: 'https://mp.weixin.qq.com/s?src=xhs-relax' },
+            { name: '小红书REDtech：Relax异步RL训练引擎开源', url: 'https://mp.weixin.qq.com/s/u0-tZEWTPX4Jh9y9EbVJ1g' },
           ],
         },
         '对快手的启示': {
