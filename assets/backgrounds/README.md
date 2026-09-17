@@ -11,6 +11,12 @@ dashboard:
 - `alpine-lake-1600.webp` for desktop
 - `alpine-lake-900.webp` for mobile
 
+The current default is the generated `star-moon-blue` twilight seascape, with
+responsive derivatives for fast cloud loading:
+
+- `star-moon-blue-1600.webp` for desktop
+- `star-moon-blue-900.webp` for mobile
+
 The interface blends the image with a neutral gray fallback at 55% opacity.
 Reading cards remain white. Users can choose a solid color or a local image,
 adjust its position and opacity, and restore the default. Custom images are

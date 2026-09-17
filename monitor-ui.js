@@ -52,8 +52,8 @@ const BACKGROUND_SETTINGS_KEY='monitor-background-settings-v2';
 const BACKGROUND_DB='company-watch-preferences';
 const BACKGROUND_STORE='background-assets';
 const DEFAULT_BACKGROUND=matchMedia('(max-width:760px)').matches
-  ? 'assets/backgrounds/alpine-lake-900.webp'
-  : 'assets/backgrounds/alpine-lake-1600.webp';
+  ? 'assets/backgrounds/star-moon-blue-900.webp'
+  : 'assets/backgrounds/star-moon-blue-1600.webp';
 const defaultBackgroundSettings={mode:'default',strength:55,position:'center',color:'#e7e9ed'};
 let backgroundSettings={...defaultBackgroundSettings};
 let customBackgroundUrl='';
