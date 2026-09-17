@@ -1,7 +1,7 @@
 {
   "generatedAt": 1789636352,
   "feedCount": 24,
-  "activeFeedCount": 22,
+  "activeFeedCount": 23,
   "intervalMinutes": 60,
   "maxItemsPerSource": 10,
   "errors": 0,
@@ -159,6 +159,13 @@
       "successAt": 1789636352,
       "message": "正常，暂无新文章",
       "count": 59
+    },
+    "MP_WXS_2397623202": {
+      "status": "cooldown",
+      "checkedAt": 1789638579,
+      "successAt": 0,
+      "message": "供应商限频，1小时冷却中",
+      "count": 50
     }
   }
 }

@@ -1,5 +1,7 @@
 {
-  "cooldowns": {},
+  "cooldowns": {
+    "ead7f07a1ca17ceddb807d6ccb367f9c523c5408c72b3822a0c6a718ccbaad76": 1789642179
+  },
   "sources": {
     "MP_WXS_2396491298": {
       "etag": "\"14508fa25b1907b58b3f07d48f76ad59\"",
