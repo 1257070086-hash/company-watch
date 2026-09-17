@@ -51,6 +51,12 @@ document.getElementById('brief-grid').className='timeline';
 document.getElementById('panel-brief').insertAdjacentHTML('afterbegin','<div id="timeline-count" class="section-line" aria-live="polite"></div>');
 document.getElementById('brief-grid').insertAdjacentHTML('afterend','<div class="load-more-wrap"><button class="btn-load-more" id="timeline-more">查看更多动态</button></div>');
 document.getElementById('timeline-more').onclick=()=>{curPage++;renderBrief();};
+// A category/search filter can still contain hundreds of articles. Showing only
+// 25 made the newest matching article from a quieter company look as if it had
+// been excluded (Meituan recruitment was ranked 26th in the combined feed).
+// Keep the chronological order, but expose a broader first batch once the
+// reader has narrowed the timeline deliberately.
+const timelinePageSize=()=>workspace.type!=='all'||activeKws.size||curSearch?Math.max(PAGE_SZ,50):PAGE_SZ;
 document.getElementById('panel-articles').insertAdjacentHTML('afterbegin','<div id="company-directory" class="company-directory"></div><div id="company-profile"></div>');
 document.getElementById('panel-charts').insertAdjacentHTML('beforeend','<section id="content-insights" class="insight-section"></section>');
 function timelineContent(a){
@@ -90,18 +96,20 @@ function timelineHTML(arts){
 }
 renderBrief=function(){
   const arts=getFiltered();
+  const pageSize=timelinePageSize();
   document.getElementById('timeline-count').innerHTML=`<strong>${arts.length.toLocaleString()} 篇动态</strong>`;
-  document.getElementById('brief-grid').innerHTML=timelineHTML(arts.slice(0,curPage*PAGE_SZ));
-  document.getElementById('timeline-more').hidden=arts.length<=curPage*PAGE_SZ;
+  document.getElementById('brief-grid').innerHTML=timelineHTML(arts.slice(0,curPage*pageSize));
+  document.getElementById('timeline-more').hidden=arts.length<=curPage*pageSize;
 };
 renderArticles=function(){
   const arts=getFiltered();
+  const pageSize=timelinePageSize();
   const companies=Object.keys(companyLogoFiles);
   document.getElementById('company-directory').innerHTML=companies.map(c=>`<button class="company-tile ${c===curCompany?'selected':''}" data-profile="${safeText(c)}" aria-pressed="${c===curCompany}">${companyLogo(c)}<strong>${safeText(c)}</strong><span>${getCompanyIds(c).length} 个关联账号</span></button>`).join('');
   document.getElementById('company-profile').innerHTML=`<div class="profile-title"><div><span class="eyebrow">COMPANY CHRONICLE</span><h2>${curCompany==='all'?'各家公司的连续动作':safeText(curCompany)}</h2></div><span>${arts.length.toLocaleString()} 篇匹配</span></div><div class="category-tabs">${['all','招聘','技术','文化','公司资讯'].map(t=>`<button data-category="${t}" class="${workspace.type===t?'selected':''}" aria-pressed="${workspace.type===t}">${t==='all'?'全部':t}</button>`).join('')}</div>`;
   document.getElementById('list-heading').textContent='发布时间轴';
-  document.getElementById('articles-list').innerHTML=timelineHTML(arts.slice(0,curPage*PAGE_SZ));
-  document.getElementById('load-more').style.display=arts.length>curPage*PAGE_SZ?'block':'none';
+  document.getElementById('articles-list').innerHTML=timelineHTML(arts.slice(0,curPage*pageSize));
+  document.getElementById('load-more').style.display=arts.length>curPage*pageSize?'block':'none';
 };
 openCompany=function(c){curCompany=c;curSourceId=null;curPage=1;switchView('articles');};
 document.addEventListener('click',e=>{
