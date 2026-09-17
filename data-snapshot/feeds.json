@@ -42,7 +42,16 @@
     "cover": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM5vhk5P7xlYy014w9hRdPMvmnciaYLl3pyQicvXV7aTXmDA/0",
     "sourceKind": "official",
     "company": "美团",
-    "updateTime": 1789636352
+    "updateTime": 1789639945
+  },
+  {
+    "id": "MP_WXS_2397623202",
+    "name": "美团招聘",
+    "intro": "美团招聘官方账号，期待你与我们一起成长，一起更好！点击“校园招聘”或“社会招聘”可以直接投递简历哦！",
+    "cover": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM6bNtyC897fSZeuGJ3vUH4zSW5m3NPvoCNJxZT5zX0dWA/0",
+    "sourceKind": "official",
+    "company": "美团",
+    "updateTime": 0
   },
   {
     "id": "MP_WXS_2398602260",
@@ -60,7 +69,7 @@
     "cover": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM75UiawQgcdqOcmtYS7Jibug9J7dskxkNicGiadtdKl7mLyiaw/0",
     "sourceKind": "media",
     "company": "",
-    "updateTime": 1789636352
+    "updateTime": 1789639945
   },
   {
     "id": "MP_WXS_3212124064",
@@ -105,7 +114,7 @@
     "cover": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM6PqxX9Yx8MibJ3nial8ialvVrRs3PxhCJm7eWgR7vFrowLA/0",
     "sourceKind": "media",
     "company": "",
-    "updateTime": 1789636352
+    "updateTime": 1789639945
   },
   {
     "id": "MP_WXS_3253632141",
@@ -114,7 +123,7 @@
     "cover": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4Mz0zV5VtfHx3vA6LLNw3npTWibbGbYhtsc131DoN6m0A/0",
     "sourceKind": "official",
     "company": "字节跳动",
-    "updateTime": 1789636352
+    "updateTime": 1789639945
   },
   {
     "id": "MP_WXS_3254144461",
@@ -159,7 +168,7 @@
     "cover": "http://wx.qlogo.cn/mmhead/QnM5bMcic4Z3zicmAfcWXsb2Gpf7ZdE3vJpvtWGd64kgGtTfaaaIlB0khjyyF9lemzMP2Sg1icE4jQ/0",
     "sourceKind": "media",
     "company": "",
-    "updateTime": 1789636352
+    "updateTime": 1789639945
   },
   {
     "id": "MP_WXS_3885737868",
@@ -196,16 +205,6 @@
     "sourceKind": "official",
     "company": "小红书",
     "updateTime": 1789636352
-  },
-  {
-    "id": "MP_WXS_2397623202",
-    "name": "美团招聘",
-    "intro": "美团招聘官方账号，期待你与我们一起成长，一起更好！点击“校园招聘”或“社会招聘”可以直接投递简历哦！",
-    "cover": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM6bNtyC897fSZeuGJ3vUH4zSW5m3NPvoCNJxZT5zX0dWA/0",
-    "syncTime": 1785923048,
-    "updateTime": 1775034688,
-    "sourceKind": "official",
-    "company": "美团"
   },
   {
     "id": "MP_WXS_3077993707",
