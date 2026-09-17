@@ -1,13 +1,11 @@
 name: Cloud RSS sync
 
 on:
-  # Kept off the public dashboard: repository administrators can use this to
-  # recover a stale snapshot without exposing a refresh button to visitors.
+  # Cloudflare calls this dispatch endpoint hourly from 08:12-23:12 Beijing
+  # time. Repository administrators can also use it for manual recovery.
+  # Do not add a GitHub schedule here: running both schedulers duplicates
+  # supplier requests.
   workflow_dispatch:
-  schedule:
-    # Beijing time 08:12-23:12, hourly. The :12 offset sits between the
-    # local collector's 20-minute supplier rounds instead of overlapping them.
-    - cron: "12 0-15 * * *"
 
 permissions:
   contents: write
