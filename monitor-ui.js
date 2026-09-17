@@ -1,15 +1,217 @@
 // Shared workspace presentation and filtering. Loaded before the initial data fetch.
 const workspace = {period:'all',type:'all',day:null,chartDays:14,scroll:{},density:'compact'};
-const landscape=document.createElement('div');landscape.className='landscape-backdrop';landscape.setAttribute('aria-hidden','true');document.body.prepend(landscape);
-const backgroundControl=document.createElement('details');backgroundControl.className='background-control';
-backgroundControl.innerHTML='<summary>背景</summary><div class="background-popover"><label for="background-strength">风景浓淡 <output id="background-value">55%</output></label><input id="background-strength" type="range" min="0" max="85" step="5" value="55"><div class="background-scale"><span>淡</span><span>浓</span></div><button class="quiet-button" type="button" id="background-reset">恢复默认</button></div>';
+const landscape=document.createElement('div');
+landscape.className='landscape-backdrop';
+landscape.setAttribute('aria-hidden','true');
+document.body.prepend(landscape);
+
+const backgroundControl=document.createElement('details');
+backgroundControl.className='background-control';
+backgroundControl.innerHTML=`
+  <summary aria-label="页面背景设置">背景</summary>
+  <div class="background-popover">
+    <div class="background-popover-title">页面背景</div>
+    <div class="background-mode-switch" role="group" aria-label="背景类型">
+      <button type="button" data-bg-mode="default" aria-label="使用默认背景">默认</button>
+      <button type="button" data-bg-mode="color" aria-label="使用纯色背景">纯色</button>
+      <button type="button" data-bg-mode="custom" aria-label="使用自定义图片">自定义</button>
+    </div>
+    <div class="background-preview" id="background-preview"><span>当前背景</span></div>
+    <div class="background-custom-row" id="background-custom-row" hidden>
+      <label class="background-upload" for="background-file">选择图片</label>
+      <input id="background-file" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+      <button type="button" class="background-remove" id="background-remove">移除</button>
+    </div>
+    <p class="background-hint" id="background-hint">使用优化后的默认风景图</p>
+    <div class="background-image-settings" id="background-image-settings">
+      <label for="background-strength">背景浓淡 <output id="background-value">55%</output></label>
+      <input id="background-strength" type="range" min="0" max="85" step="5" value="55">
+      <div class="background-scale"><span>淡</span><span>浓</span></div>
+      <label class="background-position-label" for="background-position">显示位置
+        <select id="background-position">
+          <option value="center">居中</option>
+          <option value="top">偏上</option>
+          <option value="bottom">偏下</option>
+        </select>
+      </label>
+    </div>
+    <div class="background-color-settings" id="background-color-settings" hidden>
+      <label for="background-color">背景颜色 <input id="background-color" type="color" value="#e7e9ed"></label>
+      <div class="background-color-presets" aria-label="推荐颜色">
+        <button type="button" data-bg-color="#e7e9ed" aria-label="雾灰"></button>
+        <button type="button" data-bg-color="#dfe8ef" aria-label="浅蓝灰"></button>
+        <button type="button" data-bg-color="#ece9e2" aria-label="暖灰"></button>
+        <button type="button" data-bg-color="#20242a" aria-label="深灰"></button>
+      </div>
+    </div>
+    <button class="quiet-button background-reset" type="button" id="background-reset">恢复默认</button>
+  </div>`;
 document.querySelector('.topbar-right').prepend(backgroundControl);
-function setLandscapeStrength(value){const n=Number(value);const strength=Number.isFinite(n)?Math.max(0,Math.min(85,n)):55;document.documentElement.style.setProperty('--landscape-opacity',String(strength/100));const slider=document.getElementById('background-strength');slider.value=String(strength);slider.setAttribute('aria-valuetext',strength===0?'隐藏风景':`风景浓度 ${strength}%`);document.getElementById('background-value').value=`${strength}%`;return strength;}
-try{const saved=localStorage.getItem('monitor-landscape-strength');setLandscapeStrength(saved===null?55:saved);}catch{setLandscapeStrength(55);}
-document.getElementById('background-strength').addEventListener('input',e=>{const n=setLandscapeStrength(e.target.value);try{localStorage.setItem('monitor-landscape-strength',String(n));}catch{}});
-document.getElementById('background-reset').onclick=()=>{setLandscapeStrength(55);try{localStorage.removeItem('monitor-landscape-strength');}catch{}};
-document.addEventListener('click',e=>{if(!backgroundControl.contains(e.target))backgroundControl.open=false;});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'&&backgroundControl.open){backgroundControl.open=false;backgroundControl.querySelector('summary').focus();}});
+
+const BACKGROUND_SETTINGS_KEY='monitor-background-settings-v2';
+const BACKGROUND_DB='company-watch-preferences';
+const BACKGROUND_STORE='background-assets';
+const DEFAULT_BACKGROUND=matchMedia('(max-width:760px)').matches
+  ? 'assets/backgrounds/alpine-lake-900.webp'
+  : 'assets/backgrounds/alpine-lake-1600.webp';
+const defaultBackgroundSettings={mode:'default',strength:55,position:'center',color:'#e7e9ed'};
+let backgroundSettings={...defaultBackgroundSettings};
+let customBackgroundUrl='';
+let backgroundLoadId=0;
+
+function readBackgroundSettings(){
+  try{
+    const saved=JSON.parse(localStorage.getItem(BACKGROUND_SETTINGS_KEY)||'null');
+    if(saved&&typeof saved==='object') backgroundSettings={...defaultBackgroundSettings,...saved};
+    const legacy=localStorage.getItem('monitor-landscape-strength');
+    if(legacy!==null&&!localStorage.getItem(BACKGROUND_SETTINGS_KEY)) backgroundSettings.strength=Number(legacy);
+  }catch{}
+}
+function saveBackgroundSettings(){
+  try{localStorage.setItem(BACKGROUND_SETTINGS_KEY,JSON.stringify(backgroundSettings));localStorage.removeItem('monitor-landscape-strength');}catch{}
+}
+function openBackgroundDb(){
+  return new Promise((resolve,reject)=>{
+    if(!('indexedDB' in window)){reject(new Error('浏览器不支持本地图片保存'));return;}
+    const request=indexedDB.open(BACKGROUND_DB,1);
+    request.onupgradeneeded=()=>{if(!request.result.objectStoreNames.contains(BACKGROUND_STORE))request.result.createObjectStore(BACKGROUND_STORE);};
+    request.onsuccess=()=>resolve(request.result);
+    request.onerror=()=>reject(request.error);
+  });
+}
+async function readCustomBackground(){
+  const db=await openBackgroundDb();
+  return new Promise((resolve,reject)=>{
+    const request=db.transaction(BACKGROUND_STORE).objectStore(BACKGROUND_STORE).get('custom');
+    request.onsuccess=()=>resolve(request.result||null);
+    request.onerror=()=>reject(request.error);
+  }).finally(()=>db.close());
+}
+async function writeCustomBackground(blob){
+  const db=await openBackgroundDb();
+  return new Promise((resolve,reject)=>{
+    const request=db.transaction(BACKGROUND_STORE,'readwrite').objectStore(BACKGROUND_STORE).put(blob,'custom');
+    request.onsuccess=()=>resolve();
+    request.onerror=()=>reject(request.error);
+  }).finally(()=>db.close());
+}
+async function deleteCustomBackground(){
+  const db=await openBackgroundDb();
+  return new Promise((resolve,reject)=>{
+    const request=db.transaction(BACKGROUND_STORE,'readwrite').objectStore(BACKGROUND_STORE).delete('custom');
+    request.onsuccess=()=>resolve();
+    request.onerror=()=>reject(request.error);
+  }).finally(()=>db.close());
+}
+function compressBackground(file){
+  return new Promise((resolve,reject)=>{
+    const sourceUrl=URL.createObjectURL(file);
+    const image=new Image();
+    image.onload=()=>{
+      const maxEdge=1920;
+      const scale=Math.min(1,maxEdge/Math.max(image.naturalWidth,image.naturalHeight));
+      const width=Math.max(1,Math.round(image.naturalWidth*scale));
+      const height=Math.max(1,Math.round(image.naturalHeight*scale));
+      const canvas=document.createElement('canvas');canvas.width=width;canvas.height=height;
+      canvas.getContext('2d',{alpha:false}).drawImage(image,0,0,width,height);
+      URL.revokeObjectURL(sourceUrl);
+      canvas.toBlob(blob=>blob?resolve(blob):reject(new Error('图片压缩失败')),'image/webp',.82);
+    };
+    image.onerror=()=>{URL.revokeObjectURL(sourceUrl);reject(new Error('图片无法读取'));};
+    image.src=sourceUrl;
+  });
+}
+function setLandscapeStrength(value){
+  const n=Number(value);const strength=Number.isFinite(n)?Math.max(0,Math.min(85,n)):55;
+  backgroundSettings.strength=strength;
+  document.documentElement.style.setProperty('--landscape-opacity',String(strength/100));
+  const slider=document.getElementById('background-strength');slider.value=String(strength);
+  slider.setAttribute('aria-valuetext',strength===0?'隐藏背景':`背景浓度 ${strength}%`);
+  document.getElementById('background-value').value=`${strength}%`;
+  return strength;
+}
+function setLandscapeImage(url){
+  const loadId=++backgroundLoadId;
+  landscape.classList.remove('is-ready');
+  if(!url){landscape.style.removeProperty('--landscape-image');return;}
+  const image=new Image();image.decoding='async';image.fetchPriority='low';
+  image.onload=()=>{
+    if(loadId!==backgroundLoadId)return;
+    landscape.style.setProperty('--landscape-image',`url("${url}")`);
+    requestAnimationFrame(()=>landscape.classList.add('is-ready'));
+  };
+  image.src=url;
+}
+function updateBackgroundPanel(){
+  const mode=backgroundSettings.mode;
+  document.querySelectorAll('[data-bg-mode]').forEach(button=>{const active=button.dataset.bgMode===mode;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));});
+  document.getElementById('background-custom-row').hidden=mode!=='custom';
+  document.getElementById('background-image-settings').hidden=mode==='color';
+  document.getElementById('background-color-settings').hidden=mode!=='color';
+  document.getElementById('background-position').value=backgroundSettings.position;
+  document.getElementById('background-color').value=backgroundSettings.color;
+  const preview=document.getElementById('background-preview');
+  preview.className=`background-preview mode-${mode}`;
+  preview.style.backgroundColor=backgroundSettings.color;
+  preview.style.backgroundImage=mode==='color'?'none':`url("${mode==='custom'&&customBackgroundUrl?customBackgroundUrl:DEFAULT_BACKGROUND}")`;
+  const hints={default:'使用优化后的默认风景图',color:'纯色加载最快，适合专注阅读',custom:customBackgroundUrl?'图片仅保存在当前浏览器':'选择一张本机图片作为背景'};
+  document.getElementById('background-hint').textContent=hints[mode];
+  document.getElementById('background-remove').disabled=!customBackgroundUrl;
+}
+function applyBackground(){
+  const {mode,position,color}=backgroundSettings;
+  document.body.classList.toggle('background-color-mode',mode==='color');
+  document.documentElement.style.setProperty('--custom-background-color',color);
+  landscape.style.backgroundPosition=position;
+  setLandscapeStrength(backgroundSettings.strength);
+  setLandscapeImage(mode==='color'?'':mode==='custom'&&customBackgroundUrl?customBackgroundUrl:DEFAULT_BACKGROUND);
+  updateBackgroundPanel();
+}
+function setBackgroundMode(mode){
+  if(!['default','color','custom'].includes(mode))return;
+  backgroundSettings.mode=mode;
+  applyBackground();saveBackgroundSettings();
+}
+
+readBackgroundSettings();
+applyBackground();
+readCustomBackground().then(blob=>{
+  if(!blob){
+    if(backgroundSettings.mode==='custom'){
+      backgroundSettings.mode='default';
+      applyBackground();saveBackgroundSettings();
+    }
+    return;
+  }
+  if(customBackgroundUrl)URL.revokeObjectURL(customBackgroundUrl);
+  customBackgroundUrl=URL.createObjectURL(blob);
+  if(backgroundSettings.mode==='custom')applyBackground();else updateBackgroundPanel();
+}).catch(()=>{if(backgroundSettings.mode==='custom'){backgroundSettings.mode='default';applyBackground();}});
+document.querySelectorAll('[data-bg-mode]').forEach(button=>button.addEventListener('click',()=>setBackgroundMode(button.dataset.bgMode)));
+document.getElementById('background-strength').addEventListener('input',event=>{setLandscapeStrength(event.target.value);saveBackgroundSettings();});
+document.getElementById('background-position').addEventListener('change',event=>{backgroundSettings.position=event.target.value;landscape.style.backgroundPosition=backgroundSettings.position;saveBackgroundSettings();});
+document.getElementById('background-color').addEventListener('input',event=>{backgroundSettings.color=event.target.value;applyBackground();saveBackgroundSettings();});
+document.querySelectorAll('[data-bg-color]').forEach(button=>button.addEventListener('click',()=>{backgroundSettings.color=button.dataset.bgColor;applyBackground();saveBackgroundSettings();}));
+document.getElementById('background-file').addEventListener('change',async event=>{
+  const file=event.target.files?.[0];event.target.value='';if(!file)return;
+  const hint=document.getElementById('background-hint');
+  if(!/^image\/(jpeg|png|webp)$/.test(file.type)){hint.textContent='请选择 JPG、PNG 或 WebP 图片';return;}
+  if(file.size>8*1024*1024){hint.textContent='图片不能超过 8MB';return;}
+  hint.textContent='正在优化图片…';
+  try{
+    const blob=await compressBackground(file);await writeCustomBackground(blob);
+    if(customBackgroundUrl)URL.revokeObjectURL(customBackgroundUrl);
+    customBackgroundUrl=URL.createObjectURL(blob);backgroundSettings.mode='custom';
+    applyBackground();saveBackgroundSettings();
+  }catch(error){hint.textContent=error?.message||'图片保存失败，请重试';}
+});
+document.getElementById('background-remove').addEventListener('click',async()=>{
+  try{await deleteCustomBackground();}catch{}
+  if(customBackgroundUrl)URL.revokeObjectURL(customBackgroundUrl);customBackgroundUrl='';backgroundSettings.mode='default';applyBackground();saveBackgroundSettings();
+});
+document.getElementById('background-reset').addEventListener('click',()=>{backgroundSettings={...defaultBackgroundSettings};applyBackground();saveBackgroundSettings();});
+document.addEventListener('click',event=>{if(!backgroundControl.contains(event.target))backgroundControl.open=false;});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&backgroundControl.open){backgroundControl.open=false;backgroundControl.querySelector('summary').focus();}});
 const safeText = value => String(value ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const safeHref = value => {try {const u=new URL(value);return /^https?:$/.test(u.protocol)?safeText(u.href):'';}catch{return '';}};
 const dayKey = date => new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(date);
