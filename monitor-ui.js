@@ -216,7 +216,7 @@ const safeText = value => String(value ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;
 const safeHref = value => {try {const u=new URL(value);return /^https?:$/.test(u.protocol)?safeText(u.href):'';}catch{return '';}};
 const dayKey = date => new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(date);
 const weekStart = () => {const d=new Date();d.setHours(0,0,0,0);d.setDate(d.getDate()-(d.getDay()+6)%7);return d;};
-const articleType = a => RECRUIT_KW.some(k=>a.title.includes(k))?'招聘':PERSON_KW.some(k=>a.title.includes(k))?'人事':/AI|大模型|算法|技术|开源|模型|芯片|智能|架构|工程|研发|数据库|编程/i.test(a.title)?'技术':'其他';
+const articleType = a => /招聘/.test(a.authorName||'')||RECRUIT_KW.some(k=>a.title.includes(k))?'招聘':PERSON_KW.some(k=>a.title.includes(k))?'人事':/AI|大模型|算法|技术|开源|模型|芯片|智能|架构|工程|研发|数据库|编程/i.test(a.title)?'技术':'其他';
 COMPANY_COLORS['字节跳动']='#089caa';
 COMPANY_COLORS['行业资讯']='#278366';
 const heading=document.createElement('section');

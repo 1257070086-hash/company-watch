@@ -11,7 +11,11 @@ const relatedCompanies = a => isOfficial(a) ? [a.company] : Object.entries(compa
   .filter(([company,names]) => !!companyLogoFiles[company] && names.filter(n=>!['微信','Seed'].includes(n)).some(n => a.title.toLowerCase().includes(n.toLowerCase()))).map(([name])=>name);
 function contentLabels(a) {
   const title=a.title||'', name=a.authorName||'', labels=[];
-  if(/校招|实习|招聘|春招|秋招|offer|社招|应届|招募|人才计划|校园大使|岗位|面试|内推|转正/i.test(title)) labels.push('招聘');
+  // Account identity is part of the content semantics: an article published by
+  // a dedicated recruiting account remains recruiting content even when its
+  // headline talks about employees, technology or an event without saying
+  // “招聘” explicitly.
+  if(/招聘/.test(name)||/校招|实习|招聘|春招|秋招|offer|社招|应届|招募|人才计划|校园大使|岗位|面试|内推|转正/i.test(title)) labels.push('招聘');
   if(/技术|算法|开源|架构|数据库|工程|研发|论文|模型|编程|AI\b/i.test(title)||/技术|Tech|Seed/i.test(name)) labels.push('技术');
   if(/文化|员工|同学|周年|价值观|公益|志愿|生活|成长|入职|职场|团队故事/.test(title)||/字节范|是小红书人/.test(name)) labels.push('文化');
   if(!isOfficial(a)) labels.push('公司资讯');
