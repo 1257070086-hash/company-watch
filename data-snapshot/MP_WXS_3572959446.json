@@ -4,6 +4,17 @@
   "home_page_url": "",
   "items": [
     {
+      "id": "fba530b31ce3056f3ea644d2d1fc05e1bd903b39402cd8cdd39e5b8e779fc99f",
+      "title": "当硅谷开始说 “打不过国内”丨五源孟醒",
+      "url": "https://mp.weixin.qq.com/s/kdXYVxJJQsQoo2P6v_MQXg",
+      "content_html": "五源资本合伙人孟醒基于2025年8月硅谷出差见闻，系统拆解了中美AI模型在不同训练阶段的真实差距：预训练方法论已接近、差距主要在算力与系统工程经验；后训练则分化明显——大规模RL是中国最难补的短板，human operation在多模态等目标模糊领域被放大，蒸馏成为普遍手段。文章还深入分析了Neo lab 1.0（以Thinking Machines Lab为代表）的困境：一群有强烈research taste的人缺乏共同北极星指标，估值倒挂、联创出走、脏活没人做。同时指出AI stack各层公司正在互相侵入对方位置，数据公司站到战争中央，破产公司数据被抢购，environment和trajectory成为新计价单位。最后反思AI researcher自身也在被重新定价。",
+      "description": "五源资本合伙人孟醒基于2025年8月硅谷出差见闻，系统拆解了中美AI模型在不同训练阶段的真实差距：预训练方法论已接近、差距主要在算力与系统工程经验；后训练则分化明显——大规模RL是中国最难补的短板，human operation在多模态等目标模糊领域被放大，蒸馏成为普遍手段。文章还深入分析了Neo lab 1.0（以Thinking Machines Lab为代表）的困境：一群有强烈research taste的人缺乏共同北极星指标，估值倒挂、联创出走、脏活没人做。同时指出AI stack各层公司正在互相侵入对方位置，数据公司站到战争中央，破产公司数据被抢购，environment和trajectory成为新计价单位。最后反思AI researcher自身也在被重新定价。",
+      "body_text": "五源资本合伙人孟醒基于2025年8月硅谷出差见闻，系统拆解了中美AI模型在不同训练阶段的真实差距：预训练方法论已接近、差距主要在算力与系统工程经验；后训练则分化明显——大规模RL是中国最难补的短板，human operation在多模态等目标模糊领域被放大，蒸馏成为普遍手段。文章还深入分析了Neo lab 1.0（以Thinking Machines Lab为代表）的困境：一群有强烈research taste的人缺乏共同北极星指标，估值倒挂、联创出走、脏活没人做。同时指出AI stack各层公司正在互相侵入对方位置，数据公司站到战争中央，破产公司数据被抢购，environment和trajectory成为新计价单位。最后反思AI researcher自身也在被重新定价。",
+      "image": null,
+      "date_modified": "2026-09-18T05:12:10Z",
+      "date_published": "2026-09-18T05:12:10Z"
+    },
+    {
       "id": "4574f70a1dfca0252809faf1641c484a0e11f789a42c7431cf5337b4130eabf6",
       "title": "腾讯养大的燧原科技，还需要走出腾讯吗？",
       "url": "https://mp.weixin.qq.com/s/ugo5Tuo2TbMvTBf_ktgyVQ",
