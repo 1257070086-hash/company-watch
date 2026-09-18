@@ -47,8 +47,8 @@ getFiltered=function(){
   return arts.filter(a=>{const key=a.url||a.id;if(!key)return true;if(seen.has(key))return false;seen.add(key);return true;})
     .sort((a,b)=>(Number.isFinite(+b.date)?+b.date:0)-(Number.isFinite(+a.date)?+a.date:0));
 };
-document.getElementById('type-select').innerHTML='<option value="all">全部类别</option>'+['招聘','技术','文化','公司资讯','其他'].map(t=>`<option>${t}</option>`).join('');
-document.getElementById('view-title').textContent='最新动态';
+document.getElementById('type-select').innerHTML='<option value="all">内容类型：全部</option>'+['招聘','技术','文化','公司资讯','其他'].map(t=>`<option>${t}</option>`).join('');
+document.getElementById('view-title').textContent='文章时间线';
 document.getElementById('view-description').textContent='招聘动向与公司相关资讯 · 按发布时间倒序';
 document.getElementById('overview-intro').remove();
 document.getElementById('brief-grid').className='timeline';
@@ -130,6 +130,6 @@ renderCharts=function(){
   document.getElementById('content-insights').innerHTML=`<div class="section-line"><h2>从数据到内容</h2><span>近 ${workspace.chartDays} 天 · 当前筛选</span></div><p class="insight-caveat">基于已收录文章与标题规则的观察，不代表完整发文量；采集缺口不等于公司没有动作。点击文章核对原文。</p><div class="insight-grid">${groups.map(g=>{const counts=['招聘','技术','文化'].map(t=>[t,g.articles.filter(a=>contentLabels(a).includes(t)).length]);const keywords=rankedKeywords(g.articles).slice(0,3);return `<article class="insight-card"><div class="section-line"><h3>${safeText(g.company)}</h3><span>${g.articles.length} 篇</span></div><div class="insight-counts">${counts.map(([t,n])=>`<span>${t} <strong>${n}</strong></span>`).join('')}</div><p>${keywords.length?'标题关注：'+keywords.map(([k,n])=>`${safeText(k)}（${n} 篇）`).join('、'):'当前样本暂无明显高频主题'}</p><h4>最近发布 · 来源依据</h4>${g.articles.slice(0,3).map(a=>articleLink(a,'insight-evidence',`<span>${safeText(a.title)}</span><time>${safeText(publishedMinute(a))}</time>`)).join('')}</article>`;}).join('')||emptyResult()}</div>`;
 };
 const previousSwitch=switchView;
-switchView=function(v){previousSwitch(v);const names={brief:['最新动态','招聘动向与公司相关资讯 · 按发布时间倒序'],articles:['公司档案','按公司追踪招聘、技术与文化'],charts:['数据与洞察','公司发文趋势与可追溯的内容观察'],archive:['行业周报','']};if(!names[v])return;document.getElementById('view-title').textContent=names[v][0];document.getElementById('view-description').textContent=names[v][1];};
+switchView=function(v){previousSwitch(v);const names={brief:['文章时间线','招聘动向与公司相关资讯 · 按发布时间倒序'],articles:['公司档案','按公司追踪招聘、技术与文化'],charts:['内容分析','公司发文趋势与可追溯的内容观察'],archive:['行业周报','']};if(!names[v])return;document.getElementById('view-title').textContent=names[v][0];document.getElementById('view-description').textContent=names[v][1];};
 const refreshSegments=rebuildSegmentButtons;
 rebuildSegmentButtons=function(){refreshSegments();};

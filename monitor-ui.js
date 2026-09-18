@@ -224,7 +224,7 @@ heading.className='workspace-heading';
 heading.innerHTML='<div><h1 id="view-title">资讯概览</h1><p id="view-description">跟进招聘、技术与组织动向</p></div><div class="heading-actions"><button class="quiet-button" data-action="sources">监测账号</button></div>';
 document.querySelector('.segment-wrap').before(heading);
 const filterBar=document.getElementById('search-bar');
-filterBar.insertAdjacentHTML('beforeend','<select class="filter-select" id="period-select" aria-label="时间范围"><option value="all">全部</option><option value="today">今天</option><option value="week">本周</option><option value="7">近 7 天</option><option value="30">近 30 天</option></select><select class="filter-select" id="type-select" aria-label="资讯类型"><option value="all">全部类型</option><option>招聘</option><option>技术</option><option>人事</option><option>其他</option></select><button class="quiet-button" data-action="reset">重置筛选</button>');
+filterBar.insertAdjacentHTML('beforeend','<select class="filter-select" id="period-select" aria-label="时间范围"><option value="all">时间范围：不限</option><option value="today">今天</option><option value="week">本周</option><option value="7">近 7 天</option><option value="30">近 30 天</option></select><select class="filter-select" id="type-select" aria-label="内容类型"><option value="all">内容类型：全部</option><option>招聘</option><option>技术</option><option>人事</option><option>其他</option></select><button class="quiet-button" data-action="reset">重置筛选</button>');
 document.getElementById('search-input').setAttribute('aria-label','搜索文章标题');
 filterBar.style.display='flex';
 const chips=document.createElement('div');chips.className='active-filters';filterBar.after(chips);
@@ -283,7 +283,7 @@ switchView=function(v){
   document.querySelectorAll('.topbar-tab').forEach(t=>{t.classList.toggle('active',t.dataset.view===v);t.setAttribute('aria-pressed',String(t.dataset.view===v));});
   document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===`panel-${v}`));
   filterBar.style.display=v==='archive'?'none':'flex';
-  const titles={brief:['资讯概览','跟进招聘、技术与组织动向'],articles:['资讯列表','按公司、时间与主题查找原文'],charts:['数据图表','点击图表中的数据，查看对应文章'],archive:['行业周报','']};
+  const titles={brief:['文章时间线','跟进招聘、技术与组织动向'],articles:['资讯列表','按公司、时间与主题查找原文'],charts:['内容分析','点击图表中的数据，查看对应文章'],archive:['行业周报','']};
   document.getElementById('view-title').textContent=titles[v][0];document.getElementById('view-description').textContent=titles[v][1];
   render();requestAnimationFrame(()=>window.scrollTo({top:workspace.scroll[v]||0,behavior:'instant'}));
 };
@@ -349,8 +349,7 @@ fetchArticles=async function(){
     if(sync.cooling_down){document.getElementById('warn-text').textContent=`WeWe ${sync.label}。最后成功：${last}；当前展示已收录文章，刷新页面不会触发上游同步。下次尝试不早于 ${new Date(sync.next_attempt_at*1000).toLocaleString('zh-CN')}。`;document.getElementById('warn-bar').style.display='flex';}
   }catch{setStatus('文章已读取 · 同步状态暂不可用');}
 };
-fetchSources=async function(){await oldFetchSources();document.getElementById('source-select').innerHTML='<option value="">全部公众号</option>'+sources.map(s=>`<option value="${safeText(s.id)}">${safeText(s.name)}</option>`).join('');const pills=document.getElementById('kw-pills');pills.innerHTML=['校招','实习','招聘','AI','大模型'].map(k=>`<button class="kw-pill" data-kw="${k}" aria-pressed="false">${k}</button>`).join('');syncWorkspace();};
-document.getElementById('kw-pills').addEventListener('click',e=>{const b=e.target.closest('[data-kw]');if(!b)return;activeKws.has(b.dataset.kw)?activeKws.delete(b.dataset.kw):activeKws.add(b.dataset.kw);curPage=1;render();});
+fetchSources=async function(){await oldFetchSources();document.getElementById('source-select').innerHTML='<option value="">全部公众号</option>'+sources.map(s=>`<option value="${safeText(s.id)}">${safeText(s.name)}</option>`).join('');syncWorkspace();};
 document.getElementById('period-select').onchange=e=>{workspace.period=e.target.value;workspace.day=null;curPage=1;render();};
 document.getElementById('type-select').onchange=e=>{workspace.type=e.target.value;curPage=1;render();};
 document.getElementById('source-select').onchange=e=>{curSourceId=e.target.value||null;curPage=1;render();};

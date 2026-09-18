@@ -41,15 +41,14 @@ fetchArticles=async function(){
   render();
 };
 
-const advanced=document.createElement('details');advanced.className='filter-options';advanced.innerHTML='<summary>筛选 ☰</summary><div class="filter-options-box"><label id="source-filter-slot">公众号</label><label>关键词<div id="keyword-filter-slot"></div></label><button class="quiet-button" data-action="reset">清除筛选</button></div>';
+const advanced=document.createElement('details');advanced.className='filter-options';advanced.innerHTML='<summary>公众号筛选 ☰</summary><div class="filter-options-box"><label id="source-filter-slot">公众号</label><button class="quiet-button" data-action="reset">清除筛选</button></div>';
 filterBar.append(advanced);
 advanced.querySelector('#source-filter-slot').append(document.getElementById('source-select'));
-advanced.querySelector('#keyword-filter-slot').append(document.getElementById('kw-pills'));
 filterBar.querySelector('[data-action="reset"]')?.remove(); // remove the original always-visible reset
 const sourceInline=document.createElement('div');sourceInline.id='industry-source-slot';filterBar.insertBefore(sourceInline,advanced);
 filterBar.insertBefore(document.getElementById('type-select'),document.getElementById('period-select'));
-document.getElementById('type-select').options[0].text='全部内容';
-const settings=document.createElement('details');settings.className='monitor-settings';settings.innerHTML='<summary aria-label="阅读设置">设置 ⚙</summary><div class="monitor-settings-box"><label id="density-slot">列表密度</label></div>';
+document.getElementById('type-select').options[0].text='内容类型：全部';
+const settings=document.createElement('details');settings.className='monitor-settings';settings.innerHTML='<summary aria-label="显示设置">显示设置 ⚙</summary><div class="monitor-settings-box"><label id="density-slot">列表密度</label></div>';
 const right=document.querySelector('.topbar-right');right.append(settings);
 const settingsBox=settings.querySelector('div');settingsBox.prepend(backgroundControl);settingsBox.append(document.querySelector('.status-pill'),document.getElementById('btn-refresh'));
 settings.querySelector('#density-slot').append(document.getElementById('density-select'));

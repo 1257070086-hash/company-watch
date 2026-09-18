@@ -421,8 +421,8 @@
   </div>
   <div class="topbar-divider"></div>
   <div class="topbar-tabs">
-    <button class="topbar-tab active" data-view="brief" onclick="switchView('brief')">最新动态</button>
-    <button class="topbar-tab" data-view="charts" onclick="switchView('charts')">数据与洞察</button>
+    <button class="topbar-tab active" data-view="brief" onclick="switchView('brief')">文章时间线</button>
+    <button class="topbar-tab" data-view="charts" onclick="switchView('charts')">内容分析</button>
     <button class="topbar-tab" data-view="archive" onclick="switchView('archive')">行业周报</button>
   </div>
   <div class="topbar-right">
@@ -463,7 +463,6 @@
     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
     <input class="search-input" id="search-input" type="text" placeholder="搜索标题关键词…" oninput="applyFilters()">
   </div>
-  <div class="kw-pills" id="kw-pills"></div>
   <div class="result-count" id="result-count"></div>
 </div>
 
@@ -670,23 +669,6 @@ async function fetchSources() {
   sources.forEach(s => sourceMap[s.id] = s);
 
   rebuildSegmentButtons();
-
-  // KW pills
-  const pills = document.getElementById('kw-pills');
-  ['校招','实习','招聘','AI','大模型'].forEach(kw => {
-    const p = document.createElement('button');
-    p.className = 'kw-pill'; p.textContent = kw;
-    p.dataset.kw = kw;
-    p.onclick = () => {
-      const isOn = p.classList.toggle('on');
-      // 取消其他 pill 的选中状态（单选）
-      document.querySelectorAll('.kw-pill').forEach(other => { if (other !== p) other.classList.remove('on'); });
-      const input = document.getElementById('search-input');
-      input.value = isOn ? kw : '';
-      applyFilters();
-    };
-    pills.appendChild(p);
-  });
 
   document.getElementById('stat-sources').textContent = sources.length;
 }
@@ -1711,12 +1693,12 @@ function escRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
 
 // The workspace layer shares one filter state across the four views.
 </script>
-<script src="monitor-ui.js?v=20260917-recruiting-source-filter"></script>
+<script src="monitor-ui.js?v=20260918-clear-filter-labels"></script>
 <link rel="stylesheet" href="monitor-timeline.css?v=20260916-batch-spacing">
-<script src="monitor-timeline.js?v=20260917-recruiting-source-filter"></script>
+<script src="monitor-timeline.js?v=20260918-clear-filter-labels"></script>
 <script src="monitor-content.js?v=20260916-charts-first"></script>
 <link rel="stylesheet" href="monitor-controls.css?v=20260917-background-panel">
-<script src="monitor-controls.js?v=20260916-cloud-hourly"></script>
+<script src="monitor-controls.js?v=20260918-clear-filter-labels"></script>
 <script>
 // ═══════════════ BOOT ═══════════════
 async function main() { await init(); }
