@@ -1,7 +1,8 @@
 name: Cloud RSS sync
 
 on:
-  # Cloudflare calls this dispatch endpoint hourly from 08:12-23:12 Beijing
+  # Cloudflare calls this dispatch endpoint every 20 minutes from
+  # 08:12-23:52 Beijing
   # time. Repository administrators can also use it for manual recovery.
   # Do not add a GitHub schedule here: running both schedulers duplicates
   # supplier requests.

@@ -26,10 +26,10 @@ CONTENT = "{http://purl.org/rss/1.0/modules/content/}encoded"
 MAX_ITEMS_PER_REQUEST = 10
 MAX_STORED_PER_SOURCE = 5000
 RATE_LIMIT_COOLDOWN = 60 * 60
-SCHEDULE_INTERVAL_MINUTES = 60
+SCHEDULE_INTERVAL_MINUTES = 20
 # Native GitHub scheduling and the external heartbeat may arrive together.
 # Keep a little tolerance for delayed jobs while preventing duplicate rounds.
-MIN_RUN_INTERVAL = 50 * 60
+MIN_RUN_INTERVAL = 15 * 60
 MAX_CONTENT_HTML = 200_000
 PRIVATE_FEED_HOSTS = {"i.hhbboo.com", "plink.anyfeeder.com", "supsub.net", "wechat2rss.xlab.app"}
 
@@ -269,7 +269,7 @@ def main() -> int:
     state = read_json(state_path, {"cooldowns": {}, "sources": {}})
     now = int(time.time())
     if not args.seed_db and now - int(state.get("lastRunAt", 0)) < MIN_RUN_INTERVAL:
-        print(json.dumps({"skipped": True, "reason": "last run is less than 19 minutes old"}))
+        print(json.dumps({"skipped": True, "reason": "last run is less than 15 minutes old"}))
         return 0
     previous_feeds = read_json(output / "feeds.json", [])
     feed_meta = {item.get("id"): item for item in previous_feeds if item.get("id")}

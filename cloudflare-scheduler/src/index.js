@@ -30,7 +30,7 @@ export default {
     if (request.method === "GET" && url.pathname === "/health") {
       return Response.json({
         ok: true,
-        schedule: "08:12-23:12 Asia/Shanghai, hourly",
+        schedule: "08:12-23:52 Asia/Shanghai, every 20 minutes",
         target: "company-watch / Cloud RSS sync",
       });
     }

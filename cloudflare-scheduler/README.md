@@ -2,7 +2,7 @@
 
 This Worker triggers the repository's `Cloud RSS sync` GitHub Actions workflow.
 
-- Schedule: `12 0-15 * * *` (08:12-23:12 Asia/Shanghai, hourly)
+- Schedule: `12,32,52 0-15 * * *` (08:12-23:52 Asia/Shanghai, every 20 minutes)
 - Target: `1257070086-hash/company-watch`
 - Workflow: `.github/workflows/rss-sync.yml`
 - Required encrypted Worker secret: `GITHUB_TOKEN`
