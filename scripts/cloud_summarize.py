@@ -20,6 +20,7 @@ MODEL = "deepseek-flash"
 PROMPT_VERSION = "full-body-v1"
 DEFAULT_MIN_BODY_CHARS = 300
 DEFAULT_MAX_ITEMS = 20
+STATE_FILE = "summary-state.json"
 
 SYSTEM_PROMPT = """你是中文资讯编辑。请依据文章完整正文写一段可直接展示在资讯列表里的核心摘要。
 要求：
@@ -49,6 +50,16 @@ def clean_text(value: str) -> str:
 
 def body_hash(value: str) -> str:
     return hashlib.sha256(value.encode("utf-8")).hexdigest()
+
+
+def article_key(path: Path, item: dict) -> str:
+    identity = clean_text(item.get("url") or item.get("id") or "")
+    if not identity:
+        identity = "|".join((
+            clean_text(item.get("title") or ""),
+            published_key(item),
+        ))
+    return hashlib.sha256(f"{path.name}|{identity}".encode("utf-8")).hexdigest()
 
 
 def published_key(item: dict) -> str:
@@ -101,7 +112,10 @@ def request_summary(api_key: str, title: str, account: str, body: str) -> tuple[
 
 def snapshot_documents(snapshot: Path) -> list[tuple[Path, dict]]:
     documents = []
-    ignored = {"feeds.json", "meta.json", "sync-state.json", "summary-meta.json", "public-feeds.json"}
+    ignored = {
+        "feeds.json", "meta.json", "sync-state.json", "summary-meta.json",
+        STATE_FILE, "public-feeds.json",
+    }
     for path in snapshot.glob("*.json"):
         if path.name in ignored:
             continue
@@ -121,16 +135,66 @@ def main() -> int:
 
     snapshot = Path(args.snapshot)
     documents = snapshot_documents(snapshot)
+    state_path = snapshot / STATE_FILE
+    state_exists = state_path.exists()
+    state = read_json(state_path, {"known": []})
+    known = set(state.get("known") or [])
     candidates = []
     skipped_current = 0
     skipped_short = 0
+    skipped_known = 0
+
+    # The first run after enabling new-article-only mode establishes a
+    # baseline. Existing articles, including summaries already generated in
+    # the rollout run, are kept but never queued as historical backlog.
+    if not state_exists:
+        baseline = {
+            article_key(path, item)
+            for path, document in documents
+            for item in document["items"]
+        }
+        if args.dry_run:
+            print(json.dumps({
+                "dryRun": True,
+                "mode": "new_articles_only",
+                "wouldInitializeBaseline": len(baseline),
+                "selected": 0,
+            }, ensure_ascii=False))
+            return 0
+        activated_at = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+        write_json(state_path, {
+            "mode": "new_articles_only",
+            "activatedAt": activated_at,
+            "known": sorted(baseline),
+        })
+        metadata = {
+            "generatedAt": activated_at,
+            "model": MODEL,
+            "promptVersion": PROMPT_VERSION,
+            "basis": "full_body",
+            "mode": "new_articles_only",
+            "baselineInitialized": len(baseline),
+            "completed": 0,
+            "failed": 0,
+            "pendingBeforeRun": 0,
+            "rateLimited": False,
+            "usage": {"inputTokens": 0, "outputTokens": 0},
+        }
+        write_json(snapshot / "summary-meta.json", metadata)
+        print(json.dumps(metadata, ensure_ascii=False))
+        return 0
 
     for path, document in documents:
         account = document.get("title") or ""
         for item in document["items"]:
+            key = article_key(path, item)
+            if key in known:
+                skipped_known += 1
+                continue
             body = clean_text(item.get("body_text") or "")
             if len(body) < args.min_body_chars:
                 skipped_short += 1
+                known.add(key)
                 continue
             digest = body_hash(body)
             meta = item.get("summary_meta") or {}
@@ -141,19 +205,22 @@ def main() -> int:
                 and meta.get("prompt_version") == PROMPT_VERSION
             ):
                 skipped_current += 1
+                known.add(key)
                 continue
-            candidates.append((published_key(item), path, document, account, item, body, digest))
+            candidates.append((published_key(item), path, document, account, item, body, digest, key))
 
     candidates.sort(key=lambda row: row[0], reverse=True)
     selected = candidates[: max(0, args.max_items)]
     if args.dry_run:
         print(json.dumps({
             "dryRun": True,
+            "mode": "new_articles_only",
             "documents": len(documents),
             "eligiblePending": len(candidates),
             "selected": len(selected),
             "skippedCurrent": skipped_current,
             "skippedShort": skipped_short,
+            "skippedKnown": skipped_known,
         }, ensure_ascii=False))
         return 0
 
@@ -170,7 +237,7 @@ def main() -> int:
     usage_output = 0
     run_at = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
-    for _, path, document, account, item, body, digest in selected:
+    for _, path, document, account, item, body, digest, key in selected:
         try:
             summary, usage = request_summary(
                 api_key,
@@ -189,6 +256,7 @@ def main() -> int:
                 "generated_at": run_at,
             }
             changed_paths.add(path)
+            known.add(key)
             completed += 1
             usage_input += int(usage.get("prompt_tokens") or 0)
             usage_output += int(usage.get("completion_tokens") or 0)
@@ -205,16 +273,25 @@ def main() -> int:
         if path in changed_paths:
             write_json(path, document)
 
+    write_json(state_path, {
+        "mode": "new_articles_only",
+        "activatedAt": state.get("activatedAt") or run_at,
+        "updatedAt": run_at,
+        "known": sorted(known),
+    })
+
     metadata = {
         "generatedAt": run_at,
         "model": MODEL,
         "promptVersion": PROMPT_VERSION,
         "basis": "full_body",
+        "mode": "new_articles_only",
         "completed": completed,
         "failed": failed,
         "pendingBeforeRun": len(candidates),
         "skippedCurrent": skipped_current,
         "skippedShort": skipped_short,
+        "skippedKnown": skipped_known,
         "rateLimited": rate_limited,
         "usage": {"inputTokens": usage_input, "outputTokens": usage_output},
     }
