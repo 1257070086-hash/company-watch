@@ -740,6 +740,8 @@ function mapArticleItems(items, src) {
   return items.map(item => ({
     id: item.id, title: item.title||'(无标题)', url: item.url,
     image: item.image||null,
+    summary: item.summary||'',
+    summaryMeta: item.summary_meta||null,
     date: (item.date_published || item.date_modified) ? new Date(item.date_published || item.date_modified) : null,
     authorName: src.name, sourceId: src.id,
     company: getCompany(src.id),
@@ -1696,7 +1698,7 @@ function escRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
 <script src="monitor-ui.js?v=20260918-clear-filter-labels"></script>
 <link rel="stylesheet" href="monitor-timeline.css?v=20260916-batch-spacing">
 <script src="monitor-timeline.js?v=20260918-clear-filter-labels"></script>
-<script src="monitor-content.js?v=20260916-charts-first"></script>
+<script src="monitor-content.js?v=20260920-cloud-summary"></script>
 <link rel="stylesheet" href="monitor-controls.css?v=20260917-background-panel">
 <script src="monitor-controls.js?v=20260918-clear-filter-labels"></script>
 <script>

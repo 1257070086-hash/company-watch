@@ -7,10 +7,11 @@ const contentReady=Promise.allSettled([
 ]).then(results=>{contentLoadError=results[0].status==='rejected';});
 function articleSummary(a){
   const edited=editorialData?.summaries?.[a.id], stored=contentData.items?.[a.id];
-  // Keep existing text visible until a full-body summary replaces it.
-  // Legacy extracts are transitional, not newly approved summaries.
-  if(stored?.kind==='image_only')return '';
-  const text=edited||stored?.text;
+  const generated=a.summaryMeta?.status==='done'&&a.summaryMeta?.basis==='full_body'?a.summary:'';
+  // Editorial copy remains the highest-priority override. New cloud summaries
+  // are full-body based; the local archive remains a compatibility fallback.
+  if(!edited&&!generated&&stored?.kind==='image_only')return '';
+  const text=edited||generated||stored?.text;
   if(!text)return '';
   return `<p class="article-abstract">${safeText(text)}</p>`;
 }

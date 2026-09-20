@@ -35,6 +35,11 @@ jobs:
           RSS_SOURCES_JSON: ${{ secrets.RSS_SOURCES_JSON }}
         run: python3 site/scripts/cloud_rss_sync.py --output cloud-data/data-snapshot
 
+      - name: Generate summaries for new full-text articles
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: python3 site/scripts/cloud_summarize.py --snapshot cloud-data/data-snapshot --max-items 20
+
       - name: Publish updated snapshot
         working-directory: cloud-data
         run: |
