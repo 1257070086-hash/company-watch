@@ -4,6 +4,27 @@
   "home_page_url": "",
   "items": [
     {
+      "id": "2d75555c37ab5bb15a43e44f15eb23312d63bff6280dde5cbd49448f93376b8a",
+      "title": "倒计时 2 天！阿里巴巴集团 AI Native 研发实践论坛诚邀开发者共话未来",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA%3D%3D&mid=2247511534&idx=1&sn=cae842ca326feb5109605684838628c3&chksm=ce5a64a0d835adb7f116ee0e6f028fa093124efab86643ad4416f41d0f876a4fc5ef4e32bc00",
+      "content_html": "",
+      "description": "AI Native 研发范式正在重塑软件工程的全流程与组织形态。本论坛聚焦 AI 原生时代的技术变革与工程实践，系统展示阿里巴巴集团从 AI 基础设施到业务场景的全景实践，并邀请来自复旦大学、蚂蚁集团的代表共同探讨研发范式的演进方向；同时，《AI Native 研发范式实践手册》将在现场重磅发布。 论坛名称 智启原生 研见未来 阿里巴巴集团 AI Native 研发实践论坛 时间 9月23日 （云栖大会Day2） 14:00-16:25 地点 杭州国际博览中心一期 三楼 301 议程信息 观众注册温馨提示 2026云栖大会全通票、优享票、畅享票均已告罄。请通过官方渠道获取大会信息，切勿轻信所谓“黄牛票”及非官方购票信息，谨防受骗。感谢关注，期待与您在云栖大会相见。 欢迎留言一起参与讨论~",
+      "body_text": "AI Native 研发范式正在重塑软件工程的全流程与组织形态。本论坛聚焦 AI 原生时代的技术变革与工程实践，系统展示阿里巴巴集团从 AI 基础设施到业务场景的全景实践，并邀请来自复旦大学、蚂蚁集团的代表共同探讨研发范式的演进方向；同时，《AI Native 研发范式实践手册》将在现场重磅发布。 论坛名称 智启原生 研见未来 阿里巴巴集团 AI Native 研发实践论坛 时间 9月23日 （云栖大会Day2） 14:00-16:25 地点 杭州国际博览中心一期 三楼 301 议程信息 观众注册温馨提示 2026云栖大会全通票、优享票、畅享票均已告罄。请通过官方渠道获取大会信息，切勿轻信所谓“黄牛票”及非官方购票信息，谨防受骗。感谢关注，期待与您在云栖大会相见。 欢迎留言一起参与讨论~",
+      "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/sz_mmbiz_jpg/kN3t5R6pdz5E62Hw6uMvNUoL0icOicPInvlQnW7ZYxRWu9y6Cb7kpOxM9Jc7C92tFO4dJc6oWRDftLyCdCsSMWoNdWzyAWKicUPVFttn9ttyY8/0?wx_fmt=jpeg",
+      "date_modified": "2026-09-21T12:14:00Z",
+      "date_published": "2026-09-21T12:14:00Z",
+      "summary": "阿里巴巴集团 AI Native 研发实践论坛将于9月23日云栖大会Day2 14:00-16:25在杭州国际博览中心一期三楼301举行，聚焦AI原生时代的技术变革与工程实践，展示从AI基础设施到业务场景的全景实践，并邀请复旦大学、蚂蚁集团代表共同探讨研发范式演进方向，现场还将发布《AI Native 研发范式实践手册》。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "1acfa1911f69a55e73df085a3d3213857fd529f4da86bf73ff62ae843f7ee0db",
+        "generated_at": "2026-09-21T12:33:12.183147Z"
+      }
+    },
+    {
       "id": "38e55df9b13252e5d1b0444f1269a45c72b57ea5c4f616d75bc8cba7146db624",
       "title": "把「达标判定」从大模型手里收回来：Graph Engineering实践",
       "url": "https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA%3D%3D&mid=2247511523&idx=1&sn=a78781dc2ab31142b71033d962b257a9&chksm=cedea350f005c9b4e74324c0aec2acfcc400dda905e89745f34a41e457b3eafb0c70743766ea",
