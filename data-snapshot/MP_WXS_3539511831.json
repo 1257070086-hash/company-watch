@@ -4,6 +4,27 @@
   "home_page_url": "",
   "items": [
     {
+      "id": "05431c79c5d32d134afe899f51872596d2fd24bc0b813977b513c659c46794ba",
+      "title": "刚刚，微软宣布亚太换帅，押注AI下一程！",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzUzOTUxMTgzMQ%3D%3D&mid=2247597634&idx=1&sn=65610533c25af2a60840ca17331e7da3&chksm=fbb230ce955a6f7f2f33ff84513f5f7312e946d902a26e9e61db8e86d520b1ed9f2b3e72a097",
+      "content_html": "",
+      "description": "刚刚，互联网坊间八卦获悉，微软公司今日宣布，微软全球资深副总裁、微软（亚洲）互联网工程院院长张祺博士出任微软亚太研发集团主席。集团原主席王永东博士卸任退休。 公开资料显示，张祺于2002年加入微软，张祺拥有30余项国际专利，本科毕业于北京大学，获美国华盛顿大学硕士及博士学位。在二十余年的职业生涯中长期深耕人工智能、机器学习、大数据等前沿领域，深度参与Microsoft 365、Copilot、Azure AI、Bing等核心产品与业务的发展。他创立的微软搜索广告团队九年间实现超100亿美元营收，并于2018年成为微软亚太研发集团首位全球杰出工程师，2021年晋升全球资深副总裁。 履新后，他将负责制定微软亚太研发集团技术与产品发展战略，推动技术创新、生态合作与新业务探索。",
+      "body_text": "刚刚，互联网坊间八卦获悉，微软公司今日宣布，微软全球资深副总裁、微软（亚洲）互联网工程院院长张祺博士出任微软亚太研发集团主席。集团原主席王永东博士卸任退休。 公开资料显示，张祺于2002年加入微软，张祺拥有30余项国际专利，本科毕业于北京大学，获美国华盛顿大学硕士及博士学位。在二十余年的职业生涯中长期深耕人工智能、机器学习、大数据等前沿领域，深度参与Microsoft 365、Copilot、Azure AI、Bing等核心产品与业务的发展。他创立的微软搜索广告团队九年间实现超100亿美元营收，并于2018年成为微软亚太研发集团首位全球杰出工程师，2021年晋升全球资深副总裁。 履新后，他将负责制定微软亚太研发集团技术与产品发展战略，推动技术创新、生态合作与新业务探索。",
+      "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/mmbiz_jpg/oQjET7dYAzyWh1xjWbu6IOcYHibx5Kj9HXNESHldy32O6SZUGK7MMEia0YeTWMqaM7fro229Vcy0OiaqRPKOROBeHDVyyjgS4tfibKunq2g0f84/640?wx_fmt=jpeg&from=appmsg",
+      "date_modified": "2026-09-28T04:14:51Z",
+      "date_published": "2026-09-28T04:14:51Z",
+      "summary": "微软宣布张祺博士出任微软亚太研发集团主席，原主席王永东博士卸任退休。张祺于2002年加入微软，长期深耕人工智能、机器学习、大数据等领域，曾深度参与Microsoft 365、Copilot、Azure AI、Bing等核心产品发展，其创立的搜索广告团队九年间实现超100亿美元营收。履新后，他将负责制定微软亚太研发集团技术与产品发展战略，推动技术创新、生态合作与新业务探索。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "025794e751fec6f588ea2396c51434f9d0d75b9ba292009127cc3bcd9014e070",
+        "generated_at": "2026-09-28T04:32:55.486035Z"
+      }
+    },
+    {
       "id": "ed6fdb39375867a0faa9410ee585ec78b7a8f9e91e57481380e7e6953d7eabd4",
       "title": "9.23｜经纬创投张颖去哪了？小米发工资要顺延？理想跌了30名！",
       "url": "https://mp.weixin.qq.com/s?__biz=MzUzOTUxMTgzMQ%3D%3D&mid=2247597620&idx=1&sn=64b0d112b168c60134142795ddeefc0a&chksm=fbb6c5f0758ef7efaa8a2ac3b9cc924b9e0c433dec13da9d77ed585dd3749c738d7c1e05adf8",
