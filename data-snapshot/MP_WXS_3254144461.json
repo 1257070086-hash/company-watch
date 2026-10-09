@@ -4,6 +4,27 @@
   "home_page_url": "",
   "items": [
     {
+      "id": "40bf5d9ddb2225f55fda1f296e7c0abe78a3a91d78fd7ab3e1b192cbe92fb2a7",
+      "title": "字节TRAE原负责人石扬离职",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI1NDE0NDQ2MQ%3D%3D&mid=2649603448&idx=1&sn=3883281b47fbd711eeaf94296460e025&chksm=f02fc1cabc62787829abe6da5c461f9f4341b8c57e7055e9ba99a5b8bf1baaa8d2ae9d54f123",
+      "content_html": "",
+      "description": "字节TRAE原负责人石扬离职 字节 AI 办公平台 TRAE 原负责人石扬，节前离职了。 圈里两个多月前就传他要走。现在看准了——他打算跟前字节 AI 数据与安全负责人傅越一起做 AI 办公创业。首轮融资都搞定了，估值差不多 2 亿美元。 石扬履历挺硬，微软、Facebook 都待过。后来自己创业做企业身份管理，被腾讯收购后接着管这块业务。去年底才化名加入字节，一路管过开源治理、豆包编程产品，最后接手 TRAE。 TRAE 本来是字节的 AI 编程工具，后来扩成了 AI 办公平台。8 月底字节刚把 TRAE、扣子团队并进豆包体系。10 月 9 日 TRAE 官方又宣布，TraeWork 和 TraeCode 合并成全新 TRAE，升级成全链路开发平台。 人走了，产品还在豆包体系里继续折腾。",
+      "body_text": "字节TRAE原负责人石扬离职 字节 AI 办公平台 TRAE 原负责人石扬，节前离职了。 圈里两个多月前就传他要走。现在看准了——他打算跟前字节 AI 数据与安全负责人傅越一起做 AI 办公创业。首轮融资都搞定了，估值差不多 2 亿美元。 石扬履历挺硬，微软、Facebook 都待过。后来自己创业做企业身份管理，被腾讯收购后接着管这块业务。去年底才化名加入字节，一路管过开源治理、豆包编程产品，最后接手 TRAE。 TRAE 本来是字节的 AI 编程工具，后来扩成了 AI 办公平台。8 月底字节刚把 TRAE、扣子团队并进豆包体系。10 月 9 日 TRAE 官方又宣布，TraeWork 和 TraeCode 合并成全新 TRAE，升级成全链路开发平台。 人走了，产品还在豆包体系里继续折腾。",
+      "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/sz_mmbiz_jpg/nEWyk3hdcmkExSGIqFEcibicYaiaFVVL3FL3ugibNTj87KbEicf0Kp8WqpMdAxOJqYLoc040m38ET0Sic579ql19ib5bJJoayHZyszJ8YvZrH1mAkI/0?wx_fmt=jpeg",
+      "date_modified": "2026-10-09T03:41:28Z",
+      "date_published": "2026-10-09T03:41:28Z",
+      "summary": "字节 AI 办公平台 TRAE 原负责人石扬已于节前离职，计划与前字节 AI 数据与安全负责人傅越共同创业做 AI 办公，首轮融资已完成，估值约 2 亿美元。TRAE 原为字节 AI 编程工具，后扩展为 AI 办公平台，8 月底与扣子团队并入豆包体系，10 月 9 日 TraeWork 和 TraeCode 合并为全新 TRAE，升级为全链路开发平台。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "546209df11bc95c25af6db3cfb703c1fc8390168a0ea2907e51614afb4015d03",
+        "generated_at": "2026-10-09T04:13:28.578018Z"
+      }
+    },
+    {
       "id": "ad44f2b9d7b232405df92b59d10a6c3fb4a9f40a15b84a2b3cddf267e3be0326",
       "title": "字节TRAE原负责人石扬离职",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI1NDE0NDQ2MQ%3D%3D&mid=2649603440&idx=1&sn=a29182217841a842c44bad640d1b4d3f&chksm=f05646eeee6edd064007c5e541e0bdbd65dd4d0017ed2476f73866dc0af044fa70452fdfe48c",
