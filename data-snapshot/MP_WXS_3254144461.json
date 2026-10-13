@@ -4,6 +4,27 @@
   "home_page_url": "",
   "items": [
     {
+      "id": "1ccc869124f7e4c144699873ca37645f4b7f9d14959bbc2b434dd481afc4e8ad",
+      "title": "旨在加强Seed安全与对齐方向的投入",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI1NDE0NDQ2MQ%3D%3D&mid=2649603483&idx=1&sn=0988fd868caaca66e557e9fe0e3b17e3&chksm=f0688c936d6aa0c52d6a61fa95268f1ab0cea1611a9911e7edfa923c5ef076b857c82ef066ff",
+      "content_html": "",
+      "description": "旨在加强Seed安全与对齐方向的投入 10月13日，据《科创板日报》消息，字节跳动 Seed 近日发出内部邮件，宣布将成立\"Seed Model-Alignment&amp;Preparedness\" 部门，由严林负责，汇报给 Seed 负责人吴永辉。原Responsible AI 团队及部分 Chat 团队成员将转入新部门。 该部门的设立旨在加强安全与对齐方向的投入，对齐的核心是让模型的行为与人类意图和安全约束保持一致，从而提升 Agent Model（智能体模型）安全能力，以及防范 CBRN（化学、生物、放射、核）等前沿能力风险。 据报道，Seed 安全与对齐部门将围绕模型规范制定、安全评估体系建设、对齐训练、防护系统搭建和风险监控等方向持续投入，并加强与外部研究机构和第三方评测的公开合作，最终使前沿模型在安全与授权约束内有效完成任务，随着模型能力和自主性增强，持续降低滥用及行为偏离风险，建立面对未知风险的全面安全体系。 严林毕业于中科院计算所，曾是豆包大语言模型对齐团队负责人。",
+      "body_text": "旨在加强Seed安全与对齐方向的投入 10月13日，据《科创板日报》消息，字节跳动 Seed 近日发出内部邮件，宣布将成立\"Seed Model-Alignment&amp;Preparedness\" 部门，由严林负责，汇报给 Seed 负责人吴永辉。原Responsible AI 团队及部分 Chat 团队成员将转入新部门。 该部门的设立旨在加强安全与对齐方向的投入，对齐的核心是让模型的行为与人类意图和安全约束保持一致，从而提升 Agent Model（智能体模型）安全能力，以及防范 CBRN（化学、生物、放射、核）等前沿能力风险。 据报道，Seed 安全与对齐部门将围绕模型规范制定、安全评估体系建设、对齐训练、防护系统搭建和风险监控等方向持续投入，并加强与外部研究机构和第三方评测的公开合作，最终使前沿模型在安全与授权约束内有效完成任务，随着模型能力和自主性增强，持续降低滥用及行为偏离风险，建立面对未知风险的全面安全体系。 严林毕业于中科院计算所，曾是豆包大语言模型对齐团队负责人。",
+      "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/sz_mmbiz_jpg/nEWyk3hdcmmSLMQWGbp9S3TrJ87wY0r7uWEnMLOBw3tkgsBackAcuUlOTlEyCLaIHbCicu3CJnfLdDIdnaPJic9nibzSZJmTfUP0EazhFbp7rw/0?wx_fmt=jpeg",
+      "date_modified": "2026-10-13T05:56:29Z",
+      "date_published": "2026-10-13T05:56:29Z",
+      "summary": "字节跳动 Seed 于10月13日宣布成立“Seed Model-Alignment&Preparedness”部门，由严林负责并汇报给吴永辉，原 Responsible AI 团队及部分 Chat 团队成员转入。该部门旨在加强安全与对齐投入，围绕模型规范制定、安全评估、对齐训练、防护系统搭建和风险监控等方向持续投入，以提升 Agent Model 安全能力并防范 CBRN 等前沿能力风险。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "ec88064dc35dc3ed3e53486a7b110e88f40fd0e9d4557081398734bf671cf3d4",
+        "generated_at": "2026-10-13T06:33:33.808138Z"
+      }
+    },
+    {
       "id": "1d82623af8d771f49380dd72e2e61cdb1ba22a00709d22926233591ae04f5d1c",
       "title": "Kling 4.0即将上线：AI视频向“长叙事、强控制、工业化”的一次系统性跃迁",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI1NDE0NDQ2MQ%3D%3D&mid=2649603477&idx=1&sn=1a8c7fd546e996170d91ba67d15dc788&chksm=f0fc70caf0070c040aa398bab12979b75ca8485e8ba43df5a2de0e18a76b927d8904ffc0594d",
