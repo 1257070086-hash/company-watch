@@ -75,7 +75,17 @@
       "body_text": "作者 ｜ Daniel Curtis 译者 ｜ 田橙 Canvas UI 是由 React Bits 作者 David Haz 推出的一款开源组件库。它是首个基于实验性 HTML-in-Canvas API 构建的组件库，可以在真实、可交互的页面内容上运行 GPU 特效。 该组件库提供了 35 个组件，包括由指针驱动的流体、火焰、玻璃透镜、ASCII 滤镜、VHS 颗粒和粒子显现效果。每种效果都提供使用 GLSL 实现的 WebGL 版本，以及通过 vgpu 使用 WGSL 实现的 WebGPU 版本，并为 React、Solid、Preact、Vue 和 Svelte 提供封装，同时还支持无依赖的原生 TypeScript。 大多数组件并不是绘制一张静态位图，而是使用 Chrome 的 html-in-canvas API，在 Canvas 中布局实时 DOM，通过 drawElementImage 捕获内容，将其上传为纹理，再利用着色器进行变形处理。文本仍然可以选择，链接依旧能够点击，内容也会保留在 无障碍树 中。这些组件并非以软件包形式发布，而是通过一个兼容 shadcn 的注册表，以源代码形式分发： npx shadcn@latest add @canvas-ui/liquid-react 要获得完整体验，需要在 Chrome 中启用 canvas-draw-element 标志，或者使用一个 源试用 令牌。该源试用从 Chrome 148 持续到 Chrome 150，并且令牌只能绑定到一个域名。在其他环境中， html-in-canvas 特效会回退为普通 GPU 叠加层，或者保持被包裹内容的原样渲染；3D 对象组件则可以在所有环境中运行。 由于代码会被直接复制到项目仓库中，升级时需要重新运行安装命令，并处理本地修改。切换渲染器通常只需将已安装的文件替换为注册表中带有 -webgpu 后缀的版本，同时添加 vgpu 和 @webgpu/types 。项目 文档 还指出，Chrome 150 对 texElementImage2D 和 copyElementImageToTexture 的修改不需要迁移，因为内容捕获通过 2D API 完成，纹理上传则使用标准的 texImage2D 或 copyExternalImageToTexture 。 shadcn 称这是他们见过的 最令人印象深刻的注册表之一，Chrome for Developers 账号也表示，很高兴看到 html-in-canvas 为新框架赋能。Flavio Copes 在一篇 详细拆解文章 中称赞了那些并不华丽但十分扎实的工程实现：Liquid 组件离开屏幕可视区域时，会通过 IntersectionObserver 停止动画循环；它会遵循 prefers-reduced-motion 设置，并在组件卸载时释放纹理、程序和事件监听器。他建议使用一个足够亮眼的特效，而不是同时堆上六个，并避免在仪表盘、结账流程和文档网站中使用这些效果。 在 Hacker News 上，一名评论者看到演示页面中的提示横幅后，对这种仅限 Google 浏览器使用的能力表示怀疑： 使用 Chrome……但我们不是应该抵制这种可能让 Google“拥抱、扩展再消灭”其他技术的做法吗？ 尽管有这种遗憾而又冷门的担忧——真希望它不是冷门问题——还是要向作者致敬。 另一名用户回应： 标准化流程要求先有实现，之后才能制定标准。WHATWG 相关议题中最近的评论分别来自 Jake Archibald（Mozilla）和 Anne van Kesteren（Apple）。这不是 Google 单方面推动的项目。 WICG 说明文档 中关于无障碍访问的讨论仍在继续，其中包括如何暴露几何信息尚未更新的可绘制子树。 Paper Shaders 提供从 npm 安装的零依赖 Canvas 着色器，但这些着色器只能以纹理形式位于内容后方或周围。同一作者开发的 React Bits 则直接为 DOM 添加动画。Canvas UI 是唯一将页面本身作为着色器输入的方案，这也正是它依赖 Safari 和 Firefox 尚未实现的功能的原因。 该项目采用 MIT 许可证加 Commons Clause，允许商业使用，但不允许转售这些组件。代码仓库 的 Star 数已经超过 4600，组件注册表也已 支持 MCP，允许智能助手通过 shadcn MCP 服务器浏览并安装组件。 原文链接： 参考链接:www[.]infoq[.]com 声明：本文为 InfoQ 翻译，未经许可禁止转载。 点击底部 阅读原文 访问 InfoQ 官网，获取更多精彩内容！ 今日好文推荐 Meta 新模型杀回AI第一梯队，Alexandr Wang 亲述 Muse 7个月翻身内幕 软件完蛋了吗？REA三天狂揽12万星：无需源码，Agent就能克隆一切软件 DeepSeek被曝新融资至少800亿；微软发布类Jev决策模型，速度约GPT-6 Sol 35倍；Node.js之父加入Cloudflare，Deno一年后停止开发｜Q资讯 Meta、OpenAI、Google集体杀入，个人Agent一夜爆红：YC CEO说真正的 AGI 已经在你电脑里",
       "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/mmbiz_gif/YriaiaJPb26VPQqHC66RJFpttVIMWG83T3lWHahUD4bvhxlKSayjeV2ibvC5ydqklP9QHDPD3qHJM07TV3IfHstjA/640?wx_fmt=gif",
       "date_modified": "2026-10-14T06:11:55Z",
-      "date_published": "2026-10-14T06:11:55Z"
+      "date_published": "2026-10-14T06:11:55Z",
+      "summary": "React Bits 作者 David Haz 推出开源组件库 Canvas UI，提供 35 个基于实验性 HTML-in-Canvas API 的组件，可在真实可交互的 DOM 内容上运行 GPU 特效，支持 WebGL 与 WebGPU 双版本及 React、Vue、Svelte 等框架封装。完整体验需在 Chrome 中启用 canvas-draw-element 标志或使用源试用令牌（Chrome 148 至 150，令牌仅绑定一个域名），其他环境会回退为普通 GPU 叠加层。该项目采用 MIT 加 Commons Clause 许可，仓库 Star 数已超 4600，注册表支持 MCP。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "e668818f1bd58b1bbc6fa75670b295017549d8a4ce370c4eace28735f24b0d70",
+        "generated_at": "2026-10-14T07:13:33.106132Z"
+      }
     },
     {
       "id": "5d869168d34d57256f956c291c3f87a8fb8d52ed24c022babfca618695f5e0e5",
