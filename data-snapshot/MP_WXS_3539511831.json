@@ -4,6 +4,27 @@
   "home_page_url": "",
   "items": [
     {
+      "id": "3268efc2aad57033e07879c9e5ce74f144930da53eb2ad8d26120a039160b24d",
+      "title": "豆包手机又被各大厂拒绝了！",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzUzOTUxMTgzMQ%3D%3D&mid=2247597855&idx=1&sn=b92d9c1d5a54572686e05e4da028338f&chksm=fb5f6270b07b3a1b8cfa30c7e5beecb2dca1184efff5fe2f086a062eecb1d95a0c0d027a72d2",
+      "content_html": "",
+      "description": "豆包手机又被各大厂拒绝了！ 今年9月14日，豆包手机助手消费者版本正式上线，同步推出SAEP协议，让第三方应用自主决定是否授权屏幕自动化操作。今天，30天公示期结束，官方正式公布了最新一批拒绝操作应用清单，共有155款应用明确不向豆包开放屏幕自动化代操作权限。这份拒绝名单里，头部互联大厂的产品几乎全员在列！其中腾讯系应用共66款，覆盖微信、QQ、腾讯会议、王者荣耀等社交、办公、娱乐全品类产品； 阿里系23款，包含淘宝、支付宝、饿了么、高德地图等高频生活服务应用；快手系14款、美团系11款也全部加入拒绝阵营。 除此之外，拼多多、去哪儿、航旅纵横、小红书、滴滴、Boss、WPS、DeepSeek等热门应用，以及中国电信、中国联通、中国移动三大运营商的相关产品，也都明确声明不开放相关权限。 另据笔者了解，按照豆包手机助手的规则，所有明确拒绝接入的应用，AI智能体都不会对其执行任何自动化操作，但用户仍可正常手动使用这些应用的全部功能。",
+      "body_text": "豆包手机又被各大厂拒绝了！ 今年9月14日，豆包手机助手消费者版本正式上线，同步推出SAEP协议，让第三方应用自主决定是否授权屏幕自动化操作。今天，30天公示期结束，官方正式公布了最新一批拒绝操作应用清单，共有155款应用明确不向豆包开放屏幕自动化代操作权限。这份拒绝名单里，头部互联大厂的产品几乎全员在列！其中腾讯系应用共66款，覆盖微信、QQ、腾讯会议、王者荣耀等社交、办公、娱乐全品类产品； 阿里系23款，包含淘宝、支付宝、饿了么、高德地图等高频生活服务应用；快手系14款、美团系11款也全部加入拒绝阵营。 除此之外，拼多多、去哪儿、航旅纵横、小红书、滴滴、Boss、WPS、DeepSeek等热门应用，以及中国电信、中国联通、中国移动三大运营商的相关产品，也都明确声明不开放相关权限。 另据笔者了解，按照豆包手机助手的规则，所有明确拒绝接入的应用，AI智能体都不会对其执行任何自动化操作，但用户仍可正常手动使用这些应用的全部功能。",
+      "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/sz_mmbiz_png/oQjET7dYAzz6DIMH81RYpJzwhA1kKtCplKJcmNcTBS5jrdKjbvuz0kJMHicV8Whml8ib6Yx9MplOe3tBic780n5ZKPjBgico0EicDOhViaWyHAiaSo/640?wx_fmt=png&from=appmsg",
+      "date_modified": "2026-10-14T12:48:36Z",
+      "date_published": "2026-10-14T12:48:36Z",
+      "summary": "豆包手机助手消费者版本上线30天公示期结束后，官方公布最新拒绝开放屏幕自动化代操作权限的应用清单，共155款应用明确拒绝，包括腾讯系66款、阿里系23款、快手系14款、美团系11款，以及拼多多、小红书、滴滴、三大运营商等热门产品。按规则，AI智能体不会对拒绝接入的应用执行自动化操作，但用户仍可手动正常使用其全部功能。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "461e0259e9b78aea687db95a45a0862c9df1cb4ef15c02b29ac5a276b1577d3b",
+        "generated_at": "2026-10-14T13:13:28.916114Z"
+      }
+    },
+    {
       "id": "9c185195ffd6e831482bcd559289d4c449d50fc3b7e70910014986b2eda36941",
       "title": "编造“Kimi16人被带走”谣言，两人被刑拘！",
       "url": "https://mp.weixin.qq.com/s?__biz=MzUzOTUxMTgzMQ%3D%3D&mid=2247597816&idx=1&sn=d0a3b5cea300f0e326f80f483379bb4b&chksm=fb3a578df47077cc4c95ce1d53d125ee2206522a0a8f7e3c5eaf1b2dace40e66e6a74276c9be",
