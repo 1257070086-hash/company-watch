@@ -4,6 +4,27 @@
   "home_page_url": "",
   "items": [
     {
+      "id": "65416f19a0eb64cc749f05502ea2fafc518043cde505d0348d116e3a609d6a82",
+      "title": "Gemini 4来了，谁该换掉自己的主力模型？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MTQzMjE1NjQwMQ%3D%3D&mid=2656212062&idx=1&sn=2acff2ff67a3dcb4eb15df4e56f36ac3&chksm=6737403b8fe23c17dd46950500a90691de2fbfd464a04d65f3196a7801ac7c4f3dacc1416327",
+      "content_html": "",
+      "description": "Gemini 4来了，谁该换掉自己的主力模型？ 时隔七个多月，谷歌的新旗舰模型终于向更多用户开放了。 &nbsp; 10月13日，谷歌宣布，Google AI Pro、Ultra订阅用户可在Gemini应用中使用Gemini 4 Argon，开发者也能通过付费API调用，免费用户暂时还用不了。 &nbsp; 最吸引人的数字是100万token。 &nbsp; Argon把一次任务的输入、推理和输出总量扩展到约100万token，通过API后台执行还能生成超过6.4万token的长内容。过去要拆成几轮的长资料，如今有机会一次处理。 &nbsp; 不过，这100万由输入、推理和输出共同占用，资料塞得越多，留给回答的空间越少；超长输出也要靠API后台拼接。普通用户在聊天窗口里，很难感受到完整的百万token能力。 &nbsp; 跑分也好看。按谷歌公布的对比表，Argon在19项评测中13项单独领先、1项并列第一；软件工程基准DeepSWE v1.1上拿到77.9%，高于GPT-6 Astra和Claude Opus 5.5。 &nbsp; 我更关心写作表现。最近的旗舰模型大多把宣传重点放在智能体和编程上，Argon的模型卡则专门提到写作、专业知识和长文档处理。文字工作者多了一个值得测试的选择，中文提升多少仍待实测。 &nbsp; 价格可能比跑分更有吸引力。2026年11月30日前，每百万输入token收费2美元、输出10美元；12月1日起恢复为4美元和20美元。恢复常规价后与Claude Opus 5.5持平，低于GPT-6 Astra，高于GPT-6.1 Sol。反复处理同一批资料还能用隐式缓存，命中后输入费用降低95%。 &nbsp; 谷歌公布的内部结果也值得一提：部分团队采用Argon后，智能体提交的代码变更增加超35%，回滚减少近三分之一。 &nbsp; 那么，普通人要不要把主力模型换成Gemini 4？ &nbsp; 经常处理长篇资料和写长文的人，可以尽快试一轮。百万token总窗口、长输出和缓存价格，确实对应了一批具体需求。 &nbsp; 平时主要用AI聊天和搜索，偶尔翻译几段文字的人，没有必要急着迁移。一个模型能否成为主力，还要看回答风格、响应速度，以及它能不能接进现有的工作流程。换模型省下的几美元，很可能抵不过重新适应工具花掉的时间。 &nbsp; 如果现在只能保留一个AI，你会选Gemini、ChatGPT、Claude，还是其他模型？哪项任务决定了你的选择？#AI #人工智能 #大模型 #谷歌 #Gemini4#ChatGPT #Claude 文案、制图｜张洪雷 编辑｜华思雨",
+      "body_text": "Gemini 4来了，谁该换掉自己的主力模型？ 时隔七个多月，谷歌的新旗舰模型终于向更多用户开放了。 &nbsp; 10月13日，谷歌宣布，Google AI Pro、Ultra订阅用户可在Gemini应用中使用Gemini 4 Argon，开发者也能通过付费API调用，免费用户暂时还用不了。 &nbsp; 最吸引人的数字是100万token。 &nbsp; Argon把一次任务的输入、推理和输出总量扩展到约100万token，通过API后台执行还能生成超过6.4万token的长内容。过去要拆成几轮的长资料，如今有机会一次处理。 &nbsp; 不过，这100万由输入、推理和输出共同占用，资料塞得越多，留给回答的空间越少；超长输出也要靠API后台拼接。普通用户在聊天窗口里，很难感受到完整的百万token能力。 &nbsp; 跑分也好看。按谷歌公布的对比表，Argon在19项评测中13项单独领先、1项并列第一；软件工程基准DeepSWE v1.1上拿到77.9%，高于GPT-6 Astra和Claude Opus 5.5。 &nbsp; 我更关心写作表现。最近的旗舰模型大多把宣传重点放在智能体和编程上，Argon的模型卡则专门提到写作、专业知识和长文档处理。文字工作者多了一个值得测试的选择，中文提升多少仍待实测。 &nbsp; 价格可能比跑分更有吸引力。2026年11月30日前，每百万输入token收费2美元、输出10美元；12月1日起恢复为4美元和20美元。恢复常规价后与Claude Opus 5.5持平，低于GPT-6 Astra，高于GPT-6.1 Sol。反复处理同一批资料还能用隐式缓存，命中后输入费用降低95%。 &nbsp; 谷歌公布的内部结果也值得一提：部分团队采用Argon后，智能体提交的代码变更增加超35%，回滚减少近三分之一。 &nbsp; 那么，普通人要不要把主力模型换成Gemini 4？ &nbsp; 经常处理长篇资料和写长文的人，可以尽快试一轮。百万token总窗口、长输出和缓存价格，确实对应了一批具体需求。 &nbsp; 平时主要用AI聊天和搜索，偶尔翻译几段文字的人，没有必要急着迁移。一个模型能否成为主力，还要看回答风格、响应速度，以及它能不能接进现有的工作流程。换模型省下的几美元，很可能抵不过重新适应工具花掉的时间。 &nbsp; 如果现在只能保留一个AI，你会选Gemini、ChatGPT、Claude，还是其他模型？哪项任务决定了你的选择？#AI #人工智能 #大模型 #谷歌 #Gemini4#ChatGPT #Claude 文案、制图｜张洪雷 编辑｜华思雨",
+      "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/sz_mmbiz_png/87nD5Qvn8kJ5yZFrcLq3G8WENuL1mwzpKEMMeaLlJRWYCvpSf281WUPTwDcmD6iaTLXViauwAnDmNDicbia3G67mPZB9wqG7cjm0mWJqLtiaotm0/0?wx_fmt=png&from=appmsg",
+      "date_modified": "2026-10-15T12:11:00Z",
+      "date_published": "2026-10-15T12:11:00Z",
+      "summary": "谷歌10月13日向Google AI Pro、Ultra订阅用户及付费API开发者开放Gemini 4 Argon，免费用户暂不可用。该模型将单任务输入、推理和输出总量扩展至约100万token，在19项评测中13项领先，DeepSWE v1.1得分77.9%，2026年11月30日前输入、输出每百万token分别收费2美元和10美元，之后恢复为4美元和20美元。经常处理长篇资料和写长文的人可尽快试用，仅用于聊天、搜索和偶尔翻译的用户则不必急于迁移。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "d3c1971fd42acc17f605a984b3c0a7aaa5c0595258d740e7b0b03c917f8c35c6",
+        "generated_at": "2026-10-15T12:33:30.912298Z"
+      }
+    },
+    {
       "id": "5a87fdd21ac4b9eb9ac69238f3086b51a6cbe0d27fe80476e2dcb2c650869a26",
       "title": "静安寺的新晋打卡地，给线下上了一课",
       "url": "https://mp.weixin.qq.com/s?__biz=MTQzMjE1NjQwMQ%3D%3D&mid=2656212045&idx=1&sn=80d1b5031df07173dae40dcb87ad5e46&chksm=67db4dfff19ce845ff13e6c2c36d290b4318a064b4b6bcb35cca59a96eb8b690e4e3c4812f48",
