@@ -4,6 +4,27 @@
   "home_page_url": "",
   "items": [
     {
+      "id": "0b73543e2ddc12d4c42346131952e4c238445d9b205a4ba1dbb4bef612f21504",
+      "title": "终于等到准信！苹果智能中国版要来了",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyNTk2NDQ5MQ%3D%3D&mid=2247490774&idx=1&sn=7ef453cd95d170fa5f6c98b55a1a562d&chksm=e930458fedef5d76ce18f30b9e32752944d9afc539f89c0a7cbe85cf04d0ccc20dff54a9e572",
+      "content_html": "",
+      "description": "终于等到准信！苹果智能中国版要来了 终于有准信了！ 苹果和千问大模型的合作定了， 苹果智能中国版也要来了。 10月15日，库克在上海接受采访时表示， 苹果智能及相关阿里千问大模型确已获得批准， 将在10月晚些时候，在国内上线beta测试版本。 首批功能包括： 实时翻译、书写工具、照片清除工具等等。 不过先划个重点： Siri AI这次不包含在内， 也不是所有功能一次性上线。 另据消息人士透露，阿里千问将作为AI能力集成至苹果智能，面向iOS、iPadOS、macOS和visionOS的中国用户。无需在App之间来回切换，就能直接体验Qwen模型的文本与图像理解、内容生成等能力。 #阿里千问 #苹果#互联网大厂",
+      "body_text": "终于等到准信！苹果智能中国版要来了 终于有准信了！ 苹果和千问大模型的合作定了， 苹果智能中国版也要来了。 10月15日，库克在上海接受采访时表示， 苹果智能及相关阿里千问大模型确已获得批准， 将在10月晚些时候，在国内上线beta测试版本。 首批功能包括： 实时翻译、书写工具、照片清除工具等等。 不过先划个重点： Siri AI这次不包含在内， 也不是所有功能一次性上线。 另据消息人士透露，阿里千问将作为AI能力集成至苹果智能，面向iOS、iPadOS、macOS和visionOS的中国用户。无需在App之间来回切换，就能直接体验Qwen模型的文本与图像理解、内容生成等能力。 #阿里千问 #苹果#互联网大厂",
+      "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/sz_mmbiz_png/MC1nFvXS8MhuRico3sSia98PyjELZYDibgHuicWjAwTKkHvFCV51yMQJznEP6WErfLlfQF9icia1dibnmhqsUoLAiaehZicgT9GWBlADGicLKRFqVhCns/0?wx_fmt=png",
+      "date_modified": "2026-10-15T11:12:34Z",
+      "date_published": "2026-10-15T11:12:34Z",
+      "summary": "苹果智能中国版已获批，将与阿里千问大模型合作，于10月晚些时候在国内上线beta测试版本，首批功能包括实时翻译、书写工具、照片清除工具等，但不包含Siri AI，且并非所有功能一次性上线。阿里千问将作为AI能力集成至苹果智能，面向iOS、iPadOS、macOS和visionOS的中国用户，无需切换App即可体验Qwen模型的文本与图像理解、内容生成等能力。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "9ec0d096ac18d19d6cb422d77f994a1d3564c32fbd112139d19bd3839a5d89e8",
+        "generated_at": "2026-10-15T11:33:25.246709Z"
+      }
+    },
+    {
       "id": "051b2e831041a077bb650da6fe5684772de587c0364b62a8850f78c3fc4bb182",
       "title": "前360漏洞研究院院长、世界顶级白帽古河宣布入职智谱",
       "url": "https://mp.weixin.qq.com/s?__biz=MzIyNTk2NDQ5MQ%3D%3D&mid=2247490766&idx=1&sn=b217a4021f1c2e53f0098f0d994cb93b&chksm=e98fe16a0ee4ce3db25bcb0d3701f1778d3c5ffd0fa9ce2715573a48354651519de701b84887",
