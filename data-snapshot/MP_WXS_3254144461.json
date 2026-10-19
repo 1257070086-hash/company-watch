@@ -4,6 +4,27 @@
   "home_page_url": "",
   "items": [
     {
+      "id": "261f421472c68d2e4570597e1a7af511e1d2ea5721f370379916da59c82f982f",
+      "title": "独家|字节Seed模型评测负责人黄文灏离职",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI1NDE0NDQ2MQ%3D%3D&mid=2649603522&idx=1&sn=644cead90f60fa92ff40c011529b4028&chksm=f0418948d25ec95a994f17c0f872a874bc6cbf513b95d28de74e727259e098d66c1ddf539460",
+      "content_html": "",
+      "description": "北京时间10月19日消息，据知情人士透露，字节Seed模型评测负责人黄文灏已于近期离职。有消息称，他的下一步动作会是创业，但具体方向和融资情况还不得而知。 2024年8月，黄文灏以零一万物联合创始人、算法副总裁及模型训练负责人的身份加入字节Seed团队，担任技术项目管理和规划负责人，向时任Seed负责人的朱文佳汇报。2025年初，谷歌DeepMind副总裁吴永辉接手Seed，黄文灏转向吴永辉汇报。此后，黄文灏的主要工作调整为Seed模型评测工作，同时参与一些seed的前沿技术规划讨论和人才招聘。 据公开资料，黄文灏本科及博士均就读于北京大学计算机专业，是国内最早从事深度学习（Deep Learning）研究的人员之一。 毕业后，黄文灏加入微软亚洲研究院，担任研究员。在微软期间，他主要关注智能体（Agent）相关技术的研究，特别是聚焦于能够完成任务的聊天机器人。 离开微软后，黄文灏加入北京智源人工智能研究院，担任健康计算研究中心技术负责人及创新应用实验室负责人。在这一阶段，他的研究重心转向“AI for Life Science”（AI赋能生命科学），重点探索“AI+大健康”领域。 2023年，黄文灏以联合创始人身份加入由李开复创办的零一万物，担任算法副总裁及模型训练负责人。在零一万物期间，他主导了公司核心大模型Yi系列（包括Yi-34B、Yi-Large等）的训练与发布工作。",
+      "body_text": "北京时间10月19日消息，据知情人士透露，字节Seed模型评测负责人黄文灏已于近期离职。有消息称，他的下一步动作会是创业，但具体方向和融资情况还不得而知。 2024年8月，黄文灏以零一万物联合创始人、算法副总裁及模型训练负责人的身份加入字节Seed团队，担任技术项目管理和规划负责人，向时任Seed负责人的朱文佳汇报。2025年初，谷歌DeepMind副总裁吴永辉接手Seed，黄文灏转向吴永辉汇报。此后，黄文灏的主要工作调整为Seed模型评测工作，同时参与一些seed的前沿技术规划讨论和人才招聘。 据公开资料，黄文灏本科及博士均就读于北京大学计算机专业，是国内最早从事深度学习（Deep Learning）研究的人员之一。 毕业后，黄文灏加入微软亚洲研究院，担任研究员。在微软期间，他主要关注智能体（Agent）相关技术的研究，特别是聚焦于能够完成任务的聊天机器人。 离开微软后，黄文灏加入北京智源人工智能研究院，担任健康计算研究中心技术负责人及创新应用实验室负责人。在这一阶段，他的研究重心转向“AI for Life Science”（AI赋能生命科学），重点探索“AI+大健康”领域。 2023年，黄文灏以联合创始人身份加入由李开复创办的零一万物，担任算法副总裁及模型训练负责人。在零一万物期间，他主导了公司核心大模型Yi系列（包括Yi-34B、Yi-Large等）的训练与发布工作。",
+      "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/mmbiz_jpg/nEWyk3hdcmlzaCPAcCbaWdN7a3GZCrze6Zd7UBpwXC9l7U471bzibs2fwmI4qP04PLwIqPUbL3eDeTCn4srvfzdXQGwnjNfhbhEbGy3KuC9w/640?wx_fmt=webp&from=appmsg",
+      "date_modified": "2026-10-19T06:00:33Z",
+      "date_published": "2026-10-19T06:00:33Z",
+      "summary": "字节Seed模型评测负责人黄文灏已于近期离职，有消息称其下一步将创业，但具体方向和融资情况尚不清楚。他于2024年8月以零一万物联合创始人身份加入字节Seed，2025年初吴永辉接手Seed后转任模型评测工作。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "6fad1da6afa89dedcd0fd2af806835915a3a480f87ab329623d7edcba1798e95",
+        "generated_at": "2026-10-19T06:33:21.503409Z"
+      }
+    },
+    {
       "id": "da5f8858bdeba784dfc85e88e8ed2544b90d00dcbe37e4160f6c5e9e7317fccb",
       "title": "阿里通义万相视频模型负责人张迎亚离职",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI1NDE0NDQ2MQ%3D%3D&mid=2649603517&idx=1&sn=7441ef2a23006c46f2bbb0104438734f&chksm=f04bf8581db908ea7122c76384df6be529887078d3dbfe581bb3fc13470cda5830a9e4041a16",
