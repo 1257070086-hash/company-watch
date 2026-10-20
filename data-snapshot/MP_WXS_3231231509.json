@@ -36,9 +36,41 @@
       "date_published": "2026-10-19T11:26:22Z"
     },
     {
+      "id": "4f5dc2d04fad20eafc2cc095bee8ed403614baebe51fa3b7defe65b521a0a46e",
+      "title": "一篇笔记读懂字节跳动 AI 产品经理！",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMTIzMTUwOQ%3D%3D&mid=2650114859&idx=1&sn=bc66ab7b6e66699440ddb9a928b16d17&chksm=f15057203beb829f3d531a262b792be78c4b8a39400b45074a16f672db789b07cdaf9765788f",
+      "content_html": "",
+      "description": "一篇笔记读懂字节跳动 AI 产品经理！ 今天招聘君带大家了解的岗位是： ⬇️ AI 产品经理 关于这个岗位，你可能会疑惑 “没有 AI 产品经理实习经历怎么办？” “什么样的 Vibe Coding 产品更容易打动面试官？” “字节跳动会怎么考察 AI 能力和产品 Sense？” “在字节跳动做 AI 产品经理，一天都在做什么？” ...... 招聘君用 5 张图片 带你看明白。 （PS：图片里还藏了面试“原题”。建议同学们先自己想一版答案，再对照解题思路，看看自己的判断、表达和产品思考还有哪些可以优化。） 另外如果你想了解更多字节跳动岗位内容？欢迎评论区留言～ 也许下期就是你想看的岗位。😉 #字节跳动#字节跳动招聘#大模型#秋招#求职#AI产品经理",
+      "body_text": "一篇笔记读懂字节跳动 AI 产品经理！ 今天招聘君带大家了解的岗位是： ⬇️ AI 产品经理 关于这个岗位，你可能会疑惑 “没有 AI 产品经理实习经历怎么办？” “什么样的 Vibe Coding 产品更容易打动面试官？” “字节跳动会怎么考察 AI 能力和产品 Sense？” “在字节跳动做 AI 产品经理，一天都在做什么？” ...... 招聘君用 5 张图片 带你看明白。 （PS：图片里还藏了面试“原题”。建议同学们先自己想一版答案，再对照解题思路，看看自己的判断、表达和产品思考还有哪些可以优化。） 另外如果你想了解更多字节跳动岗位内容？欢迎评论区留言～ 也许下期就是你想看的岗位。😉 #字节跳动#字节跳动招聘#大模型#秋招#求职#AI产品经理",
+      "image": "https://img.hhbboo.com/mm/mmecoa.qpic.cn/sz_mmecoa_jpg/mY6WyqWCyq2NyuG3plicBuKbdgLUn9YBW2rELlxQ8qNM8lov8GRHuWZE9aZibqduNxNzKa8gkIvUoV1dHjbpePlWGOm1qTjRUARicFJibugj5h4/0?wx_fmt=jpeg&from=appmsg",
+      "date_modified": "2026-10-19T11:26:22Z",
+      "date_published": "2026-10-19T11:26:22Z",
+      "summary": "字节跳动招聘以5张图片介绍AI产品经理岗位，内容涵盖无相关实习经历的应对、易打动面试官的Vibe Coding产品、AI能力与产品Sense的考察方式及日常工作，并附有面试原题供求职者自测优化。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "081cc587287b0eef5e8c4a09149c9794356e6e9735eb978a686442e80dab2375",
+        "generated_at": "2026-10-20T10:13:20.330911Z"
+      }
+    },
+    {
       "id": "96591c27109a9e2bf1e61a5a96dbeffb26d510bbdd0b3f7b9bef7c12147525a0",
       "title": "Seed Alignment & Preparedness 全球顶尖人才招募启动",
       "url": "https://mp.weixin.qq.com/s?__biz=MzIzMTIzMTUwOQ%3D%3D&mid=2650115297&idx=1&sn=ac99164cc1fe85e3e6edb14963a78fe3&chksm=f1fb813ea6c5aac80535a7c69ca9e2802ea599a19b94bb24b2840ae7f4ce02c718bf93f7e769",
+      "content_html": "",
+      "description": "",
+      "body_text": "",
+      "image": "https://mmecoa.qpic.cn/sz_mmecoa_png/mY6WyqWCyq3KaDGMHauudKuaAD4Gd7LCWeyks9AibWCN7mxI04p9oJ4SAUUOucqFiadDveWpibdicHoD0eOsAdakhOfywnwFnZ3DypIxobQwiaqo/640?wx_fmt=png&from=appmsg",
+      "date_modified": "2026-10-15T10:03:03Z",
+      "date_published": "2026-10-15T10:03:03Z"
+    },
+    {
+      "id": "81189218246504f4d2f6504ed14eef8484a75bf1c80f7fe620dce6b717efa84a",
+      "title": "Seed Alignment & Preparedness 全球顶尖人才招募启动",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMTIzMTUwOQ%3D%3D&mid=2650115297&idx=1&sn=ac99164cc1fe85e3e6edb14963a78fe3&chksm=f1e8f74bd594183185e1a6d40cf4d66ea38b0b01a1d5af43fd1fe327f90f631b473c2e9eb362",
       "content_html": "",
       "description": "",
       "body_text": "",
