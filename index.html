@@ -1704,11 +1704,11 @@ function escRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
 <script>
 // ═══════════════ BOOT ═══════════════
 async function main() {
-  await init();
   if (new URLSearchParams(location.search).get('view') === 'weekly') {
     await customElements.whenDefined('industry-weekly');
     switchView('archive');
   }
+  await init();
 }
 main();
 </script>
