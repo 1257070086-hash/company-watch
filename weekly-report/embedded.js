@@ -157,4 +157,3 @@ class IndustryWeekly extends HTMLElement {
   }
 }
 customElements.define('industry-weekly',IndustryWeekly);
-
