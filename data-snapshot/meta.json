@@ -4,7 +4,7 @@
   "activeFeedCount": 23,
   "intervalMinutes": 20,
   "maxItemsPerSource": 10,
-  "errors": 2,
+  "errors": 0,
   "sources": {
     "MP_WXS_1432156401": {
       "status": "ok",
@@ -133,17 +133,17 @@
       "count": 95
     },
     "MP_WXS_3572959446": {
-      "status": "error",
-      "checkedAt": 1792552355,
-      "successAt": 1790675561,
-      "message": "HTTP 404，保留已有文章",
-      "count": 91
+      "status": "ok",
+      "checkedAt": 1792552420,
+      "successAt": 1792552420,
+      "message": "RSS源替换，读取10篇，补入10篇",
+      "count": 101
     },
     "MP_WXS_3885737868": {
-      "status": "error",
-      "checkedAt": 1792552355,
-      "successAt": 1790763158,
-      "message": "读取失败，保留已有文章：ValueError",
+      "status": "ok",
+      "checkedAt": 1792552420,
+      "successAt": 1792552420,
+      "message": "RSS源替换，读取10篇，补入0篇",
       "count": 73
     },
     "MP_WXS_3889763736": {
@@ -167,5 +167,6 @@
       "message": "正常，暂无新文章",
       "count": 63
     }
-  }
+  },
+  "repairedAt": 1792552420
 }

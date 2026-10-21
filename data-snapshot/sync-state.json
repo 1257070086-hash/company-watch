@@ -24,7 +24,8 @@
     "MP_WXS_3572959446": {
       "etag": "",
       "modified": "",
-      "successAt": 1790675561
+      "sourceFingerprint": "1bf50866cb41dc58c68d9004821edd1bb91e07212b549ef403eeb13f14b076d6",
+      "successAt": 1792552420
     },
     "MP_WXS_1432156401": {
       "etag": "W/\"18e063adfecb3bf8-386412\"",
@@ -92,9 +93,10 @@
       "successAt": 1792552355
     },
     "MP_WXS_3885737868": {
-      "etag": "W/\"18d9ca20597ef2a6-f40311\"",
-      "modified": "Tue, 29 Sep 2026 12:22:47 GMT",
-      "successAt": 1790763158
+      "etag": "",
+      "modified": "",
+      "sourceFingerprint": "1502ebfb03ffed7f56c80d831707df850ad9888bbe218f10bb0ebf96fb7c0b40",
+      "successAt": 1792552420
     },
     "MP_WXS_3889763736": {
       "etag": "W/\"18e034c69ad97918-e5248\"",
