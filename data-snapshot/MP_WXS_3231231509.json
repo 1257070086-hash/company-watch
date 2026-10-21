@@ -4,6 +4,27 @@
   "home_page_url": "",
   "items": [
     {
+      "id": "f2639adc0af3933f1585343d107c6bc16125b55119b6cec8dd9be1846b74711c",
+      "title": "一篇笔记读懂字节跳动招聘岗！",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMTIzMTUwOQ%3D%3D&mid=2650115428&idx=1&sn=a0e3adf9cf8023003033f2578953def5&chksm=f1933aeee9df370183533fd81174b4e3960c965c3ea8c5e0308f800210cd45772434ca3ccc05",
+      "content_html": "",
+      "description": "一篇笔记读懂字节跳动招聘岗！ 昨天刚结束的【字节跳动 2027 校招空宣・职能场】直播，大家都看了吗？😉 没赶上的同学也别慌——可以搜索【字节跳动招聘】✨视频号✨（注意不是服务号喔～）在主页找到直播回放栏，就可以随时回看啦！ 后续我们还会把空宣里的精彩问答、岗位干货剪成精华混剪，持续在视频号发布，欢迎点个关注不迷路！ 回到今天的正题 这是招聘君【一次看透一个岗】的第五期内容 ⬇️ 招聘岗 “没有 HR 实习经历可以投递吗？” “字节招聘岗的工作就是每天都在打电话吗？” “怎么确定我适不适合做招聘？” ...... 今天招聘君就用五张图，带你看懂【字节招聘岗】的所有真相！🤔 还有什么岗位内容你想要了解？评论区留言～ 可能会有对应岗位面试官、招聘在线解答哦！ #字节跳动#校招#秋招#求职#招聘岗#HR#字节跳动招聘",
+      "body_text": "一篇笔记读懂字节跳动招聘岗！ 昨天刚结束的【字节跳动 2027 校招空宣・职能场】直播，大家都看了吗？😉 没赶上的同学也别慌——可以搜索【字节跳动招聘】✨视频号✨（注意不是服务号喔～）在主页找到直播回放栏，就可以随时回看啦！ 后续我们还会把空宣里的精彩问答、岗位干货剪成精华混剪，持续在视频号发布，欢迎点个关注不迷路！ 回到今天的正题 这是招聘君【一次看透一个岗】的第五期内容 ⬇️ 招聘岗 “没有 HR 实习经历可以投递吗？” “字节招聘岗的工作就是每天都在打电话吗？” “怎么确定我适不适合做招聘？” ...... 今天招聘君就用五张图，带你看懂【字节招聘岗】的所有真相！🤔 还有什么岗位内容你想要了解？评论区留言～ 可能会有对应岗位面试官、招聘在线解答哦！ #字节跳动#校招#秋招#求职#招聘岗#HR#字节跳动招聘",
+      "image": "https://img.hhbboo.com/mm/mmecoa.qpic.cn/sz_mmecoa_jpg/mY6WyqWCyq1aQhUURa3qF9xMzvj8tjpEGeo85xC4FuJXvfLtRIEORNSSibKW5YT0ZXbLWsvO7kNcrXkX3f09NyXmSJAqXKGZtKnPVDqJKicA4/0?wx_fmt=jpeg&from=appmsg",
+      "date_modified": "2026-10-21T11:13:05Z",
+      "date_published": "2026-10-21T11:13:05Z",
+      "summary": "字节跳动招聘岗是【一次看透一个岗】第五期内容，以五张图集中解答无HR实习经历能否投递、招聘岗是否每天打电话、如何判断自己是否适合做招聘等求职疑问；2027校招空宣职能场直播回放可在字节跳动招聘视频号主页查看，后续还将发布问答与岗位干货混剪。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "ad0513cdb09a1c1aa29ee2d5148fb2ebe1d4eccba588e27c4d600e52515fcc76",
+        "generated_at": "2026-10-21T11:32:51.513524Z"
+      }
+    },
+    {
       "id": "05765ba604c1e757201f1c3ec4d92d03218ffe460c8facf285409c2e688bc3fc",
       "title": "关于字节跳动 HR ，你不知道的 17 个冷知识",
       "url": "https://mp.weixin.qq.com/s?__biz=MzIzMTIzMTUwOQ%3D%3D&mid=2650115390&idx=1&sn=2b98a2c5f6bd47722c9d3bc80b6d78d9&chksm=f1a073118edb41cf6a7eb2621f3c608ffa6450f98895add01f9a5adb3473856621b190400eef",
