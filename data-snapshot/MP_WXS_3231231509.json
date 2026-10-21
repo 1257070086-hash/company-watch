@@ -45,7 +45,7 @@
       "image": "https://img.hhbboo.com/mm/mmecoa.qpic.cn/sz_mmecoa_jpg/mY6WyqWCyq2NyuG3plicBuKbdgLUn9YBW2rELlxQ8qNM8lov8GRHuWZE9aZibqduNxNzKa8gkIvUoV1dHjbpePlWGOm1qTjRUARicFJibugj5h4/0?wx_fmt=jpeg&from=appmsg",
       "date_modified": "2026-10-19T11:26:22Z",
       "date_published": "2026-10-19T11:26:22Z",
-      "summary": "字节跳动招聘以5张图片介绍AI产品经理岗位，内容涵盖无相关实习经历的应对、易打动面试官的Vibe Coding产品、AI能力与产品Sense的考察方式及日常工作，并附有面试原题供求职者自测优化。",
+      "summary": "字节跳动招聘发布AI产品经理岗位解读，用5张图片介绍该岗位的面试考察点，包括没有AI产品经理实习经历的应对、什么样的Vibe Coding产品更打动面试官、AI能力与产品Sense的考察方式，以及日常工作情况，图片中还附有面试原题及解题思路。",
       "summary_meta": {
         "status": "done",
         "source": "deepseek",
@@ -53,19 +53,8 @@
         "model": "deepseek-flash",
         "prompt_version": "full-body-v1",
         "body_hash": "081cc587287b0eef5e8c4a09149c9794356e6e9735eb978a686442e80dab2375",
-        "generated_at": "2026-10-20T10:13:20.330911Z"
+        "generated_at": "2026-09-28T00:12:56.975996Z"
       }
-    },
-    {
-      "id": "96591c27109a9e2bf1e61a5a96dbeffb26d510bbdd0b3f7b9bef7c12147525a0",
-      "title": "Seed Alignment & Preparedness 全球顶尖人才招募启动",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMTIzMTUwOQ%3D%3D&mid=2650115297&idx=1&sn=ac99164cc1fe85e3e6edb14963a78fe3&chksm=f1fb813ea6c5aac80535a7c69ca9e2802ea599a19b94bb24b2840ae7f4ce02c718bf93f7e769",
-      "content_html": "",
-      "description": "",
-      "body_text": "",
-      "image": "https://mmecoa.qpic.cn/sz_mmecoa_png/mY6WyqWCyq3KaDGMHauudKuaAD4Gd7LCWeyks9AibWCN7mxI04p9oJ4SAUUOucqFiadDveWpibdicHoD0eOsAdakhOfywnwFnZ3DypIxobQwiaqo/640?wx_fmt=png&from=appmsg",
-      "date_modified": "2026-10-15T10:03:03Z",
-      "date_published": "2026-10-15T10:03:03Z"
     },
     {
       "id": "81189218246504f4d2f6504ed14eef8484a75bf1c80f7fe620dce6b717efa84a",
@@ -134,17 +123,6 @@
       "date_published": "2026-09-29T09:04:35Z"
     },
     {
-      "id": "2ded5fe829225701e297a7d2de4811fed081fb32ad2a0efa2e340f55574d7cb5",
-      "title": "没赶上字节跳动2027校园宣讲会？看这篇就够了",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMTIzMTUwOQ%3D%3D&mid=2650114991&idx=1&sn=50c0463a9fcd480d23ed98b5dd38ad39&chksm=f16f08552db932818f9a19e1e899f9405448dc726db0017792726006fcd242e7913408547798",
-      "content_html": "",
-      "description": "这个九月六位来自清北复交等高校的学长学姐和招聘君一起回到了各自的母校他们是大家的校友也是字节跳动不同业务团队的 Leader围绕「字节跳动」「选择」与「AI 时代」他们分享了从校园到职场的经历与思考以下是本次分享的精彩内容 ⬇️ 点击“阅读原文”，一键投递！",
-      "body_text": "这个九月六位来自清北复交等高校的学长学姐和招聘君一起回到了各自的母校他们是大家的校友也是字节跳动不同业务团队的 Leader围绕「字节跳动」「选择」与「AI 时代」他们分享了从校园到职场的经历与思考以下是本次分享的精彩内容 ⬇️ 点击“阅读原文”，一键投递！",
-      "image": "https://mmecoa.qpic.cn/mmecoa_jpg/mY6WyqWCyq2scNBgx8Us46w6FOVUK1h2Yjiaevg1QUnNgF8Zbuzjh3b6cMnXmb4icXQJtIBu59hLmzW4PDkZ1a4owXpckwDVZl0MSxZIN4Y88/640?wx_fmt=jpeg&from=appmsg",
-      "date_modified": "2026-09-29T09:04:35Z",
-      "date_published": "2026-09-29T09:04:35Z"
-    },
-    {
       "id": "b9c77ef8ae6b3d509c1e7bf4dc1cf15a8ad369c12b5f699207e8d8c417710b41",
       "title": "没赶上字节跳动2027校园宣讲会？看这篇就够了",
       "url": "https://mp.weixin.qq.com/s?__biz=MzIzMTIzMTUwOQ%3D%3D&mid=2650114991&idx=1&sn=50c0463a9fcd480d23ed98b5dd38ad39&chksm=f162c0cb442ea05eadb699f4ba41fe232d9824f5728723c4c725b9d13fd99e1eb0aeb4efcd90",
@@ -152,50 +130,6 @@
       "description": "这个九月六位来自清北复交等高校的学长学姐和招聘君一起回到了各自的母校他们是大家的校友也是字节跳动不同业务团队的 Leader围绕「字节跳动」「选择」与「AI 时代」他们分享了从校园到职场的经历与思考以下是本次分享的精彩内容 ⬇️ 点击“阅读原文”，一键投递！",
       "body_text": "这个九月六位来自清北复交等高校的学长学姐和招聘君一起回到了各自的母校他们是大家的校友也是字节跳动不同业务团队的 Leader围绕「字节跳动」「选择」与「AI 时代」他们分享了从校园到职场的经历与思考以下是本次分享的精彩内容 ⬇️ 点击“阅读原文”，一键投递！",
       "image": "https://mmecoa.qpic.cn/mmecoa_jpg/mY6WyqWCyq2scNBgx8Us46w6FOVUK1h2Yjiaevg1QUnNgF8Zbuzjh3b6cMnXmb4icXQJtIBu59hLmzW4PDkZ1a4owXpckwDVZl0MSxZIN4Y88/640?wx_fmt=jpeg&from=appmsg",
-      "date_modified": "2026-09-29T09:04:35Z",
-      "date_published": "2026-09-29T09:04:35Z"
-    },
-    {
-      "id": "185fdcef594e4af63fdc5676134f892aad648f9017f86615fd87c1dd771dd406",
-      "title": "红果短剧 2027 校园招聘来啦，一起定义下一代视频故事产品！",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMTIzMTUwOQ%3D%3D&mid=2650114991&idx=2&sn=7d8b5e73a45070db32e3075eb07f6e1d&chksm=f1a39720f973662e8229a90759bfb4bec99936754004acfc3601e9b523ec0a70d624b2e6757c",
-      "content_html": "",
-      "description": "戳“阅读原文”，一键投递！",
-      "body_text": "戳“阅读原文”，一键投递！",
-      "image": "https://mmecoa.qpic.cn/sz_mmecoa_png/mY6WyqWCyq13FwhTHWHB7wHPxP3EOtibMSnmxiapwBf9X5z5wL10uOUh4vcyPPwB0239sxegfIuNpcics6xFgWG6VWkvicGgAXia8Zf3y8JQfsEI/640?wx_fmt=png&from=appmsg",
-      "date_modified": "2026-09-29T09:04:35Z",
-      "date_published": "2026-09-29T09:04:35Z"
-    },
-    {
-      "id": "af7b5740ad7680df1b5ca687396616cfbfd5c38684e2e8e462d14236a79c7f8f",
-      "title": "AI 数据与安全团队热招中！覆盖技术、产品、运营岗位，一起加入 AI 浪潮",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMTIzMTUwOQ%3D%3D&mid=2650114991&idx=3&sn=4d65819e06233ce02653164d88a502b6&chksm=f1d7693600cc3b7c75470d8759d7f31a2842cb6ddfc8f5d9634812b69a5e2ab284c2626e1b68",
-      "content_html": "",
-      "description": "扫描上方二维码，一键投递！",
-      "body_text": "扫描上方二维码，一键投递！",
-      "image": "https://mmecoa.qpic.cn/sz_mmecoa_jpg/mY6WyqWCyq1Nvu0jQaoNzYhWFZCEnwNJniccicEpyK09hedphxic5DR6Md8ibOzt7ibgqQvMa28rsNCmibAW3TVBMarqH3r6b8G1LNBibUhDM80iaK4/640?wx_fmt=jpeg&from=appmsg",
-      "date_modified": "2026-09-29T09:04:35Z",
-      "date_published": "2026-09-29T09:04:35Z"
-    },
-    {
-      "id": "d1330d8a3db1049ae5058c752c709572c190eb0a2cb7c352093a41bfa9ba4a75",
-      "title": "产品研发和工程架构业务中台团队校招进行中！客户端、算法、产品等多方向热招",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMTIzMTUwOQ%3D%3D&mid=2650114991&idx=4&sn=39b7a87b40d1e60135a093ee7bd48504&chksm=f1a07bfcec4904ab9cfba2577dd018f57a39a372933322af59955204527bc20ad8d044d2299e",
-      "content_html": "",
-      "description": "戳“阅读原文”，一键投递！",
-      "body_text": "戳“阅读原文”，一键投递！",
-      "image": "https://mmecoa.qpic.cn/sz_mmecoa_png/mY6WyqWCyq0dlywiaPjy9K12BabYrYVs60JeenVGpL6wriaGBSoDHlezibZfjBuHPiaDpUfqAxTIv5SKPd5qQIylRrvdXIPacVd6zAo4rlFMWGo/640?wx_fmt=png&from=appmsg",
-      "date_modified": "2026-09-29T09:04:35Z",
-      "date_published": "2026-09-29T09:04:35Z"
-    },
-    {
-      "id": "c78899fd3ded8eccc23fbe53b0e654be313ea9abac07e8ddc7817f372f85b0ca",
-      "title": "剪映CapCut 2027 校园招聘，邀你一起让 AI 创作触手可及",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMTIzMTUwOQ%3D%3D&mid=2650114991&idx=5&sn=38d50c580b0c8db1baee1ca51708832f&chksm=f155eb49a08b1ec916ecbe90613bcb3fa2b8ae5f613ccede256484cf26b26afaa74011825fa0",
-      "content_html": "",
-      "description": "戳“阅读原文”，一键投递！",
-      "body_text": "戳“阅读原文”，一键投递！",
-      "image": "https://mmecoa.qpic.cn/mmecoa_png/mY6WyqWCyq25l8XObONXtO7dZVuqNKsADqshrODsSpzJCIqYBj98Cia3tyQyRqoBicWzyI5ibJyby9nrJicS68FeA9R6I5gvTxUZdGzH93bFyTI/640?wx_fmt=png&from=appmsg",
       "date_modified": "2026-09-29T09:04:35Z",
       "date_published": "2026-09-29T09:04:35Z"
     },
@@ -209,59 +143,6 @@
       "image": "https://img.hhbboo.com/mm/mmecoa.qpic.cn/mmecoa_jpg/mY6WyqWCyq2EN4XjZeHgOBwF2s8UIwHDRediajTr4LNHiaplxYLqwibTiamxYRhAqpVCLLnU2T5awXCkZdfnsdYlJqHic8edgwWJSM4icrdhwOV0Q/0?wx_fmt=jpeg",
       "date_modified": "2026-09-29T09:04:00Z",
       "date_published": "2026-09-29T09:04:00Z"
-    },
-    {
-      "id": "8ab2f58e70831f30c7d3328c89414c671dbffb2016301ad197bd8fd13db8e5ab",
-      "title": "一篇笔记读懂字节跳动 AI 产品经理！",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMTIzMTUwOQ%3D%3D&mid=2650114859&idx=1&sn=bc66ab7b6e66699440ddb9a928b16d17&chksm=f1864747676a37eaeef9457ed6984e88790fb9b161df47bb165f60c2cfabab51b4c31a4e5617",
-      "content_html": "",
-      "description": "一篇笔记读懂字节跳动 AI 产品经理！ 今天招聘君带大家了解的岗位是：\\x0a⬇️ AI 产品经理\\x0a关于这个岗位，你可能会疑惑\\x0a“没有 AI 产品经理实习经历怎么办？”\\x0a“什么样的 Vibe Coding 产品更容易打动面试官？”\\x0a“字节跳动会怎么考察 AI 能力和产品 Sense？”\\x0a“在字节跳动做 AI 产品经理，一天都在做什么？”\\x0a......\\x0a招聘君用 5 张图片 带你看明白。\\x0a（PS：图片里还藏了面试“原题”。建议同学们先自己想一版答案，再对照解题思路，看看自己的判断、表达和产品思考还有哪些可以优化。）\\x0a\\x0a另外如果你想了解更多字节跳动岗位内容？欢迎评论区留言～\\x0a也许下期就是你想看的岗位。😉\\x0a\\x0a\\x26lt;a class=\\x26quot;wx_topic_link\\x26quot; topic-id=\\x26quot;mudpr9o1-iimlpz\\x26quot; style=\\x26quot;color: #576B95 !important;\\x26quot; data-topic=\\x26quot;1\\x26quot; data-recommend=\\x26quot;\\x26quot;\\x26gt;#字节跳动\\x26lt;/a\\x26gt;\\x26lt;a class=\\x26quot;wx_topic_link\\x26quot; topic-id=\\x26quot;mudpr9o2-e2i3tl\\x26quot; style=\\x26quot;color: #576B95 !important;\\x26quot; data-topic=\\x26quot;1\\x26quot; data-recommend=\\x26quot;\\x26quot;\\x26gt;#字节跳动招聘\\x26lt;/a\\x26gt;\\x26lt;a class=\\x26quot;wx_topic_link\\x26quot; topic-id=\\x26quot;mudpr9o2-3pf4ah\\x26quot; style=\\x26quot;color: #576B95 !important;\\x26quot; data-topic=\\x26quot;1\\x26quot; data-recommend=\\x26quot;\\x26quot;\\x26gt;#大模型\\x26lt;/a\\x26gt;\\x26lt;a class=\\x26quot;wx_topic_link\\x26quot; topic-id=\\x26quot;mudpr9o2-48rthr\\x26quot; style=\\x26quot;color: #576B95 !important;\\x26quot; data-topic=\\x26quot;1\\x26quot; data-recommend=\\x26quot;\\x26quot;\\x26gt;#秋招\\x26lt;/a\\x26gt;\\x26lt;a class=\\x26quot;wx_topic_link\\x26quot; topic-id=\\x26quot;mudpr9o2-hg7iri\\x26quot; style=\\x26quot;color: #576B95 !important;\\x26quot; data-topic=\\x26quot;1\\x26quot; data-recommend=\\x26quot;\\x26quot;\\x26gt;#求职\\x26lt;/a\\x26gt;\\x26lt;a class=\\x26quot;wx_topic_link\\x26quot; topic-id=\\x26quot;mudpr9o2-1ebw1x\\x26quot; style=\\x26quot;color: #576B95 !important;\\x26quot; data-topic=\\x26quot;1\\x26quot; data-recommend=\\x26quot;\\x26quot;\\x26gt;#AI产品经理\\x26lt;/a\\x26gt;",
-      "body_text": "一篇笔记读懂字节跳动 AI 产品经理！ 今天招聘君带大家了解的岗位是：\\x0a⬇️ AI 产品经理\\x0a关于这个岗位，你可能会疑惑\\x0a“没有 AI 产品经理实习经历怎么办？”\\x0a“什么样的 Vibe Coding 产品更容易打动面试官？”\\x0a“字节跳动会怎么考察 AI 能力和产品 Sense？”\\x0a“在字节跳动做 AI 产品经理，一天都在做什么？”\\x0a......\\x0a招聘君用 5 张图片 带你看明白。\\x0a（PS：图片里还藏了面试“原题”。建议同学们先自己想一版答案，再对照解题思路，看看自己的判断、表达和产品思考还有哪些可以优化。）\\x0a\\x0a另外如果你想了解更多字节跳动岗位内容？欢迎评论区留言～\\x0a也许下期就是你想看的岗位。😉\\x0a\\x0a\\x26lt;a class=\\x26quot;wx_topic_link\\x26quot; topic-id=\\x26quot;mudpr9o1-iimlpz\\x26quot; style=\\x26quot;color: #576B95 !important;\\x26quot; data-topic=\\x26quot;1\\x26quot; data-recommend=\\x26quot;\\x26quot;\\x26gt;#字节跳动\\x26lt;/a\\x26gt;\\x26lt;a class=\\x26quot;wx_topic_link\\x26quot; topic-id=\\x26quot;mudpr9o2-e2i3tl\\x26quot; style=\\x26quot;color: #576B95 !important;\\x26quot; data-topic=\\x26quot;1\\x26quot; data-recommend=\\x26quot;\\x26quot;\\x26gt;#字节跳动招聘\\x26lt;/a\\x26gt;\\x26lt;a class=\\x26quot;wx_topic_link\\x26quot; topic-id=\\x26quot;mudpr9o2-3pf4ah\\x26quot; style=\\x26quot;color: #576B95 !important;\\x26quot; data-topic=\\x26quot;1\\x26quot; data-recommend=\\x26quot;\\x26quot;\\x26gt;#大模型\\x26lt;/a\\x26gt;\\x26lt;a class=\\x26quot;wx_topic_link\\x26quot; topic-id=\\x26quot;mudpr9o2-48rthr\\x26quot; style=\\x26quot;color: #576B95 !important;\\x26quot; data-topic=\\x26quot;1\\x26quot; data-recommend=\\x26quot;\\x26quot;\\x26gt;#秋招\\x26lt;/a\\x26gt;\\x26lt;a class=\\x26quot;wx_topic_link\\x26quot; topic-id=\\x26quot;mudpr9o2-hg7iri\\x26quot; style=\\x26quot;color: #576B95 !important;\\x26quot; data-topic=\\x26quot;1\\x26quot; data-recommend=\\x26quot;\\x26quot;\\x26gt;#求职\\x26lt;/a\\x26gt;\\x26lt;a class=\\x26quot;wx_topic_link\\x26quot; topic-id=\\x26quot;mudpr9o2-1ebw1x\\x26quot; style=\\x26quot;color: #576B95 !important;\\x26quot; data-topic=\\x26quot;1\\x26quot; data-recommend=\\x26quot;\\x26quot;\\x26gt;#AI产品经理\\x26lt;/a\\x26gt;",
-      "image": "https://img.hhbboo.com/mm/mmecoa.qpic.cn/sz_mmecoa_jpg/mY6WyqWCyq2NyuG3plicBuKbdgLUn9YBW2rELlxQ8qNM8lov8GRHuWZE9aZibqduNxNzKa8gkIvUoV1dHjbpePlWGOm1qTjRUARicFJibugj5h4/0?wx_fmt=jpeg&from=appmsg",
-      "date_modified": "2026-09-23T06:21:28Z",
-      "date_published": "2026-09-23T06:21:28Z",
-      "summary": "字节跳动招聘以5张图片介绍AI产品经理岗位，内容涵盖没有相关实习经历如何应对、什么样的Vibe Coding产品更打动面试官、公司如何考察AI能力与产品Sense、以及该岗位的日常工作，图片中还附有面试原题供求职者自测。",
-      "summary_meta": {
-        "status": "done",
-        "source": "deepseek",
-        "basis": "full_body",
-        "model": "deepseek-flash",
-        "prompt_version": "full-body-v1",
-        "body_hash": "88951df02b33252e1036bf64befa1426129341adb780087a7c025b1bb7fb438d",
-        "generated_at": "2026-09-23T06:33:16.384405Z"
-      }
-    },
-    {
-      "id": "a2aa181bd9985b0090fccc2d246d192f88f959832acf25fc39ba7691a7a619be",
-      "title": "字节校招空宣今晚 18:00 开播！有问必答！",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMTIzMTUwOQ%3D%3D&mid=2650114827&idx=1&sn=8610a0da99aa159a43fabb9b7638bcb5&chksm=f1f98da5541e171f563983e4673ab2e96f7db3f4b71c67db96e20553eb564caff2366df7fe4a",
-      "content_html": "",
-      "description": "字节校招空宣今晚 18:00 开播！有问必答！ 字节跳动2027校招空中宣讲会 今日正式启动！首场直播就在今晚18:00！ 🌟两场直播，覆盖算法、工程、AI 产品等多个岗位，快速了解多个方向！ 🌟业务 Leader “在线透题”，讲解 AI 时代下字节校招岗位及人才要求变化，全程弹幕答疑！ 🌟已拿到 2027 校招 Offer 的同学分享真实求职经验，简历准备、面试 TIPS 统统都有！ 点击主页！速来预约！精彩不错过！ 🔥字节2027校招火热进行中 🏃加入我们，和优秀的人，做有挑战的事！ #字节跳动招聘#字节跳动#校招#空宣#宣讲会#秋招",
-      "body_text": "字节校招空宣今晚 18:00 开播！有问必答！ 字节跳动2027校招空中宣讲会 今日正式启动！首场直播就在今晚18:00！ 🌟两场直播，覆盖算法、工程、AI 产品等多个岗位，快速了解多个方向！ 🌟业务 Leader “在线透题”，讲解 AI 时代下字节校招岗位及人才要求变化，全程弹幕答疑！ 🌟已拿到 2027 校招 Offer 的同学分享真实求职经验，简历准备、面试 TIPS 统统都有！ 点击主页！速来预约！精彩不错过！ 🔥字节2027校招火热进行中 🏃加入我们，和优秀的人，做有挑战的事！ #字节跳动招聘#字节跳动#校招#空宣#宣讲会#秋招",
-      "image": "https://img.hhbboo.com/mm/mmecoa.qpic.cn/sz_mmecoa_jpg/mY6WyqWCyq33sev2nBJ80ia2O2JUcJYTV3MibxCtJJtA9YdMpBecVdz3bJKaXWoOdL3FeYrwicozS7u2ibJjS7iaxQFPiacT0A0AtbGdwr08DUb4A/0?wx_fmt=jpeg&from=appmsg",
-      "date_modified": "2026-09-23T06:21:28Z",
-      "date_published": "2026-09-23T06:21:28Z"
-    },
-    {
-      "id": "f1d6b407bd808925c131e0a114f864735b8eace5023a2231b8348c36fe096083",
-      "title": "一篇笔记读懂字节跳动 AI 产品经理！",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMTIzMTUwOQ%3D%3D&mid=2650114859&idx=1&sn=bc66ab7b6e66699440ddb9a928b16d17&chksm=f15538b46bea8b9e159bbbdcd779d789ebe66779cf9aa837d8198cf02a0c4594003b2579f51e",
-      "content_html": "",
-      "description": "一篇笔记读懂字节跳动 AI 产品经理！ 今天招聘君带大家了解的岗位是： ⬇️ AI 产品经理 关于这个岗位，你可能会疑惑 “没有 AI 产品经理实习经历怎么办？” “什么样的 Vibe Coding 产品更容易打动面试官？” “字节跳动会怎么考察 AI 能力和产品 Sense？” “在字节跳动做 AI 产品经理，一天都在做什么？” ...... 招聘君用 5 张图片 带你看明白。 （PS：图片里还藏了面试“原题”。建议同学们先自己想一版答案，再对照解题思路，看看自己的判断、表达和产品思考还有哪些可以优化。） 另外如果你想了解更多字节跳动岗位内容？欢迎评论区留言～ 也许下期就是你想看的岗位。😉 #字节跳动#字节跳动招聘#大模型#秋招#求职#AI产品经理",
-      "body_text": "一篇笔记读懂字节跳动 AI 产品经理！ 今天招聘君带大家了解的岗位是： ⬇️ AI 产品经理 关于这个岗位，你可能会疑惑 “没有 AI 产品经理实习经历怎么办？” “什么样的 Vibe Coding 产品更容易打动面试官？” “字节跳动会怎么考察 AI 能力和产品 Sense？” “在字节跳动做 AI 产品经理，一天都在做什么？” ...... 招聘君用 5 张图片 带你看明白。 （PS：图片里还藏了面试“原题”。建议同学们先自己想一版答案，再对照解题思路，看看自己的判断、表达和产品思考还有哪些可以优化。） 另外如果你想了解更多字节跳动岗位内容？欢迎评论区留言～ 也许下期就是你想看的岗位。😉 #字节跳动#字节跳动招聘#大模型#秋招#求职#AI产品经理",
-      "image": "https://img.hhbboo.com/mm/mmecoa.qpic.cn/sz_mmecoa_jpg/mY6WyqWCyq2NyuG3plicBuKbdgLUn9YBW2rELlxQ8qNM8lov8GRHuWZE9aZibqduNxNzKa8gkIvUoV1dHjbpePlWGOm1qTjRUARicFJibugj5h4/0?wx_fmt=jpeg&from=appmsg",
-      "date_modified": "2026-09-23T06:21:28Z",
-      "date_published": "2026-09-23T06:21:28Z",
-      "summary": "字节跳动招聘发布AI产品经理岗位解读，用5张图片介绍该岗位的面试考察点，包括没有AI产品经理实习经历的应对、什么样的Vibe Coding产品更打动面试官、AI能力与产品Sense的考察方式，以及日常工作情况，图片中还附有面试原题及解题思路。",
-      "summary_meta": {
-        "status": "done",
-        "source": "deepseek",
-        "basis": "full_body",
-        "model": "deepseek-flash",
-        "prompt_version": "full-body-v1",
-        "body_hash": "081cc587287b0eef5e8c4a09149c9794356e6e9735eb978a686442e80dab2375",
-        "generated_at": "2026-09-28T00:12:56.975996Z"
-      }
     },
     {
       "id": "317972e8b04bbe9197b348c3ae877c57e069d623f72e5fc3c755635ba5c4355b",

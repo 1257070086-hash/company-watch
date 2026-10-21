@@ -181,15 +181,15 @@
       "image": "https://wechat2rss.bestblogs.dev/img-proxy/?k=3a1436a3&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FkN3t5R6pdz7esVgicqWRRpVgWF8icxay1aBRGLkAjyYprFNPeAdsgVXKVc3sagqMpbJSzMicsXic5eFehvOHmJjdoDuXlYfHOWuDfseNOf8JxqI%2F0%3Fwx_fmt%3Djpeg",
       "date_modified": "2026-09-24T10:02:00Z",
       "date_published": "2026-09-24T10:02:00Z",
-      "summary": "阿里巴巴在云栖大会发布开放具身数据基础设施项目 RoboFlywheel，首发仿真板块由阿里与清华大学赵昊团队联合打造，涵盖百万级仿真资产底座与跨引擎仿真平台，首批覆盖52万刚体、40万铰链物体和10万柔性体。铰链资产生成测试运动学通过率99.93%，200个资产在Genesis、PyBullet和MuJoCo三引擎联合通过率99.0%。",
+      "summary": "阿里巴巴在云栖大会发布开放具身数据基础设施项目RoboFlywheel，首发仿真板块由阿里与清华大学赵昊团队联合打造，涵盖百万级仿真资产底座与跨引擎仿真平台，首批覆盖52万刚体、40万铰链物体和10万柔性体。铰链资产生成测试运动学通过率99.93%，在Genesis、PyBullet和MuJoCo三引擎联合通过率99.0%。平台将场景生成、机器人交互、数据生产与评测串成闭环，支持跨引擎对照评测和操作轨迹采集，用于策略训练与复评。",
       "summary_meta": {
         "status": "done",
         "source": "deepseek",
         "basis": "full_body",
         "model": "deepseek-flash",
         "prompt_version": "full-body-v1",
-        "body_hash": "56e0fe01bc068e804e0f5341c7526d99daac3302fde6b814227a17b4265d6689",
-        "generated_at": "2026-09-28T01:52:55.892851Z"
+        "body_hash": "ff26152603feb7b5a635b09a5bab7834a08c0b999bbdb851b78ab0a4928b6188",
+        "generated_at": "2026-10-21T03:33:14.971273Z"
       }
     },
     {
@@ -202,15 +202,15 @@
       "image": "https://wechat2rss.bestblogs.dev/img-proxy/?k=e613a5ca&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FkN3t5R6pdz5xDstpBNCfwOyxt0fzUGgvJRib8xocX53lQ2KwNDkrE5NoX2CvPUOlsCAQN4t8Ku3hLQ8IpqvAicmIlGq9DKDxloQhjTjeWBicbA%2F0%3Fwx_fmt%3Djpeg",
       "date_modified": "2026-09-23T06:49:00Z",
       "date_published": "2026-09-23T06:49:00Z",
-      "summary": "在云栖大会阿里巴巴集团 AI Native 研发实践论坛上，《AI Native 研发范式实践手册》正式发布。手册从 AIDC 数字投手智能营销助手、千问用增 Agent 和万有无界平台三个业务实践案例出发，提炼出环境与验证驱动、平台能力升级、提效度量、数字员工和组织配套五个共性挑战，并展开 Harness 框架、企业知识库、工具体系、Sandbox 与 Coding 环境、身份与权限、生产安全 Guardrail 及可观测能力等企业级 AI 研发基础设施技术全景。",
+      "summary": "在云栖大会AI Native研发实践论坛上，阿里巴巴集团正式发布《AI Native 研发范式实践手册》。手册基于AIDC数字投手、千问用增Agent和万有无界平台三个业务实践，提炼出环境与验证驱动、平台能力升级、提效度量、数字员工和组织配套五个共性挑战，并展开Harness框架、企业知识库、工具体系、Sandbox与Coding环境、身份与权限、生产安全Guardrail及可观测能力等企业级AI研发基础设施的技术全景。",
       "summary_meta": {
         "status": "done",
         "source": "deepseek",
         "basis": "full_body",
         "model": "deepseek-flash",
         "prompt_version": "full-body-v1",
-        "body_hash": "543d4967b88bd1269f0f0155a55a0dbfe55c3abbe94ef432e9cce8c0d79645f8",
-        "generated_at": "2026-09-23T07:13:13.425698Z"
+        "body_hash": "02c0002f5fae9c6de73046fa7118cd0c6685a3ddca58baf812ce684c7e6f8441",
+        "generated_at": "2026-10-21T03:33:14.971273Z"
       }
     },
     {
