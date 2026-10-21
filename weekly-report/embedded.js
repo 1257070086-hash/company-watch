@@ -19,7 +19,7 @@ class IndustryWeekly extends HTMLElement {
     const options = this.issues.map(([week,range],index) =>
       `<option value="${week}">${this.pickerRange(range)} · 第${week}期${index===0?'（最新）':''}</option>`
     ).join('');
-    this.shadowRoot.innerHTML = `<link rel="stylesheet" href="weekly-report/embedded.css?v=20261021-rss-recovery"><link rel="stylesheet" href="weekly-report/embedded-layout.css?v=20261021-rss-recovery"><div class="masthead" id="report-top"><div><h1>行业周报</h1><p>招聘 · 技术 · 企业文化 · 行业趋势</p></div><div class="issue-picker"><label for="week-picker">选择期数</label><select id="week-picker" aria-label="选择周报日期">${options}</select></div></div><div class="content" aria-live="polite"></div>`;
+    this.shadowRoot.innerHTML = `<link rel="stylesheet" href="weekly-report/embedded.css?v=20261021-w42-revision"><link rel="stylesheet" href="weekly-report/embedded-layout.css?v=20261021-w42-revision"><div class="masthead" id="report-top"><div><h1>行业周报</h1><p>招聘 · 技术 · 企业文化 · 行业趋势</p></div><div class="issue-picker"><label for="week-picker">选择期数</label><select id="week-picker" aria-label="选择周报日期">${options}</select></div></div><div class="content" aria-live="polite"></div>`;
     this.shadowRoot.querySelector('select').addEventListener('change', () => this.load(true));
     this.shadowRoot.addEventListener('click', event => {
       const button = event.target.closest('[data-section]');
@@ -62,7 +62,7 @@ class IndustryWeekly extends HTMLElement {
       await new Promise((resolve,reject) => {
         const script = document.createElement('script');
         script.src = week === '34' ? 'weekly-report/data.js' : `weekly-report/data-W${week}.js`;
-        script.src += '?v=20261021-rss-recovery';
+        script.src += '?v=20261021-w42-revision';
         window.REPORT_DATA = undefined;
         script.onload = () => {
           if (!window.REPORT_DATA || !Array.isArray(window.REPORT_DATA.companies)) { script.remove(); reject(new Error('invalid report')); return; }
@@ -140,7 +140,7 @@ class IndustryWeekly extends HTMLElement {
     const card = co => `<article class="company" data-node="${escape(co.name)}" id="${prefix}-section-${escape(co.id)}" style="--brand:${/^#[a-f\d]{6}$/i.test(co.color) ? co.color : '#245bba'}"><header class="company-header"><h2>${escape(co.name)}</h2>${co.summary ? `<p class="company-summary">${escape(co.summary)}</p>` : ''}${co.id!=='industry'?`<button class="company-view" data-company-view="${escape(co.name.includes('阿里')?'阿里':co.name)}">查看最新动态 ↗</button>`:''}</header>${sections(co.sections)}${co.takeaway ? `<aside class="takeaway"><h3><span aria-hidden="true">↗</span> 可借鉴点 <small>编辑观察</small></h3><p>${escape(co.takeaway)}</p></aside>` : ''}</article>`;
     const nav = [{id:'headlines', name:'本周头条'}, {id:'industry', name:'行业综合'}, ...companies];
     return `<section class="weekly-issue" data-week="${escape(issue)}">
-      <header class="issue-header"><div class="eyebrow"><span>W${escape(issue)}${latest?' · 最新':''}</span></div><h2>2026年第${escape(issue)}周</h2><p class="issue-date">${escape(this.displayRange(data.range))}</p>
+      <header class="issue-header"><div class="eyebrow"><span>W${escape(issue)}${latest?' · 最新':''}</span></div><h2>2026年第${escape(issue)}周</h2><p class="issue-date">${escape(this.displayRange(data.range))}${data.updatedAt ? ` · <time datetime="${escape(data.updatedAt)}">${escape(data.updatedAt.replace(/-/g,'/'))} 更新</time>` : ''}</p>
 </header>
       <div class="issue-body">
         <aside class="directory"><nav class="issue-toc" aria-label="第${escape(issue)}期目录"><p>本期目录</p>${nav.map((co,i) => `<button data-section="${prefix}-section-${escape(co.id)}"${i===0?' aria-current="location"':''}>${escape(co.name)}</button>`).join('')}</nav></aside>
