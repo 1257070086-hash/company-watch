@@ -159,10 +159,30 @@ def parse_feed(payload: bytes) -> tuple[str, list[dict]]:
     return child_text(channel, "title", ATOM + "title") or "未命名订阅", result
 
 
+def apply_source_overrides(sources: list[dict]) -> list[dict]:
+    overrides = read_json(Path(__file__).with_name("rss-source-overrides.json"), {})
+    return [{**source, **overrides.get(source["id"], {})} for source in sources]
+
+
+def source_fingerprint(source: dict) -> str:
+    return hashlib.sha256(source["url"].encode("utf-8")).hexdigest()
+
+
+def article_identity(item: dict) -> str:
+    url = (item.get("url") or "").split("#", 1)[0].strip()
+    parts = urlsplit(url)
+    query = parse_qs(parts.query)
+    if parts.hostname == "mp.weixin.qq.com" and all(query.get(k) for k in ("__biz", "mid", "idx")):
+        return "wechat:" + ":".join(query[k][0] for k in ("__biz", "mid", "idx"))
+    return "url:" + url if url else "id:" + str(item.get("id") or item.get("title") or "")
+
+
 def fetch(source: dict, state: dict) -> tuple[str, list[dict], dict]:
     source_state = state.get("sources", {}).get(source["id"], {})
+    if source_state.get("sourceFingerprint") != source_fingerprint(source):
+        source_state = {}
     headers = {
-        "User-Agent": "CompanyWatch-Cloud/1.0",
+        "User-Agent": source.get("user_agent", "CompanyWatch-Cloud/1.0"),
         "Accept": "application/rss+xml, application/atom+xml, application/xml",
     }
     if source_state.get("etag"):
@@ -197,7 +217,7 @@ def merge_items(previous: list[dict], fresh: list[dict]) -> list[dict]:
         # duplicate every existing item.
         url = (item.get("url") or "").split("#", 1)[0].strip()
         title = (item.get("title") or "").strip()
-        key = f"url:{url}" if url else f"title:{title}" if title else item.get("id")
+        key = article_identity(item)
         if not key:
             continue
         merged[key] = {**merged.get(key, {}), **item}
@@ -263,6 +283,7 @@ def main() -> int:
     sources = json.loads(os.environ["RSS_SOURCES_JSON"])
     if not isinstance(sources, list) or not sources:
         raise SystemExit("RSS_SOURCES_JSON must contain a non-empty list")
+    sources = apply_source_overrides(sources)
     if args.seed_db:
         seed_local_database(output, Path(args.seed_db), sources)
     state_path = output / "sync-state.json"
@@ -313,6 +334,7 @@ def main() -> int:
                 }
                 write_json(previous_file, document)
             state.setdefault("sources", {})[sid] = {
+                "sourceFingerprint": source_fingerprint(source),
                 "etag": headers.get("etag", state.get("sources", {}).get(sid, {}).get("etag", "")),
                 "modified": headers.get("modified", state.get("sources", {}).get(sid, {}).get("modified", "")),
                 "successAt": now,
