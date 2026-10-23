@@ -8,6 +8,7 @@ import hashlib
 import json
 import os
 import re
+import sys
 import time
 import urllib.error
 import urllib.request
@@ -262,11 +263,14 @@ def main() -> int:
             usage_output += int(usage.get("completion_tokens") or 0)
         except urllib.error.HTTPError as exc:
             failed += 1
+            detail = exc.read(4096).decode("utf-8", errors="replace").replace(api_key, "[REDACTED]")
+            print(json.dumps({"event": "summary_failed", "title": item.get("title"), "url": item.get("url"), "file": path.name, "httpStatus": exc.code, "error": detail}, ensure_ascii=False), file=sys.stderr)
             if exc.code == 429:
                 rate_limited = True
                 break
-        except (KeyError, TypeError, ValueError, json.JSONDecodeError, urllib.error.URLError, TimeoutError):
+        except (KeyError, TypeError, ValueError, json.JSONDecodeError, urllib.error.URLError, TimeoutError) as exc:
             failed += 1
+            print(json.dumps({"event": "summary_failed", "title": item.get("title"), "url": item.get("url"), "errorType": type(exc).__name__, "error": str(exc).replace(api_key, "[REDACTED]")}, ensure_ascii=False), file=sys.stderr)
         time.sleep(0.35)
 
     for path, document in documents:
