@@ -71,7 +71,7 @@ def valid_summary(value: str) -> str:
     text = clean_text(value).strip('"“”')
     if not 20 <= len(text) <= 320:
         raise ValueError("summary length outside 20-320 characters")
-    if text.startswith(("作者", "小编", "编辑：", "来源：")):
+    if re.match(r"^(?:作者|小编|编辑|来源)\s*[:：]", text):
         raise ValueError("summary begins with byline or source")
     return text
 
@@ -108,7 +108,29 @@ def request_summary(api_key: str, title: str, account: str, body: str) -> tuple[
         result = json.loads(response.read().decode("utf-8"))
     content = result["choices"][0]["message"]["content"]
     parsed = json.loads(content)
-    return valid_summary(parsed.get("summary", "")), result.get("usage") or {}
+    return parsed.get("summary", ""), result.get("usage") or {}
+
+
+def request_with_retry(api_key, title, account, body):
+    """Retry only transient failures, bounded to three attempts per article."""
+    for attempt in range(1, 4):
+        try:
+            return request_summary(api_key, title, account, body)
+        except urllib.error.HTTPError as exc:
+            if exc.code not in {429, 500, 502, 503, 504} or attempt == 3:
+                raise
+            try:
+                delay = min(30, max(0, float(exc.headers.get("Retry-After", 2 ** attempt))))
+            except (TypeError, ValueError):
+                delay = 2 ** attempt
+            exc.close()
+        except (urllib.error.URLError, TimeoutError, ConnectionError):
+            if attempt == 3:
+                raise
+            delay = 2 ** attempt
+        print(json.dumps({"event": "summary_retry", "title": title,
+                          "attempt": attempt, "delaySeconds": delay}, ensure_ascii=False), file=sys.stderr)
+        time.sleep(delay)
 
 
 def snapshot_documents(snapshot: Path) -> list[tuple[Path, dict]]:
@@ -228,8 +250,9 @@ def main() -> int:
     api_key = os.environ.get("DEEPSEEK_API_KEY", "").strip()
     if not api_key:
         print(json.dumps({"skipped": True, "reason": "DEEPSEEK_API_KEY is not configured"}))
-        return 0
+        return 1 if selected else 0
 
+    errors = []
     completed = 0
     failed = 0
     rate_limited = False
@@ -240,12 +263,15 @@ def main() -> int:
 
     for _, path, document, account, item, body, digest, key in selected:
         try:
-            summary, usage = request_summary(
+            summary, usage = request_with_retry(
                 api_key,
                 clean_text(item.get("title") or "无标题"),
                 clean_text(account),
                 body,
             )
+            usage_input += int(usage.get("prompt_tokens") or 0)
+            usage_output += int(usage.get("completion_tokens") or 0)
+            summary = valid_summary(summary)
             item["summary"] = summary
             item["summary_meta"] = {
                 "status": "done",
@@ -259,18 +285,20 @@ def main() -> int:
             changed_paths.add(path)
             known.add(key)
             completed += 1
-            usage_input += int(usage.get("prompt_tokens") or 0)
-            usage_output += int(usage.get("completion_tokens") or 0)
         except urllib.error.HTTPError as exc:
             failed += 1
             detail = exc.read(4096).decode("utf-8", errors="replace").replace(api_key, "[REDACTED]")
-            print(json.dumps({"event": "summary_failed", "title": item.get("title"), "url": item.get("url"), "file": path.name, "httpStatus": exc.code, "error": detail}, ensure_ascii=False), file=sys.stderr)
+            error = {"title": item.get("title"), "url": item.get("url"), "file": path.name, "httpStatus": exc.code, "error": detail}
+            errors.append(error)
+            print(json.dumps({"event": "summary_failed", **error}, ensure_ascii=False), file=sys.stderr)
             if exc.code == 429:
                 rate_limited = True
                 break
-        except (KeyError, TypeError, ValueError, json.JSONDecodeError, urllib.error.URLError, TimeoutError) as exc:
+        except (KeyError, TypeError, ValueError, json.JSONDecodeError, urllib.error.URLError, TimeoutError, ConnectionError) as exc:
             failed += 1
-            print(json.dumps({"event": "summary_failed", "title": item.get("title"), "url": item.get("url"), "errorType": type(exc).__name__, "error": str(exc).replace(api_key, "[REDACTED]")}, ensure_ascii=False), file=sys.stderr)
+            error = {"title": item.get("title"), "url": item.get("url"), "errorType": type(exc).__name__, "error": str(exc).replace(api_key, "[REDACTED]")[:4096]}
+            errors.append(error)
+            print(json.dumps({"event": "summary_failed", **error}, ensure_ascii=False), file=sys.stderr)
         time.sleep(0.35)
 
     for path, document in documents:
@@ -292,6 +320,9 @@ def main() -> int:
         "mode": "new_articles_only",
         "completed": completed,
         "failed": failed,
+        "errors": errors,
+        "status": "failed" if failed else "success",
+        "pendingAfterRun": len(candidates) - completed,
         "pendingBeforeRun": len(candidates),
         "skippedCurrent": skipped_current,
         "skippedShort": skipped_short,
@@ -301,7 +332,7 @@ def main() -> int:
     }
     write_json(snapshot / "summary-meta.json", metadata)
     print(json.dumps(metadata, ensure_ascii=False))
-    return 0
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":
