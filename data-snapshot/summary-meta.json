@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T03:12:52.028049Z",
+  "generatedAt": "2026-10-23T03:32:52.919359Z",
   "model": "deepseek-flash",
   "promptVersion": "full-body-v1",
   "basis": "full_body",
@@ -8,8 +8,8 @@
   "failed": 2,
   "pendingBeforeRun": 2,
   "skippedCurrent": 0,
-  "skippedShort": 2,
-  "skippedKnown": 2737,
+  "skippedShort": 0,
+  "skippedKnown": 2739,
   "rateLimited": false,
   "usage": {
     "inputTokens": 0,
