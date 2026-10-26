@@ -5,7 +5,7 @@ class IndustryWeekly extends HTMLElement {
     this.attachShadow({mode: 'open'});
     this.cache = new Map();
     this.issues = [
-      ['42','10.12 至 10.18'],['41','10.05 至 10.11'],['40','09.28 至 10.04'],
+      ['43','10.19 至 10.25'],['42','10.12 至 10.18'],['41','10.05 至 10.11'],['40','09.28 至 10.04'],
       ['39','09.21 至 09.27'],['38','09.14 至 09.20'],
       ['37','09.07 至 09.13'],['36','08.31 至 09.06'],['35','08.24 至 08.30'],
       ['34','08.17 至 08.23'],['33','08.10 至 08.16'],['32','08.04 至 08.10'],
@@ -19,7 +19,7 @@ class IndustryWeekly extends HTMLElement {
     const options = this.issues.map(([week,range],index) =>
       `<option value="${week}">${this.pickerRange(range)} · 第${week}期${index===0?'（最新）':''}</option>`
     ).join('');
-    this.shadowRoot.innerHTML = `<link rel="stylesheet" href="weekly-report/embedded.css?v=20261021-w42-revision"><link rel="stylesheet" href="weekly-report/embedded-layout.css?v=20261021-w42-revision"><div class="masthead" id="report-top"><div><h1>行业周报</h1><p>招聘 · 技术 · 企业文化 · 行业趋势</p></div><div class="issue-picker"><label for="week-picker">选择期数</label><select id="week-picker" aria-label="选择周报日期">${options}</select></div></div><div class="content" aria-live="polite"></div>`;
+    this.shadowRoot.innerHTML = `<link rel="stylesheet" href="weekly-report/embedded.css?v=20261026-w43"><link rel="stylesheet" href="weekly-report/embedded-layout.css?v=20261026-w43"><div class="masthead" id="report-top"><div><h1>行业周报</h1><p>招聘 · 技术 · 企业文化 · 行业趋势</p></div><div class="issue-picker"><label for="week-picker">选择期数</label><select id="week-picker" aria-label="选择周报日期">${options}</select></div></div><div class="content" aria-live="polite"></div>`;
     this.shadowRoot.querySelector('select').addEventListener('change', () => this.load(true));
     this.shadowRoot.addEventListener('click', event => {
       const button = event.target.closest('[data-section]');
@@ -62,7 +62,7 @@ class IndustryWeekly extends HTMLElement {
       await new Promise((resolve,reject) => {
         const script = document.createElement('script');
         script.src = week === '34' ? 'weekly-report/data.js' : `weekly-report/data-W${week}.js`;
-        script.src += '?v=20261021-w42-revision';
+        script.src += '?v=20261026-w43';
         window.REPORT_DATA = undefined;
         script.onload = () => {
           if (!window.REPORT_DATA || !Array.isArray(window.REPORT_DATA.companies)) { script.remove(); reject(new Error('invalid report')); return; }

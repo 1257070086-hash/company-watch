@@ -5,7 +5,7 @@ const path=require('node:path');
 const vm=require('node:vm');
 const root=path.join(__dirname,'..');
 function setup(){
-  const select={value:'42',addEventListener(){}};
+  const select={value:'43',addEventListener(){}};
   const content={innerHTML:'',setAttribute(){},removeAttribute(){}};
   const shadow={innerHTML:'',querySelector:s=>s==='select'?select:content,addEventListener(){}};
   const context={URL,window:{},document:{getElementById(){return null}},HTMLElement:class{attachShadow(){this.shadowRoot=shadow;}},customElements:{define(_,C){this.C=C}}};
@@ -31,16 +31,27 @@ test('untrusted text and non-HTTP source URLs cannot execute markup',()=>{
 test('rapid switches only render the last selection, without older autoload',async()=>{
  const {element,content,select}=setup();const pending={};const calls=[];
  element.issueData=w=>{calls.push(w);return new Promise(r=>pending[w]=r)};
- const first=element.load();select.value='41';const second=element.load();
+ select.value='42';const first=element.load();select.value='41';const second=element.load();
  pending['41']({...data,week:'2026 W41'});await second;pending['42'](data);await first;
  assert(content.innerHTML.includes('data-week="41"'));assert(!content.innerHTML.includes('data-week="42"'));assert.deepEqual(calls,['42','41']);
  assert(content.innerHTML.includes('data-week-target="42"'));assert(content.innerHTML.includes('data-week-target="40"'));
 });
 test('failed load is retryable and latest issue has no newer link',async()=>{
  const {element,content}=setup();element.issueData=async()=>{throw new Error('offline')};await element.load();assert(content.innerHTML.includes('data-retry'));assert.equal(element.loaded,null);
- element.issueData=async()=>data;await element.load();assert(content.innerHTML.includes('已是最新一期'));assert(content.innerHTML.includes('data-week-target="41"'));assert(!content.innerHTML.includes('data-week-target="43"'));
+ element.issueData=async()=>({...data,week:'2026 W43',range:'10.19 — 10.25'});await element.load();assert(content.innerHTML.includes('已是最新一期'));assert(content.innerHTML.includes('data-week-target="42"'));assert(!content.innerHTML.includes('data-week-target="44"'));
 });
 test('primary text colors exceed 4.5:1 on their reading backgrounds',()=>{
  const luminance=hex=>{const rgb=hex.match(/\w\w/g).map(h=>parseInt(h,16)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);return rgb.reduce((s,v,i)=>s+v*[.2126,.7152,.0722][i],0)};
  for(const [text,bg] of [['243247','ffffff'],['17263c','ffffff'],['526177','ffffff'],['2155a3','edf3fc'],['645025','fff8e9'],['3b4b60','f4f7fc']])assert((luminance(bg)+.05)/(luminance(text)+.05)>=4.5,`${text}/${bg}`);
+});
+
+test('W43 matches JSON, renders evidence gaps and is the default latest issue',()=>{
+ const d=JSON.parse(fs.readFileSync(path.join(root,'weekly-report/data-W43.json'),'utf8'));
+ const {element,context}=setup();
+ vm.runInContext(fs.readFileSync(path.join(root,'weekly-report/data-W43.js'),'utf8'),context);
+ assert.equal(JSON.stringify(context.window.REPORT_DATA),JSON.stringify(d));
+ assert.equal(element.issues[0][0],'43');
+ const html=element.issueMarkup(d,true);
+ for(const t of ['10月19日','10月25日','2026/10/26','素材覆盖与证据边界','无正文','对快手雇主品牌的建议'])assert(html.includes(t),t);
+ assert(!html.includes('来源待核实'));
 });
