@@ -1,28 +1,21 @@
 {
-  "generatedAt": "2026-10-27T09:33:06.083101Z",
+  "generatedAt": "2026-10-27T09:40:32.123399Z",
   "model": "deepseek-flash",
   "promptVersion": "full-body-v1",
   "basis": "full_body",
   "mode": "new_articles_only",
-  "completed": 2,
-  "failed": 1,
-  "errors": [
-    {
-      "title": "人类数据如何变成机器人真实能力？Ropedia重磅发布六项研究成果",
-      "url": "http://weixin.sogou.com/weixin?type=2&query=%E6%9C%BA%E5%99%A8%E4%B9%8B%E5%BF%83+%E4%BA%BA%E7%B1%BB%E6%95%B0%E6%8D%AE%E5%A6%82%E4%BD%95%E5%8F%98%E6%88%90%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9C%9F%E5%AE%9E%E8%83%BD%E5%8A%9B%EF%BC%9FRopedia%E9%87%8D%E7%A3%85%E5%8F%91%E5%B8%83%E5%85%AD%E9%A1%B9%E7%A0%94%E7%A9%B6%E6%88%90%E6%9E%9C",
-      "errorType": "ValueError",
-      "error": "summary length outside 20-320 characters"
-    }
-  ],
-  "status": "failed",
-  "pendingAfterRun": 1,
-  "pendingBeforeRun": 3,
+  "completed": 1,
+  "failed": 0,
+  "errors": [],
+  "status": "success",
+  "pendingAfterRun": 0,
+  "pendingBeforeRun": 1,
   "skippedCurrent": 0,
   "skippedShort": 0,
-  "skippedKnown": 2903,
+  "skippedKnown": 2905,
   "rateLimited": false,
   "usage": {
-    "inputTokens": 9375,
-    "outputTokens": 506
+    "inputTokens": 9350,
+    "outputTokens": 288
   }
 }
