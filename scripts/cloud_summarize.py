@@ -29,7 +29,8 @@ SYSTEM_PROMPT = """你是中文资讯编辑。请依据文章完整正文写一�
 2. 不介绍作者、编辑、来源和公众号，不使用“本文介绍了”“文章指出”等套话。
 3. 招聘内容优先说明招聘对象、岗位或项目、时间节点和关键条件；技术内容优先说明问题、方法和结果；公司文化内容优先说明具体行动和影响。
 4. 只能使用正文已有信息，不猜测、不补充外部事实。
-5. 只输出 JSON，格式为 {"summary":"摘要"}，不要输出 Markdown。"""
+5. 摘要建议80至180字，必须在20至320个字符之间。
+6. 只输出 JSON，格式为 {"summary":"摘要"}，summary 必须为字符串，不要输出 Markdown。"""
 
 
 def read_json(path: Path, default):
@@ -68,15 +69,18 @@ def published_key(item: dict) -> str:
 
 
 def valid_summary(value: str) -> str:
+    if not isinstance(value, str):
+        raise ValueError("summary must be a string")
     text = clean_text(value).strip('"“”')
     if not 20 <= len(text) <= 320:
-        raise ValueError("summary length outside 20-320 characters")
+        raise ValueError(f"summary length outside 20-320 characters (actual: {len(text)})")
     if re.match(r"^(?:作者|小编|编辑|来源)\s*[:：]", text):
         raise ValueError("summary begins with byline or source")
     return text
 
 
-def request_summary(api_key: str, title: str, account: str, body: str) -> tuple[str, dict]:
+def request_summary(api_key: str, title: str, account: str, body: str,
+                    feedback: str = "") -> tuple[str, dict]:
     payload = {
         "model": MODEL,
         "messages": [
@@ -89,10 +93,16 @@ def request_summary(api_key: str, title: str, account: str, body: str) -> tuple[
         "thinking": {"type": "disabled"},
         "reasoning_effort": "none",
         "response_format": {"type": "json_object"},
-        "max_tokens": 300,
+        "max_tokens": 600,
         "temperature": 0.2,
         "stream": False,
     }
+    if feedback:
+        payload["messages"].append({
+            "role": "user",
+            "content": f"上次输出未通过校验，原因：{feedback}。请依据同一正文重新生成，"
+                       '控制在80至180字，必须满足20至320个字符，只输出 {"summary":"摘要"}。',
+        })
     request = urllib.request.Request(
         API_URL,
         data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
@@ -108,14 +118,21 @@ def request_summary(api_key: str, title: str, account: str, body: str) -> tuple[
         result = json.loads(response.read().decode("utf-8"))
     content = result["choices"][0]["message"]["content"]
     parsed = json.loads(content)
+    if not isinstance(parsed, dict):
+        raise ValueError("response must be a JSON object containing summary")
     return parsed.get("summary", ""), result.get("usage") or {}
 
 
 def request_with_retry(api_key, title, account, body):
-    """Retry only transient failures, bounded to three attempts per article."""
+    """Retry transient and invalid-output failures, at most three calls per article."""
+    feedback = ""
+    usage_total = {"prompt_tokens": 0, "completion_tokens": 0}
     for attempt in range(1, 4):
         try:
-            return request_summary(api_key, title, account, body)
+            summary, usage = request_summary(api_key, title, account, body, feedback=feedback)
+            for key in usage_total:
+                usage_total[key] += int(usage.get(key) or 0)
+            return valid_summary(summary), usage_total
         except urllib.error.HTTPError as exc:
             if exc.code not in {429, 500, 502, 503, 504} or attempt == 3:
                 raise
@@ -128,6 +145,14 @@ def request_with_retry(api_key, title, account, body):
             if attempt == 3:
                 raise
             delay = 2 ** attempt
+        except (KeyError, TypeError, ValueError) as exc:
+            if attempt == 3:
+                raise
+            # Keep feedback bounded and do not log the article body or raw response.
+            feedback = str(exc).replace(api_key, "[REDACTED]")[:300]
+            print(json.dumps({"event": "summary_validation_retry", "title": title,
+                              "attempt": attempt, "error": feedback}, ensure_ascii=False), file=sys.stderr)
+            continue
         print(json.dumps({"event": "summary_retry", "title": title,
                           "attempt": attempt, "delaySeconds": delay}, ensure_ascii=False), file=sys.stderr)
         time.sleep(delay)
@@ -271,7 +296,6 @@ def main() -> int:
             )
             usage_input += int(usage.get("prompt_tokens") or 0)
             usage_output += int(usage.get("completion_tokens") or 0)
-            summary = valid_summary(summary)
             item["summary"] = summary
             item["summary_meta"] = {
                 "status": "done",
@@ -337,3 +361,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
