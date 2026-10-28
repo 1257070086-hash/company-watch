@@ -4,6 +4,27 @@
   "home_page_url": "",
   "items": [
     {
+      "id": "4262f1a0a308df82f2e4cc56b488ed84735844c89690c65716a26012a858a5ce",
+      "title": "啊？这样也能拿到字节 offer 吗？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI5MzI4MzM1OQ%3D%3D&mid=2247533084&idx=1&sn=760daa2353f204580e55ddba74617b5b&chksm=ed59d4aaaf2dbba645f9e2883e54bbbee9e9af84a2722778d7c012e7e90353efdea254eb262e",
+      "content_html": "",
+      "description": "非 985 、211 学校，没有互联网经验，传统行业转行，不爱说话的重度 i 人......这样的候选人们，能加入字节吗？🤔 一直有同学问： 字节招人到底看什么？什么样的人能拿到 offer ？ 这一期，我们翻出了几份 “特别” 的简历，点击 「 TA 能拿到 offer 吗？」 ，查收他们的录用结果。 回到开头的问题：字节跳动用人到底看什么？ 「用人看本质」是字节的人才观，同时也是字节的领导力原则之一。 title 、大厂光环、对口经历......都只是参考，我们更关注一个人底层的素质。外在标签可能会过时，底层能力和潜力不会。 欢迎大家投递字节跳动， 期待与大家共同成长～ 点击“阅读原文”一键投递",
+      "body_text": "非 985 、211 学校，没有互联网经验，传统行业转行，不爱说话的重度 i 人......这样的候选人们，能加入字节吗？🤔 一直有同学问： 字节招人到底看什么？什么样的人能拿到 offer ？ 这一期，我们翻出了几份 “特别” 的简历，点击 「 TA 能拿到 offer 吗？」 ，查收他们的录用结果。 回到开头的问题：字节跳动用人到底看什么？ 「用人看本质」是字节的人才观，同时也是字节的领导力原则之一。 title 、大厂光环、对口经历......都只是参考，我们更关注一个人底层的素质。外在标签可能会过时，底层能力和潜力不会。 欢迎大家投递字节跳动， 期待与大家共同成长～ 点击“阅读原文”一键投递",
+      "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/mmbiz_jpg/Wl0pfQiav456pviaDkL0W12t3xHrJkAy92daweGsibytt3zK20uLP0jeFERbZFClgNLcpsIRAla65zqK0rS1xbuLtTqpdXrGiaOmUk6PnpWyVwM/640?wx_fmt=jpeg",
+      "date_modified": "2026-10-28T04:00:00Z",
+      "date_published": "2026-10-28T04:00:00Z",
+      "summary": "字节跳动回应非985/211、无互联网经验、传统行业转行、不爱说话的重度i人能否加入的问题，展示了几份“特别”简历的录用结果，并说明其用人看本质，title、大厂光环、对口经历只是参考，更关注底层素质和潜力，邀请投递。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "825e4a178d13e186c07b2aad840b2a0a2e453ccc952602e2a237823165b839a5",
+        "generated_at": "2026-10-28T04:13:50.151095Z"
+      }
+    },
+    {
       "id": "ff8d207b396f80194c83c18f0c564766dca431f4c4e0d8b0447f49f50940c22f",
       "title": "字节员工的第一行代码都是啥？",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI5MzI4MzM1OQ%3D%3D&mid=2247533019&idx=1&sn=22fdfdb7873b29652d941e3d0c69de0b&chksm=ed206df0c0d717a2f20468741f98cbf5c8cb672e0d13ef716693a893dcef3e61776d32f50b39",
