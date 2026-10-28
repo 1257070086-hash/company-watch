@@ -4,6 +4,27 @@
   "home_page_url": "",
   "items": [
     {
+      "id": "0db81e08f6b548147177fe90f91565870dd5a47ccc038b11eb10c8346d40be73",
+      "title": "字节跳动招人到底看什么？这些“非典型简历”凭借什么拿到了offer",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzMTIzMTUwOQ%3D%3D&mid=2650115461&idx=1&sn=4d59d8b07344e9a251df3e31b9074d7d&chksm=f1f6dc5c84016d204a309fe98c77daa1db555bd9125c22dba3459c28ba5a7680cd7adf901bc1",
+      "content_html": "",
+      "description": "非 985 、211 学校，没有互联网经验，传统行业转行，不爱说话的重度 i 人......这样的候选人们，能加入字节吗？🤔 一直有同学问： 字节招人到底看什么？什么样的人能拿到 offer ？ 这一期，我们翻出了几份 “特别” 的简历，点击 「 TA 能拿到 offer 吗？」 ，查收他们的录用结果。 回到开头的问题：字节跳动用人到底看什么？ 「用人看本质」是字节的人才观，同时也是字节的领导力原则之一。 title 、大厂光环、对口经历......都只是参考，我们更关注一个人底层的素质。外在标签可能会过时，底层能力和潜力不会。 欢迎大家投递字节跳动 期待与大家共同成长～ 点击“阅读原文”一键投递",
+      "body_text": "非 985 、211 学校，没有互联网经验，传统行业转行，不爱说话的重度 i 人......这样的候选人们，能加入字节吗？🤔 一直有同学问： 字节招人到底看什么？什么样的人能拿到 offer ？ 这一期，我们翻出了几份 “特别” 的简历，点击 「 TA 能拿到 offer 吗？」 ，查收他们的录用结果。 回到开头的问题：字节跳动用人到底看什么？ 「用人看本质」是字节的人才观，同时也是字节的领导力原则之一。 title 、大厂光环、对口经历......都只是参考，我们更关注一个人底层的素质。外在标签可能会过时，底层能力和潜力不会。 欢迎大家投递字节跳动 期待与大家共同成长～ 点击“阅读原文”一键投递",
+      "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/mmbiz_jpg/Wl0pfQiav456pviaDkL0W12t3xHrJkAy92daweGsibytt3zK20uLP0jeFERbZFClgNLcpsIRAla65zqK0rS1xbuLtTqpdXrGiaOmUk6PnpWyVwM/640?wx_fmt=jpeg",
+      "date_modified": "2026-10-28T10:02:51Z",
+      "date_published": "2026-10-28T10:02:51Z",
+      "summary": "字节跳动回应招聘标准：非985、211、无互联网经验、传统行业转行、不爱说话的i人均有机会。其人才观为“用人看本质”，title、大厂光环、对口经历只是参考，更关注底层素质，外在标签可能过时，底层能力和潜力不会。文末欢迎投递并附一键投递入口。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "33a0959de6bc7e9000790f0dd6211318677cddde9eeda7da0bcf880291a85c8d",
+        "generated_at": "2026-10-28T10:16:56.420498Z"
+      }
+    },
+    {
       "id": "f2639adc0af3933f1585343d107c6bc16125b55119b6cec8dd9be1846b74711c",
       "title": "一篇笔记读懂字节跳动招聘岗！",
       "url": "https://mp.weixin.qq.com/s?__biz=MzIzMTIzMTUwOQ%3D%3D&mid=2650115428&idx=1&sn=a0e3adf9cf8023003033f2578953def5&chksm=f1933aeee9df370183533fd81174b4e3960c965c3ea8c5e0308f800210cd45772434ca3ccc05",
