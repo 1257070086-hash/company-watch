@@ -4,6 +4,27 @@
   "home_page_url": "",
   "items": [
     {
+      "id": "f35af0372b2f1b20652ce43d48d76c81afdbfd2f434f7fe425a0fa4b66884085",
+      "title": "百度确认吴甜已离职，基础模型进展将持续推进",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI1NDE0NDQ2MQ%3D%3D&mid=2649603576&idx=1&sn=41537d703bb8add80307d8eb1aef40d8&chksm=f02f42427ca556ff315b7d89be72387e09f223697da0e423d43a72b03bcf48280ce0bc359c4d",
+      "content_html": "",
+      "description": "10月29日，有传闻称百度集团副总裁、百度研究院副院长吴甜已离职，百度公关经理在朋友圈对此做了回应。 文中称，吴甜已结束在百度的任职。同时提到，百度的技术工作仍在向前推进。就在两天前（10 月 27 日），百度发布并开源文心Unlimited OCR 2，全球首次实现任意页数文档解析，将 OCR 的处理上限从数十页推向\"无限\"，达到当前最先进水平（SOTA）。实测显示，该模型能够一次性解析《哈利·波特》全系列 7 部作品，累计超过 3600 页，在文档长度大幅增加的情况下依然保持较高的精度和处理效率，推动文档解析技术迈向 OCR 3.0 时代。 据悉，吴甜今年 5 月已不再担任基础模型研发部门负责人，后转任百度研究院副院长。在基础模型方向，相关工作近期同样在持续推进。据接近百度的知情人士透露，文心模型方面下周就会有新进展对外发布。",
+      "body_text": "10月29日，有传闻称百度集团副总裁、百度研究院副院长吴甜已离职，百度公关经理在朋友圈对此做了回应。 文中称，吴甜已结束在百度的任职。同时提到，百度的技术工作仍在向前推进。就在两天前（10 月 27 日），百度发布并开源文心Unlimited OCR 2，全球首次实现任意页数文档解析，将 OCR 的处理上限从数十页推向\"无限\"，达到当前最先进水平（SOTA）。实测显示，该模型能够一次性解析《哈利·波特》全系列 7 部作品，累计超过 3600 页，在文档长度大幅增加的情况下依然保持较高的精度和处理效率，推动文档解析技术迈向 OCR 3.0 时代。 据悉，吴甜今年 5 月已不再担任基础模型研发部门负责人，后转任百度研究院副院长。在基础模型方向，相关工作近期同样在持续推进。据接近百度的知情人士透露，文心模型方面下周就会有新进展对外发布。",
+      "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/sz_mmbiz_png/nEWyk3hdcmlw4ibaXVlCkeup8H4fqTicFNQJsho8TYqo6tu53BvJVupnCBKeIUnJtd1O3x7IUvfcdnkbWBzc4VHicvp3Xyt3AIZ5LxVtlKZhSw/640?wx_fmt=png&from=appmsg",
+      "date_modified": "2026-10-29T07:18:28Z",
+      "date_published": "2026-10-29T07:18:28Z",
+      "summary": "百度确认集团副总裁、百度研究院副院长吴甜已离职，其今年5月已不再担任基础模型研发部门负责人。百度技术工作仍在推进：10月27日发布并开源文心Unlimited OCR 2，全球首次实现任意页数文档解析，可一次性解析超3600页文档并保持较高精度；文心模型下周将有新进展对外发布。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "56e23c0895ce05e11d8def49f0a39a31437e445342640df63b93259673dffeeb",
+        "generated_at": "2026-10-29T07:33:09.766804Z"
+      }
+    },
+    {
       "id": "9532c389d193960d32f2b7c78d00cf43a62a2464e39ca31e0c64eae03c8ae377",
       "title": "百度集团副总裁、研究院副院长吴甜离职",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI1NDE0NDQ2MQ%3D%3D&mid=2649603571&idx=1&sn=2528574efd6d0e937f0a9c2840b0d05a&chksm=f055b611393d489dca7d029997e406f02f737397fd11ed79491a18e0260ba9419dc71be5052e",

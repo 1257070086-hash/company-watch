@@ -4,6 +4,27 @@
   "home_page_url": "",
   "items": [
     {
+      "id": "a617dc521fd0c4ab897a3326a9b93bec60721a9a2fad17068f7745ee1238968b",
+      "title": "吴甜已离职，百度基础模型进展持续推进",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyNTk2NDQ5MQ%3D%3D&mid=2247490840&idx=1&sn=a1034893a2bd284205cdf9cb8a7f40aa&chksm=e92bd82bac9e26a3bae62fab86c7081612b12ea6f4c5b3d31d0c3095a7e1e357b45080f6fe8a",
+      "content_html": "",
+      "description": "今天有传闻称百度集团副总裁、百度研究院副院长吴甜已离职。厂哥关注到，随后有百度公关经理在朋友圈对此做出了回应： 回应称，吴甜已结束在百度的任职。同时提到，百度的技术工作仍在向前推进。 而且就在两天前（10 月 27 日），百度发布并开源文心 Unlimited OCR 2，全球首次实现任意页数文档解析，将 OCR 的处理上限从数十页推向\"无限\"，达到当前最先进水平（SOTA）。 实测显示，该模型能够一次性解析《哈利·波特》全系列 7 部作品，累计超过 3600 页，在文档长度大幅增加的情况下依然保持较高的精度和处理效率，推动文档解析技术迈向 OCR 3.0 时代。 据了解，吴甜今年 5 月已不再担任基础模型研发部门负责人，后转任百度研究院副院长。在基础模型方向，相关工作近期同样在持续推进。 此外，据接近百度的知情人士透露，文心模型方面下周就会有新进展对外发布。",
+      "body_text": "今天有传闻称百度集团副总裁、百度研究院副院长吴甜已离职。厂哥关注到，随后有百度公关经理在朋友圈对此做出了回应： 回应称，吴甜已结束在百度的任职。同时提到，百度的技术工作仍在向前推进。 而且就在两天前（10 月 27 日），百度发布并开源文心 Unlimited OCR 2，全球首次实现任意页数文档解析，将 OCR 的处理上限从数十页推向\"无限\"，达到当前最先进水平（SOTA）。 实测显示，该模型能够一次性解析《哈利·波特》全系列 7 部作品，累计超过 3600 页，在文档长度大幅增加的情况下依然保持较高的精度和处理效率，推动文档解析技术迈向 OCR 3.0 时代。 据了解，吴甜今年 5 月已不再担任基础模型研发部门负责人，后转任百度研究院副院长。在基础模型方向，相关工作近期同样在持续推进。 此外，据接近百度的知情人士透露，文心模型方面下周就会有新进展对外发布。",
+      "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/sz_mmbiz_jpg/MC1nFvXS8MhGQYibJicVYJVYs4lRwXHLRZN7mDqZgVAfIzOUtrQdg6qyAgPI9TEEe4ibJIpT9CHaDzoXM5hdKAGI9ePPQkp6pKhjznOqiaXbKrU/640?wx_fmt=jpeg",
+      "date_modified": "2026-10-29T07:26:44Z",
+      "date_published": "2026-10-29T07:26:44Z",
+      "summary": "百度公关经理回应称吴甜已结束在百度任职，此前她于今年5月不再担任基础模型研发部门负责人、转任百度研究院副院长。两天前百度发布并开源文心Unlimited OCR 2，全球首次实现任意页数文档解析，实测可一次解析超3600页内容并保持较高精度与效率；知情人士称文心模型下周将有新进展发布。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "bfb4a23d78427431e28bea97122efd0eaa5012b1a3425f410a3052ad2eea1c1e",
+        "generated_at": "2026-10-29T07:33:09.766804Z"
+      }
+    },
+    {
       "id": "50f1f71925f95de7b0020f8d69abe3416510d0ee1f5ea80d5814649e6f08d122",
       "title": "百度智能云组织调整，业务按属性重新归集",
       "url": "https://mp.weixin.qq.com/s?__biz=MzIyNTk2NDQ5MQ%3D%3D&mid=2247490833&idx=1&sn=d0d419a83a599e4eb00c10b39d707d1e&chksm=e90f10b5a55c4d257b1f4798ed6e1624ac7f51036f7c7ccd96123314b6cd471e5b6ecfd9877c",
