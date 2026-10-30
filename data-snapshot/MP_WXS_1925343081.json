@@ -4,6 +4,38 @@
   "home_page_url": "",
   "items": [
     {
+      "id": "0b7c9de7b7086736ffdebf7d30587efe3c53319c5ea838374c09e9202ce197f3",
+      "title": "微信青云招聘速报｜小微团队介绍&热招课题",
+      "url": "https://mp.weixin.qq.com/s?__biz=MTkyNTM0MzA4MQ%3D%3D&mid=2650971617&idx=1&sn=9909fa43f570abf69370cf98d2ada768&chksm=4047d137a0a007daf8826bc54b8c9b2113d518cffcf9da12686c811fa9dc9cd7d566ffc41686",
+      "content_html": "",
+      "description": "微信青云招聘速报｜小微团队介绍&热招课题 ✨「小微」介绍 微信小微是微信团队在小范围内测的原生AI助手。 用户可以与小微通过文字或语音对话，借由AI技术，更好地使用微信、与好友沟通，也可调起小程序，为用户提供更好的服务。6月开启测试以来，“小微”持续扩大灰度测试，入口从微信首页侧滑主入口延伸至朋友圈、公众号、视频号等更多场景，用户可以在有需要时，更便捷地唤起小微，获得更丰富的体验 💡「小微」团队 小微所在的微信基础团队，负责微信通讯与社交业务，为亿万用户提供高可用、低延迟的通讯基础设施。团队积极探索AI、音乐等创新领域，持续推进原生AI助手\"小微\"的研发，支持通过文字或语音对话操作微信原生功能，致力于打造更智能、更丰富的通讯社交生态 🔥 热招青云课题 微信小微-支持方言的音频理解模型 微信小微-记忆系统的构建与下游应用 微信小微-面向小程序复杂交互环境的强化学习 GUIAgent 决策机制研究 微信小微-基于大语言模型的小程序功能组件（Skill）生成式编译技术研究 微信小微-支持多方言的音频生成模型 微信小微-用户人格建模与个性化对话研究 微信小微-基于微信复杂生态的Agentic后训练研究 🔍投递方式 腾讯青云计划官网投递 可同步发送简历到邮箱： carlowschen@tencent.com",
+      "body_text": "微信青云招聘速报｜小微团队介绍&热招课题 ✨「小微」介绍 微信小微是微信团队在小范围内测的原生AI助手。 用户可以与小微通过文字或语音对话，借由AI技术，更好地使用微信、与好友沟通，也可调起小程序，为用户提供更好的服务。6月开启测试以来，“小微”持续扩大灰度测试，入口从微信首页侧滑主入口延伸至朋友圈、公众号、视频号等更多场景，用户可以在有需要时，更便捷地唤起小微，获得更丰富的体验 💡「小微」团队 小微所在的微信基础团队，负责微信通讯与社交业务，为亿万用户提供高可用、低延迟的通讯基础设施。团队积极探索AI、音乐等创新领域，持续推进原生AI助手\"小微\"的研发，支持通过文字或语音对话操作微信原生功能，致力于打造更智能、更丰富的通讯社交生态 🔥 热招青云课题 微信小微-支持方言的音频理解模型 微信小微-记忆系统的构建与下游应用 微信小微-面向小程序复杂交互环境的强化学习 GUIAgent 决策机制研究 微信小微-基于大语言模型的小程序功能组件（Skill）生成式编译技术研究 微信小微-支持多方言的音频生成模型 微信小微-用户人格建模与个性化对话研究 微信小微-基于微信复杂生态的Agentic后训练研究 🔍投递方式 腾讯青云计划官网投递 可同步发送简历到邮箱： carlowschen@tencent.com",
+      "image": "https://img.hhbboo.com/mm/mmecoa.qpic.cn/sz_mmecoa_png/50opAau08FbG3iaKUrK0rYz8LusWwwSA2dnU4F29WTHiciaTG8YOeribybJEfoQDOrJHtLCaThj6BfLv30jIvmMvXYawicPD6ibkrqKxbLs7fthLI/0?wx_fmt=png&from=appmsg",
+      "date_modified": "2026-10-30T03:35:55Z",
+      "date_published": "2026-10-30T03:35:55Z",
+      "summary": "微信基础团队正在招聘青云计划课题，围绕原生AI助手“小微”开展方言音频理解与生成、记忆系统、小程序GUI Agent强化学习、Skill生成式编译、用户人格建模及Agentic后训练等研究。小微已从微信首页侧滑入口扩展至朋友圈、公众号、视频号等场景，支持文字或语音操作微信功能。可通过腾讯青云计划官网或邮箱投递简历。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "2a59d2552069451ea34e74ea2d7957274ad812c57a82c94babf4aa5dd407e8c7",
+        "generated_at": "2026-10-30T03:53:03.902868Z"
+      }
+    },
+    {
+      "id": "53c43a38c049229b4a81fa4fa24c0930d65a09a0da33a7b772393775a17b9ce8",
+      "title": "校招｜听腾讯游戏美术面试官说校招秘籍",
+      "url": "https://mp.weixin.qq.com/s?__biz=MTkyNTM0MzA4MQ%3D%3D&mid=2650946025&idx=4&sn=74d6aeca122437d1cf78ccf802e6156e&chksm=408fd8e244074057ce7fe7e3455786e8d2a0ed724137892834bfd6ecc216771c9738b1e4d8f1",
+      "content_html": "",
+      "description": "校招｜听腾讯游戏美术面试官说校招秘籍 今天带你走进【游戏美术】岗位，听听“面试官说”，对游戏美术各类岗位方向，分享给同学们的“校招秘籍”！ ⬅️左滑查看2025 腾讯IEG游戏美术岗位能力图鉴看完“面试官说”不过瘾？没关系！还有线下1对1见面交流机会！ 🐧9月23日起，北京、重庆、成都、大连、长春、杭州、西安、广州等多地开启校招美术专场宣讲会 💎业务大咖嘉宾现场分享，面试官&amp;HR现场交流，快速推进流程 🔗马上报名： 参考链接:wj[.]qq[.]com 🔐提前锁定现场面试名额，快人一步获取offer~",
+      "body_text": "校招｜听腾讯游戏美术面试官说校招秘籍 今天带你走进【游戏美术】岗位，听听“面试官说”，对游戏美术各类岗位方向，分享给同学们的“校招秘籍”！ ⬅️左滑查看2025 腾讯IEG游戏美术岗位能力图鉴看完“面试官说”不过瘾？没关系！还有线下1对1见面交流机会！ 🐧9月23日起，北京、重庆、成都、大连、长春、杭州、西安、广州等多地开启校招美术专场宣讲会 💎业务大咖嘉宾现场分享，面试官&amp;HR现场交流，快速推进流程 🔗马上报名： 参考链接:wj[.]qq[.]com 🔐提前锁定现场面试名额，快人一步获取offer~",
+      "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/sz_mmbiz_jpg/CqncWic46iaMhC6MaQ8KoxeLaS6JsXoR8kuEb6LntXicWsERzcs4sVDv1wZYpvx2APiafuNVedsJynBMl8byIBhVJg/0?wx_fmt=jpeg&from=appmsg",
+      "date_modified": "2026-10-30T03:35:55Z",
+      "date_published": "2026-10-30T03:35:55Z"
+    },
+    {
       "id": "b2542f7997693a69ef811c6ec1899c800b5fb290634db51e0ae686e3c5f66141",
       "title": "腾讯内容培训生｜鹅媒派实习生专项招聘启动！",
       "url": "https://mp.weixin.qq.com/s?__biz=MTkyNTM0MzA4MQ%3D%3D&mid=2650971601&idx=1&sn=23bcdbbbdcc1f79ea077ecdadfec443b&chksm=406a412a9ea5623fac225128a0cad4579561120c7a22eebd8f75ab634b2707813fee4d3d376a",
