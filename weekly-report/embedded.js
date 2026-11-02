@@ -5,7 +5,7 @@ class IndustryWeekly extends HTMLElement {
     this.attachShadow({mode: 'open'});
     this.cache = new Map();
     this.issues = [
-      ['43','10.19 至 10.25'],['42','10.12 至 10.18'],['41','10.05 至 10.11'],['40','09.28 至 10.04'],
+      ['44','10.26 至 11.01'],['43','10.19 至 10.25'],['42','10.12 至 10.18'],['41','10.05 至 10.11'],['40','09.28 至 10.04'],
       ['39','09.21 至 09.27'],['38','09.14 至 09.20'],
       ['37','09.07 至 09.13'],['36','08.31 至 09.06'],['35','08.24 至 08.30'],
       ['34','08.17 至 08.23'],['33','08.10 至 08.16'],['32','08.04 至 08.10'],
@@ -62,7 +62,7 @@ class IndustryWeekly extends HTMLElement {
       await new Promise((resolve,reject) => {
         const script = document.createElement('script');
         script.src = week === '34' ? 'weekly-report/data.js' : `weekly-report/data-W${week}.js`;
-        script.src += '?v=20261026-w43';
+        script.src += '?v=20261102-w44';
         window.REPORT_DATA = undefined;
         script.onload = () => {
           if (!window.REPORT_DATA || !Array.isArray(window.REPORT_DATA.companies)) { script.remove(); reject(new Error('invalid report')); return; }

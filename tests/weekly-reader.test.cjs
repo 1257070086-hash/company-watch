@@ -5,7 +5,7 @@ const path=require('node:path');
 const vm=require('node:vm');
 const root=path.join(__dirname,'..');
 function setup(){
-  const select={value:'43',addEventListener(){}};
+  const select={value:'44',addEventListener(){}};
   const content={innerHTML:'',setAttribute(){},removeAttribute(){}};
   const shadow={innerHTML:'',querySelector:s=>s==='select'?select:content,addEventListener(){}};
   const context={URL,window:{},document:{getElementById(){return null}},HTMLElement:class{attachShadow(){this.shadowRoot=shadow;}},customElements:{define(_,C){this.C=C}}};
@@ -38,20 +38,48 @@ test('rapid switches only render the last selection, without older autoload',asy
 });
 test('failed load is retryable and latest issue has no newer link',async()=>{
  const {element,content}=setup();element.issueData=async()=>{throw new Error('offline')};await element.load();assert(content.innerHTML.includes('data-retry'));assert.equal(element.loaded,null);
- element.issueData=async()=>({...data,week:'2026 W43',range:'10.19 — 10.25'});await element.load();assert(content.innerHTML.includes('已是最新一期'));assert(content.innerHTML.includes('data-week-target="42"'));assert(!content.innerHTML.includes('data-week-target="44"'));
+ element.issueData=async()=>({...data,week:'2026 W44',range:'10.26 — 11.01'});await element.load();assert(content.innerHTML.includes('已是最新一期'));assert(content.innerHTML.includes('data-week-target="43"'));assert(!content.innerHTML.includes('data-week-target="45"'));
 });
 test('primary text colors exceed 4.5:1 on their reading backgrounds',()=>{
  const luminance=hex=>{const rgb=hex.match(/\w\w/g).map(h=>parseInt(h,16)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);return rgb.reduce((s,v,i)=>s+v*[.2126,.7152,.0722][i],0)};
  for(const [text,bg] of [['243247','ffffff'],['17263c','ffffff'],['526177','ffffff'],['2155a3','edf3fc'],['645025','fff8e9'],['3b4b60','f4f7fc']])assert((luminance(bg)+.05)/(luminance(text)+.05)>=4.5,`${text}/${bg}`);
 });
 
-test('W43 matches JSON, renders evidence gaps and is the default latest issue',()=>{
+test('W43 matches JSON and keeps its evidence gaps in the archive',()=>{
  const d=JSON.parse(fs.readFileSync(path.join(root,'weekly-report/data-W43.json'),'utf8'));
  const {element,context}=setup();
  vm.runInContext(fs.readFileSync(path.join(root,'weekly-report/data-W43.js'),'utf8'),context);
  assert.equal(JSON.stringify(context.window.REPORT_DATA),JSON.stringify(d));
- assert.equal(element.issues[0][0],'43');
+ assert.equal(element.issues[1][0],'43');
  const html=element.issueMarkup(d,true);
  for(const t of ['10月19日','10月25日','2026/10/26','素材覆盖与证据边界','无正文','对快手雇主品牌的建议'])assert(html.includes(t),t);
  assert(!html.includes('来源待核实'));
+});
+
+test('W44 renders as latest and all source dates and URLs trace to its fixed audit',async()=>{
+ const d=JSON.parse(fs.readFileSync(path.join(root,'weekly-report/data-W44.json'),'utf8'));
+ const audit=JSON.parse(fs.readFileSync(path.join(root,'weekly-report/audit-W44/articles.json'),'utf8'));
+ const {element,context,content,select}=setup();
+ vm.runInContext(fs.readFileSync(path.join(root,'weekly-report/data-W44.js'),'utf8'),context);
+ assert.equal(JSON.stringify(context.window.REPORT_DATA),JSON.stringify(d));
+ assert.equal(element.issues[0][0],'44');
+ const html=element.issueMarkup(d,true);
+ for(const t of ['10月26日','11月1日','2026/11/02','PGM人才计划2.0','快照无正文','组织支持','上线','四个大体积媒体快照读取失败'])assert(html.includes(t),t);
+ const byURL=new Map(audit.articles.map(a=>[a.url,a]));
+ const refs=[...d.headlines.map(h=>({url:h.url,published_at:h.published_at})),...Object.values(d.industry.sections).flatMap(s=>s.sources),...d.companies.flatMap(c=>Object.values(c.sections).flatMap(s=>s.sources))];
+ for(const ref of refs){
+   const a=byURL.get(ref.url);assert(a,ref.url);assert(a.included);
+   assert.equal(ref.published_at,a.published_at);
+   assert(new Date(a.published_at)>=new Date(d.provenance.periodStart));
+   assert(new Date(a.published_at)<new Date(d.provenance.periodEndExclusive));
+   const u=new URL(ref.url);assert.equal(u.hostname,'mp.weixin.qq.com');
+   for(const k of ['__biz','mid','idx','sn'])assert(u.searchParams.get(k),k);
+ }
+ assert.equal(audit.articles.length,65);
+ assert.equal(new Set(audit.articles.map(a=>a.canonical_identity)).size,65);
+ assert.equal(audit.articles.filter(a=>a.evidence_level==='title_only').length,10);
+ assert.equal(audit.unread_sources.length,4);
+ element.issueData=async w=>w==='44'?d:JSON.parse(fs.readFileSync(path.join(root,'weekly-report/data-W43.json'),'utf8'));
+ await element.load();assert(content.innerHTML.includes('data-week="44"'));assert(content.innerHTML.includes('data-week-target="43"'));assert(content.innerHTML.includes('已是最新一期'));
+ select.value='43';await element.load();assert(content.innerHTML.includes('data-week-target="44"'));assert(content.innerHTML.includes('data-week-target="42"'));
 });
