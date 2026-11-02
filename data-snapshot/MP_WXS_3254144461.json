@@ -4,6 +4,27 @@
   "home_page_url": "",
   "items": [
     {
+      "id": "4c91335fe9b94b40e8dcca4929326edf545f7d89bb1c729e4cb531fbde1de5b5",
+      "title": "腾讯混元多模态强化学习负责人庞天宇离职",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI1NDE0NDQ2MQ%3D%3D&mid=2649603591&idx=1&sn=cc1a9d408bb7f1b74b5d93185f6101f8&chksm=f0e216d6a61faba963794adbb199572925a07e6f2720f17c1c7591be042e42139604f1a7572a",
+      "content_html": "",
+      "description": "北京时间11月2日，据知情人士消息，腾讯混元多模态强化学习（R/L）负责人庞天宇已经离职，目前来看，他最有可能选择创业。 庞天宇今年1月30日在小红书宣布加入腾讯，担任混元首席研究科学家（Principal Scientist），同时担任Tech Lead of Multimodal RL。 庞天宇的主要研究方向为多模态模型的强化学习，包括生成模型(e.g.,diffusion models)和理解模型(e.g.,VLMs)。​​ 据公开资料，庞天宇1995年出生，高一获保送清华大学资格。‌‌2017年本科毕业于清华大学数理基科班，2022年博士毕业于清华大学计算机系，导师为朱军教授。 在ICML/NeurIPS/ICLR等顶会顶刊上发表70余篇文章，总被引用数15000余次。学生时期曾荣获微软学者奖学金、百度奖学金、英伟达学术先锋奖、WAIC云帆奖、钟士模奖学金、CAAI优秀博士论文等。 清华毕业后，庞天宇在新加坡Sea人工智能实验室（Ai Lab）担任高级研究科学家。",
+      "body_text": "北京时间11月2日，据知情人士消息，腾讯混元多模态强化学习（R/L）负责人庞天宇已经离职，目前来看，他最有可能选择创业。 庞天宇今年1月30日在小红书宣布加入腾讯，担任混元首席研究科学家（Principal Scientist），同时担任Tech Lead of Multimodal RL。 庞天宇的主要研究方向为多模态模型的强化学习，包括生成模型(e.g.,diffusion models)和理解模型(e.g.,VLMs)。​​ 据公开资料，庞天宇1995年出生，高一获保送清华大学资格。‌‌2017年本科毕业于清华大学数理基科班，2022年博士毕业于清华大学计算机系，导师为朱军教授。 在ICML/NeurIPS/ICLR等顶会顶刊上发表70余篇文章，总被引用数15000余次。学生时期曾荣获微软学者奖学金、百度奖学金、英伟达学术先锋奖、WAIC云帆奖、钟士模奖学金、CAAI优秀博士论文等。 清华毕业后，庞天宇在新加坡Sea人工智能实验室（Ai Lab）担任高级研究科学家。",
+      "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/mmbiz_jpg/nEWyk3hdcmmA01bMvvDa2KogUmxqBPn02lu5Itm2sAjDjfj0hB2gdPvtXNWkjW7AMSwSoXIMu0MuItqoJ3UWufvgZm60vqEiaEGVTYicps1gI/640?wx_fmt=jpeg",
+      "date_modified": "2026-11-02T04:11:55Z",
+      "date_published": "2026-11-02T04:11:55Z",
+      "summary": "腾讯混元多模态强化学习负责人庞天宇已离职，最可能选择创业。他今年1月30日宣布加入腾讯，任混元首席研究科学家及多模态强化学习Tech Lead，研究方向为扩散模型、视觉语言模型等，此前在新加坡Sea人工智能实验室任高级研究科学家。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "8bb4acf1f83c76a720ad0cf70270ef368867fe44a7d071cec4dac39c67ee4732",
+        "generated_at": "2026-11-02T04:33:16.421145Z"
+      }
+    },
+    {
       "id": "8fa50caea7ff6bf2927f752f1ab663b2d357da6ae590eb31fa6d8f73e90e07da",
       "title": "美团晋升两位80后副总裁",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI1NDE0NDQ2MQ%3D%3D&mid=2649603587&idx=1&sn=8093c5eb2c7282a117d9851eec0460e2&chksm=f095c38dea4bc8876e224ab693ba9431a0f7b46cf6337630ecf6815411338462ddcf2e71651d",
@@ -109,9 +130,9 @@
       }
     },
     {
-      "id": "5dc13c8da4492ecc39cccce4fdd39116025e2e68d4a411d78f9215db313d70d9",
+      "id": "2e30e48316674fd16347966a6d74a9a516a4cc5e975b5031c4c3ec099bf2e350",
       "title": "百度智能云事业群组调整业务归属 相关业务线分转入三大部门",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzI1NDE0NDQ2MQ%3D%3D&mid=2649603565&idx=1&sn=8e9a56290e34cdd5e362ac62befa1d14&chksm=f0696c57618a588ce91f105d53282de6bda2e0948395d454c3c7dd7ef0bc05e3d31769e527e4",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI1NDE0NDQ2MQ%3D%3D&mid=2649603565&idx=1&sn=8e9a56290e34cdd5e362ac62befa1d14&chksm=f061e267f70a89c37ff429002dcf543eec0348a8cc3df39b333ce2a1ce2efd8bcbf49e4947fd",
       "content_html": "",
       "description": "近日，百度智能云事业群组（ACG）围绕业务发展进行组织调整。 ACG 智能应用事业部下相关业务基于各业务属性，分别转入基础设施事业部、智能体事业部、服务交付与质量工程中心。其中，服务交付与质量工程中心更名为行业应用与技术服务中心，部门负责人保持不变，继续向沈抖汇报。 同时，百度副总裁阮瑜轮岗担任小度科技组织负责人，继续向沈抖汇报。此次组织架构调整，是百度面向AI时代组织演进、深化\"云智一体\"协同作战的重要举措。 未来，百度 ACG 产研阵型将形成“基础设施、智能体”两层格局，聚焦AI云、智能体两大核心战场，通过FDE加速 AI 能力在企业场景及消费级场景的规模化、高效落地。 业内人士分析，此次调整按照业务属性重新归集相关业务线，有助于各业务更聚焦自身主赛道，让产研资源与业务需求贴得更紧，缩短决策链条、提升协同效率。同时有利于 AI 能力在行业场景更快落地，打通从技术到业务的链路，为相关业务的长期发展创造出空间。",
       "body_text": "近日，百度智能云事业群组（ACG）围绕业务发展进行组织调整。 ACG 智能应用事业部下相关业务基于各业务属性，分别转入基础设施事业部、智能体事业部、服务交付与质量工程中心。其中，服务交付与质量工程中心更名为行业应用与技术服务中心，部门负责人保持不变，继续向沈抖汇报。 同时，百度副总裁阮瑜轮岗担任小度科技组织负责人，继续向沈抖汇报。此次组织架构调整，是百度面向AI时代组织演进、深化\"云智一体\"协同作战的重要举措。 未来，百度 ACG 产研阵型将形成“基础设施、智能体”两层格局，聚焦AI云、智能体两大核心战场，通过FDE加速 AI 能力在企业场景及消费级场景的规模化、高效落地。 业内人士分析，此次调整按照业务属性重新归集相关业务线，有助于各业务更聚焦自身主赛道，让产研资源与业务需求贴得更紧，缩短决策链条、提升协同效率。同时有利于 AI 能力在行业场景更快落地，打通从技术到业务的链路，为相关业务的长期发展创造出空间。",
