@@ -1,9 +1,9 @@
 // Local editorial material and archived-body excerpts. No external generation calls.
 let contentData={items:{}}, editorialData=null, editorialSources={}, contentLoadError=false;
 const contentReady=Promise.allSettled([
-  fetch('monitor-summaries.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>contentData=d),
-  fetch('monitor-editorial.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>editorialData=d),
-  fetch('monitor-editorial-sources.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>editorialSources=d)
+  (usingSnapshot?Promise.resolve({ok:true,json:async()=>({items:{}})}):fetch('monitor-summaries.json')).then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>contentData=d),
+  fetch('monitor-editorial.json').then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>editorialData=d),
+  fetch('monitor-editorial-sources.json').then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>editorialSources=d)
 ]).then(results=>{contentLoadError=results[0].status==='rejected';});
 function articleSummary(a){
   const edited=editorialData?.summaries?.[a.id], stored=contentData.items?.[a.id];
@@ -11,7 +11,7 @@ function articleSummary(a){
   // Editorial copy remains the highest-priority override. New cloud summaries
   // are full-body based; the local archive remains a compatibility fallback.
   if(!edited&&!generated&&stored?.kind==='image_only')return '';
-  const text=edited||generated||stored?.text;
+  const text=edited||generated||a.storedSummary||stored?.text;
   if(!text)return '';
   return `<p class="article-abstract">${safeText(text)}</p>`;
 }

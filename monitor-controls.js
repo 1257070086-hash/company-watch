@@ -126,7 +126,7 @@ if(!usingSnapshot)refresh=async function(){
 // read-only GitHub request and never triggers an upstream RSS fetch.
 let cloudSnapshotRefreshPending=false;
 async function refreshCloudSnapshot(){
-  if(!usingSnapshot||cloudSnapshotRefreshPending||document.visibilityState==='hidden')return;
+  if(!usingSnapshot||curView==='archive'||cloudSnapshotRefreshPending||document.visibilityState==='hidden')return;
   cloudSnapshotRefreshPending=true;
   try{
     await fetchSources();

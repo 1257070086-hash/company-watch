@@ -43,6 +43,9 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python3 site/scripts/cloud_summarize.py --snapshot cloud-data/data-snapshot --max-items 20
 
+      - name: Build lightweight reader pages
+        run: python3 site/scripts/build_reader_data.py --snapshot cloud-data/data-snapshot
+
       - name: Publish updated snapshot
         working-directory: cloud-data
         run: |

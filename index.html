@@ -8,9 +8,6 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>大厂内容观察台</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
 <script src="weekly-report/embedded.js?v=20261102-w44" defer></script>
   <style>
     body.weekly-view .main-layout { grid-template-columns: minmax(0,1fr); }
@@ -742,6 +739,7 @@ function mapArticleItems(items, src) {
     image: item.image||null,
     summary: item.summary||'',
     summaryMeta: item.summary_meta||null,
+    storedSummary: item.reader_excerpt||'',
     date: (item.date_published || item.date_modified) ? new Date(item.date_published || item.date_modified) : null,
     authorName: src.name, sourceId: src.id,
     company: getCompany(src.id),
@@ -1698,17 +1696,19 @@ function escRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
 <script src="monitor-ui.js?v=20260918-clear-filter-labels"></script>
 <link rel="stylesheet" href="monitor-timeline.css?v=20260916-batch-spacing">
 <script src="monitor-timeline.js?v=20260918-clear-filter-labels"></script>
-<script src="monitor-content.js?v=20260920-cloud-summary"></script>
+<script src="monitor-content.js?v=20261104-reader-v1"></script>
 <link rel="stylesheet" href="monitor-controls.css?v=20260917-background-panel">
-<script src="monitor-controls.js?v=20260920-refresh-schedule"></script>
+<script src="monitor-controls.js?v=20261104-reader-v1"></script>
+<script src="monitor-loading.js?v=20261104-reader-v1"></script>
 <script>
 // ═══════════════ BOOT ═══════════════
 async function main() {
   if (new URLSearchParams(location.search).get('view') === 'weekly') {
     await customElements.whenDefined('industry-weekly');
     switchView('archive');
+    return;
   }
-  await init();
+  await ensureReaderStarted();
 }
 main();
 </script>
