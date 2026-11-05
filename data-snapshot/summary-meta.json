@@ -1,58 +1,93 @@
 {
-  "generatedAt": "2026-11-05T13:53:40.797593Z",
+  "generatedAt": "2026-11-05T14:13:41.793182Z",
   "model": "deepseek-flash",
   "promptVersion": "full-body-v1",
   "basis": "full_body",
   "mode": "new_articles_only",
   "completed": 0,
-  "failed": 6,
+  "failed": 11,
   "errors": [
     {
       "title": "永别了，程序员",
       "url": "https://mp.weixin.qq.com/s?__biz=MTQzMjE1NjQwMQ%3D%3D&mid=2656217546&idx=1&sn=cb026dac8db94b2568868e8a15a19edd&chksm=67a5f8fc399d62e2b8fcf09691e52e72b3ab7fc8b377077d7c3f8243d1457a5c2753a4974f56",
       "file": "MP_WXS_1432156401.json",
       "httpStatus": 402,
-      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: 6ed4b7f5-c409-4ea9-acd9-f0d7fe5603fa)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
+      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: 078906a9-ff96-4c2b-8a7e-f028b6054638)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
     },
     {
       "title": "别吹特斯拉Semi碾压了，中国重卡的护城河，根本不在车轮上",
       "url": "https://mp.weixin.qq.com/s?__biz=MTQzMjE1NjQwMQ%3D%3D&mid=2656217546&idx=2&sn=d9cfcd420eaaed30d95a954f16970a23&chksm=674c9e907cca051ed01d52853a8eca862f85f8a5398dd0508e806dc1ac8399b3c8e766b70ab4",
       "file": "MP_WXS_1432156401.json",
       "httpStatus": 402,
-      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: f9b9cfdd-0d42-478d-8418-486ae235036c)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
+      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: 4ee87328-834b-4e7c-a68b-2d3c30089380)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
     },
     {
       "title": "刺激大脑就能减肥？这只是强脑市值Play的一环",
       "url": "https://mp.weixin.qq.com/s?__biz=MTQzMjE1NjQwMQ%3D%3D&mid=2656217546&idx=3&sn=4a2d7e75c50b2a58bf47fa1375bb1f67&chksm=67239b0b838a30f11510cb19c1d40440e11f6dc75675d0afd221ea20d7513834ad0f919342e3",
       "file": "MP_WXS_1432156401.json",
       "httpStatus": 402,
-      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: 8e78c623-90ae-42c0-81be-44f931ad9f1c)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
+      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: d40a1f5b-5cdc-483d-b6c9-abe59a67c16d)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
     },
     {
       "title": "火锅剧本杀卖彩票，影院的花样自救",
       "url": "https://mp.weixin.qq.com/s?__biz=MTQzMjE1NjQwMQ%3D%3D&mid=2656217546&idx=4&sn=c4997def810029b37f51408fc32192d9&chksm=67055c3ae3f4ef7626365b947d5ba237af0e5aaf95d594e9767f34c59a128568fade20f2bc09",
       "file": "MP_WXS_1432156401.json",
       "httpStatus": 402,
-      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: 8fefa603-bc8f-49df-a794-471a3aba840c)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
+      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: 703401c9-6eb9-483e-85b1-8bd35f292da3)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
     },
     {
       "title": "每两家头部手机厂商就有一家选它：火山引擎如何成为 AI 手机助手的\"隐形底座\"？",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247524066&idx=1&sn=09bbc349ba9edd8ad8a82890256e16a3",
       "file": "MP_WXS_3253632141.json",
       "httpStatus": 402,
-      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: 1070344f-22f1-4c30-bd17-e9b735dd5afd)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
+      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: c699e6d7-a072-4578-bd8c-2c43920b288a)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
     },
     {
       "title": "OpenViking连接业务系统，LLM Wiki一键编译",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247524066&idx=2&sn=34ef93bca435a2d298fbe078aa081c69",
       "file": "MP_WXS_3253632141.json",
       "httpStatus": 402,
-      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: 7d71f89f-ebde-400c-b97c-9bdda976afa0)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
+      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: e4036c2d-7408-46c2-9b92-537f8d557af7)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
+    },
+    {
+      "title": "孩子的人生大事，你要怎样的AI？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247939889&idx=1&sn=f257ff7009b022c2f25b2df09dd55bc0",
+      "file": "MP_WXS_3236757533.json",
+      "httpStatus": 402,
+      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: 72acdcc5-7568-461f-8e68-bf15d4d7d986)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
+    },
+    {
+      "title": "拼多多让年轻人造草莓工厂，170天后“答案”熟了",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247939889&idx=2&sn=664b9d7fa8d35e72eb8b114d046667fc",
+      "file": "MP_WXS_3236757533.json",
+      "httpStatus": 402,
+      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: c199a34e-cd93-419f-9559-e7f71baa0f10)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
+    },
+    {
+      "title": "淘宝MNN团队开源0.3B手机模型，iPhone 18 Pro上离线跑出350 token/s",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247939889&idx=3&sn=4222751c75f7010c476c38293c5ed091",
+      "file": "MP_WXS_3236757533.json",
+      "httpStatus": 402,
+      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: 09bd012a-83f1-49de-92c7-051a6a8d71af)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
+    },
+    {
+      "title": "量子位「MEET2027智能未来大会」启动！年度榜单征集进行中",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247939889&idx=4&sn=b8e99d288f9c48bde787b30eff5c8fb5",
+      "file": "MP_WXS_3236757533.json",
+      "httpStatus": 402,
+      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: 2fd6cbc4-d3ce-4a0a-b895-412b7476b19f)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
+    },
+    {
+      "title": "量子位编辑作者招聘",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247939889&idx=5&sn=00a74c5defd758c10efd2d012bde6190",
+      "file": "MP_WXS_3236757533.json",
+      "httpStatus": 402,
+      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: 0b068097-04ff-431c-be67-99db34bba9d0)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
     }
   ],
   "status": "failed",
-  "pendingAfterRun": 6,
-  "pendingBeforeRun": 6,
+  "pendingAfterRun": 11,
+  "pendingBeforeRun": 11,
   "skippedCurrent": 0,
   "skippedShort": 0,
   "skippedKnown": 3287,
