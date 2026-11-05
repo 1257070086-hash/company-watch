@@ -1,15 +1,58 @@
 {
-  "generatedAt": "2026-11-05T13:13:38.924605Z",
+  "generatedAt": "2026-11-05T13:33:40.033814Z",
   "model": "deepseek-flash",
   "promptVersion": "full-body-v1",
   "basis": "full_body",
   "mode": "new_articles_only",
   "completed": 0,
-  "failed": 0,
-  "errors": [],
-  "status": "success",
-  "pendingAfterRun": 0,
-  "pendingBeforeRun": 0,
+  "failed": 6,
+  "errors": [
+    {
+      "title": "永别了，程序员",
+      "url": "https://mp.weixin.qq.com/s?__biz=MTQzMjE1NjQwMQ%3D%3D&mid=2656217546&idx=1&sn=cb026dac8db94b2568868e8a15a19edd&chksm=67a5f8fc399d62e2b8fcf09691e52e72b3ab7fc8b377077d7c3f8243d1457a5c2753a4974f56",
+      "file": "MP_WXS_1432156401.json",
+      "httpStatus": 402,
+      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: 3370c4c4-658c-4086-a580-3140f654f9b8)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
+    },
+    {
+      "title": "别吹特斯拉Semi碾压了，中国重卡的护城河，根本不在车轮上",
+      "url": "https://mp.weixin.qq.com/s?__biz=MTQzMjE1NjQwMQ%3D%3D&mid=2656217546&idx=2&sn=d9cfcd420eaaed30d95a954f16970a23&chksm=674c9e907cca051ed01d52853a8eca862f85f8a5398dd0508e806dc1ac8399b3c8e766b70ab4",
+      "file": "MP_WXS_1432156401.json",
+      "httpStatus": 402,
+      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: a654f857-daf2-4af3-ae2e-f188a112f509)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
+    },
+    {
+      "title": "刺激大脑就能减肥？这只是强脑市值Play的一环",
+      "url": "https://mp.weixin.qq.com/s?__biz=MTQzMjE1NjQwMQ%3D%3D&mid=2656217546&idx=3&sn=4a2d7e75c50b2a58bf47fa1375bb1f67&chksm=67239b0b838a30f11510cb19c1d40440e11f6dc75675d0afd221ea20d7513834ad0f919342e3",
+      "file": "MP_WXS_1432156401.json",
+      "httpStatus": 402,
+      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: 8ddba2f9-e7a6-47b3-b039-ff283a23710e)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
+    },
+    {
+      "title": "火锅剧本杀卖彩票，影院的花样自救",
+      "url": "https://mp.weixin.qq.com/s?__biz=MTQzMjE1NjQwMQ%3D%3D&mid=2656217546&idx=4&sn=c4997def810029b37f51408fc32192d9&chksm=67055c3ae3f4ef7626365b947d5ba237af0e5aaf95d594e9767f34c59a128568fade20f2bc09",
+      "file": "MP_WXS_1432156401.json",
+      "httpStatus": 402,
+      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: d4e8e70f-9aea-49d2-b39f-b4c8d50d1c19)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
+    },
+    {
+      "title": "每两家头部手机厂商就有一家选它：火山引擎如何成为 AI 手机助手的\"隐形底座\"？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247524066&idx=1&sn=09bbc349ba9edd8ad8a82890256e16a3",
+      "file": "MP_WXS_3253632141.json",
+      "httpStatus": 402,
+      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: ecf8381f-d5c9-4f9b-8739-fdf402524484)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
+    },
+    {
+      "title": "OpenViking连接业务系统，LLM Wiki一键编译",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247524066&idx=2&sn=34ef93bca435a2d298fbe078aa081c69",
+      "file": "MP_WXS_3253632141.json",
+      "httpStatus": 402,
+      "error": "{\"error\":{\"message\":\"Insufficient Balance (request_id: d6467bb6-dacc-4815-a06d-f97ab929cf5c)\",\"type\":\"insufficient_balance_error\",\"param\":null,\"code\":\"invalid_request_error\"}}"
+    }
+  ],
+  "status": "failed",
+  "pendingAfterRun": 6,
+  "pendingBeforeRun": 6,
   "skippedCurrent": 0,
   "skippedShort": 0,
   "skippedKnown": 3287,
