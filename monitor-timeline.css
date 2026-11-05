@@ -86,3 +86,12 @@ button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{ou
 #panel-charts>.article-toolbar h2{font-size:17px;color:#f8fbff;font-weight:700;letter-spacing:.01em;text-shadow:0 1px 3px rgba(17,36,57,.72),0 4px 16px rgba(17,36,57,.32)}
 #panel-charts>.article-toolbar h2::before{content:'';display:inline-block;width:7px;height:7px;margin:0 10px 2px 0;border-radius:50%;background:#d9e9fb;box-shadow:0 0 0 4px rgba(33,61,96,.2)}
 #panel-charts>.article-toolbar .filter-select{background:rgba(255,255,255,.94)}
+
+/* Text placed directly on the photo, outside the white insight cards. */
+#content-insights>.section-line>h2,
+#content-insights>.section-line>span,
+#content-insights>.insight-caveat,
+.reader-history>span {
+  color:#f8fbff;
+  text-shadow:0 1px 3px rgba(17,36,57,.72),0 4px 16px rgba(17,36,57,.32);
+}
