@@ -4,6 +4,27 @@
   "home_page_url": "",
   "items": [
     {
+      "id": "26d7f50e4a171f5843eb5a375f2488665e6f69d34f0ade9273635ed91d89c67a",
+      "title": "OpenAI 封号潮，这次终于不装了？",
+      "url": "https://mp.weixin.qq.com/s?__biz=MTQzMjE1NjQwMQ%3D%3D&mid=2656218521&idx=1&sn=0ee58fcf63d1ee03e6f250e091b12d8b&chksm=67ab8054b6beb5a49e09e0e0e988fb8b60fbe33776e0eaa85aa7cfd9d9c769f73f301dccefb3",
+      "content_html": "",
+      "description": "刚过去的周末，多名用户在开发者社区反映，登录 ChatGPT 时，页面提示账号“已被删除或停用”。也有 Plus、Pro 用户称自己没有收到预警，平时工作需要翻阅的聊天记录也无法打开。两天过去，OpenAI 仍未公布受影响账号的数量，也没有解释这些账号为何同时出问题。 这场争议背后，OpenAI 正在重新规定谁能使用算力，以及一份订阅可以怎样使用。 11月初更新的帮助文档开始限制同一张支付卡关联的订阅数量，也限制一台设备能够使用的付费账号数，Go、Plus 和不同档位的 Pro 都在范围内。触发限制后，用户可能无法购买订阅，也可能看到“Device limit reached”。这和永久封号是两套措施，官方目前没有确认两者存在直接关系。 这项限制会让批量开号、多人共用设备和同卡多订阅变得更难。共用银行卡的家庭成员也可能被误伤，OpenAI 因此提供了人工复核和退款入口。 12月开始，Plus、Pro 和 Business 的 ChatGPT 与 Codex 将共用一份额度，高级用量按 Token 衡量。普通 Instant 对话不计入，复杂任务和更强模型会消耗更多。额度用完以后，用户可以等重置、升级或购买 Credits。 这会改变重度用户过去的用法。有人用多个账号轮换 Codex 额度，也有人把 ChatGPT 和 Codex 当成两份资源。两项规则合在一起，账号越来越像一个同时绑定身份、支付和算力的计费单位。 11月20日生效的新政策还把模型访问中介纳入事先审批，普通应用接入模型不受这一条影响，直接向第三方转售模型访问的服务会面对更高门槛。低价区账号、拼车订阅和 API 中转过去依靠的价差，都会越来越难维持。 这次封号是否专门针对这些做法，仍然没有官方答案。可以确定的是，平台留给多账号轮换和访问转售的空间正在缩小。正常付费用户也该重新想一想，哪些东西可以留在云端，哪些必须握在自己手里。#OpenAI封号 #ChatGPT #AI #程序员 文案、制图｜张洪雷 编辑｜华思雨",
+      "body_text": "刚过去的周末，多名用户在开发者社区反映，登录 ChatGPT 时，页面提示账号“已被删除或停用”。也有 Plus、Pro 用户称自己没有收到预警，平时工作需要翻阅的聊天记录也无法打开。两天过去，OpenAI 仍未公布受影响账号的数量，也没有解释这些账号为何同时出问题。 这场争议背后，OpenAI 正在重新规定谁能使用算力，以及一份订阅可以怎样使用。 11月初更新的帮助文档开始限制同一张支付卡关联的订阅数量，也限制一台设备能够使用的付费账号数，Go、Plus 和不同档位的 Pro 都在范围内。触发限制后，用户可能无法购买订阅，也可能看到“Device limit reached”。这和永久封号是两套措施，官方目前没有确认两者存在直接关系。 这项限制会让批量开号、多人共用设备和同卡多订阅变得更难。共用银行卡的家庭成员也可能被误伤，OpenAI 因此提供了人工复核和退款入口。 12月开始，Plus、Pro 和 Business 的 ChatGPT 与 Codex 将共用一份额度，高级用量按 Token 衡量。普通 Instant 对话不计入，复杂任务和更强模型会消耗更多。额度用完以后，用户可以等重置、升级或购买 Credits。 这会改变重度用户过去的用法。有人用多个账号轮换 Codex 额度，也有人把 ChatGPT 和 Codex 当成两份资源。两项规则合在一起，账号越来越像一个同时绑定身份、支付和算力的计费单位。 11月20日生效的新政策还把模型访问中介纳入事先审批，普通应用接入模型不受这一条影响，直接向第三方转售模型访问的服务会面对更高门槛。低价区账号、拼车订阅和 API 中转过去依靠的价差，都会越来越难维持。 这次封号是否专门针对这些做法，仍然没有官方答案。可以确定的是，平台留给多账号轮换和访问转售的空间正在缩小。正常付费用户也该重新想一想，哪些东西可以留在云端，哪些必须握在自己手里。#OpenAI封号 #ChatGPT #AI #程序员 文案、制图｜张洪雷 编辑｜华思雨",
+      "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/sz_mmbiz_png/87nD5Qvn8kKkSicoiaS6Q04JaagSWlCIpjDzgloxfEmxBdIbUlfCZ82UH8VXynPfnkDWVjoTBbxzt4HnG43C5C3yptvPFZkS0bvlS8J526gLQ/0?wx_fmt=png&from=appmsg",
+      "date_modified": "2026-11-09T14:30:00Z",
+      "date_published": "2026-11-09T14:30:00Z",
+      "summary": "多名用户反映ChatGPT账号被删除或停用，OpenAI未公布受影响数量及原因。11月初帮助文档已限制同卡订阅数和单设备付费账号数，12月起Plus、Pro、Business的ChatGPT与Codex共用一份按Token计量的额度，11月20日生效的新政还将模型访问中介纳入事先审批，多账号轮换与转售空间正在缩小。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "9858378b555219803114134ec693261b4e96aacac2adb8ea6dccc04166f2309c",
+        "generated_at": "2026-11-09T14:53:43.251561Z"
+      }
+    },
+    {
       "id": "6509dcea821e447264dd826b7c59308cdf114ea78567c6e68c677f8d9febb3c2",
       "title": "消费审慎期，豪华车为什么卖得更好了？",
       "url": "https://mp.weixin.qq.com/s?__biz=MTQzMjE1NjQwMQ%3D%3D&mid=2656218520&idx=2&sn=58a8782cbd6ba1981ded69f54b18a04a&chksm=679d0f2e8ed57568cfae00cf0ea81dda3291c4a648f5049ca8b9b52d6ee6d460fe679d39a7eb",
