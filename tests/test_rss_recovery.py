@@ -22,4 +22,22 @@ class RecoveryTests(unittest.TestCase):
   with patch.object(sync.urllib.request,'urlopen',return_value=Response()) as call:
    sync.fetch(source,{'sources':{'a':{'etag':'OLD','modified':'OLD','sourceFingerprint':'old'}}});req=call.call_args.args[0]
    self.assertFalse(req.has_header('If-none-match'));self.assertFalse(req.has_header('If-modified-since'));self.assertEqual(req.get_header('User-agent'),'Mozilla/5.0')
+ def test_sogou_search_link_uses_labeled_wechat_original(self):
+  search='http://weixin.sogou.com/weixin?type=2&query=example'
+  original='http://mp.weixin.qq.com/s?__biz=abc&amp;mid=12&amp;idx=2&amp;sn=xyz#rd'
+  body=f'<p><a href="{original}"><span>文章原文</span></a></p>'
+  expected='https://mp.weixin.qq.com/s?__biz=abc&mid=12&idx=2&sn=xyz'
+  self.assertEqual(sync.preferred_article_url(search,body),expected)
+  merged=sync.merge_items([{'id':'old','url':search,'title':'same','content_html':body}],[{'id':'new','url':expected,'title':'same'}])
+  self.assertEqual(len(merged),1);self.assertEqual(merged[0]['url'],expected)
+  feed=('<rss xmlns:content="http://purl.org/rss/1.0/modules/content/">'
+        '<channel><title>机器之心</title><item><title>same</title>'
+        f'<link>{search.replace("&", "&amp;")}</link>'
+        f'<content:encoded><![CDATA[{body}]]></content:encoded>'
+        '</item></channel></rss>')
+  self.assertEqual(sync.parse_feed(feed.encode())[1][0]['url'],expected)
+ def test_unverified_original_does_not_replace_link(self):
+  search='http://weixin.sogou.com/weixin?type=2&query=example'
+  self.assertEqual(sync.preferred_article_url(search,'<a href="https://example.com">文章原文</a>'),search)
+  self.assertEqual(sync.preferred_article_url(search,'<a href="https://mp.weixin.qq.com/s?mid=12">文章原文</a>'),search)
 if __name__=='__main__':unittest.main()

@@ -50,6 +50,45 @@ class TextExtractor(HTMLParser):
             self.image = dict(attrs).get("src") or ""
 
 
+class OriginalArticleLinkExtractor(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.current_href = ""
+        self.current_text: list[str] = []
+        self.original_url = ""
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag.lower() == "a":
+            self.current_href = dict(attrs).get("href") or ""
+            self.current_text = []
+
+    def handle_data(self, data: str) -> None:
+        if self.current_href:
+            self.current_text.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag.lower() != "a" or not self.current_href:
+            return
+        if "".join(self.current_text).strip() == "文章原文":
+            parts = urlsplit(html.unescape(self.current_href))
+            query = parse_qs(parts.query)
+            if (parts.hostname == "mp.weixin.qq.com" and parts.path == "/s"
+                    and all(query.get(key) for key in ("__biz", "mid", "idx"))):
+                self.original_url = urlunsplit(("https", parts.netloc, parts.path, parts.query, ""))
+        self.current_href = ""
+        self.current_text = []
+
+
+def preferred_article_url(url: str, content_html: str) -> str:
+    """Replace a Sogou search link with the article's verified WeChat link."""
+    parts = urlsplit(url or "")
+    if parts.hostname != "weixin.sogou.com" or not content_html:
+        return url
+    extractor = OriginalArticleLinkExtractor()
+    extractor.feed(content_html)
+    return extractor.original_url or url
+
+
 def read_json(path: Path, default):
     try:
         return json.loads(path.read_text("utf-8"))
@@ -135,6 +174,7 @@ def parse_feed(payload: bytes) -> tuple[str, list[dict]]:
         if urlsplit(link).scheme not in {"http", "https"}:
             link = ""
         body = public_content_html(child_text(entry, CONTENT, ATOM + "content"))
+        link = preferred_article_url(link, body)
         description = child_text(entry, "description", ATOM + "summary")
         extractor = TextExtractor()
         extractor.feed(body or description)
@@ -212,6 +252,7 @@ def merge_items(previous: list[dict], fresh: list[dict]) -> list[dict]:
             "content_html": public_content_html(item.get("content_html") or item.get("body") or "")[:MAX_CONTENT_HTML],
             "image": public_asset_url(item.get("image") or "") or None,
         }
+        item["url"] = preferred_article_url(item.get("url") or "", item["content_html"])
         # Historical snapshots and the new collector may generate different IDs
         # for the same article. Prefer the canonical URL so a migration cannot
         # duplicate every existing item.
