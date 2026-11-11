@@ -1,0 +1,242 @@
+[
+  {
+    "sourceId": "MP_WXS_1432156401",
+    "name": "虎嗅APP",
+    "read": true,
+    "official": false,
+    "periodCount": 77,
+    "titleOnlyCount": 0,
+    "includedCount": 0,
+    "file_sha256": "e242c56849212b619f0f86e7545246550e86ad232cd5836d99cf1ca581d175a5"
+  },
+  {
+    "sourceId": "MP_WXS_1925343081",
+    "name": "腾讯招聘",
+    "read": true,
+    "official": true,
+    "periodCount": 3,
+    "titleOnlyCount": 2,
+    "includedCount": 3,
+    "file_sha256": "c83feb9cf235f17a3fc8247fdf3699c7ab7d9ab4f07a9a31c80dafafc5c264f2"
+  },
+  {
+    "sourceId": "MP_WXS_2266383221",
+    "name": "腾讯文化",
+    "read": true,
+    "official": true,
+    "periodCount": 0,
+    "titleOnlyCount": 0,
+    "includedCount": 0,
+    "file_sha256": "80b8f24f7b7ebbc3a1d37c5aab0819f79926ab70478fc09fe1dfd15a71c238a1"
+  },
+  {
+    "sourceId": "MP_WXS_2390142780",
+    "name": "InfoQ",
+    "read": true,
+    "official": false,
+    "periodCount": 32,
+    "titleOnlyCount": 0,
+    "includedCount": 0,
+    "file_sha256": "a77bde988e40c1c0a5ec0a0a307b448b0b8410b03e51c8f96be5f32dc96901b3"
+  },
+  {
+    "sourceId": "MP_WXS_2396491298",
+    "name": "美团技术团队",
+    "read": true,
+    "official": true,
+    "periodCount": 1,
+    "titleOnlyCount": 0,
+    "includedCount": 1,
+    "file_sha256": "9b6a7477c22fba93066ebaaea98b0e7ee8096f5d5107525b315d68a18e243a88"
+  },
+  {
+    "sourceId": "MP_WXS_2397623202",
+    "name": "美团招聘",
+    "read": true,
+    "official": true,
+    "periodCount": 3,
+    "titleOnlyCount": 2,
+    "includedCount": 3,
+    "file_sha256": "88587fc8e9b17a2924bdd22a1a7d85fdf50e25e72028ce977a4504fcc2801147"
+  },
+  {
+    "sourceId": "MP_WXS_2398602260",
+    "name": "腾讯技术工程",
+    "read": true,
+    "official": true,
+    "periodCount": 5,
+    "titleOnlyCount": 0,
+    "includedCount": 4,
+    "file_sha256": "791c4ccf29bad724e01320dd59cba66787348b4bbb4cf8174fdddba2ebc75b85"
+  },
+  {
+    "sourceId": "MP_WXS_3073282833",
+    "name": "机器之心",
+    "read": true,
+    "official": false,
+    "periodCount": 64,
+    "titleOnlyCount": 0,
+    "includedCount": 0,
+    "file_sha256": "1d51f4091c494319aa1056288e090bc5f04bdc509f56501cdbb6301b551bff48"
+  },
+  {
+    "sourceId": "MP_WXS_3077993707",
+    "name": "天天开柒",
+    "read": true,
+    "official": false,
+    "periodCount": 0,
+    "titleOnlyCount": 0,
+    "includedCount": 0,
+    "file_sha256": "724e0d18acbc05f4a7aa04fdd74fc6ec13410b4c7a64931ab4951b627f2d6649"
+  },
+  {
+    "sourceId": "MP_WXS_3212124064",
+    "name": "小红书招聘",
+    "read": true,
+    "official": true,
+    "periodCount": 3,
+    "titleOnlyCount": 3,
+    "includedCount": 3,
+    "file_sha256": "eb0ae8d6f66a7f1f3d98e528fcc74126a0e11d1151cc6562ca26a0de89876797"
+  },
+  {
+    "sourceId": "MP_WXS_3223374696",
+    "name": "大厂日爆",
+    "read": true,
+    "official": false,
+    "periodCount": 4,
+    "titleOnlyCount": 0,
+    "includedCount": 0,
+    "file_sha256": "f487050422926f08caf912c54cf2c34a45d944b4d87a5238a853782e3d5e82de"
+  },
+  {
+    "sourceId": "MP_WXS_3225964491",
+    "name": "大厂青年",
+    "read": true,
+    "official": false,
+    "periodCount": 8,
+    "titleOnlyCount": 0,
+    "includedCount": 0,
+    "file_sha256": "a53d302e2df1fcae3eae1452270a5a317b32fed57ed7ed38ef8bce009d4c749c"
+  },
+  {
+    "sourceId": "MP_WXS_3231231509",
+    "name": "字节跳动招聘",
+    "read": true,
+    "official": true,
+    "periodCount": 1,
+    "titleOnlyCount": 0,
+    "includedCount": 1,
+    "file_sha256": "9a50c11c796bd758da570d86b5d85e5a5e7cb66ccf01cfeb838637da5c7bb636"
+  },
+  {
+    "sourceId": "MP_WXS_3236757533",
+    "name": "量子位",
+    "read": true,
+    "official": false,
+    "periodCount": 32,
+    "titleOnlyCount": 0,
+    "includedCount": 0,
+    "file_sha256": "e3ef3945c8b4dcf7555aeb2e8b253859cf23bc83ed9382f0338556ba9fce0c50"
+  },
+  {
+    "sourceId": "MP_WXS_3253632141",
+    "name": "字节跳动技术团队",
+    "read": true,
+    "official": true,
+    "periodCount": 4,
+    "titleOnlyCount": 0,
+    "includedCount": 3,
+    "file_sha256": "45f38709b721c0571bef18b6d7f19e9cd279bf53289580ca02b34a69c58a6e57"
+  },
+  {
+    "sourceId": "MP_WXS_3254144461",
+    "name": "申妈的朋友圈",
+    "read": true,
+    "official": false,
+    "periodCount": 8,
+    "titleOnlyCount": 0,
+    "includedCount": 0,
+    "file_sha256": "f2ad1a8e0e6fad40568f2174bef7a0a0aaaab080dd594ecd1f7cf30391adf3ea"
+  },
+  {
+    "sourceId": "MP_WXS_3293283359",
+    "name": "字节范儿",
+    "read": true,
+    "official": true,
+    "periodCount": 1,
+    "titleOnlyCount": 1,
+    "includedCount": 1,
+    "file_sha256": "a33d31b4b0b1ac30a36ff4401082547b7e0bfd5c8af144754264a8f5fee3b7cb"
+  },
+  {
+    "sourceId": "MP_WXS_3534750856",
+    "name": "阿里巴巴集团招聘",
+    "read": true,
+    "official": true,
+    "periodCount": 3,
+    "titleOnlyCount": 1,
+    "includedCount": 3,
+    "file_sha256": "41ea2ab4d3c76e443d1023f9305e96c292e2c4569cfcab1e7e13c2daa801e79c"
+  },
+  {
+    "sourceId": "MP_WXS_3539511831",
+    "name": "互联网坊间八卦",
+    "read": true,
+    "official": false,
+    "periodCount": 6,
+    "titleOnlyCount": 0,
+    "includedCount": 0,
+    "file_sha256": "eb5ab7ca682a48e78c38ac0a469f0f77aa10c725be0dc7e4d207b8f647e9d98e"
+  },
+  {
+    "sourceId": "MP_WXS_3572959446",
+    "name": "晚点LatePost",
+    "read": true,
+    "official": false,
+    "periodCount": 8,
+    "titleOnlyCount": 0,
+    "includedCount": 0,
+    "file_sha256": "13a8c6f3984d98dc1daeee747e8527b90e9bfa3d1935338a07069031208b1046"
+  },
+  {
+    "sourceId": "MP_WXS_3885737868",
+    "name": "阿里技术",
+    "read": true,
+    "official": true,
+    "periodCount": 6,
+    "titleOnlyCount": 0,
+    "includedCount": 5,
+    "file_sha256": "24de884a7b4821831a8d0c85fd1fa504d691838a50f9a8736dec8216a2ff0651"
+  },
+  {
+    "sourceId": "MP_WXS_3889763736",
+    "name": "小红书技术REDtech",
+    "read": true,
+    "official": true,
+    "periodCount": 6,
+    "titleOnlyCount": 0,
+    "includedCount": 5,
+    "file_sha256": "f300329dc8b9995d8f294bef457af2750c047f7e0569bdffc7082216306686d7"
+  },
+  {
+    "sourceId": "MP_WXS_3930693616",
+    "name": "字节跳动Seed",
+    "read": true,
+    "official": true,
+    "periodCount": 0,
+    "titleOnlyCount": 0,
+    "includedCount": 0,
+    "file_sha256": "56fb9a6f45b61bbca41ebfd8abd4d4ff285eb281c9d55750fa0fe99f10ff73d7"
+  },
+  {
+    "sourceId": "MP_WXS_3935671163",
+    "name": "是小红书人啊",
+    "read": true,
+    "official": true,
+    "periodCount": 2,
+    "titleOnlyCount": 1,
+    "includedCount": 2,
+    "file_sha256": "d494e9f66950c01ea738caf322070cea8b6e90754d04d588ec8cca959e4f9e89"
+  }
+]
