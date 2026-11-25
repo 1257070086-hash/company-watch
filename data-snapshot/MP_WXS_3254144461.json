@@ -4,6 +4,27 @@
   "home_page_url": "",
   "items": [
     {
+      "id": "6eed22fa9e7b29081bdcf3c635c16c4063927092e35976f5f0ba8e04feb98a4c",
+      "title": "阿里千问Qwen-VL负责人白帅即将离职",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzI1NDE0NDQ2MQ%3D%3D&mid=2649603869&idx=1&sn=ccc5025beb789f63e9265f913238ddf4&chksm=f0a27ecb616f30b3add808c4637a1a428e3a6e965c2cba87831ad806911895efb57f97ea0519",
+      "content_html": "",
+      "description": "北京时间11月25日，据知情人士透露，阿里千问算法科学家、多模态理解模型Qwen-VL负责人白帅即将离职，目前已进入长期休假状态，下一步去向暂时不能确认。 据公开资料，白帅本硕就读于北京邮电大学，师从北京邮电大学教授、博士生导师董远。研究领域包括视觉表征、多模态学习和视觉统一理解生成，曾在多个顶级会议发表高水平论文，引用量9500+。 2021年，硕士毕业后，白帅加入阿里达摩院，早期研究涉及目标跟踪、视觉语言等计算机视觉任务，后来逐渐转向大规模多模态模型。进入大模型时代后，阿里千问系列大模型Qwen2、Qwen3、Qwen3.8以及最新的Qwen4中，他都有所贡献。 2022年，阿里达摩院团队发表了一篇论文，题目为：OFA: Unifying Architectures,Tasks,and Modalities Through a Simple Sequence-to-Sequence Learning Framework。在作者列表中，白帅位列其中，其他作者还有林俊旸 、周畅、周靖人以及杨红霞。 除白帅之外，阿里Token Foundry事业部未来生活实验室多模态理解负责人宋俊已于近期离职，有消息称他已经创业，也有消息称他加入阿里系某厂。 宋俊博士毕业于中国科学院空天信息研究院，先后在阿里巴巴达摩院、淘天集团工作多年，负责过人机对话系统、淘宝商品理解等业务，在自然语言处理、多模态技术等方面有长期积累。",
+      "body_text": "北京时间11月25日，据知情人士透露，阿里千问算法科学家、多模态理解模型Qwen-VL负责人白帅即将离职，目前已进入长期休假状态，下一步去向暂时不能确认。 据公开资料，白帅本硕就读于北京邮电大学，师从北京邮电大学教授、博士生导师董远。研究领域包括视觉表征、多模态学习和视觉统一理解生成，曾在多个顶级会议发表高水平论文，引用量9500+。 2021年，硕士毕业后，白帅加入阿里达摩院，早期研究涉及目标跟踪、视觉语言等计算机视觉任务，后来逐渐转向大规模多模态模型。进入大模型时代后，阿里千问系列大模型Qwen2、Qwen3、Qwen3.8以及最新的Qwen4中，他都有所贡献。 2022年，阿里达摩院团队发表了一篇论文，题目为：OFA: Unifying Architectures,Tasks,and Modalities Through a Simple Sequence-to-Sequence Learning Framework。在作者列表中，白帅位列其中，其他作者还有林俊旸 、周畅、周靖人以及杨红霞。 除白帅之外，阿里Token Foundry事业部未来生活实验室多模态理解负责人宋俊已于近期离职，有消息称他已经创业，也有消息称他加入阿里系某厂。 宋俊博士毕业于中国科学院空天信息研究院，先后在阿里巴巴达摩院、淘天集团工作多年，负责过人机对话系统、淘宝商品理解等业务，在自然语言处理、多模态技术等方面有长期积累。",
+      "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/sz_mmbiz_jpg/nEWyk3hdcmlStiatoyVAcIgUb1V2CT94kWVs1xhlKREMqSpOI0Lt1OlzOe0ianLibkxO9DicSz4V3kiciaBZfTjBq0iatJ03tdCnvLnmW71OCDT7YA/640?wx_fmt=jpeg&from=appmsg",
+      "date_modified": "2026-11-25T02:43:04Z",
+      "date_published": "2026-11-25T02:43:04Z",
+      "summary": "阿里千问算法科学家、多模态理解模型Qwen-VL负责人白帅即将离职，目前已进入长期休假状态，下一步去向暂不能确认。白帅2021年硕士毕业后加入阿里达摩院，曾参与Qwen2、Qwen3、Qwen4等模型及OFA论文。此外，阿里Token Foundry事业部未来生活实验室多模态理解负责人宋俊已于近期离职，有消息称其已创业或加入阿里系某厂。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "95dcb5aa941e113f463d2e90e5bc5845781d2b430b727df7ccf9fa7c1ce49672",
+        "generated_at": "2026-11-25T03:13:33.650921Z"
+      }
+    },
+    {
       "id": "bf1bcbdf069596ec974caf33ac16887b24eced3a287ddb10c005114d44227554",
       "title": "原京东集团首席战略官廖建文因病去世",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI1NDE0NDQ2MQ%3D%3D&mid=2649603856&idx=1&sn=fb3d64468b930db0abf0f0cac62d5df5&chksm=f0e8bfa8d8eee8f9190eae033af8db2dea578f94a75815e4657b05fc1be9f0933d308cda26d8",
