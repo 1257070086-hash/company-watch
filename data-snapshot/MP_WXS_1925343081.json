@@ -25,9 +25,52 @@
       }
     },
     {
+      "id": "ad1dad3458d251088ba0810af61fc0f2580232bb3a056ed964c49202b4a2c69f",
+      "title": "腾讯 NeurIPS 2026 Spotlight & Poster 论文精选抢先看",
+      "url": "https://i.hhbboo.com/go/_3WX3EpTnfYBARUKARAmAAAAAJ4CnmcxOTI1MzQzMDgxp1XwDBUx32urYNOInBMLkkBZHlXtQQU38V6VuAMv41BMOqMQhq1hvxgVWPmWsAtIaN-CHjoK",
+      "content_html": "",
+      "description": "NeurIPS（Conference on Neural Information Processing Systems） 是机器学习与人工智能领域最具影响力的国际学术会议之一，涵盖大模型、深度学习、强化学习、多模态学习等前沿方向。NeurIPS 2026 悉尼主会场活动将于 2026 年 12 月 6 日至 12 日在澳大利亚悉尼举行。 在近期公布的论文接收结果中，腾讯多篇成果获 Spotlight 收录，另有多篇论文入选 Poster。入选论文来自 腾讯混元、微信、腾讯游戏、PCG 大数据平台部、优图实验室、腾讯地图、天衍实验室、腾讯营销 等多个业务与研究团队，覆盖多模态生成、大模型后训练与推理效率、智能体、模型评测等方向。 From learning to reasoning，以下为部分 腾讯入选本届NeurIPS 2026 的 Spotlight 与 Poster 论文精选， 期待与全球学者一起，共探多模态生成与智能决策的前沿演进。 Spotlight 论文精选 1 Flow-DPPO: Divergence Proximal Policy Optimization for Flow Matching Models Spotlight摘要 近期研究表明， 在线强化学习（RL） 能够显著提升图像与视频生成场景下 flow matching 模型的质量与对齐能力。Flow-GRPO、CPS 等方法将去噪过程建模为马尔可夫决策过程，并采用 PPO 式的概率比裁剪来约束信任域。然而我们认为， 概率比裁剪在结构上并不适配 flow 模型 ：新旧策略之间的概率比只是真实策略散度的、带噪的单样本估计，会在轨迹的某些区域过度收紧约束，在另一些区域则约束不足。 我们提出 Flow-DPPO以散度近端约束 取代概率比裁剪。关键洞见在于：flow 模型中每一步的策略为高斯分布，因而可以精确且低开销地计算新旧策略之间的 KL 散度。Flow-DPPO 使用非对称散度掩码：仅当更新同时偏离可信区域且超出散度阈值时，才阻断相应梯度。 实验表明， Flow-DPPO 在更高奖励下具有更好的 KL 近端效率 ，能缓解灾难性遗忘，促进多目标间的平衡优化，并在概率比裁剪明显退化的情形下仍可稳定进行多轮训练 Spotlight时间 ： Wed 9 Dec 17:00-20:00(AEDT) Spotlight地点：Hall 1-4, Session 4 团队介绍 腾讯混元 基础模型部 基础模型部负责混元大模型的 前沿技术探索与基础模型研发 ，聚焦 模型结构、数据与训练策略、强化学习及Agent能力，协同各模态研发能力 ，高效开发并迭代基础模型架构，面向AGI愿景探索智能上限、确保技术领先；同时 构建基于大模型的AI PaaS中台能力 ，赋能公司内外部的产品创新与业务应用。 2 PixelPonder: Dynamic Patch Adaptation for Enhanced Multi-Conditional Text-to-Image Generation Spotlight摘要 近年来，基于扩散模型的文生图生成技术在视觉条件控制方面取得了显著进展。然而， 现有的类似 ControlNet 的方法在处理复合视觉条件时仍面临挑战 ：它们难以在保持高质量视觉效果的同时，确保多种异构控制信号在语义上的一致性。这些方法通常采用独立的控制分支，在去噪过程中往往会引入相互冲突的引导信息，进而导致生成图像出现结构畸变和伪影。 为解决这一问题，我们提出了 PixelPonder ——一种全新的统一控制框架，能够在 单一控制结构 下实现 对多种视觉条件的有效管控 。具体而言，我们设计了一种 “图块级自适应条件选择机制” ，能够根据空间相关性在子区域层面 动态筛选并优先处理关键控制信号 ，从而在实现精确局部引导的同时，避免了全局层面的干扰。 此外，我们还引入了 “时间感知型控制注入方案” ，根据去噪的时间步长（timesteps）动态调节各类条件的影响权重，使生成过程从结构保持平滑过渡到纹理细化，并充分利用不同类别的控制信息，从而生成更加协调的图像。 大量实验表明， PixelPonder 在多个基准数据集上的表现均优于现有方法 ，在提升空间对齐精度的同时，依然保持了极高的文本语义一致性。 Spotlight时间 ： Wed 9 Dec 17:00–20:00(AEDT) Spotlight地点：Hall 1-4, Session 2 团队介绍 腾讯CSIG 优图实验室 优图实验室 成立于2012年，致力于推动 AI前沿技术研究 ，将研究成果转化为 实际生产力 ，助力产业与产品的智能升级。 在技术研究层，重点研究方向包含： 计算机视觉（覆盖视觉感知理解、生图生视频等全栈视觉能力）、大模型技术（构建大语言模型、多模态理解双轮驱动体系）、AI infra（聚焦计算加速、模型优化等层地技术创新） 在应用层，外部赋能通过 腾讯云 输出 慧眼核身、数智人、工业质检 等解决方案；内部支撑 微信支付（人脸核身）、QQ浏览器（Agent）、腾讯会议（虚拟背景）、腾讯元宝（RAG） 等算法能力 在学术成果上，优图实验室已在全球范围内斩获 逾1800项专利 ；发表高质量学术论文 近1000篇 （包括CVPR、ICML、NeurIPS等 CCF A类会议论文占比达90% ），研究成果多次入选国际顶级学术会议，发表顶级期刊数量逐年攀升 部分中稿Poster抢先看 · 点击论文标题查看论文详情· MoCA: Mixture-of-Components Attention for Scalable Compositional 3D Generation 腾讯混元-基础模型部 时间： Wed 9 Dec 17:00–20:00 (AEDT) 地点： Hall 1-4, Poster Session 4 Beyond Distribution Matching: Self-Supervised Representation Forcing for Few-Step Video Generation 腾讯混元-基础模型部 时间： Tue 8 Dec 10:00–13:00 (AEDT) 地点： Hall 1-4, Poster Session 1 MeshFIM: Local Low-Poly Mesh Editing via Fill-in-the-Middle Autoregressive Generation 腾讯混元-基础模型部 时间： Thu 10 Dec 10:00–13:00 (AEDT) 地点： Hall 1-4, Poster Session 5 UniForm: Segment-Aware GRPO for Joint Punctuation Restoration and Inverse Text Normalization 腾讯混元-基础模型部 时间： Wed 9 Dec 10:00–13:00 (AEDT) 地点： Hall 1-4, Poster Session 3 Precise: SDE-Consistent Stochastic Sampling for RL Post-Training of Flow-Matching Models 腾讯混元-基础模型部 时间： Tue 8 Dec 17:00–20:00 (AEDT) 地点： Hall 1–4, Poster Session 2 Baton: Explicit Semantic Blueprints for Joint Video-Audio Generation 腾讯混元-基础模型部 时间： Thu 10 Dec 17:00–20:00 (AEDT) 地点： Hall 1-4, Poster Session 6 SAS: Simple Attention Sparsification via End-to-End Optimization of Context Ranking 腾讯混元-基础模型部 时间： Wed 9 Dec 17:00–20:00 (AEDT) 地点： Hall 1-4, Poster Session 4 Composition-RL: Compose Your Verifiable Prompts for Reinforcement Learning of Large Language Models 腾讯混元-基础模型部 时间： Wed 9 Dec 10:00–13:00 (AEDT) 地点： Hall 1-4, Poster Session 3 PipeFSDP: Efficient Pipeline Parallel under Fully Sharded Data Parallel for Large Language Model Training 腾讯混元-AI Infra部 时间： Wed 9 Dec 10:00–13:00 (AEDT) 地点： Hall 1-4, Poster Session 3 ReGen: Agentic Video World Modeling with Synergized Reasoning and Generation 腾讯混元-AI Data部 时间： Wed 9 Dec 17:00–20:00 (AEDT) 地点： Hall 1-4, Poster Session 4 3A-VLA: Abstraction-Aligned Action Learning for Vision",
+      "body_text": "NeurIPS（Conference on Neural Information Processing Systems） 是机器学习与人工智能领域最具影响力的国际学术会议之一，涵盖大模型、深度学习、强化学习、多模态学习等前沿方向。NeurIPS 2026 悉尼主会场活动将于 2026 年 12 月 6 日至 12 日在澳大利亚悉尼举行。 在近期公布的论文接收结果中，腾讯多篇成果获 Spotlight 收录，另有多篇论文入选 Poster。入选论文来自 腾讯混元、微信、腾讯游戏、PCG 大数据平台部、优图实验室、腾讯地图、天衍实验室、腾讯营销 等多个业务与研究团队，覆盖多模态生成、大模型后训练与推理效率、智能体、模型评测等方向。 From learning to reasoning，以下为部分 腾讯入选本届NeurIPS 2026 的 Spotlight 与 Poster 论文精选， 期待与全球学者一起，共探多模态生成与智能决策的前沿演进。 Spotlight 论文精选 1 Flow-DPPO: Divergence Proximal Policy Optimization for Flow Matching Models Spotlight摘要 近期研究表明， 在线强化学习（RL） 能够显著提升图像与视频生成场景下 flow matching 模型的质量与对齐能力。Flow-GRPO、CPS 等方法将去噪过程建模为马尔可夫决策过程，并采用 PPO 式的概率比裁剪来约束信任域。然而我们认为， 概率比裁剪在结构上并不适配 flow 模型 ：新旧策略之间的概率比只是真实策略散度的、带噪的单样本估计，会在轨迹的某些区域过度收紧约束，在另一些区域则约束不足。 我们提出 Flow-DPPO以散度近端约束 取代概率比裁剪。关键洞见在于：flow 模型中每一步的策略为高斯分布，因而可以精确且低开销地计算新旧策略之间的 KL 散度。Flow-DPPO 使用非对称散度掩码：仅当更新同时偏离可信区域且超出散度阈值时，才阻断相应梯度。 实验表明， Flow-DPPO 在更高奖励下具有更好的 KL 近端效率 ，能缓解灾难性遗忘，促进多目标间的平衡优化，并在概率比裁剪明显退化的情形下仍可稳定进行多轮训练 Spotlight时间 ： Wed 9 Dec 17:00-20:00(AEDT) Spotlight地点：Hall 1-4, Session 4 团队介绍 腾讯混元 基础模型部 基础模型部负责混元大模型的 前沿技术探索与基础模型研发 ，聚焦 模型结构、数据与训练策略、强化学习及Agent能力，协同各模态研发能力 ，高效开发并迭代基础模型架构，面向AGI愿景探索智能上限、确保技术领先；同时 构建基于大模型的AI PaaS中台能力 ，赋能公司内外部的产品创新与业务应用。 2 PixelPonder: Dynamic Patch Adaptation for Enhanced Multi-Conditional Text-to-Image Generation Spotlight摘要 近年来，基于扩散模型的文生图生成技术在视觉条件控制方面取得了显著进展。然而， 现有的类似 ControlNet 的方法在处理复合视觉条件时仍面临挑战 ：它们难以在保持高质量视觉效果的同时，确保多种异构控制信号在语义上的一致性。这些方法通常采用独立的控制分支，在去噪过程中往往会引入相互冲突的引导信息，进而导致生成图像出现结构畸变和伪影。 为解决这一问题，我们提出了 PixelPonder ——一种全新的统一控制框架，能够在 单一控制结构 下实现 对多种视觉条件的有效管控 。具体而言，我们设计了一种 “图块级自适应条件选择机制” ，能够根据空间相关性在子区域层面 动态筛选并优先处理关键控制信号 ，从而在实现精确局部引导的同时，避免了全局层面的干扰。 此外，我们还引入了 “时间感知型控制注入方案” ，根据去噪的时间步长（timesteps）动态调节各类条件的影响权重，使生成过程从结构保持平滑过渡到纹理细化，并充分利用不同类别的控制信息，从而生成更加协调的图像。 大量实验表明， PixelPonder 在多个基准数据集上的表现均优于现有方法 ，在提升空间对齐精度的同时，依然保持了极高的文本语义一致性。 Spotlight时间 ： Wed 9 Dec 17:00–20:00(AEDT) Spotlight地点：Hall 1-4, Session 2 团队介绍 腾讯CSIG 优图实验室 优图实验室 成立于2012年，致力于推动 AI前沿技术研究 ，将研究成果转化为 实际生产力 ，助力产业与产品的智能升级。 在技术研究层，重点研究方向包含： 计算机视觉（覆盖视觉感知理解、生图生视频等全栈视觉能力）、大模型技术（构建大语言模型、多模态理解双轮驱动体系）、AI infra（聚焦计算加速、模型优化等层地技术创新） 在应用层，外部赋能通过 腾讯云 输出 慧眼核身、数智人、工业质检 等解决方案；内部支撑 微信支付（人脸核身）、QQ浏览器（Agent）、腾讯会议（虚拟背景）、腾讯元宝（RAG） 等算法能力 在学术成果上，优图实验室已在全球范围内斩获 逾1800项专利 ；发表高质量学术论文 近1000篇 （包括CVPR、ICML、NeurIPS等 CCF A类会议论文占比达90% ），研究成果多次入选国际顶级学术会议，发表顶级期刊数量逐年攀升 部分中稿Poster抢先看 · 点击论文标题查看论文详情· MoCA: Mixture-of-Components Attention for Scalable Compositional 3D Generation 腾讯混元-基础模型部 时间： Wed 9 Dec 17:00–20:00 (AEDT) 地点： Hall 1-4, Poster Session 4 Beyond Distribution Matching: Self-Supervised Representation Forcing for Few-Step Video Generation 腾讯混元-基础模型部 时间： Tue 8 Dec 10:00–13:00 (AEDT) 地点： Hall 1-4, Poster Session 1 MeshFIM: Local Low-Poly Mesh Editing via Fill-in-the-Middle Autoregressive Generation 腾讯混元-基础模型部 时间： Thu 10 Dec 10:00–13:00 (AEDT) 地点： Hall 1-4, Poster Session 5 UniForm: Segment-Aware GRPO for Joint Punctuation Restoration and Inverse Text Normalization 腾讯混元-基础模型部 时间： Wed 9 Dec 10:00–13:00 (AEDT) 地点： Hall 1-4, Poster Session 3 Precise: SDE-Consistent Stochastic Sampling for RL Post-Training of Flow-Matching Models 腾讯混元-基础模型部 时间： Tue 8 Dec 17:00–20:00 (AEDT) 地点： Hall 1–4, Poster Session 2 Baton: Explicit Semantic Blueprints for Joint Video-Audio Generation 腾讯混元-基础模型部 时间： Thu 10 Dec 17:00–20:00 (AEDT) 地点： Hall 1-4, Poster Session 6 SAS: Simple Attention Sparsification via End-to-End Optimization of Context Ranking 腾讯混元-基础模型部 时间： Wed 9 Dec 17:00–20:00 (AEDT) 地点： Hall 1-4, Poster Session 4 Composition-RL: Compose Your Verifiable Prompts for Reinforcement Learning of Large Language Models 腾讯混元-基础模型部 时间： Wed 9 Dec 10:00–13:00 (AEDT) 地点： Hall 1-4, Poster Session 3 PipeFSDP: Efficient Pipeline Parallel under Fully Sharded Data Parallel for Large Language Model Training 腾讯混元-AI Infra部 时间： Wed 9 Dec 10:00–13:00 (AEDT) 地点： Hall 1-4, Poster Session 3 ReGen: Agentic Video World Modeling with Synergized Reasoning and Generation 腾讯混元-AI Data部 时间： Wed 9 Dec 17:00–20:00 (AEDT) 地点： Hall 1-4, Poster Session 4 3A-VLA: Abstraction-Aligned Action Learning for Vision-Language Agents in 3D Game Worlds 腾讯游戏-游戏前沿技术团队 时间： Tue 8 Dec 17:00–20:00 (AEDT) 地点： Hall 1-4, Session 2 WorldPrism: 3D Consistency for Video World Models via Bidirectional Cross-Space Verification 腾讯游戏-ARC lab 时间： Thu 10 Dec 17:00–20:00 (AEDT) 地点： Hall 1-4, Poster Session 6 LiteNav: Lightweight Map‑free Outdoor Visual Navigation 腾讯地图-地图平台部 时间： Wed 9 Dec 10:00–13:00 (AEDT) 地点： Hall 1-4, Poster Session 3 Learning to Synergize Textual and Visual Prompts for Fine-Grained Traffic Element Detection in HD Maps 腾讯地图-地图平台部 时间： Tue 8 Dec 17:00–20:00 (AEDT) 地点： Hall 1-4, Poster Session 2 ARES: How Reliable Are LLM User Simulators for Recommender A/B Testing? 腾讯PCG-大数据平台部 时间： Wed 9 Dec 17:00–20:00 (AEDT) 地点： Hall 1-4, Poster Session 4 Improving General Role-Playing Agents via Psychology-Grounded Reasoning and Role-Aware Policy Optimization 腾讯CSIG-优图实验室 时间： Tue 8 Dec 10:00–13:00 (AEDT) 地点： Hall 1-4, Poster Session 4 UniDG: Unified Defect Generation via Defect-Context Editing 腾讯CSIG-优图实验室 时间： Tue 8 Dec 10:00–13:00 (AEDT) 地点： Hall 1-4, Poster Session 1 TokenCLIP: Token-wise Prompt Learning for Zero-shot Anomaly Detection 腾讯CSIG-优图实验室 时间： Tue 8 Dec 10:00–13:00 (AEDT) 地点： Hall 1-4, Poster Session 1 VicEdit: Learning to Edit Videos from Visual In-Context Examples 腾讯CSIG-优图实验室 时间： Wed 9 Dec 10:00–13:00 (AEDT) 地点： Hall 1-4, Poster Session 4 HiLoc: A Hierarchical Representation Method for Spatial Localization in Multimodal Large Language Models 腾讯CSIG-优图实验室 时间： Thu 10 Dec 10:00 - 13:00 (AEDT) 地点： Hall 1-4, Poster Session 5 Collapse Hunter: Tackling the Dimensional Degeneration in Generative Ranking 腾讯营销 时间： Tue 8 Dec 10:00–13:00 (AEDT) 地点： Hall 1-4, Poster Session 1 REVERSE: Reinforcing Evidence Verification and Search for Agentic Image Geolocation 微信-视觉技术部 时间： Thu 10 Dec 17:00–20:00 (AEDT) 地点： Hall 1-4, Poster Session 4 ReflectMT: Internalizing Reflection for Efficient and High-Quality Machine Translation 微信-基础模型技术中心 时间： Tue 8 Dec 10:00–13:00 (AEDT) 地点： Hall 1-4, Poster Session 1 PathNavigate: A Training-Free Pathology Agent with Surprise-Guided Scan and Shared Slide Memory for Whole-Slide VQA 腾讯天衍实验室 时间： Thu 10 Dec 10:00–13:00 (AEDT) 地点： Hall 1-4, Poster Session 5 StainNFT: Curriculum-Gated Multi-Reward Post-Training for Pathology-Faithful Virtual Staining 腾讯天衍实验室 时间： Thu 10 Dec 10:00–13:00 (AEDT) 地点： Hall 1-4, Poster Session 5 Rare Disease Diagnosis Agent with Decoupled Workflows and Knowledge-Driven Self-Evaluation 腾讯天衍实验室 时间： Thu 10 Dec 10:00–13:00 (AEDT) 地点： Hall 1-4, Poster Session 5 Feeling of Knowing in Large Language Models 腾讯天衍实验室 时间： Thu 10 Dec 17:00–20:00 (AEDT) 地点： Hall 1-4, Poster Session 6 腾讯青云计划 2027持续热招中 期待相见 成就你的青云之志",
+      "image": "https://img.hhbboo.com/mm/mmecoa.qpic.cn/mmecoa_jpg/50opAau08FanxAvTGezWwclH28p2ATI6O9Q8KLBxXKHicibWK8bgR1NM2OZiaJSAR6EicCoN6MicDGkpOQ5ebyw4hLxjtK7CooZibL3vZ8PDgIZpA/0?wx_fmt=jpeg",
+      "date_modified": "2026-11-25T08:55:00Z",
+      "date_published": "2026-11-25T08:55:00Z",
+      "summary": "NeurIPS 2026公布论文接收结果，腾讯多篇成果入选Spotlight与Poster，来自混元、微信、腾讯游戏、PCG大数据平台部、优图实验室、腾讯地图、天衍实验室、腾讯营销等团队，覆盖多模态生成、大模型后训练与推理效率、智能体、模型评测等方向。其中Flow-DPPO以散度近端约束替代概率比裁剪，提升flow matching模型强化学习训练的稳定性；PixelPonder在单一控制结构下统一管控多种视觉条件，提升空间对齐精度与文本语义一致性。会议将于2026年12月6日至12日在悉尼举行。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "683a418bdca8d622bd43d66b8b8e10834eb75f398393b39180a30ddc37cacdec",
+        "generated_at": "2026-11-26T02:33:40.876673Z"
+      }
+    },
+    {
       "id": "37283c5c2852797d7567746da727c253fff41346ef27211e07836e5e8e06faae",
       "title": "「胖鹅来」超市开业！腾讯互娱 x 清华 AI快闪活动限时预约",
       "url": "https://mp.weixin.qq.com/s?__biz=MTkyNTM0MzA4MQ%3D%3D&mid=2650971730&idx=1&sn=c50569b04d96657f16f79584c6b43037&chksm=40df93954aec82f82daa82d980609ab36fd1af394e70ac0394b98c1e00752eea1ac4f1fa72cf",
+      "content_html": "",
+      "description": "",
+      "body_text": "",
+      "image": "https://mmecoa.qpic.cn/sz_mmecoa_png/2a4pCcFXThBfbx4thPlpo53C1yBoIhRBmOTzRibzuXT51ybkPSyiahKwdlx5RcPHF1v9ArqTibFQT1ibfC9TMuGkPl5g77NKjMxtf1teSvyuqcs/640?wx_fmt=png",
+      "date_modified": "2026-11-18T08:16:12Z",
+      "date_published": "2026-11-18T08:16:12Z"
+    },
+    {
+      "id": "9e6d15e7d81642c6a4ed6ba80bab9aa39f972e1a2ccb624868c6851b8c6ca95a",
+      "title": "「胖鹅来」超市开业！腾讯互娱 x 清华 AI快闪活动限时预约",
+      "url": "https://i.hhbboo.com/go/pw6A_mFx9U8BARUKARAmAAAAAJ4CnlIxOTI1MzQzMDgxxQVpsE2WZX8W95WExrQwN0AcI7xKx96sdfSnwaiB_Kywrjo5Y0EhXkHrN8d4ntJXGDjNqu_a",
+      "content_html": "",
+      "description": "",
+      "body_text": "",
+      "image": "https://mmecoa.qpic.cn/sz_mmecoa_png/2a4pCcFXThBfbx4thPlpo53C1yBoIhRBmOTzRibzuXT51ybkPSyiahKwdlx5RcPHF1v9ArqTibFQT1ibfC9TMuGkPl5g77NKjMxtf1teSvyuqcs/640?wx_fmt=png",
+      "date_modified": "2026-11-18T08:16:12Z",
+      "date_published": "2026-11-18T08:16:12Z"
+    },
+    {
+      "id": "37283c5c2852797d7567746da727c253fff41346ef27211e07836e5e8e06faae",
+      "title": "「胖鹅来」超市开业！腾讯互娱 x 清华 AI快闪活动限时预约",
+      "url": "https://i.hhbboo.com/go/Rz078e4TVCgBARUKARAmAAAAAJ4CnlIxOTI1MzQzMDgxxQVpsE2WZX8W95WExrQwN0Dfk5VK7IL4LaqC2YBgmrNv0a85TnCsA5S5jB4AdS7qGsTx-nLP",
       "content_html": "",
       "description": "",
       "body_text": "",
@@ -47,9 +90,53 @@
       "date_published": "2026-11-17T03:00:00Z"
     },
     {
+      "id": "32de70711253e0634039a82bc1efe168ae61b91332100fe285f181c0eed42ec2",
+      "title": "NeurIPS 2026 悉尼｜腾讯 · 青云之夜活动邀请",
+      "url": "https://i.hhbboo.com/go/ZfZIFmGnulABARUKARAmAAAAAJ4CnksxOTI1MzQzMDgxFGqDB511hGZp4K5h0iPhakBSZOO17iAZdL0s7GtnbSX_9sbud108Zrt3OqapaG3mXDtPbxRE",
+      "content_html": "",
+      "description": "",
+      "body_text": "",
+      "image": "https://mmecoa.qpic.cn/mmecoa_gif/t3uDgf3LHEmribdCt14NfNkcbjqkP1w1hyS6DntVwsYjTWtUN54EJMQ7GpuGDyuzGvySSEmAn99hMLX1OopH6JrdKmMoxxCiafTpvzLF1a0CQ/640?wx_fmt=gif",
+      "date_modified": "2026-11-17T03:00:00Z",
+      "date_published": "2026-11-17T03:00:00Z"
+    },
+    {
+      "id": "12a050d939e314a0ed3ff9ec27bcf42dce7426690c4db39d9475eb89603ebe97",
+      "title": "NeurIPS 2026 悉尼｜腾讯 · 青云之夜活动邀请",
+      "url": "https://i.hhbboo.com/go/mMMMGPX5X0oBARUKARAmAAAAAJ4CnksxOTI1MzQzMDgxFGqDB511hGZp4K5h0iPhakDAW6fS64jVNH4yIQsyFt3SzeV6F0xmRqx_ook3zXiGmdcf6uhN",
+      "content_html": "",
+      "description": "",
+      "body_text": "",
+      "image": "https://mmecoa.qpic.cn/mmecoa_gif/t3uDgf3LHEmribdCt14NfNkcbjqkP1w1hyS6DntVwsYjTWtUN54EJMQ7GpuGDyuzGvySSEmAn99hMLX1OopH6JrdKmMoxxCiafTpvzLF1a0CQ/640?wx_fmt=gif",
+      "date_modified": "2026-11-17T03:00:00Z",
+      "date_published": "2026-11-17T03:00:00Z"
+    },
+    {
       "id": "ce2bc260f52fe04d882b158b0d22aea9bfe8658a2e971d52804c332bbb7a4222",
       "title": "腾讯游戏·青云计划 x SIGGRAPH Asia 2026，向你发出一封邀请函",
       "url": "https://mp.weixin.qq.com/s?__biz=MTkyNTM0MzA4MQ%3D%3D&mid=2650971718&idx=1&sn=9c4b72b53ef3e41dea540b14908926e0&chksm=405f0017944a400e52b6cb33fead39ecc6a565e0c46290f757092ba87d9d220a9f6403e374e6",
+      "content_html": "",
+      "description": "",
+      "body_text": "",
+      "image": "https://mmecoa.qpic.cn/sz_mmecoa_jpg/2a4pCcFXThA0tNcB5aLyUcbIQrvxIeSlPE3EBA7H0fNeOvlKP67mKNkNjZKaTrVnia3wRqz27Z9wz9xzNQPUvIEmICFianmTV3eNFFcI5M70s/640?wx_fmt=jpeg",
+      "date_modified": "2026-11-13T03:01:00Z",
+      "date_published": "2026-11-13T03:01:00Z"
+    },
+    {
+      "id": "522f52e5b30e6434acfdb7da7b027f4051c7b29539700552f496a4a0ad97a759",
+      "title": "腾讯游戏·青云计划 x SIGGRAPH Asia 2026，向你发出一封邀请函",
+      "url": "https://i.hhbboo.com/go/V4CBfi3puDsBARUKARAmAAAAAJ4CnkYxOTI1MzQzMDgxnEtytT7z5B3qVAsUkIkm4ECJWWeNIvcPk5z4yyfXNuZw0Qmq7afwtCAn3pC5ydv1xjTUHBP-",
+      "content_html": "",
+      "description": "",
+      "body_text": "",
+      "image": "https://mmecoa.qpic.cn/sz_mmecoa_jpg/2a4pCcFXThA0tNcB5aLyUcbIQrvxIeSlPE3EBA7H0fNeOvlKP67mKNkNjZKaTrVnia3wRqz27Z9wz9xzNQPUvIEmICFianmTV3eNFFcI5M70s/640?wx_fmt=jpeg",
+      "date_modified": "2026-11-13T03:01:00Z",
+      "date_published": "2026-11-13T03:01:00Z"
+    },
+    {
+      "id": "ce2bc260f52fe04d882b158b0d22aea9bfe8658a2e971d52804c332bbb7a4222",
+      "title": "腾讯游戏·青云计划 x SIGGRAPH Asia 2026，向你发出一封邀请函",
+      "url": "https://i.hhbboo.com/go/1XP-luPxXKQBARUKARAmAAAAAJ4CnkYxOTI1MzQzMDgxnEtytT7z5B3qVAsUkIkm4EBfABeUSkAOUrbLM_6tOezGpWXgxGKQ91cJK6h9nSIKn2QD43Tm",
       "content_html": "",
       "description": "",
       "body_text": "",
@@ -69,9 +156,42 @@
       "date_published": "2026-11-09T09:18:55Z"
     },
     {
+      "id": "3e27ffbd83bbe915039282d005f57b9172496b1275c71a2cd5fbd1a410c218a0",
+      "title": "AI时代，腾讯校招看重这3个特质！",
+      "url": "https://i.hhbboo.com/go/v33hRGTcTMMBARUKARAmAAAAAJ4CnjoxOTI1MzQzMDgx6m_daCpVKZdWI_XnOaGNCUBi09-oxLESK4869lcoOq6Q8TpNAA1sxSpyjbYEVYFDhYiQ07dN",
+      "content_html": "",
+      "description": "▶ 视频号视频 · 腾讯招聘 🎵祈祷你像英勇的小企鹅～寻鹅启事｜腾讯校招最新录用标准解读，全网寻找拥有这3个特质的同学#有鹅选鹅#腾讯校招#腾讯招聘",
+      "body_text": "▶ 视频号视频 · 腾讯招聘 🎵祈祷你像英勇的小企鹅～寻鹅启事｜腾讯校招最新录用标准解读，全网寻找拥有这3个特质的同学#有鹅选鹅#腾讯校招#腾讯招聘",
+      "image": "https://mmecoa.qpic.cn/sz_mmecoa_png/50opAau08FbFJUjhgIPaBcEQ3pTibO5UM68EPfT3k1KYes2ZZsdbdkncRjjE8FlvKibA9aD8AarRrfbicpkickuv1UEdneELBQgXxWgBicApVwRQ/640?wx_fmt=png",
+      "date_modified": "2026-11-09T09:18:55Z",
+      "date_published": "2026-11-09T09:18:55Z"
+    },
+    {
+      "id": "6c7aba9aa3e1bc54dadcbe56df87f826b9c1f377a22d5b320b435a14828292aa",
+      "title": "AI时代，腾讯校招看重这3个特质！",
+      "url": "https://i.hhbboo.com/go/-unl53vxM-sBARUKARAmAAAAAJ4CnjoxOTI1MzQzMDgx6m_daCpVKZdWI_XnOaGNCUDR-8VofrdaE0G8f1CKwQPx9khBMqJ5zVNo5U8L4lYS1pDE1ADa",
+      "content_html": "",
+      "description": "▶ 视频号视频 · 腾讯招聘 🎵祈祷你像英勇的小企鹅～寻鹅启事｜腾讯校招最新录用标准解读，全网寻找拥有这3个特质的同学#有鹅选鹅#腾讯校招#腾讯招聘",
+      "body_text": "▶ 视频号视频 · 腾讯招聘 🎵祈祷你像英勇的小企鹅～寻鹅启事｜腾讯校招最新录用标准解读，全网寻找拥有这3个特质的同学#有鹅选鹅#腾讯校招#腾讯招聘",
+      "image": "https://mmecoa.qpic.cn/sz_mmecoa_png/50opAau08FbFJUjhgIPaBcEQ3pTibO5UM68EPfT3k1KYes2ZZsdbdkncRjjE8FlvKibA9aD8AarRrfbicpkickuv1UEdneELBQgXxWgBicApVwRQ/640?wx_fmt=png",
+      "date_modified": "2026-11-09T09:18:55Z",
+      "date_published": "2026-11-09T09:18:55Z"
+    },
+    {
       "id": "29b13136e8459597ccfccae17175d3dd67167c71840f541beef35028cedd330c",
       "title": "Hy4正式发布，腾讯混元寻找同路人",
       "url": "https://mp.weixin.qq.com/s?__biz=MTkyNTM0MzA4MQ%3D%3D&mid=2650971669&idx=1&sn=2e8daf19345e3ee31c4089f4bf06fe92&chksm=40e9e9f0580b5e68820199e57d1b7e599f48cea9aff349a91f1519d2e8644bb6c93062be5139",
+      "content_html": "",
+      "description": "",
+      "body_text": "",
+      "image": "https://mmecoa.qpic.cn/sz_mmecoa_png/50opAau08FaocZlSr7yTJibA4UIR92JDa1uDmpZ7Nyt5Wo2t2A2rbS642Gv6GUl6N9c4p3g9cicxBf8Jdxx44AdO9442jQBltDH79HHwSWibicg/640?wx_fmt=png",
+      "date_modified": "2026-11-04T08:00:00Z",
+      "date_published": "2026-11-04T08:00:00Z"
+    },
+    {
+      "id": "29b13136e8459597ccfccae17175d3dd67167c71840f541beef35028cedd330c",
+      "title": "Hy4正式发布，腾讯混元寻找同路人",
+      "url": "https://i.hhbboo.com/go/1EY9ebMW1QIBARUKARAmAAAAAJ4CnhUxOTI1MzQzMDgxLo2vGTRePuMcQIn0vwb-kkDp6fBYC15oggGZ5X0bflmfSM6pr_NJqR8VGdLoZEu2yTBivlE5",
       "content_html": "",
       "description": "",
       "body_text": "",
