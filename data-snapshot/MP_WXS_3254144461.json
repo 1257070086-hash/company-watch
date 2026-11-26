@@ -33,7 +33,17 @@
       "body_text": "北京时间11月25日，据知情人士透露，阿里千问算法科学家、多模态理解模型Qwen-VL负责人白帅即将离职，目前已进入长期休假状态，下一步去向暂时不能确认。 据公开资料，白帅本硕就读于北京邮电大学，师从北京邮电大学教授、博士生导师董远。研究领域包括视觉表征、多模态学习和视觉统一理解生成，曾在多个顶级会议发表高水平论文，引用量9500+。 2021年，硕士毕业后，白帅加入阿里达摩院，早期研究涉及目标跟踪、视觉语言等计算机视觉任务，后来逐渐转向大规模多模态模型。进入大模型时代后，阿里千问系列大模型Qwen2、Qwen3、Qwen3.8以及最新的Qwen4中，他都有所贡献。 2022年，阿里达摩院团队发表了一篇论文，题目为：OFA: Unifying Architectures,Tasks,and Modalities Through a Simple Sequence-to-Sequence Learning Framework。在作者列表中，白帅位列其中，其他作者还有林俊旸 、周畅、周靖人以及杨红霞。 除白帅之外，阿里Token Foundry事业部未来生活实验室多模态理解负责人宋俊已于近期离职，有消息称他已经创业，也有消息称他加入阿里系某厂。 宋俊博士毕业于中国科学院空天信息研究院，先后在阿里巴巴达摩院、淘天集团工作多年，负责过人机对话系统、淘宝商品理解等业务，在自然语言处理、多模态技术等方面有长期积累。",
       "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/sz_mmbiz_jpg/nEWyk3hdcmlStiatoyVAcIgUb1V2CT94kWVs1xhlKREMqSpOI0Lt1OlzOe0ianLibkxO9DicSz4V3kiciaBZfTjBq0iatJ03tdCnvLnmW71OCDT7YA/640?wx_fmt=jpeg&from=appmsg",
       "date_modified": "2026-11-25T02:43:04Z",
-      "date_published": "2026-11-25T02:43:04Z"
+      "date_published": "2026-11-25T02:43:04Z",
+      "summary": "阿里千问算法科学家、多模态理解模型Qwen-VL负责人白帅即将离职，目前已进入长期休假状态，下一步去向暂不能确认。白帅2021年硕士毕业后加入阿里达摩院，曾参与OFA论文及Qwen2、Qwen3、Qwen4等模型研发。此外，阿里Token Foundry事业部未来生活实验室多模态理解负责人宋俊已于近期离职，有消息称其已创业或加入阿里系某厂。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "95dcb5aa941e113f463d2e90e5bc5845781d2b430b727df7ccf9fa7c1ce49672",
+        "generated_at": "2026-11-26T02:53:30.629393Z"
+      }
     },
     {
       "id": "851f42268a08d7f56de0b0f7d46f6908b56286f708af252530204756cf2c128a",
@@ -65,7 +75,17 @@
       "body_text": "北京时间11月24日，字节豆包旗下个人AI助理产品“小豆”开启公测。 小豆是豆包在个人智能体（Personal Agent）方向推出的一款探索性产品，目前采用邀请制开放体验。豆包方面透露，小豆的相关能力和体验未来也将逐步放开，在豆包主端推出，为更多豆包用户提供服务。 据介绍，在问答、信息检索的基础上，小豆更侧重主动服务、基于记忆更懂用户和任务执行。用户交代事项后，小豆可在后台持续跟进，按时提醒或代为处理。具体场景上，经用户授权接入抖音、飞书、日历、健康等应用后，小豆可以主动汇总健康信息，或者提示商品降价、团购券临近到期及日程冲突等，并给出处理建议。用户也可以用一句话设置定时提醒或监控任务，并在“任务”页修改或暂停。 以官方演示视频中猫粮补货为例，小豆能记住用户此前拆封猫粮的情况，根据日常用量估算余量，并主动询问是否需要补货。经用户确认后，小豆可完成下单，并设置下月的补货提醒。 视频还展示了更多任务执行的场景。如用户交代“今天4点前把最终版资料发出”后，小豆会发提醒通知，并按时发送资料；它也可以帮助用户代打电话，询问餐厅是否有4人座位，以及餐费和停车费用。对于“3个月减8公斤”等长期目标，小豆可将其拆解为每日热量记录和步数提醒。目前，小豆代打电话功能仅覆盖餐厅、酒店、门店等生活服务场景，不支持境外和私人电话。 据悉，小豆公测初期名额有限，用户需凭邀请码体验。同时，新用户可获得一定免费额度，邀请好友加入可再获额度。 AI产品在个人智能体方向的探索正从完成单次任务，延伸到持续、主动处理用户的日常事务。今年9月，Meta推出同类产品Muse，强调记住个人偏好、持续跟进长期目标，用户可通过独立应用或WhatsApp使用。",
       "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/sz_mmbiz_png/nEWyk3hdcmmZWD3Av6p3GXJCXgiadnNsgwylX8dbXb3QIEXs9MBIDuzZ4PMubu8FHUH8bAlBX0ud3rWskEWiaKgsibB3lkjjRO0D09vsN2zlTc/640?wx_fmt=png&from=appmsg",
       "date_modified": "2026-11-24T05:43:00Z",
-      "date_published": "2026-11-24T05:43:00Z"
+      "date_published": "2026-11-24T05:43:00Z",
+      "summary": "字节豆包旗下个人AI助理“小豆”于11月24日开启公测，采用邀请制，初期名额有限，新用户可获免费额度。产品侧重主动服务、记忆和任务执行，接入抖音、飞书、日历等应用后可提醒降价、日程冲突，并支持代打电话、拆解长期目标等，代打电话仅限生活服务场景。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "2f546e1418b76b36d87ca8353fb255b6103b749ee4b29161550c469325156c9a",
+        "generated_at": "2026-11-26T02:53:30.629393Z"
+      }
     },
     {
       "id": "bf1bcbdf069596ec974caf33ac16887b24eced3a287ddb10c005114d44227554",
@@ -97,7 +117,17 @@
       "body_text": "北京时间11月23日，据长江商学院美西校友会发布的消息，原京东集团首席战略官、原长江商学院副院长廖建文先生已于11月22日离世，享年59岁。 廖建文有超过25年的战略规划与领导经验，拥有横跨学术研究和产业实践的广泛全球职业生涯，具备全球化的视角和丰富的实践经验。 廖建文现任京东集团董事会资深顾问以及哈佛商学院高级研究员（Executive Fellow）。2017年4月至2021年7月，他担任京东首席战略官。在任职期间，廖建文京东集团整体战略的规划及实施、企业合作伙伴关系维护、战略投资、创新以及企业品牌与公共关系等多项重要职责。 他负责指导了京东的“零售即服务”（RaaS）战略的实施，策略性地拆分了一系列高度整合的业务模块，例如京东零售、京东物流、京东健康以及京东科技等，旨在将它们重塑为一体化开放平台。他还重新定义了京东的使命和战略定位，将其定位为“以供应链为核心的科技与服务企业”。更重要的是，他构建并发展了京东的战略体系，该体系涵盖了思维方式、方法和管理（3M），极大地提升了京东组织的战略能力。此外，他还直接领导了重大战略投资项目，如唯品会、谷歌、Farfetch、利丰和五星电器（中国百思买前身）等。 2021年7月，廖建文因身体原因卸任京东首席战略官一职，转任集团荣誉顾问。 在加入京东之前，廖建文曾担任长江商学院副院长和战略与创新创业实践教授。还在伊利诺伊工科大学斯图尔特商学院担任终身教授，并在香港科技大学、北京大学和中国欧洲国际工商学院（CEIBS）担任访问教授职位。他不仅是创业领域的杰出贡献者之一，还积极从事企业创新动态研究（PSED）并发表了大量关于战略和创业的研究论文。 同时，他也在数家公司的董事会任职，包括Farfetch、奇虎360、招商地产、中国联通以及永辉超市和百荣。廖博士经常应邀为众多中国顶尖企业和跨国公司提供咨询建议，帮助这些企业构建创新型组织，并制定推动可持续增长的战略举措。此外，他还经常在各类行业活动中发表演讲，其观点深受全球商业媒体和刊物的关注与引用。",
       "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/sz_mmbiz_jpg/nEWyk3hdcmmj97jbCoXIMpuQ1KvI5fmHYcRnSpFcnJicI8xiauJKT4pezYwprjyUqAJ13ElswutyOz0VOlAy1cTIdA41hcdqGD9bibkufc4jibk/640?wx_fmt=jpeg&from=appmsg",
       "date_modified": "2026-11-23T03:19:37Z",
-      "date_published": "2026-11-23T03:19:37Z"
+      "date_published": "2026-11-23T03:19:37Z",
+      "summary": "原京东集团首席战略官、长江商学院副院长廖建文于11月22日因病离世，享年59岁。他2017年至2021年任京东首席战略官，主导RaaS战略实施，推动拆分京东零售、物流、健康、科技等业务，并重新定位京东为“以供应链为核心的科技与服务企业”，还领导了唯品会、谷歌、Farfetch等重大战略投资。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "cbbd28e16634e3f1a9fcaa3e367124d16d05245d943e735908e110612cba849b",
+        "generated_at": "2026-11-26T02:53:30.629393Z"
+      }
     },
     {
       "id": "0d2e056ca86c3df1b81970536b7bf7c7f128d2f1d673b43011a78227a1c18e2e",
@@ -129,7 +159,17 @@
       "body_text": "北京时间11月21日，近日，字节发布内部邮件，为加强MaaS和Seed模型之间的合作，对Seed和Data部门进行组织调整：Seed模型下成立新的二级部门Seed Model-MaaS Infra，吴迪担任负责人；同时火山方舟更名为Seed MaaS，负责搭建企业级的大模型服务平台，支撑内外部业务的AI应用落地，该部门继续由吴迪负责，吴迪实线向项亮汇报，虚线向谭待汇报。 据官方介绍，方舟是火山引擎在2023年6月28日正式发布的一站式企业级大模型服务平台，也就是MaaS（模型即服务）平台，截至2026年11月20日已经迭代出覆盖全链路大模型落地需求的完整能力体系。 吴迪，现任字节跳动旗下火山引擎智能算法负责人、火山方舟负责人，负责火山引擎大模型服务平台的整体规划与运营，致力于连接模型提供方与使用方，构建正向的大模型生态循环。他拥有南京大学物理学博士学位，曾在南京大学任教并担任科技部国家重大科学研究计划项目首席科学家。 此前，字节基础大模型由Seed负责，方舟平台则属于火山引擎。字节的模型训练和平台分属不同部门，在合作和协调方面可能会存在一定的分歧。作为模型训练方，Seed自然希望方舟多推广自己的模型；作为模型平台方，方舟又不太可能只售卖豆包大模型，如果智谱、DS、千问的模型比豆包好用，价格又划算，没有理由不进行售卖。 在其他互联网大厂中，阿里这边早在今年初就实现了模型训练和平台的整合。 3月16日，阿里成立ATH事业群，建立以“创造Token，输送Token，应用Token”为核心目标的新组织，由阿里巴巴CEO吴泳铭直接负责。成立时业务包括：通义实验室、MaaS业务线、千问事业部、悟空事业部和AI创新事业部。此后，阿里ATH持续架构调整：通义实验室升级为通义事业部；成立Token Foundry事业部；阿里又成立千问办公事业部。 作为ATH的一级部门，阿里MaaS业务线由阿里集团战略副总裁、ATH事业群MaaS业务线总裁文征负责。文征经历比较神秘，据称，他多年前就在阿里工作，中间在其他大厂工作数年后，又于近年回归阿里，并被吴泳铭委以重任。 腾讯那边，混元基础大模型和MaaS业务分属TEG的混元部门和CSIG事业群的腾讯云行业大模型部门。",
       "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/mmbiz_png/nEWyk3hdcmlMp5LicpeibbraGP7wR03YsdP0wtKrT0ibCLyXKHMKaMcF6VKjkybMDNvWRhjEUFfmdibibIG7OmqLrU0LNxWEtXeYI3wibg3ibAxMicg/640?wx_fmt=png&from=appmsg",
       "date_modified": "2026-11-21T05:25:43Z",
-      "date_published": "2026-11-21T05:25:43Z"
+      "date_published": "2026-11-21T05:25:43Z",
+      "summary": "字节跳动近日发内部邮件调整Seed和Data部门：Seed模型下新设二级部门Seed Model-MaaS Infra，由吴迪负责；火山方舟更名为Seed MaaS，继续由吴迪负责，搭建企业级大模型服务平台，支撑内外部业务AI应用落地，吴迪实线向项亮、虚线向谭待汇报。此前字节模型训练与平台分属Seed和火山引擎，此次调整意在加强MaaS与Seed模型合作。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "a03fb28f1496d215f135217a7a4cc5063242fc69d9d0d94609d82871db50df98",
+        "generated_at": "2026-11-26T02:53:30.629393Z"
+      }
     },
     {
       "id": "03a9f8aaad4e1f3c456c138c1e50b8afab3447a8c80604b652c5a52ef48238c5",
@@ -161,7 +201,17 @@
       "body_text": "11月20日，据彭博社消息，原千问技术负责人林俊旸创立的Pragmatik Labs已完成新一轮融资，估值达50亿美元，短短数月内增长逾一倍。 据知情人士称，Pragmatik Labs由明星研究员林俊旸离开阿里巴巴后于今年夏天创立，该公司在最近完成的一轮融资中筹集了数千万美元。今年8月，该公司在首次融资中估值达20亿美元，融资数亿美元。其中一位知情人士因讨论非公开信息而要求匿名，其表示，新投资者包括HyT Capital、鼎晖投资和汽车制造商吉利汽车控股有限公司。Pragmatik、HyT、鼎晖投资和吉利的代表均未回应置评请求。 总部位于上海的Pragmatik（亦称p7k）为数字世界和物理世界构建AI智能体。其首轮投资者包括高榕创投、HSG、腾讯控股有限公司和上海引擎基金，后者是上海市政府支持的国资平台。",
       "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/sz_mmbiz_jpg/nEWyk3hdcmlcvd6zBnpv6JrQkFd2d91Dxv67pvp0Ty2Picn9ia8D3d7Nk3NsDu3jPPuFEcfYA0JT4lv1E9g5LMx4AAUQIvaV6bR7R7EYRxurY/0?wx_fmt=jpeg",
       "date_modified": "2026-11-20T09:42:28Z",
-      "date_published": "2026-11-20T09:42:28Z"
+      "date_published": "2026-11-20T09:42:28Z",
+      "summary": "原千问技术负责人林俊旸创立的Pragmatik Labs完成新一轮融资，估值达50亿美元，数月内增长逾一倍；本轮筹集数千万美元，新投资者包括HyT Capital、鼎晖投资和吉利汽车。该公司今年8月首轮融资估值20亿美元，总部位于上海，为数字世界和物理世界构建AI智能体。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "3c4c182ab43135a1ca977032b273206f51fc76f658db84f00f530e42685086ff",
+        "generated_at": "2026-11-26T02:53:30.629393Z"
+      }
     },
     {
       "id": "03a9f8aaad4e1f3c456c138c1e50b8afab3447a8c80604b652c5a52ef48238c5",
@@ -172,7 +222,17 @@
       "body_text": "11月20日，据彭博社消息，原千问技术负责人林俊旸创立的Pragmatik Labs已完成新一轮融资，估值达50亿美元，短短数月内增长逾一倍。 据知情人士称，Pragmatik Labs由明星研究员林俊旸离开阿里巴巴后于今年夏天创立，该公司在最近完成的一轮融资中筹集了数千万美元。今年8月，该公司在首次融资中估值达20亿美元，融资数亿美元。其中一位知情人士因讨论非公开信息而要求匿名，其表示，新投资者包括HyT Capital、鼎晖投资和汽车制造商吉利汽车控股有限公司。Pragmatik、HyT、鼎晖投资和吉利的代表均未回应置评请求。 总部位于上海的Pragmatik（亦称p7k）为数字世界和物理世界构建AI智能体。其首轮投资者包括高榕创投、HSG、腾讯控股有限公司和上海引擎基金，后者是上海市政府支持的国资平台。",
       "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/sz_mmbiz_jpg/nEWyk3hdcmlcvd6zBnpv6JrQkFd2d91Dxv67pvp0Ty2Picn9ia8D3d7Nk3NsDu3jPPuFEcfYA0JT4lv1E9g5LMx4AAUQIvaV6bR7R7EYRxurY/0?wx_fmt=jpeg",
       "date_modified": "2026-11-20T09:42:28Z",
-      "date_published": "2026-11-20T09:42:28Z"
+      "date_published": "2026-11-20T09:42:28Z",
+      "summary": "原千问技术负责人林俊旸创立的Pragmatik Labs完成第二轮融资，估值达50亿美元，较今年8月首轮20亿美元估值增长逾一倍。本轮筹集数千万美元，新投资者包括HyT Capital、鼎晖投资和吉利汽车。该公司总部位于上海，为数字世界和物理世界构建AI智能体。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "3c4c182ab43135a1ca977032b273206f51fc76f658db84f00f530e42685086ff",
+        "generated_at": "2026-11-26T02:53:30.629393Z"
+      }
     },
     {
       "id": "275f6dbd2e8e78c6d6e9132f6cd855ccfe8b8723e1f9288231e6f9700a61e9e2",
