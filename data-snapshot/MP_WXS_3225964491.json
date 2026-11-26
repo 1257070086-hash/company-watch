@@ -4,6 +4,17 @@
   "home_page_url": "",
   "items": [
     {
+      "id": "c494903e12af7d8f640acd95c63bee4dfe7f3946ea5be6a4ec3db7a32f3a1235",
+      "title": "雷总来微博了，来总亲自接待",
+      "url": "https://i.hhbboo.com/go/aQVkGIRdqGUBARUKARAmAAAAAIX1_k0zMjI1OTY0NDkxgaqYh34RviAlVxM-NHo3julBFwonyJK2vTiwmKvcpoR6bT9nrhX5cpxDgYOVWzRdPOlHIqgC",
+      "content_html": "",
+      "description": "厂哥收到消息， 雷总近日现身微博总部， 来总（王高飞）亲自接待 两人一起乘电梯，挥手和员工打招呼， 在电梯里，身后还有微博的吉祥物 #互联网大厂 #职场 #互联网 #雷军",
+      "body_text": "厂哥收到消息， 雷总近日现身微博总部， 来总（王高飞）亲自接待 两人一起乘电梯，挥手和员工打招呼， 在电梯里，身后还有微博的吉祥物 #互联网大厂 #职场 #互联网 #雷军",
+      "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/mmbiz_jpg/MC1nFvXS8MjleM1x6n8tcKI3BQm0P0gfBOaYAuRsic2U1BtIrIbmWCTauibeL8jMpzLaWIOaw3TibLhJeLWQut6hMoHfsWc8eCf0CGRhfibgSxI/0?wx_fmt=jpeg",
+      "date_modified": "2026-11-26T03:28:48Z",
+      "date_published": "2026-11-26T03:28:48Z"
+    },
+    {
       "id": "106639f55a45faf8d758a4ade3a9fa60deeb5018c91c418b7cee691095a2a842",
       "title": "近期大厂事儿：微博发起AED公益活动；马斯克带俩娃拜访英伟达；某模型明星厂收缩；两家大厂低调广进",
       "url": "https://mp.weixin.qq.com/s?__biz=MzIyNTk2NDQ5MQ%3D%3D&mid=2247491141&idx=1&sn=8c48a6312be81aaa759a708650a1aedc&chksm=e9db5bb4540709cc796224d6bc9cb971e83423506bcc6fb69fb4e1782a40d51b54401b9e9ef9",
@@ -286,7 +297,17 @@
       "body_text": "昨天阿里发公告宣布樊路远离职， 市场讨论了很多个人评价。🤔 但比起谁走谁留，谁出任新的CEO， 我其实更想看看， 阿里接下来要怎么打虎鲸文娱这张牌。 首先就是短剧这扒， 到底跟不跟，怎么跟？ 红果起来之后，腾讯也已经下场了， 阿里这边却一直没有什么明显动作。 而在优酷的基本盘里， 有现成的内容和制作能力， 也不缺流量和商业化资源。 外有行业的变化，内有长视频增长的压力， 所以短剧这个事儿，我觉得肯定是要搞的 毕竟连淘宝现在都上短剧了， 阿里大文娱更应该当仁不让。 然后说下大麦。 大麦的口碑虽然有…用户老吐槽抢不到票[破涕为笑] 但这个业务是刚需，是本身有价值的， 也契合当下创造创新消费场景的叙事， 显而易见的，大麦和淘天、飞猪等业务怎么协同， 想象空间其实不小。 最后是AI。 虎鲸此前在AI影像上 尤其是在生产流程上做了不少尝试， 接下来的问题是， 怎么和阿里集团的技术能力进一步融合？ 不管承不承认， 文娱都是当下受AI冲击最大的行业之一， 而阿里又是AI领域的重要玩家， 这场变化不可能缺席。 所以，这次调整不只是 换一个CEO那么简单。 阿里的核心战场， 一个是商业，一个是科技。 虎鲸文娱恰好站在两者的交汇处。 到底怎么变？咱们不妨蹲一下文娱的全员信！ #互联网大厂 #职场 #互联网",
       "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/mmbiz_jpg/MC1nFvXS8MhFKyfF9O1qt3RrJ8SjsRCokhgNXApznibOaZEHzAyHezcXMBEM7QytuWPmh4Mibmt6tTnq7f3USAJQUorEqFEicqD34IycnFbe8Q/0?wx_fmt=jpeg",
       "date_modified": "2026-11-17T08:17:42Z",
-      "date_published": "2026-11-17T08:17:42Z"
+      "date_published": "2026-11-17T08:17:42Z",
+      "summary": "樊路远离职后，虎鲸文娱面临短剧、大麦和AI三条战线的调整：短剧需决定是否跟进红果与腾讯的布局，优酷具备内容制作和商业化资源；大麦需推进与淘天、飞猪等业务的协同；AI方面则要解决如何与阿里集团技术能力进一步融合的问题。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "7562ed057c5fbe8fe7827286d1799b537c15838ba743ac1450914beacb663b00",
+        "generated_at": "2026-11-26T03:33:36.577263Z"
+      }
     },
     {
       "id": "8ab7da90212773233007ff715bcac6b9b9daefdfd196ce1bcc763044a1f75418",
