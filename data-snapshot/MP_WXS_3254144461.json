@@ -275,7 +275,17 @@
       "body_text": "北京时间11月20日消息，据知情人士透露，豆包移动版产品负责人陆游离职，下一步计划估计是创业。 陆游（应该是化名），2019年加入字节，曾任抖音社交产品负责人，现任豆包App端产品负责人。 任职期间，孵化了多个社交项目，包括此前的虚拟社交功能“抖音仔仔”，以及密友社交“抖音时刻”等。其中，“抖音时刻”已经成为抖音APP中的一项重要社交服务，并参照抖音时刻的模式，应用在全新的“多闪”APP内。 2022年12月，抖音调整组织架构，社交负责人陆游向韩尚佑汇报。2023年7月，陆游调岗至大模型团队担任相关负责人，向朱文佳汇报。2025年3月，转任豆包App端负责人。 2025年4月，星绘团队计划并入豆包，由豆包App端负责人陆游统一管理。 2025年9月24日，字节AI条线人力资源负责人赵祺转岗至Spring-产品部门（包括Flow、Ocean等团队），负责豆包产品工作，统领豆包mobile/PC的用户产品、模型策略产品，向字节产品副总裁Alex（朱骏）汇报。 豆包原有的PC产品负责人齐俊元、Mobile移动版负责人陆游、模型策略产品负责人改为向赵祺汇报。同时，为加强豆包与飞书的办公套件协同，飞书产品负责人童遥虚线汇报给赵祺。两个月后，PC版产品负责人齐俊元离职创业。",
       "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/sz_mmbiz_jpg/nEWyk3hdcml2yFDs9o6cIXcBurFBs1MhE4ObAW07OnVros14qURqJhjB0e7CjNU2kalDLbMhBOTcNOV0s9vhvdsL8TKCqzov3SXE6S48qj4/640?wx_fmt=jpeg",
       "date_modified": "2026-11-20T04:15:47Z",
-      "date_published": "2026-11-20T04:15:47Z"
+      "date_published": "2026-11-20T04:15:47Z",
+      "summary": "豆包移动版产品负责人陆游已于11月20日离职，下一步计划估计是创业。陆游2019年加入字节，曾任抖音社交产品负责人，2023年7月调岗至大模型团队，2025年3月转任豆包App端负责人，同年4月星绘团队计划并入豆包由其统一管理。此前豆包PC版产品负责人齐俊元已离职创业。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "2a79ff97bc620cbedc8ff38fc7aed6fde91929906800b7172f5d9d931768b8ad",
+        "generated_at": "2026-11-26T03:13:30.380329Z"
+      }
     },
     {
       "id": "b97e53213a9e25a0dedbf131b07202fe8f7d4d94662acf9190c486c28ffe6c44",
@@ -286,7 +296,17 @@
       "body_text": "北京时间11月20日消息，据知情人士透露，豆包移动版产品负责人陆游或将离职，目前已卸任豆包产品体验和设计部门负责人的职位，也有消息称陆游也在看内部活水机会。 陆游（应该是化名），2019年加入字节，曾任抖音社交产品负责人，现任豆包App端产品负责人。 任职期间，孵化了多个社交项目，包括此前的虚拟社交功能“抖音仔仔”，以及密友社交“抖音时刻”等。其中，“抖音时刻”已经成为抖音APP中的一项重要社交服务，并参照抖音时刻的模式，应用在全新的“多闪”APP内。 2022年12月，抖音调整组织架构，社交负责人陆游向韩尚佑汇报。2023年7月，陆游调岗至大模型团队担任相关负责人。2025年3月，转任豆包App端负责人。 2025年9月24日，字节AI条线人力资源负责人赵祺转岗至Spring-产品部门（包括Flow、Ocean等团队），负责豆包产品工作，统领豆包mobile/PC的用户产品、模型策略产品，向字节产品副总裁Alex（朱骏）汇报。 豆包原有的PC产品负责人齐俊元、Mobile移动版负责人陆游、模型策略产品负责人改为向赵祺汇报。同时，为加强豆包与飞书的办公套件协同，飞书产品负责人童遥虚线汇报给赵祺。两个月后，PC版产品负责人齐俊元离职创业。",
       "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/sz_mmbiz_jpg/nEWyk3hdcml2yFDs9o6cIXcBurFBs1MhE4ObAW07OnVros14qURqJhjB0e7CjNU2kalDLbMhBOTcNOV0s9vhvdsL8TKCqzov3SXE6S48qj4/640?wx_fmt=jpeg",
       "date_modified": "2026-11-20T04:15:47Z",
-      "date_published": "2026-11-20T04:15:47Z"
+      "date_published": "2026-11-20T04:15:47Z",
+      "summary": "知情人士透露，豆包移动版产品负责人陆游或将离职，目前已卸任豆包产品体验和设计部门负责人职位，也有消息称其在看内部活水机会。陆游2019年加入字节，曾任抖音社交产品负责人，2025年3月转任豆包App端负责人；此前豆包PC产品负责人齐俊元已离职创业。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "11f876212e92bfdee6fc5bf11a3b143568512ec21b046815af0422304863d054",
+        "generated_at": "2026-11-26T03:13:30.380329Z"
+      }
     },
     {
       "id": "06a56c658413e10bcee70f52fe430e3cb4e0f019dcf93d79f4ceee4f2f39497c",
