@@ -4,6 +4,27 @@
   "home_page_url": "",
   "items": [
     {
+      "id": "f49fe09cc2d02d11633f3fdfa5b9ff9665db06fa3e519d0962b1014b4a466ed7",
+      "title": "阿里千问语音Omni负责人徐进即将离职",
+      "url": "https://i.hhbboo.com/go/Kvouc-lTuywBARUKARAmAAAAAJ3tvyMzMjU0MTQ0NDYxy5bOZW6fiUUyN0O3a2RMkPCTrH1O0Ry2aZnT_J_KTe3MWBoiSA7nEzg3jVL_8e_wck9FWjBO",
+      "content_html": "",
+      "description": "北京时间11月26日，据知情人士透露，阿里千问语音方向负责人，Qwen-Omni系列项目负责人徐进即将离职。 据公开信息，徐进本科毕业于北京邮电大学通信工程学院，之后在清华大学交叉信息研究院攻读博士，师从李建教授，主要研究大模型自动架构搜索，低资源语音合成与识别，自回归语言模型重复问题的优化以及图模型应用等。他在ICLR、ICML、NeurlPS、KDD等国际人工智能顶级会议上发表论文数十篇，谷歌学术引用量11000+。 在北邮及清华读书期间，徐进曾在百度商业智能实验室、微软亚洲研究院以及苹果Siri团队担任算法实习生。 2023年博士毕业后，徐进加入阿里，致力于通用音频理解、音视频理解、实时音视频交互、大规模语音合成，通用音频合成以及围绕音频的全模态交互模型研究及其应用，代表项目包括Qwen-Omni，Qwen-Audio，Qwen-ASR和Qwen-TTS。",
+      "body_text": "北京时间11月26日，据知情人士透露，阿里千问语音方向负责人，Qwen-Omni系列项目负责人徐进即将离职。 据公开信息，徐进本科毕业于北京邮电大学通信工程学院，之后在清华大学交叉信息研究院攻读博士，师从李建教授，主要研究大模型自动架构搜索，低资源语音合成与识别，自回归语言模型重复问题的优化以及图模型应用等。他在ICLR、ICML、NeurlPS、KDD等国际人工智能顶级会议上发表论文数十篇，谷歌学术引用量11000+。 在北邮及清华读书期间，徐进曾在百度商业智能实验室、微软亚洲研究院以及苹果Siri团队担任算法实习生。 2023年博士毕业后，徐进加入阿里，致力于通用音频理解、音视频理解、实时音视频交互、大规模语音合成，通用音频合成以及围绕音频的全模态交互模型研究及其应用，代表项目包括Qwen-Omni，Qwen-Audio，Qwen-ASR和Qwen-TTS。",
+      "image": null,
+      "date_modified": "2026-11-26T04:31:37Z",
+      "date_published": "2026-11-26T04:31:37Z",
+      "summary": "据知情人士透露，阿里千问语音方向负责人、Qwen-Omni系列项目负责人徐进即将离职。徐进2023年博士毕业于清华大学交叉信息研究院，加入阿里后负责通用音频理解、实时音视频交互、大规模语音合成等研究，代表项目包括Qwen-Omni、Qwen-Audio、Qwen-ASR和Qwen-TTS。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "df4044eb17d785f22992eeabf0a35bc4375dec6ba5d58fdcbb86d40bf4e53679",
+        "generated_at": "2026-11-26T04:53:32.905640Z"
+      }
+    },
+    {
       "id": "6eed22fa9e7b29081bdcf3c635c16c4063927092e35976f5f0ba8e04feb98a4c",
       "title": "阿里千问Qwen-VL负责人白帅即将离职",
       "url": "https://mp.weixin.qq.com/s?__biz=MzI1NDE0NDQ2MQ%3D%3D&mid=2649603869&idx=1&sn=ccc5025beb789f63e9265f913238ddf4&chksm=f0a27ecb616f30b3add808c4637a1a428e3a6e965c2cba87831ad806911895efb57f97ea0519",
