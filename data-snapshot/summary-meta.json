@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-11-26T13:13:12.071230Z",
+  "generatedAt": "2026-11-26T13:33:17.037044Z",
   "model": "deepseek-flash",
   "promptVersion": "full-body-v1",
   "basis": "full_body",
   "mode": "new_articles_only",
-  "completed": 0,
+  "completed": 2,
   "failed": 0,
   "errors": [],
   "status": "success",
   "pendingAfterRun": 0,
-  "pendingBeforeRun": 0,
+  "pendingBeforeRun": 2,
   "skippedCurrent": 0,
-  "skippedShort": 0,
+  "skippedShort": 1,
   "skippedKnown": 4303,
   "rateLimited": false,
   "usage": {
-    "inputTokens": 0,
-    "outputTokens": 0
+    "inputTokens": 7354,
+    "outputTokens": 177
   }
 }
