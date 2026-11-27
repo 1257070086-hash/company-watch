@@ -4,6 +4,27 @@
   "home_page_url": "",
   "items": [
     {
+      "id": "cbf57bdbd6a5dcee162dc4a5538250e2c50910b9ac8ba8ffcb178d0c7072daeb",
+      "title": "阿里加码北美招聘，Qwen团队今年已吸纳数百名AI人才",
+      "url": "https://i.hhbboo.com/go/x1MY0j6H2dEBARUKARAmAAAAAJ3tvzAzMjU0MTQ0NDYxb_Lg7BHLJQDrbqfn1GPBJPA424frdyGcVAicNN5nzmAUOFn_pDLq8CQcYDOtW4x8e8KEJXat",
+      "content_html": "",
+      "description": "北京时间11月27日消息，据雷峰网报道，阿里正在北美加大招聘力度，主要面向全球顶级AI研究员。目前，Qwen北美团队已开放多个岗位，涉及模型研究、训练与推理、多模态、智能体（Agent）和数据等方向。 有消息人士称，今年全球已有数百人加入阿里Qwen大模型团队。 为激励有想法的AI研究员积极探索突破，并吸引更多外部优质AI人才，阿里还在包含Qwen团队的Token Foundry推行新的组织模式，相关岗位已取消传统层级，让组织更加扁平化、更加灵活。 11月16日，阿里发布Qwen4系列首款模型Qwen4-Max。该模型在CodeArena等国际三方榜单中位居全球前列，阿里方面预计，未来两周内还将开源发布该系列的中小尺寸模型。",
+      "body_text": "北京时间11月27日消息，据雷峰网报道，阿里正在北美加大招聘力度，主要面向全球顶级AI研究员。目前，Qwen北美团队已开放多个岗位，涉及模型研究、训练与推理、多模态、智能体（Agent）和数据等方向。 有消息人士称，今年全球已有数百人加入阿里Qwen大模型团队。 为激励有想法的AI研究员积极探索突破，并吸引更多外部优质AI人才，阿里还在包含Qwen团队的Token Foundry推行新的组织模式，相关岗位已取消传统层级，让组织更加扁平化、更加灵活。 11月16日，阿里发布Qwen4系列首款模型Qwen4-Max。该模型在CodeArena等国际三方榜单中位居全球前列，阿里方面预计，未来两周内还将开源发布该系列的中小尺寸模型。",
+      "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/sz_mmbiz_jpg/nEWyk3hdcmkWZNAMBKwIydRGmvYqOD554M3LaG4FdqiaibRgGAwvpAkISaqR4UD77ibf5Xv1icndZyn1mpw2j5BtTjUOLbzDJx1oy6qRNs87H9Y/640?wx_fmt=jpeg",
+      "date_modified": "2026-11-27T01:00:00Z",
+      "date_published": "2026-11-27T01:00:00Z",
+      "summary": "阿里在北美加大招聘力度，面向全球顶级AI研究员，Qwen北美团队开放模型研究、训练与推理、多模态、智能体（Agent）和数据等方向岗位。今年全球已有数百人加入Qwen大模型团队，Token Foundry推行取消传统层级的扁平化组织模式。11月16日阿里发布Qwen4-Max，在CodeArena等国际榜单位居前列，预计未来两周开源该系列中小尺寸模型。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "fdb6239ce4b532bd22336e45b0cbb9a2e65e46c10a758997e2ad3fd19a222607",
+        "generated_at": "2026-11-27T01:13:11.740395Z"
+      }
+    },
+    {
       "id": "d78de5fd5500e4a60592804593cbb83f3556f50eadf3f867721532f0ff7e375d",
       "title": "关于某大厂大模型团队最近要降薪的事儿",
       "url": "https://i.hhbboo.com/go/hSAAzPhj72UBARUKARAmAAAAAJ3tvykzMjU0MTQ0NDYxYb4xoy19o4ExpFxvDYf4NfDng47VOBi-Xdn6nbHpiM28ronz_RM6S5ZibKwTYDW757aVKbnx",
