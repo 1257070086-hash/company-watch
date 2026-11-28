@@ -130,6 +130,27 @@
       }
     },
     {
+      "id": "495ba41405b2d3b221b132267059ce221839dd3b67e7cc6b64891fbc72987691",
+      "title": "这下，OpenAI 真有两个“Tibo”了！",
+      "url": "https://i.hhbboo.com/go/u3bHKQ1g-GEBARUKARAmAAAAAJ4HmN4yMzkwMTQyNzgw5IQRKGHN86I5OolYIzaJ3rxcw2Vi5iE4gWzVtVEOPlBcEI-jeiQMaYAthhKfwFrEcDQc7K0m",
+      "content_html": "",
+      "description": "OpenAI这波从Anthropic挖人，已经快成Claude Code老友重聚会了。 Anthropic的Claude Code核心工程师Thariq Shihipar，因为在开发者社区的影响力和工作方式，被称作「Anthropic的Tibo」。昨天刚被爆出加入OpenAI，今天就正式官宣了。这下，OpenAI真的有两个“Tibo”了。 Tibo本人还亲自在评论区欢迎这位新同事：「Welcome to the team! So much to do 👀」 产品负责人、桌面端创造者、核心工程师，Claude Code的老班底正在OpenAI异地重组，Codex这次是真的要迎来一波强化了？ 更多详情快看：<a data-unique-id=\"mwwx2ipy-w5fys5\" href=\"https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;mid=2651297952&amp;idx=1&amp;sn=3d54099ea6d274606b8c44843b4a48f5&amp;scene=142#wechat_redirect\" class=\"normal_text_link mp_article_text_link\" target=\"_blank\" data-itemshowtype=\"0\">破发不算最疼，Claude Code核心班底被OpenAI疯狂收割才是：Anthropic的编程王座悬了？</a> 编辑｜高知微",
+      "body_text": "OpenAI这波从Anthropic挖人，已经快成Claude Code老友重聚会了。 Anthropic的Claude Code核心工程师Thariq Shihipar，因为在开发者社区的影响力和工作方式，被称作「Anthropic的Tibo」。昨天刚被爆出加入OpenAI，今天就正式官宣了。这下，OpenAI真的有两个“Tibo”了。 Tibo本人还亲自在评论区欢迎这位新同事：「Welcome to the team! So much to do 👀」 产品负责人、桌面端创造者、核心工程师，Claude Code的老班底正在OpenAI异地重组，Codex这次是真的要迎来一波强化了？ 更多详情快看：<a data-unique-id=\"mwwx2ipy-w5fys5\" href=\"https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;mid=2651297952&amp;idx=1&amp;sn=3d54099ea6d274606b8c44843b4a48f5&amp;scene=142#wechat_redirect\" class=\"normal_text_link mp_article_text_link\" target=\"_blank\" data-itemshowtype=\"0\">破发不算最疼，Claude Code核心班底被OpenAI疯狂收割才是：Anthropic的编程王座悬了？</a> 编辑｜高知微",
+      "image": "https://img.hhbboo.com/mm/mmbiz.qpic.cn/sz_mmbiz_png/hLLZnAbUwNgU4hZyqFK3ia8qWXDvLupibjlhEibf0Nl3Y9V1PGbicqK6FSiabPmjymHgkAPBF497eNEFyfAQrHwchLNnibAUD9Jl5UVO1rW79bCgM/0?wx_fmt=png&from=appmsg",
+      "date_modified": "2026-11-26T02:17:52Z",
+      "date_published": "2026-11-26T02:17:52Z",
+      "summary": "Anthropic Claude Code 核心工程师 Thariq Shihipar 被曝加入 OpenAI 后正式官宣，他因在开发者社区的影响力和工作方式被称为“Anthropic 的 Tibo”。Tibo 本人亲自在评论区欢迎新同事。随着产品负责人、桌面端创造者、核心工程师等 Claude Code 老班底在 OpenAI 重组，Codex 预计将迎来强化。",
+      "summary_meta": {
+        "status": "done",
+        "source": "deepseek",
+        "basis": "full_body",
+        "model": "deepseek-flash",
+        "prompt_version": "full-body-v1",
+        "body_hash": "cc9547a55f0b980dc2b30a4056d042410cb9c8d859befc539afadd31f19bd6dc",
+        "generated_at": "2026-11-28T00:13:37.770532Z"
+      }
+    },
+    {
       "id": "8ab0126098e8cba5c725d45ed3e9d73cc61252d4f41eeb3f334cbf8854ed6aa0",
       "title": "当产品开始写代码、研发开始做需求，团队该怎么变？｜极客对谈",
       "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA%3D%3D&mid=2651297991&idx=2&sn=9f2ac909f54d4d1ea94ace3f3b61a7f7&chksm=bcc2f2b805341e96020ecdb38764286e2eb1b684f8ee2b160c1ff4886f40d8c8d6d2a59d0038",
